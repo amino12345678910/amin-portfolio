@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Safonas - Mobile-First Design System</title>
+  
+  <!-- Critical CSS - Inline for Performance -->
+  <style>
+    /* Inline critical CSS here for optimal performance */
+    :root {
+      --font-size-base: 1rem;
+      --font-size-xl: 1.25rem;
+      --font-size-3xl: 1.875rem;
+      --leading-normal: 1.5;
+      --leading-tight: 1.25;
+      --spacing-4: 1rem;
+      --spacing-6: 1.5rem;
+      --spacing-8: 2rem;
+      --color-primary: #00ff94;
+      --color-background: #0a0e1a;
+      --color-surface: #1a202c;
+      --color-text-primary: #f7fafc;
+      --color-text-secondary: #e2e8f0;
+      --color-border: #2d3748;
+      --radius-xl: 0.75rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; line-height: var(--leading-normal); overflow-x: hidden; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; color: var(--color-text-primary); background: var(--color-background); overflow-x: hidden; }
+    .container { width: 100%; margin: 0 auto; padding: 0 var(--spacing-4); max-width: 100%; }
+    header { position: sticky; top: 0; z-index: 1000; background: rgba(10, 14, 26, 0.95); backdrop-filter: blur(10px); }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: var(--spacing-4) 0; }
+    .logo { font-size: var(--font-size-xl); font-weight: 700; color: var(--color-primary); }
+    @media (min-width: 640px) { .container { max-width: 640px; padding: 0 var(--spacing-6); } }
+  </style>
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="../css/blog-mobile-first.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/blog-mobile-first.css"></noscript>
+  
+  <!-- Web Fonts with Font Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Performance Hints -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Blog Safonas - Design system mobile-first optimisé pour une expérience de lecture parfaite sur mobile">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog Safonas - Mobile-First Design System">
+  <meta property="og:description" content="Experience de blog optimisée mobile avec design system moderne">
+  <meta property="og:type" content="website">
+</head>
+
+<body class="blog-page">
+  <!-- Header with Mobile-First Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Safonas</div>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links hidden md:flex">
+          <a href="../index.html" class="nav-link">Accueil</a>
+          <a href="../index.html#services" class="nav-link">Services</a>
+          <a href="index.html" class="nav-link active">Blog</a>
+          <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn md:hidden" aria-label="Menu mobile" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-nav-links">
+      <a href="../index.html" class="mobile-nav-link">Accueil</a>
+      <a href="../index.html#services" class="mobile-nav-link">Services</a>
+      <a href="index.html" class="mobile-nav-link">Blog</a>
+      <a href="../index.html#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="blog-main">
+    <!-- Blog Header -->
+    <section class="blog-header">
+      <div class="blog-container">
+        <div class="blog-header-content">
+          <h1 class="blog-title">Blog Safonas</h1>
+          <p class="blog-subtitle">Découvrez les dernières actualités en intelligence artificielle, guides pratiques et insights techniques</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Content -->
+    <div class="blog-container">
+      <!-- Search and Filters -->
+      <section class="py-6">
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Rechercher un article..." aria-label="Rechercher">
+          <button class="search-btn" aria-label="Rechercher">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="filter-tabs">
+          <a href="#" class="filter-tab active">Tous</a>
+          <a href="#" class="filter-tab">IA</a>
+          <a href="#" class="filter-tab">Tutoriels</a>
+          <a href="#" class="filter-tab">Outils</a>
+          <a href="#" class="filter-tab">Actualités</a>
+        </div>
+      </section>
+
+      <!-- Featured Article -->
+      <article class="featured-article fade-in-up">
+        <div class="featured-badge">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          Article vedette
+        </div>
+        
+        <div class="article-content">
+          <div class="article-meta">
+            <span class="article-category">Guide</span>
+            <span class="article-date">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+              12 Mars 2024
+            </span>
+          </div>
+          
+          <h2 class="article-title">
+            <a href="#">Guide Complet : Design System Mobile-First pour 2024</a>
+          </h2>
+          
+          <p class="article-excerpt">
+            Découvrez comment créer un design system mobile-first performant et accessible. 
+            Méthodologie complète, composants réutilisables, et optimisations avancées pour 
+            une expérience utilisateur exceptionnelle sur tous les appareils.
+          </p>
+          
+          <div class="article-tags">
+            <a href="#" class="article-tag">Design System</a>
+            <a href="#" class="article-tag">Mobile-First</a>
+            <a href="#" class="article-tag">Performance</a>
+            <a href="#" class="article-tag">Accessibilité</a>
+          </div>
+          
+          <a href="#" class="article-read-more">
+            Lire l'article complet
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Blog Grid -->
+      <section class="blog-grid">
+        <!-- Article 1 -->
+        <article class="article-card fade-in-up">
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="article-category">IA</span>
+              <span class="article-date">10 Mars 2024</span>
+            </div>
+            
+            <h3 class="article-title">
+              <a href="#">L'Intelligence Artificielle transforme le développement web en 2024</a>
+            </h3>
+            
+            <p class="article-excerpt">
+              Comment l'IA révolutionne la création de sites web et améliore l'expérience développeur.
+            </p>
+            
+            <div class="article-tags">
+              <a href="#" class="article-tag">IA</a>
+              <a href="#" class="article-tag">Développement</a>
+            </div>
+            
+            <a href="#" class="article-read-more">
+              Lire la suite
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card fade-in-up">
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="article-category">Tutoriel</span>
+              <span class="article-date">8 Mars 2024</span>
+            </div>
+            
+            <h3 class="article-title">
+              <a href="#">Optimiser les performances mobile avec CSS moderne</a>
+            </h3>
+            
+            <p class="article-excerpt">
+              Techniques avancées pour des sites web ultra-rapides sur mobile. Guide pratique complet.
+            </p>
+            
+            <div class="article-tags">
+              <a href="#" class="article-tag">CSS</a>
+              <a href="#" class="article-tag">Performance</a>
+              <a href="#" class="article-tag">Mobile</a>
+            </div>
+            
+            <a href="#" class="article-read-more">
+              Lire la suite
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card fade-in-up">
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="article-category">Outils</span>
+              <span class="article-date">5 Mars 2024</span>
+            </div>
+            
+            <h3 class="article-title">
+              <a href="#">Les meilleurs outils IA pour les développeurs en 2024</a>
+            </h3>
+            
+            <p class="article-excerpt">
+              Découvrez les outils d'IA qui révolutionnent le workflow de développement moderne.
+            </p>
+            
+            <div class="article-tags">
+              <a href="#" class="article-tag">Outils</a>
+              <a href="#" class="article-tag">Productivité</a>
+            </div>
+            
+            <a href="#" class="article-read-more">
+              Lire la suite
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Loading Skeletons for Infinite Scroll -->
+        <div class="skeleton skeleton-article hidden" id="loadingSkeleton">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text"></div>
+        </div>
+      </section>
+
+      <!-- Pagination -->
+      <nav class="pagination" aria-label="Navigation pagination">
+        <a href="#" class="pagination-btn" aria-label="Page précédente">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </a>
+        <a href="#" class="pagination-btn active">1</a>
+        <a href="#" class="pagination-btn">2</a>
+        <a href="#" class="pagination-btn">3</a>
+        <span class="pagination-btn" style="border: none; background: none;">...</span>
+        <a href="#" class="pagination-btn">12</a>
+        <a href="#" class="pagination-btn" aria-label="Page suivante">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" aria-label="Basculer le thème" id="themeToggle">
+    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript for Mobile Interactions -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    
+    function toggleMobileMenu() {
+      mobileMenu.classList.toggle('open');
+      mobileMenuOverlay.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    }
+    
+    mobileMenuBtn?.addEventListener('click', toggleMobileMenu);
+    mobileMenuOverlay?.addEventListener('click', toggleMobileMenu);
+    
+    // Close mobile menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu?.classList.contains('open')) {
+        toggleMobileMenu();
+      }
+    });
+    
+    // Lazy Loading and Intersection Observer
+    const observerOptions = {
+      root: null,
+      rootMargin: '50px',
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in-up').forEach(el => {
+      observer.observe(el);
+    });
+    
+    // Theme Toggle (if needed)
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('light-theme');
+      localStorage.setItem('theme', document.documentElement.classList.contains('light-theme') ? 'light' : 'dark');
+    });
+    
+    // Restore theme preference
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('light-theme');
+    }
+    
+    // Performance: Preload next page on hover (for desktop)
+    if (!('ontouchstart' in window)) {
+      document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          const linkEl = document.createElement('link');
+          linkEl.rel = 'prefetch';
+          linkEl.href = link.href;
+          document.head.appendChild(linkEl);
+        }, { once: true });
+      });
+    }
+    
+    // Search functionality
+    const searchInput = document.querySelector('.search-input');
+    let searchTimeout;
+    
+    searchInput?.addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        // Implement search logic here
+        console.log('Searching for:', e.target.value);
+      }, 300);
+    });
+    
+    // Filter tabs
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.filter-tab.active')?.classList.remove('active');
+        tab.classList.add('active');
+        // Implement filter logic here
+      });
+    });
+  </script>
+
+  <!-- Service Worker for Offline Support (Optional) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(registrationError => console.log('SW registration failed'));
+      });
+    }
+  </script>
+</body>
+</html>

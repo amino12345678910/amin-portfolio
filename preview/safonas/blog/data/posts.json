@@ -1,0 +1,141 @@
+{
+  "posts": [
+    {
+      "id": "ia-transformation-digitale-tunisie",
+      "title": "IA Transformation Digitale Tunisie",
+      "excerpt": "Guide complet sur la transformation digitale en Tunisie avec l'intelligence artificielle. Découvrez les opportunités et défis pour les entreprises tunisiennes.",
+      "date": "2025-01-15",
+      "author": "Équipe Safonas",
+      "category": "guides",
+      "tags": ["IA", "Tunisie", "Transformation", "Entreprise"],
+      "readTime": 8,
+      "featured": true,
+      "image": "/blog/images/ia-transformation.jpg",
+      "url": "ia-transformation-digitale-tunisie.html"
+    },
+    {
+      "id": "automatisation-pme-tunisie",
+      "title": "Automatisation PME Tunisie",
+      "excerpt": "Solutions d'automatisation adaptées aux PME tunisiennes. Optimisez vos processus et boostez votre productivité avec l'IA.",
+      "date": "2025-01-10",
+      "author": "Équipe Safonas",
+      "category": "automatisation",
+      "tags": ["Automatisation", "PME", "Tunisie", "Productivité"],
+      "readTime": 6,
+      "featured": false,
+      "image": "/blog/images/automatisation-pme.jpg",
+      "url": "automatisation-pme-tunisie.html"
+    },
+    {
+      "id": "guide-intelligence-artificielle-tunisie",
+      "title": "Guide Intelligence Artificielle Tunisie",
+      "excerpt": "Le guide complet pour comprendre et implémenter l'intelligence artificielle dans votre entreprise en Tunisie.",
+      "date": "2025-01-05",
+      "author": "Équipe Safonas",
+      "category": "guides",
+      "tags": ["IA", "Guide", "Tunisie", "Implementation"],
+      "readTime": 12,
+      "featured": true,
+      "image": "/blog/images/guide-ia-tunisie.jpg",
+      "url": "guide-intelligence-artificielle-tunisie.html"
+    },
+    {
+      "id": "chatbot-whatsapp-tunisie",
+      "title": "Chatbot WhatsApp Tunisie",
+      "excerpt": "Créez un chatbot WhatsApp performant pour votre entreprise. Guide complet avec stratégies et outils pratiques.",
+      "date": "2024-12-28",
+      "author": "Équipe Safonas",
+      "category": "outils",
+      "tags": ["Chatbot", "WhatsApp", "Communication", "Automatisation"],
+      "readTime": 10,
+      "featured": false,
+      "image": "/blog/images/chatbot-whatsapp.jpg",
+      "url": "chatbot-whatsapp-tunisie.html"
+    },
+    {
+      "id": "outils-ai-creation-site-gratuit",
+      "title": "17 Outils IA Gratuits pour Créer un Site Web Professionnel",
+      "excerpt": "🚀 Découvrez notre sélection exclusive de 17 outils d'IA 100% gratuits pour créer facilement votre site web professionnel, même sans aucune connaissance technique. Économisez des milliers d'euros en frais de développement !",
+      "date": "2025-08-27",
+      "author": "Équipe Safonas",
+      "category": "outils",
+      "tags": ["OutilsGratuits", "SiteWeb", "NoCode", "IA"],
+      "readTime": 12,
+      "featured": true,
+      "image": "/blog/images/outils-ia-gratuits.jpg",
+      "url": "outils-ai-creation-site-gratuit.html"
+    },
+    {
+      "id": "hugging-face-spaces-guide",
+      "title": "Guide Complet Hugging Face Spaces - 400K+ Apps IA Gratuites",
+      "excerpt": "🚀 Découvrez la plus grande boutique d'applications d'IA au monde avec plus de 400 000 applications gratuites. Guide complet étape par étape pour maîtriser cette plateforme révolutionnaire et accéder à l'IA sans limites.",
+      "date": "2025-08-11",
+      "author": "Équipe Safonas",
+      "category": "plateformes",
+      "tags": ["HuggingFace", "PlateformeIA", "AppsGratuites", "Machine Learning"],
+      "readTime": 8,
+      "featured": true,
+      "image": "/blog/images/hugging-face-spaces.jpg",
+      "url": "hugging-face-spaces-guide.html"
+    },
+    {
+      "id": "ia-transformation-digitale-tunisie",
+      "title": "Comment l'IA Transforme les Entreprises en Tunisie",
+      "excerpt": "Découvrez les secteurs tunisiens révolutionnés par l'intelligence artificielle. Opportunités uniques, stratégies d'implémentation et études de cas locales réussies.",
+      "date": "2025-06-10",
+      "author": "Équipe Safonas",
+      "category": "guides",
+      "tags": ["IA", "TransformationDigitale", "Tunisie", "Stratégie", "Innovation"],
+      "readTime": 11,
+      "featured": false,
+      "image": "/blog/images/blog-ia-transformation.jpg",
+      "url": "ia-transformation-digitale-tunisie.html"
+    },
+    {
+      "id": "nano-banana-qwen-seedream-ia-editing",
+      "title": "Nano Banana vs Qwen Image Edit 2509 vs Seedream-4 : Le Duel des Géants de l'IA Image 2025",
+      "excerpt": "🎯 Découvrez les 3 modèles d'IA révolutionnaires qui transforment l'édition d'images en 2025. Analyse comparative complète, benchmarks, et guide d'implémentation pour choisir la solution parfaite pour vos projets.",
+      "date": "2025-10-05",
+      "author": "Équipe Safonas",
+      "category": "outils",
+      "tags": ["Nano Banana", "Qwen Image Edit", "Seedream-4", "IA Image", "Benchmark"],
+      "readTime": 15,
+      "featured": true,
+      "image": "/blog/images/ia-editing-showdown.jpg",
+      "url": "nano-banana-qwen-seedream-ia-editing.html"
+    }
+  ],
+  "categories": [
+    {
+      "id": "guides",
+      "name": "Guides",
+      "icon": "fas fa-book",
+      "description": "Guides complets et tutoriels pratiques"
+    },
+    {
+      "id": "outils",
+      "name": "Outils IA",
+      "icon": "fas fa-tools",
+      "description": "Découverte et analyse d'outils d'intelligence artificielle"
+    },
+    {
+      "id": "plateformes",
+      "name": "Plateformes",
+      "icon": "fas fa-cube",
+      "description": "Plateformes et écosystèmes IA"
+    },
+    {
+      "id": "automatisation",
+      "name": "Automatisation",
+      "icon": "fas fa-robot",
+      "description": "Solutions d'automatisation et optimisation"
+    }
+  ],
+  "tags": [
+    "IA", "Tunisie", "Transformation", "Entreprise", "Automatisation", "PME",
+    "Productivité", "Guide", "Implementation", "Chatbot", "WhatsApp",
+    "Communication", "OutilsGratuits", "SiteWeb", "NoCode", "HuggingFace",
+    "PlateformeIA", "AppsGratuites", "Machine Learning", "Nano Banana",
+    "Qwen Image Edit", "Seedream-4", "IA Image", "Benchmark"
+  ]
+}

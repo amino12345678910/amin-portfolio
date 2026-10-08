@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://safonas.com/</loc>
+        <image:image>
+            <image:loc>https://safonas.com/images/author-safonas.jpg</image:loc>
+            <image:caption>Auteur Safonas - Expert en intelligence artificielle</image:caption>
+            <image:title>Auteur Safonas</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://safonas.com/images/author-safonas.svg</image:loc>
+            <image:caption>Logo auteur Safonas - Format vectoriel</image:caption>
+            <image:title>Auteur Safonas SVG</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://safonas.com/images/avatar-placeholder.png</image:loc>
+            <image:caption>Avatar placeholder pour profil utilisateur</image:caption>
+            <image:title>Avatar Placeholder</image:title>
+        </image:image>
+    </url>
+
+    <!-- Blog Articles -->
+    <url>
+        <loc>https://safonas.com/blog/outils-ai-creation-site-gratuit.html</loc>
+        <image:image>
+            <image:loc>https://safonas.com/images/outils-ia-gratuits-thumb.jpg</image:loc>
+            <image:caption>Outils IA gratuits pour création de sites web</image:caption>
+            <image:title>Outils IA Gratuits</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://safonas.com/images/outils-ia-gratuits-thumb.svg</image:loc>
+            <image:caption>Outils IA gratuits pour création de sites web - Format vectoriel</image:caption>
+            <image:title>Outils IA Gratuits SVG</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://safonas.com/blog/hugging-face-spaces-guide.html</loc>
+        <image:image>
+            <image:loc>https://safonas.com/images/hugging-face-spaces-thumb.jpg</image:loc>
+            <image:caption>Guide Hugging Face Spaces pour déploiement modèles IA</image:caption>
+            <image:title>Hugging Face Spaces</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://safonas.com/images/hugging-face-spaces-thumb.svg</image:loc>
+            <image:caption>Guide Hugging Face Spaces pour déploiement modèles IA - Format vectoriel</image:caption>
+            <image:title>Hugging Face Spaces SVG</image:title>
+        </image:image>
+    </url>
+
+</urlset>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Coming Soon | Under Development</title>
+    <style>
+        :root {
+            --bg-dark: #070b14;    /* Safonas Deep Navy */
+            --mint: #34d399;       /* Single Electric Mint Color */
+            --text-gray: #e9d5ff;  
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: rgba(10, 15, 44, 0.95); 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            overscroll-behavior: none;
+        }
+
+        #canvas-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            filter: blur(8px) contrast(25); 
+            background: transparent;
+            z-index: 1;
+        }
+
+        canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+            /*color : #00b76b*/
+        }
+
+        .ui-layer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 20;
+            text-align: center;
+            color: white;
+            pointer-events: none; 
+            width: 90%;
+            /* Adds a slight dark glow to improve text legibility on mobile */
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 12vw, 5rem);
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+
+        p {
+            font-size: clamp(0.9rem, 4vw, 1.2rem);
+            font-weight: 300;
+            color: var(--text-gray);
+            margin-top: 15px;
+            opacity: 0.9;
+            padding: 0 10px;
+        }
+
+        .status-pill {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(7, 11, 20, 0.6); /* Darker background for contrast */
+            border: 1px solid rgba(52, 211, 153, 0.3);
+            border-radius: 50px;
+            font-size: 0.7rem;
+            color: var(--mint);
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(4px);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="ui-layer">
+        <div class="status-pill">Work in Progress</div>
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Stay Tuned</h1>
+        <p class="status-pill" style="font-size: calc(1.25vh + 1.25vw);font-family: serif !important; font-weight: 700;color: white;">Our website is undergoing scheduled maintenance <br>for a better experience.</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let balls = [];
+        let mouse = { x: -1000, y: -1000 };
+
+        function resize() {
+            const scale = window.devicePixelRatio || 1;
+            canvas.width = window.innerWidth * scale;
+            canvas.height = window.innerHeight * scale;
+            ctx.scale(scale, scale);
+            init();
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        window.addEventListener('touchmove', (e) => {
+            mouse.x = e.touches[0].clientX;
+            mouse.y = e.touches[0].clientY;
+        }, { passive: false });
+
+        window.addEventListener('touchend', () => {
+            mouse.x = -1000;
+            mouse.y = -1000;
+        });
+
+        class Ball {
+            constructor() {
+                this.x = Math.random() * window.innerWidth;
+                this.y = Math.random() * window.innerHeight;
+                
+                // Optimized bubble sizes: much smaller on phones
+                const isMobile = window.innerWidth < 600;
+                const sizeBase = isMobile ? 12 : 25;
+                const sizeRange = isMobile ? 15 : 30;
+                
+                this.radius = (Math.random() * sizeRange + sizeBase);
+                this.vx = (Math.random() - 0.5) * (isMobile ? 1 : 2);
+                this.vy = (Math.random() - 0.5) * (isMobile ? 1 : 2);
+                this.color = '#00ff82'; 
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = this.color; 
+                ctx.fill();
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x + this.radius > window.innerWidth || this.x - this.radius < 0) this.vx *= -1;
+                if (this.y + this.radius > window.innerHeight || this.y - this.radius < 0) this.vy *= -1;
+
+                const dx = mouse.x - this.x;
+                const dy = mouse.y - this.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                const pushRadius = window.innerWidth < 600 ? 120 : 200;
+                if (distance < pushRadius) {
+                    this.x += dx * 0.05;
+                    this.y += dy * 0.05;
+                }
+            }
+        }
+
+        function init() {
+            balls = [];
+            // Increased count for mobile but smaller individual size
+            const ballCount = window.innerWidth < 600 ? 45 : 80;
+            for (let i = 0; i < ballCount; i++) {
+                balls.push(new Ball());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+            balls.forEach(ball => {
+                ball.update();
+                ball.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+        animate();
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+# Enhanced .htaccess for Clean URLs and Directory Indexing (cPanel Optimized)
+
+# =================================================================
+# XML/RSS FEEDS ACCESS - TOP PRIORITY
+# =================================================================
+# Allow direct access to RSS feeds and sitemaps
+<Files "feed.xml">
+    Require all granted
+    Header always set Content-Type "application/rss+xml; charset=UTF-8"
+    Header always set Cache-Control "public, max-age=3600"
+</Files>
+
+<Files "sitemap.xml">
+    Require all granted
+    Header always set Content-Type "application/xml; charset=UTF-8"
+    Header always set Cache-Control "public, max-age=3600"
+</Files>
+
+<Files "sitemap-images.xml">
+    Require all granted
+    Header always set Content-Type "application/xml; charset=UTF-8"
+    Header always set Cache-Control "public, max-age=3600"
+</Files>
+
+# Allow all XML and RSS files
+<FilesMatch "\.(xml|rss)$">
+    Require all granted
+    Header always set Content-Type "application/xml"
+    Header always set Cache-Control "public, max-age=3600"
+</FilesMatch>
+
+# Skip ALL security rules and rewrites for XML files
+RewriteEngine On
+RewriteCond %{REQUEST_URI} \.(xml|rss)$ [NC]
+RewriteRule .* - [L]
+
+# Protect sensitive files (except XML files)
+<Files ".env">
+    Require all denied
+</Files>
+
+# Enable mod_rewrite for clean URLs
+RewriteEngine On
+RewriteBase /
+
+# cPanel performance optimizations
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType application/xml "access plus 1 hour"
+    ExpiresByType text/xml "access plus 1 hour"
+    ExpiresByType application/rss+xml "access plus 1 hour"
+</IfModule>
+
+# Compress text files for faster loading
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Set default directory index files
+DirectoryIndex index.html index.php
+
+# XML/RSS files already handled at the top of this file
+
+# Clean URLs for blog articles (blog/article-name -> blog/article-name.html)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/blog/$1.html -f
+RewriteRule ^blog/([^/]+)/?$ blog/$1.html [L]
+
+# Clean URLs for pages directory (pages/services -> pages/services.html)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/pages/$1.html -f
+RewriteRule ^pages/([^/]+)/?$ pages/$1.html [L]
+
+# Clean URLs for legal directory (legal/mentions-legales -> legal/mentions-legales.html)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/legal/$1.html -f
+RewriteRule ^legal/([^/]+)/?$ legal/$1.html [L]
+
+# Clean URLs for root level pages (service -> service.html) 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Ensure blog directory serves index.html by default
+RewriteCond %{REQUEST_URI} ^/blog/?$
+RewriteCond %{DOCUMENT_ROOT}/blog/index.html -f
+RewriteRule ^blog/?$ blog/index.html [L]

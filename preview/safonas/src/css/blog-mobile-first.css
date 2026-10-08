@@ -1,0 +1,388 @@
+/* ========================================
+   SAFONAS BLOG - MOBILE-FIRST STYLESHEET
+   Complete design system implementation
+   Target: 375px mobile, 768px tablet, 1024px+ desktop
+======================================== */
+
+/* Import Design System Foundation */
+@import url('mobile-design-system.css');
+@import url('blog-components.css');
+
+/* ========================================
+   BLOG-SPECIFIC LAYOUT OVERRIDES
+======================================== */
+
+/* Blog Page Layout */
+.blog-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-main {
+  flex: 1;
+  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-8);
+}
+
+/* Blog Grid Layout - Mobile First */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-6);
+}
+
+@media (min-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Featured Article - Mobile Spotlight */
+.featured-article {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-elevated) 100%);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 255, 148, 0.03), rgba(139, 92, 246, 0.03));
+  pointer-events: none;
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-bottom: var(--spacing-4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================
+   MOBILE-SPECIFIC ENHANCEMENTS
+======================================== */
+
+/* Touch-Optimized Article Cards */
+@media (hover: none) and (pointer: coarse) {
+  .article-card {
+    /* Remove hover effects on touch devices */
+    transform: none !important;
+  }
+  
+  .article-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease-out;
+  }
+  
+  /* Increase touch targets */
+  .article-read-more,
+  .nav-link,
+  .filter-tab {
+    min-height: 48px;
+    padding: var(--spacing-3) var(--spacing-4);
+  }
+}
+
+/* Mobile Menu Enhancement */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--color-surface);
+  z-index: 2000;
+  padding: var(--spacing-8) var(--spacing-6);
+  transition: left var(--transition-slow);
+  border-right: 1px solid var(--color-border);
+  box-shadow: var(--shadow-xl);
+}
+
+.mobile-menu.open {
+  left: 0;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1500;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+}
+
+.mobile-menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-8);
+}
+
+.mobile-nav-link {
+  padding: var(--spacing-4);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+  font-weight: 500;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+  background: rgba(0, 255, 148, 0.1);
+  color: var(--color-primary);
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+======================================== */
+
+/* Lazy Loading Images */
+.lazy-image {
+  opacity: 0;
+  transition: opacity var(--transition-slow);
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* Intersection Observer Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--transition-slow);
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Progressive Enhancement for Modern Browsers */
+@supports (backdrop-filter: blur(10px)) {
+  header {
+    background: rgba(10, 14, 26, 0.8);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@supports (display: grid) {
+  .blog-grid {
+    display: grid;
+  }
+}
+
+@supports not (display: grid) {
+  .blog-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+======================================== */
+
+@media print {
+  header,
+  .blog-sidebar,
+  .mobile-menu,
+  .pagination {
+    display: none !important;
+  }
+  
+  body {
+    color: #000;
+    background: #fff;
+  }
+  
+  .article-card {
+    border: 1px solid #ddd;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+  
+  a:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+
+/* ========================================
+   ERROR HANDLING & FALLBACKS
+======================================== */
+
+/* Font Loading Fallback */
+@font-face {
+  font-family: 'Inter-fallback';
+  size-adjust: 107%;
+  ascent-override: 90%;
+  src: local('Arial');
+}
+
+body {
+  font-family: 'Inter', 'Inter-fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Image Loading Error Fallback */
+img {
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  display: inline-block;
+  position: relative;
+}
+
+img:after {
+  content: "Image not available";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
+/* ========================================
+   REDUCED MOTION PREFERENCES
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .fade-in-up {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .loading::after {
+    animation: none;
+  }
+}
+
+/* ========================================
+   DARK MODE TOGGLE SUPPORT
+======================================== */
+
+.theme-toggle {
+  position: fixed;
+  bottom: var(--spacing-6);
+  right: var(--spacing-6);
+  width: 56px;
+  height: 56px;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-background);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  z-index: 1000;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-lg);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ========================================
+   SCROLL BEHAVIOR & SMOOTH SCROLLING
+======================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-light) var(--color-surface);
+}
+
+/* ========================================
+   FINAL MOBILE VIEWPORT FIXES
+======================================== */
+
+/* iOS Safari viewport height fix */
+@supports (-webkit-touch-callout: none) {
+  .blog-page {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Android Chrome address bar compensation */
+@media screen and (max-width: 768px) {
+  .blog-main {
+    min-height: calc(100vh - 120px);
+  }
+}
+
+/* Prevent horizontal overflow on all elements */
+* {
+  max-width: 100%;
+}

@@ -1,0 +1,182 @@
+/* ========================================
+   SERVICES PAGE GRID LAYOUT FIX
+   Complete Tailwind-style utility classes
+   ======================================== */
+
+/* Core Grid System - Override existing styles */
+.grid {
+  display: grid !important;
+}
+
+/* Grid Template Columns */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+/* Gap utilities */
+.gap-4 {
+  gap: 1rem !important;
+}
+
+.gap-6 {
+  gap: 1.5rem !important;
+}
+
+.gap-8 {
+  gap: 2rem !important;
+}
+
+/* Margin utilities */
+.mb-16 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-20 {
+  margin-bottom: 5rem !important;
+}
+
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* Medium screens (768px and up) */
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .md\:gap-8 {
+    gap: 2rem !important;
+  }
+}
+
+/* Large screens (1024px and up) */
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  
+  .lg\:gap-8 {
+    gap: 2rem !important;
+  }
+}
+
+/* ========================================
+   SERVICES PAGE SPECIFIC FIXES
+   ======================================== */
+
+/* Services grid container - ensure proper spacing and layout */
+#services .grid {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+/* Process grid container */
+#process .grid {
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+/* Service cards - ensure they display properly in grid */
+.service-card {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 300px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Process cards */
+.process-card {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 200px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  #services .grid,
+  #process .grid {
+    padding: 0 0.5rem !important;
+  }
+  
+  .service-card,
+  .process-card {
+    min-height: auto !important;
+  }
+}
+
+/* Ensure cards have equal height */
+.service-card, .process-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.service-card p, .process-card p {
+  flex-grow: 1 !important;
+}
+
+/* Navigation styling fix */
+.nav-links {
+  display: flex !important;
+  gap: 2rem !important;
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem !important;
+}
+
+.nav-link:hover {
+  color: #00ff94 !important;
+  background: rgba(0, 255, 148, 0.1) !important;
+}
+
+.nav-link.active {
+  color: #00ff94 !important;
+  background: rgba(0, 255, 148, 0.15) !important;
+}
+
+/* Footer link styling */
+footer a {
+  color: #94a3b8 !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+}
+
+footer a:hover {
+  color: #00ff94 !important;
+}
+
+/* Button styling */
+.btn {
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .nav-links {
+    display: none !important;
+  }
+}

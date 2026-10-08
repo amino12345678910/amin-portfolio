@@ -1,0 +1,26 @@
+# =================================================================
+# CONFIG DIRECTORY SECURITY - SAFONAS AI AGENCY
+# =================================================================
+# Complete lockdown of configuration files
+# =================================================================
+
+# Deny all access to configuration directory
+Require all denied
+
+# Block all file access
+<FilesMatch ".*">
+    Require all denied
+</FilesMatch>
+
+# Additional protection layers
+Options -Indexes -ExecCGI -Includes
+RemoveHandler .php .php3 .php4 .php5 .phtml .pl .py .jsp .asp .sh .cgi
+
+# Block specific file extensions
+<FilesMatch "\.(php|inc|conf|config|ini|log|sql|json|xml|yml|yaml|env|bak|backup|old|tmp)$">
+    Require all denied
+</FilesMatch>
+
+# Security headers (even though access is denied)
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "DENY"

@@ -1,0 +1,428 @@
+/* 
+ * MOBILE-FIRST BLOG FRAMEWORK
+ * Comprehensive UX Solution for 375px+ viewports
+ * Designed for optimal reading experience and touch interaction
+ */
+
+/* =============================================================================
+   1. RESET & BASE STYLES
+   ============================================================================= */
+
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =============================================================================
+   2. MOBILE LAYOUT FOUNDATION (375px baseline)
+   ============================================================================= */
+
+.mobile-container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .mobile-container {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+}
+
+/* =============================================================================
+   3. TYPOGRAPHY SCALE (Mobile-Optimized)
+   ============================================================================= */
+
+/* Primary Heading - Blog Title */
+.mobile-h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Secondary Heading - Section Titles */
+.mobile-h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 2rem 0 1rem 0;
+  color: #f0f0f0;
+}
+
+/* Card Titles */
+.mobile-h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+/* Body Text - Optimized for mobile reading */
+.mobile-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #b5b5b5;
+  margin-bottom: 1rem;
+  max-width: 65ch; /* Optimal reading line length */
+}
+
+/* Small Text - Meta information */
+.mobile-small {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #8a8a8a;
+}
+
+/* =============================================================================
+   4. TOUCH-FRIENDLY COMPONENTS
+   ============================================================================= */
+
+/* Touch Target Standards (minimum 44px) */
+.mobile-touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Primary Button - CTAs */
+.mobile-btn-primary {
+  background: linear-gradient(135deg, #00ff94 0%, #6366f1 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
+  min-height: 48px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.mobile-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Secondary Button - Filters */
+.mobile-btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #b5b5b5;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 10px 16px;
+  min-height: 44px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-btn-secondary.active {
+  background: linear-gradient(135deg, #00ff94 0%, #6366f1 100%);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+/* =============================================================================
+   5. BLOG CARD DESIGN (Mobile-First)
+   ============================================================================= */
+
+.mobile-blog-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.mobile-blog-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00ff94 0%, #6366f1 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-blog-card:hover::before {
+  opacity: 1;
+}
+
+/* Card Image Area */
+.mobile-card-image {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #00ff94 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-card-image i {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+
+/* Card Meta Information */
+.mobile-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.mobile-tag {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* =============================================================================
+   6. NAVIGATION & FILTERING
+   ============================================================================= */
+
+.mobile-filter-bar {
+  display: flex;
+  gap: 8px;
+  padding: 16px 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-breadcrumb {
+  padding: 16px 0;
+  margin-bottom: 16px;
+}
+
+.mobile-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-breadcrumb-item:hover {
+  color: #00ff94;
+}
+
+.mobile-breadcrumb-separator {
+  margin: 0 8px;
+  color: #555;
+  font-size: 0.7rem;
+}
+
+/* =============================================================================
+   7. NEWSLETTER & CTA SECTIONS
+   ============================================================================= */
+
+.mobile-newsletter {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(0, 255, 148, 0.1) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin: 32px 0;
+  text-align: center;
+}
+
+.mobile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 280px;
+  margin: 16px auto 0;
+}
+
+.mobile-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  min-height: 48px;
+  transition: all 0.2s ease;
+}
+
+.mobile-input:focus {
+  outline: none;
+  border-color: #00ff94;
+  box-shadow: 0 0 0 2px rgba(0, 255, 148, 0.1);
+}
+
+.mobile-input::placeholder {
+  color: #8a8a8a;
+}
+
+/* =============================================================================
+   8. SPACING SYSTEM (8px Grid)
+   ============================================================================= */
+
+.mobile-space-xs { margin-bottom: 8px; }
+.mobile-space-sm { margin-bottom: 16px; }
+.mobile-space-md { margin-bottom: 24px; }
+.mobile-space-lg { margin-bottom: 32px; }
+.mobile-space-xl { margin-bottom: 48px; }
+
+.mobile-pad-xs { padding: 8px; }
+.mobile-pad-sm { padding: 16px; }
+.mobile-pad-md { padding: 24px; }
+.mobile-pad-lg { padding: 32px; }
+
+/* =============================================================================
+   9. PROGRESSIVE ENHANCEMENT (Tablet & Desktop)
+   ============================================================================= */
+
+@media (min-width: 768px) {
+  .mobile-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  
+  .mobile-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .mobile-form {
+    flex-direction: row;
+    max-width: 400px;
+  }
+  
+  .mobile-form .mobile-input {
+    flex: 1;
+  }
+  
+  .mobile-form .mobile-btn-primary {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-container {
+    max-width: 1024px;
+  }
+  
+  .mobile-blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  
+  .mobile-h1 {
+    font-size: 3rem;
+  }
+  
+  .mobile-h2 {
+    font-size: 2rem;
+  }
+}
+
+/* =============================================================================
+   10. ACCESSIBILITY ENHANCEMENTS
+   ============================================================================= */
+
+/* Focus indicators */
+.mobile-touch-target:focus,
+.mobile-btn-primary:focus,
+.mobile-btn-secondary:focus,
+.mobile-input:focus {
+  outline: 2px solid #00ff94;
+  outline-offset: 2px;
+}
+
+/* Screen reader support */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  .mobile-blog-card {
+    border-width: 2px;
+  }
+  
+  .mobile-btn-primary {
+    border: 2px solid #00ff94;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

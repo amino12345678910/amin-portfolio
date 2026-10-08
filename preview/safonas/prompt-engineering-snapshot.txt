@@ -1,0 +1,678 @@
+uid=1_0 RootWebArea "Guide Complet de Prompt Engineering - Maîtrisez l'Art de Communiquer avec l'IA" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html"
+  uid=1_1 ignored
+    uid=1_2 ignored
+      uid=1_3 banner
+        uid=1_4 ignored
+          uid=1_5 navigation "Main navigation"
+            uid=1_6 banner
+              uid=1_7 StaticText "Safonas"
+                uid=1_8 InlineTextBox "Safonas"
+            uid=1_9 menubar orientation="horizontal"
+              uid=1_10 menuitem "Fonctionnalités"
+                uid=1_11 StaticText "Fonctionnalités"
+                  uid=1_12 InlineTextBox "Fonctionnalités"
+              uid=1_13 menuitem "Services"
+                uid=1_14 StaticText "Services"
+                  uid=1_15 InlineTextBox "Services"
+              uid=1_16 menuitem "Témoignages"
+                uid=1_17 StaticText "Témoignages"
+                  uid=1_18 InlineTextBox "Témoignages"
+              uid=1_19 menuitem "Contact"
+                uid=1_20 StaticText "Contact"
+                  uid=1_21 InlineTextBox "Contact"
+              uid=1_22 menuitem "Blog"
+                uid=1_23 StaticText "Blog"
+                  uid=1_24 InlineTextBox "Blog"
+            uid=1_25 button "Toggle mobile menu"
+              uid=1_26 generic
+                uid=1_27 ignored
+                  uid=1_28 StaticText ""
+                    uid=1_29 InlineTextBox ""
+        uid=1_30 generic
+          uid=1_31 generic
+            uid=1_32 link "Fonctionnalités" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#features"
+              uid=1_33 StaticText "Fonctionnalités"
+                uid=1_34 InlineTextBox "Fonctionnalités"
+            uid=1_35 StaticText " "
+              uid=1_36 InlineTextBox " "
+            uid=1_37 link "Services" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#services"
+              uid=1_38 StaticText "Services"
+                uid=1_39 InlineTextBox "Services"
+            uid=1_40 StaticText " "
+              uid=1_41 InlineTextBox " "
+            uid=1_42 link "Témoignages" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#testimonials"
+              uid=1_43 StaticText "Témoignages"
+                uid=1_44 InlineTextBox "Témoignages"
+            uid=1_45 StaticText " "
+              uid=1_46 InlineTextBox " "
+            uid=1_47 link "Contact" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+              uid=1_48 StaticText "Contact"
+                uid=1_49 InlineTextBox "Contact"
+            uid=1_50 StaticText " "
+              uid=1_51 InlineTextBox " "
+            uid=1_52 link "Blog" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#blog"
+              uid=1_53 StaticText "Blog"
+                uid=1_54 InlineTextBox "Blog"
+      uid=1_55 main
+        uid=1_56 generic
+          uid=1_57 generic
+            uid=1_58 navigation
+              uid=1_59 ignored
+                uid=1_60 ignored
+                  uid=1_61 ignored
+                    uid=1_62 link " Accueil" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html"
+                      uid=1_63 generic
+                        uid=1_64 ignored
+                          uid=1_65 StaticText ""
+                            uid=1_66 InlineTextBox ""
+                      uid=1_67 StaticText "Accueil"
+                        uid=1_68 InlineTextBox "Accueil"
+                    uid=1_69 ignored
+                      uid=1_70 StaticText "/"
+                        uid=1_71 InlineTextBox "/"
+                    uid=1_72 link " Blog" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#blog"
+                      uid=1_73 generic
+                        uid=1_74 ignored
+                          uid=1_75 StaticText ""
+                            uid=1_76 InlineTextBox ""
+                      uid=1_77 StaticText "Blog"
+                        uid=1_78 InlineTextBox "Blog"
+                    uid=1_79 ignored
+                      uid=1_80 StaticText "/"
+                        uid=1_81 InlineTextBox "/"
+                    uid=1_82 ignored
+                      uid=1_83 StaticText "Prompt Engineering"
+                        uid=1_84 InlineTextBox "Prompt Engineering"
+            uid=1_85 ignored
+              uid=1_86 ignored
+                uid=1_87 generic
+                  uid=1_88 ignored
+                    uid=1_89 StaticText ""
+                      uid=1_90 InlineTextBox ""
+                uid=1_91 ignored
+                  uid=1_92 StaticText "8 Novembre 2025"
+                    uid=1_93 InlineTextBox "8 Novembre 2025"
+              uid=1_94 ignored
+                uid=1_95 generic
+                  uid=1_96 ignored
+                    uid=1_97 StaticText ""
+                      uid=1_98 InlineTextBox ""
+                uid=1_99 ignored
+                  uid=1_100 StaticText "15 min"
+                    uid=1_101 InlineTextBox "15 min"
+              uid=1_102 ignored
+                uid=1_103 generic
+                  uid=1_104 ignored
+                    uid=1_105 StaticText ""
+                      uid=1_106 InlineTextBox ""
+                uid=1_107 ignored
+                  uid=1_108 StaticText "Safonas Team"
+                    uid=1_109 InlineTextBox "Safonas Team"
+            uid=1_110 ignored
+              uid=1_111 heading "Guide Complet de Prompt Engineering" level="1"
+                uid=1_112 StaticText "Guide Complet de Prompt Engineering"
+                  uid=1_113 InlineTextBox "Guide Complet de Prompt "
+                  uid=1_114 InlineTextBox "Engineering"
+              uid=1_115 generic
+                uid=1_116 generic
+                  uid=1_117 ignored
+                    uid=1_118 StaticText ""
+                      uid=1_119 InlineTextBox ""
+                uid=1_120 ignored
+                  uid=1_121 StaticText "Framework RODES Inclus"
+                    uid=1_122 InlineTextBox "Framework RODES Inclus"
+            uid=1_123 paragraph
+              uid=1_124 StaticText "Découvrez les techniques avancées de prompt engineering pour optimiser vos interactions avec l'intelligence artificielle. Maîtrisez le framework RODES et transformez vos conversations avec l'IA."
+                uid=1_125 InlineTextBox "Découvrez les techniques avancées de prompt engineering pour "
+                uid=1_126 InlineTextBox "optimiser vos interactions avec l'intelligence artificielle. Maîtrisez le "
+                uid=1_127 InlineTextBox "framework RODES et transformez vos conversations avec l'IA."
+            uid=1_128 ignored
+        uid=1_129 article
+          uid=1_130 ignored
+            uid=1_131 ignored
+              uid=1_132 generic
+                uid=1_133 generic
+                  uid=1_134 ignored
+                    uid=1_135 StaticText ""
+                      uid=1_136 InlineTextBox ""
+                uid=1_137 ignored
+                  uid=1_138 heading "🎯 Ce Guide Vous Offrira" level="4"
+                    uid=1_139 StaticText "🎯 Ce Guide Vous Offrira"
+                      uid=1_140 InlineTextBox "🎯 Ce Guide Vous Offrira"
+                  uid=1_141 paragraph
+                    uid=1_142 StaticText "Une compréhension complète du prompt engineering, des techniques professionnelles, et le framework RODES pour créer des prompts qui donnent des résultats exceptionnels."
+                      uid=1_143 InlineTextBox "Une compréhension complète du prompt engineering, des techniques professionnelles, et le "
+                      uid=1_144 InlineTextBox "framework RODES pour créer des prompts qui donnent des résultats exceptionnels."
+              uid=1_145 generic
+                uid=1_146 heading " Qu'est-ce que le Prompt Engineering?" level="2"
+                  uid=1_147 generic
+                    uid=1_148 ignored
+                      uid=1_149 StaticText ""
+                        uid=1_150 InlineTextBox ""
+                  uid=1_151 StaticText "Qu'est-ce que le Prompt Engineering?"
+                    uid=1_152 InlineTextBox "Qu'est-ce que le Prompt Engineering?"
+                uid=1_153 paragraph
+                  uid=1_154 StaticText "Le "
+                    uid=1_155 InlineTextBox "Le "
+                  uid=1_156 strong
+                    uid=1_157 StaticText "prompt engineering"
+                      uid=1_158 InlineTextBox "prompt engineering"
+                  uid=1_159 StaticText " est l'art et la science de concevoir des instructions optimales pour guider les modèles d'intelligence artificielle vers des résultats précis et pertinents."
+                    uid=1_160 InlineTextBox " est l'art et la science de concevoir des instructions optimales pour guider les modèles "
+                    uid=1_161 InlineTextBox "d'intelligence artificielle vers des résultats précis et pertinents."
+                uid=1_162 ignored
+                  uid=1_163 ignored
+                    uid=1_164 paragraph
+                      uid=1_165 StaticText "C'est une compétence essentielle qui transforme votre manière d'interagir avec l'IA, vous permettant d'obtenir exactement ce que vous voulez, chaque fois que vous le demandez."
+                        uid=1_166 InlineTextBox "C'est une compétence essentielle qui transforme "
+                        uid=1_167 InlineTextBox "votre manière d'interagir avec l'IA, vous permettant "
+                        uid=1_168 InlineTextBox "d'obtenir exactement ce que vous voulez, chaque "
+                        uid=1_169 InlineTextBox "fois que vous le demandez."
+                  uid=1_170 generic
+                    uid=1_171 heading " Statistiques Clés" level="3"
+                      uid=1_172 generic
+                        uid=1_173 ignored
+                          uid=1_174 StaticText ""
+                            uid=1_175 InlineTextBox ""
+                      uid=1_176 StaticText "Statistiques Clés"
+                        uid=1_177 InlineTextBox "Statistiques Clés"
+                    uid=1_178 ignored
+                      uid=1_179 ignored
+                        uid=1_180 generic
+                          uid=1_181 StaticText "87%"
+                            uid=1_182 InlineTextBox "87%"
+                        uid=1_183 generic
+                          uid=1_184 StaticText "Amélioration des réponses"
+                            uid=1_185 InlineTextBox "Amélioration des "
+                            uid=1_186 InlineTextBox "réponses"
+                      uid=1_187 ignored
+                        uid=1_188 generic
+                          uid=1_189 StaticText "3x"
+                            uid=1_190 InlineTextBox "3x"
+                        uid=1_191 generic
+                          uid=1_192 StaticText "Plus efficace"
+                            uid=1_193 InlineTextBox "Plus efficace"
+                uid=1_194 ignored
+                  uid=1_195 ignored
+                    uid=1_196 generic
+                      uid=1_197 ignored
+                        uid=1_198 StaticText ""
+                          uid=1_199 InlineTextBox ""
+                    uid=1_200 paragraph
+                      uid=1_201 StaticText ""Le prompt engineering est la différence entre demander et obtenir réellement ce que vous voulez de l'IA.""
+                        uid=1_202 InlineTextBox ""Le prompt engineering est la différence entre demander et obtenir réellement ce que vous voulez "
+                        uid=1_203 InlineTextBox "de l'IA.""
+              uid=1_204 generic
+                uid=1_205 heading " Le Framework RODES" level="2"
+                  uid=1_206 generic
+                    uid=1_207 ignored
+                      uid=1_208 StaticText ""
+                        uid=1_209 InlineTextBox ""
+                  uid=1_210 StaticText "Le Framework RODES"
+                    uid=1_211 InlineTextBox "Le Framework RODES"
+                uid=1_212 paragraph
+                  uid=1_213 StaticText "Le framework RODES est une méthode structurée en 5 étapes pour créer des prompts parfaitement optimisés qui garantissent des résultats exceptionnels."
+                    uid=1_214 InlineTextBox "Le framework RODES est une méthode structurée en 5 étapes pour créer des prompts parfaitement optimisés "
+                    uid=1_215 InlineTextBox "qui garantissent des résultats exceptionnels."
+                uid=1_216 generic
+                  uid=1_217 heading " Les 5 Étapes du RODES" level="3"
+                    uid=1_218 generic
+                      uid=1_219 ignored
+                        uid=1_220 StaticText ""
+                          uid=1_221 InlineTextBox ""
+                    uid=1_222 StaticText "Les 5 Étapes du RODES"
+                      uid=1_223 InlineTextBox "Les 5 Étapes du RODES"
+                  uid=1_224 ignored
+                    uid=1_225 ignored
+                      uid=1_226 generic
+                        uid=1_227 StaticText "R"
+                          uid=1_228 InlineTextBox "R"
+                      uid=1_229 generic
+                        uid=1_230 StaticText "Rôle"
+                          uid=1_231 InlineTextBox "Rôle"
+                      uid=1_232 generic
+                        uid=1_233 StaticText "Définissez clairement le rôle que l'IA doit adopter"
+                          uid=1_234 InlineTextBox "Définissez clairement le rôle que "
+                          uid=1_235 InlineTextBox "l'IA doit adopter"
+                    uid=1_236 ignored
+                      uid=1_237 generic
+                        uid=1_238 StaticText "O"
+                          uid=1_239 InlineTextBox "O"
+                      uid=1_240 generic
+                        uid=1_241 StaticText "Objectif"
+                          uid=1_242 InlineTextBox "Objectif"
+                      uid=1_243 generic
+                        uid=1_244 StaticText "Précisez ce que vous voulez accomplir"
+                          uid=1_245 InlineTextBox "Précisez ce que vous voulez "
+                          uid=1_246 InlineTextBox "accomplir"
+                    uid=1_247 ignored
+                      uid=1_248 generic
+                        uid=1_249 StaticText "D"
+                          uid=1_250 InlineTextBox "D"
+                      uid=1_251 generic
+                        uid=1_252 StaticText "Détails"
+                          uid=1_253 InlineTextBox "Détails"
+                      uid=1_254 generic
+                        uid=1_255 StaticText "Fournissez le contexte et les informations nécessaires"
+                          uid=1_256 InlineTextBox "Fournissez le contexte et les "
+                          uid=1_257 InlineTextBox "informations nécessaires"
+                    uid=1_258 ignored
+                      uid=1_259 generic
+                        uid=1_260 StaticText "E"
+                          uid=1_261 InlineTextBox "E"
+                      uid=1_262 generic
+                        uid=1_263 StaticText "Exemples"
+                          uid=1_264 InlineTextBox "Exemples"
+                      uid=1_265 generic
+                        uid=1_266 StaticText "Donnez des exemples pour guider la réponse"
+                          uid=1_267 InlineTextBox "Donnez des exemples pour "
+                          uid=1_268 InlineTextBox "guider la réponse"
+                    uid=1_269 ignored
+                      uid=1_270 generic
+                        uid=1_271 StaticText "S"
+                          uid=1_272 InlineTextBox "S"
+                      uid=1_273 generic
+                        uid=1_274 StaticText "Structure"
+                          uid=1_275 InlineTextBox "Structure"
+                      uid=1_276 generic
+                        uid=1_277 StaticText "Définissez le format de sortie attendu"
+                          uid=1_278 InlineTextBox "Définissez le format de sortie "
+                          uid=1_279 InlineTextBox "attendu"
+                uid=1_280 generic
+                  uid=1_281 generic
+                    uid=1_282 ignored
+                      uid=1_283 StaticText ""
+                        uid=1_284 InlineTextBox ""
+                  uid=1_285 ignored
+                    uid=1_286 heading "Exemple Pratique RODES" level="4"
+                      uid=1_287 StaticText "Exemple Pratique RODES"
+                        uid=1_288 InlineTextBox "Exemple Pratique RODES"
+                    uid=1_289 generic
+                      uid=1_290 strong
+                        uid=1_291 StaticText "R"
+                          uid=1_292 InlineTextBox "R"
+                      uid=1_293 StaticText "ole: "En tant qu'expert en marketing digital...""
+                        uid=1_294 InlineTextBox "ole: "En tant qu'expert en marketing digital...""
+                      uid=1_295 LineBreak "
+"
+                        uid=1_296 InlineTextBox "
+"
+                      uid=1_297 strong
+                        uid=1_298 StaticText "O"
+                          uid=1_299 InlineTextBox "O"
+                      uid=1_300 StaticText "bjectif: "Crée une campagne de lancement...""
+                        uid=1_301 InlineTextBox "bjectif: "Crée une campagne de lancement...""
+                      uid=1_302 LineBreak "
+"
+                        uid=1_303 InlineTextBox "
+"
+                      uid=1_304 strong
+                        uid=1_305 StaticText "D"
+                          uid=1_306 InlineTextBox "D"
+                      uid=1_307 StaticText "étails: "Pour une application mobile de fitness...""
+                        uid=1_308 InlineTextBox "étails: "Pour une application mobile de fitness...""
+                      uid=1_309 LineBreak "
+"
+                        uid=1_310 InlineTextBox "
+"
+                      uid=1_311 strong
+                        uid=1_312 StaticText "E"
+                          uid=1_313 InlineTextBox "E"
+                      uid=1_314 StaticText "xemples: "Comme Nike ou Adidas...""
+                        uid=1_315 InlineTextBox "xemples: "Comme Nike ou Adidas...""
+                      uid=1_316 LineBreak "
+"
+                        uid=1_317 InlineTextBox "
+"
+                      uid=1_318 strong
+                        uid=1_319 StaticText "S"
+                          uid=1_320 InlineTextBox "S"
+                      uid=1_321 StaticText "tructure: "Format tableau avec colonnes...""
+                        uid=1_322 InlineTextBox "tructure: "Format tableau avec colonnes...""
+              uid=1_323 generic
+                uid=1_324 heading " Techniques Avancées" level="2"
+                  uid=1_325 generic
+                    uid=1_326 ignored
+                      uid=1_327 StaticText ""
+                        uid=1_328 InlineTextBox ""
+                  uid=1_329 StaticText "Techniques Avancées"
+                    uid=1_330 InlineTextBox "Techniques Avancées"
+                uid=1_331 ignored
+                  uid=1_332 ignored
+                    uid=1_333 heading " Chain of Thought" level="3"
+                      uid=1_334 generic
+                        uid=1_335 ignored
+                          uid=1_336 StaticText ""
+                            uid=1_337 InlineTextBox ""
+                      uid=1_338 StaticText "Chain of Thought"
+                        uid=1_339 InlineTextBox "Chain of "
+                        uid=1_340 InlineTextBox "Thought"
+                    uid=1_341 paragraph
+                      uid=1_342 StaticText "Guidez l'IA à réfléchir étape par étape pour des réponses plus logiques et détaillées."
+                        uid=1_343 InlineTextBox "Guidez l'IA à réfléchir étape "
+                        uid=1_344 InlineTextBox "par étape pour des "
+                        uid=1_345 InlineTextBox "réponses plus logiques et "
+                        uid=1_346 InlineTextBox "détaillées."
+                  uid=1_347 ignored
+                    uid=1_348 heading " Few-Shot Learning" level="3"
+                      uid=1_349 generic
+                        uid=1_350 ignored
+                          uid=1_351 StaticText ""
+                            uid=1_352 InlineTextBox ""
+                      uid=1_353 StaticText "Few-Shot Learning"
+                        uid=1_354 InlineTextBox "Few-Shot "
+                        uid=1_355 InlineTextBox "Learning"
+                    uid=1_356 paragraph
+                      uid=1_357 StaticText "Fournissez quelques exemples pour aider l'IA à comprendre exactement ce que vous voulez."
+                        uid=1_358 InlineTextBox "Fournissez quelques "
+                        uid=1_359 InlineTextBox "exemples pour aider l'IA à "
+                        uid=1_360 InlineTextBox "comprendre exactement ce "
+                        uid=1_361 InlineTextBox "que vous voulez."
+                  uid=1_362 ignored
+                    uid=1_363 heading " Template Engineering" level="3"
+                      uid=1_364 generic
+                        uid=1_365 ignored
+                          uid=1_366 StaticText ""
+                            uid=1_367 InlineTextBox ""
+                      uid=1_368 StaticText "Template Engineering"
+                        uid=1_369 InlineTextBox "Template "
+                        uid=1_370 InlineTextBox "Engineering"
+                    uid=1_371 paragraph
+                      uid=1_372 StaticText "Créez des modèles réutilisables pour garantir la cohérence de vos prompts."
+                        uid=1_373 InlineTextBox "Créez des modèles "
+                        uid=1_374 InlineTextBox "réutilisables pour garantir la "
+                        uid=1_375 InlineTextBox "cohérence de vos prompts."
+              uid=1_376 generic
+                uid=1_377 heading " Meilleures Pratiques" level="2"
+                  uid=1_378 generic
+                    uid=1_379 ignored
+                      uid=1_380 StaticText ""
+                        uid=1_381 InlineTextBox ""
+                  uid=1_382 StaticText "Meilleures Pratiques"
+                    uid=1_383 InlineTextBox "Meilleures Pratiques"
+                uid=1_384 ignored
+                  uid=1_385 ignored
+                    uid=1_386 ignored
+                      uid=1_387 ignored
+                        uid=1_388 StaticText "1"
+                          uid=1_389 InlineTextBox "1"
+                    uid=1_390 ignored
+                      uid=1_391 heading "Soyez Spécifique" level="3"
+                        uid=1_392 StaticText "Soyez Spécifique"
+                          uid=1_393 InlineTextBox "Soyez Spécifique"
+                      uid=1_394 paragraph
+                        uid=1_395 StaticText "Évitez les instructions vagues. Plus vous êtes précis, meilleurs seront les résultats."
+                          uid=1_396 InlineTextBox "Évitez les instructions vagues. Plus vous êtes précis, meilleurs seront les résultats."
+                  uid=1_397 ignored
+                    uid=1_398 ignored
+                      uid=1_399 ignored
+                        uid=1_400 StaticText "2"
+                          uid=1_401 InlineTextBox "2"
+                    uid=1_402 ignored
+                      uid=1_403 heading "Fournissez du Contexte" level="3"
+                        uid=1_404 StaticText "Fournissez du Contexte"
+                          uid=1_405 InlineTextBox "Fournissez du Contexte"
+                      uid=1_406 paragraph
+                        uid=1_407 StaticText "Donnez à l'IA toutes les informations nécessaires pour comprendre votre demande."
+                          uid=1_408 InlineTextBox "Donnez à l'IA toutes les informations nécessaires pour comprendre votre demande."
+                  uid=1_409 ignored
+                    uid=1_410 ignored
+                      uid=1_411 ignored
+                        uid=1_412 StaticText "3"
+                          uid=1_413 InlineTextBox "3"
+                    uid=1_414 ignored
+                      uid=1_415 heading "Testez et Itérez" level="3"
+                        uid=1_416 StaticText "Testez et Itérez"
+                          uid=1_417 InlineTextBox "Testez et Itérez"
+                      uid=1_418 paragraph
+                        uid=1_419 StaticText "Affinez vos prompts progressivement en fonction des résultats obtenus."
+                          uid=1_420 InlineTextBox "Affinez vos prompts progressivement en fonction des résultats obtenus."
+              uid=1_421 generic
+                uid=1_422 heading " Exemples de Code" level="2"
+                  uid=1_423 generic
+                    uid=1_424 ignored
+                      uid=1_425 StaticText ""
+                        uid=1_426 InlineTextBox ""
+                  uid=1_427 StaticText "Exemples de Code"
+                    uid=1_428 InlineTextBox "Exemples de Code"
+                uid=1_429 ignored
+                  uid=1_430 ignored
+                    uid=1_431 heading "Prompt pour Développement Web" level="3"
+                      uid=1_432 StaticText "Prompt pour Développement Web"
+                        uid=1_433 InlineTextBox "Prompt pour Développement Web"
+                    uid=1_434 generic
+                      uid=1_435 generic
+                        uid=1_436 code
+                          uid=1_437 StaticText "// RODES Framework Application
+{
+  "Role": "En tant que développeur web senior spécialisé React et TypeScript",
+  "Objective": "Crée un composant React type-safe pour un formulaire de contact",
+  "Details": {
+    "technologies": ["React", "TypeScript", "Tailwind CSS"],
+    "features": ["validation temps réel", "accessibilité WCAG", "responsive design"],
+    "fields": ["nom", "email", "sujet", "message"]
+  },
+  "Examples": "Similaire aux formulaires de Stripe ou Vercel",
+  "Structure": "TypeScript avec hooks React, tests inclus, documentation JSDoc"
+}"
+                            uid=1_438 InlineTextBox "// RODES Framework Application"
+                            uid=1_439 InlineTextBox "
+"
+                            uid=1_440 InlineTextBox "{"
+                            uid=1_441 InlineTextBox "
+"
+                            uid=1_442 InlineTextBox "  "Role": "En tant que développeur web senior spécialisé React et TypeScript","
+                            uid=1_443 InlineTextBox "
+"
+                            uid=1_444 InlineTextBox "  "Objective": "Crée un composant React type-safe pour un formulaire de contact","
+                            uid=1_445 InlineTextBox "
+"
+                            uid=1_446 InlineTextBox "  "Details": {"
+                            uid=1_447 InlineTextBox "
+"
+                            uid=1_448 InlineTextBox "    "technologies": ["React", "TypeScript", "Tailwind CSS"],"
+                            uid=1_449 InlineTextBox "
+"
+                            uid=1_450 InlineTextBox "    "features": ["validation temps réel", "accessibilité WCAG", "responsive design"],"
+                            uid=1_451 InlineTextBox "
+"
+                            uid=1_452 InlineTextBox "    "fields": ["nom", "email", "sujet", "message"]"
+                            uid=1_453 InlineTextBox "
+"
+                            uid=1_454 InlineTextBox "  },"
+                            uid=1_455 InlineTextBox "
+"
+                            uid=1_456 InlineTextBox "  "Examples": "Similaire aux formulaires de Stripe ou Vercel","
+                            uid=1_457 InlineTextBox "
+"
+                            uid=1_458 InlineTextBox "  "Structure": "TypeScript avec hooks React, tests inclus, documentation JSDoc""
+                            uid=1_459 InlineTextBox "
+"
+                            uid=1_460 InlineTextBox "}"
+                      uid=1_461 button " Copier"
+                        uid=1_462 generic
+                          uid=1_463 ignored
+                            uid=1_464 StaticText ""
+                              uid=1_465 InlineTextBox ""
+                        uid=1_466 StaticText "Copier"
+                          uid=1_467 InlineTextBox "Copier"
+              uid=1_468 ignored
+                uid=1_469 ignored
+                  uid=1_470 ignored
+                    uid=1_471 generic
+                      uid=1_472 ignored
+                        uid=1_473 StaticText "#"
+                          uid=1_474 InlineTextBox "#"
+                    uid=1_475 StaticText "Prompt Engineering"
+                      uid=1_476 InlineTextBox "Prompt Engineering"
+                  uid=1_477 ignored
+                    uid=1_478 generic
+                      uid=1_479 ignored
+                        uid=1_480 StaticText "#"
+                          uid=1_481 InlineTextBox "#"
+                    uid=1_482 StaticText "Intelligence Artificielle"
+                      uid=1_483 InlineTextBox "Intelligence Artificielle"
+                  uid=1_484 ignored
+                    uid=1_485 generic
+                      uid=1_486 ignored
+                        uid=1_487 StaticText "#"
+                          uid=1_488 InlineTextBox "#"
+                    uid=1_489 StaticText "RODES Framework"
+                      uid=1_490 InlineTextBox "RODES Framework"
+                  uid=1_491 ignored
+                    uid=1_492 generic
+                      uid=1_493 ignored
+                        uid=1_494 StaticText "#"
+                          uid=1_495 InlineTextBox "#"
+                    uid=1_496 StaticText "Machine Learning"
+                      uid=1_497 InlineTextBox "Machine Learning"
+                  uid=1_498 ignored
+                    uid=1_499 generic
+                      uid=1_500 ignored
+                        uid=1_501 StaticText "#"
+                          uid=1_502 InlineTextBox "#"
+                    uid=1_503 StaticText "Productivité"
+                      uid=1_504 InlineTextBox "Productivité"
+        uid=1_505 generic
+          uid=1_506 ignored
+            uid=1_507 ignored
+              uid=1_508 heading "Prêt à Maîtriser l'Art du Prompt Engineering?" level="2"
+                uid=1_509 StaticText "Prêt à Maîtriser l'Art du Prompt Engineering?"
+                  uid=1_510 InlineTextBox "Prêt à Maîtriser l'Art du Prompt Engineering?"
+              uid=1_511 paragraph
+                uid=1_512 StaticText "Contactez notre équipe d'experts pour une formation personnalisée ou pour intégrer ces techniques dans vos projets IA."
+                  uid=1_513 InlineTextBox "Contactez notre équipe d'experts pour une formation personnalisée ou "
+                  uid=1_514 InlineTextBox "pour intégrer ces techniques dans vos projets IA."
+              uid=1_515 ignored
+                uid=1_516 link " Démarrer un Projet" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                  uid=1_517 generic
+                    uid=1_518 ignored
+                      uid=1_519 StaticText ""
+                        uid=1_520 InlineTextBox ""
+                  uid=1_521 StaticText "Démarrer un Projet"
+                    uid=1_522 InlineTextBox "Démarrer un Projet"
+                uid=1_523 link " Nous Contacter" url="mailto:contact@safonas.com"
+                  uid=1_524 generic
+                    uid=1_525 ignored
+                      uid=1_526 StaticText ""
+                        uid=1_527 InlineTextBox ""
+                  uid=1_528 StaticText "Nous Contacter"
+                    uid=1_529 InlineTextBox "Nous Contacter"
+      uid=1_530 contentinfo
+        uid=1_531 generic
+          uid=1_532 generic
+          uid=1_533 generic
+        uid=1_534 ignored
+          uid=1_535 generic
+            uid=1_536 ignored
+              uid=1_537 heading "Safonas" level="3"
+                uid=1_538 StaticText "Safonas"
+                  uid=1_539 InlineTextBox "Safonas"
+              uid=1_540 paragraph
+                uid=1_541 StaticText "Agence experte en intelligence artificielle et transformation digitale."
+                  uid=1_542 InlineTextBox "Agence experte en intelligence "
+                  uid=1_543 InlineTextBox "artificielle et transformation digitale."
+              uid=1_544 ignored
+                uid=1_545 link "" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                  uid=1_546 generic
+                    uid=1_547 ignored
+                      uid=1_548 StaticText ""
+                        uid=1_549 InlineTextBox ""
+                uid=1_550 link "" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                  uid=1_551 generic
+                    uid=1_552 ignored
+                      uid=1_553 StaticText ""
+                        uid=1_554 InlineTextBox ""
+                uid=1_555 link "" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                  uid=1_556 generic
+                    uid=1_557 ignored
+                      uid=1_558 StaticText ""
+                        uid=1_559 InlineTextBox ""
+                uid=1_560 link "" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                  uid=1_561 generic
+                    uid=1_562 ignored
+                      uid=1_563 StaticText ""
+                        uid=1_564 InlineTextBox ""
+            uid=1_565 ignored
+              uid=1_566 heading "Services" level="3"
+                uid=1_567 StaticText "Services"
+                  uid=1_568 InlineTextBox "Services"
+              uid=1_569 list
+                uid=1_570 listitem level="1"
+                  uid=1_571 link "Développement IA" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#services"
+                    uid=1_572 StaticText "Développement IA"
+                      uid=1_573 InlineTextBox "Développement IA"
+                uid=1_574 listitem level="1"
+                  uid=1_575 link "Consulting" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#services"
+                    uid=1_576 StaticText "Consulting"
+                      uid=1_577 InlineTextBox "Consulting"
+                uid=1_578 listitem level="1"
+                  uid=1_579 link "Formation" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#services"
+                    uid=1_580 StaticText "Formation"
+                      uid=1_581 InlineTextBox "Formation"
+                uid=1_582 listitem level="1"
+                  uid=1_583 link "Support Technique" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#services"
+                    uid=1_584 StaticText "Support Technique"
+                      uid=1_585 InlineTextBox "Support Technique"
+            uid=1_586 ignored
+              uid=1_587 heading "Entreprise" level="3"
+                uid=1_588 StaticText "Entreprise"
+                  uid=1_589 InlineTextBox "Entreprise"
+              uid=1_590 list
+                uid=1_591 listitem level="1"
+                  uid=1_592 link "À Propos" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#about"
+                    uid=1_593 StaticText "À Propos"
+                      uid=1_594 InlineTextBox "À Propos"
+                uid=1_595 listitem level="1"
+                  uid=1_596 link "Carrières" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                    uid=1_597 StaticText "Carrières"
+                      uid=1_598 InlineTextBox "Carrières"
+                uid=1_599 listitem level="1"
+                  uid=1_600 link "Blog" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#blog"
+                    uid=1_601 StaticText "Blog"
+                      uid=1_602 InlineTextBox "Blog"
+                uid=1_603 listitem level="1"
+                  uid=1_604 link "Presse" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                    uid=1_605 StaticText "Presse"
+                      uid=1_606 InlineTextBox "Presse"
+            uid=1_607 ignored
+              uid=1_608 heading "Contact" level="3"
+                uid=1_609 StaticText "Contact"
+                  uid=1_610 InlineTextBox "Contact"
+              uid=1_611 list
+                uid=1_612 listitem level="1"
+                  uid=1_613 generic
+                    uid=1_614 ignored
+                      uid=1_615 StaticText ""
+                        uid=1_616 InlineTextBox ""
+                  uid=1_617 link "contact@safonas.com" url="mailto:contact@safonas.com"
+                    uid=1_618 StaticText "contact@safonas.com"
+                      uid=1_619 InlineTextBox "contact@safonas.com"
+                uid=1_620 listitem level="1"
+                  uid=1_621 generic
+                    uid=1_622 ignored
+                      uid=1_623 StaticText ""
+                        uid=1_624 InlineTextBox ""
+                  uid=1_625 link "+216 12 345 678" url="tel:+21612345678"
+                    uid=1_626 StaticText "+216 12 345 678"
+                      uid=1_627 InlineTextBox "+216 12 345 678"
+                uid=1_628 listitem level="1"
+                  uid=1_629 generic
+                    uid=1_630 ignored
+                      uid=1_631 StaticText ""
+                        uid=1_632 InlineTextBox ""
+                  uid=1_633 ignored
+                    uid=1_634 StaticText "Tunis, Tunisie"
+                      uid=1_635 InlineTextBox "Tunis, Tunisie"
+          uid=1_636 ignored
+            uid=1_637 paragraph
+              uid=1_638 StaticText "© 2025 Safonas. Tous droits réservés. | "
+                uid=1_639 InlineTextBox "© 2025 Safonas. Tous droits réservés. | "
+              uid=1_640 link "Mentions légales" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                uid=1_641 StaticText "Mentions légales"
+                  uid=1_642 InlineTextBox "Mentions légales"
+              uid=1_643 StaticText " | "
+                uid=1_644 InlineTextBox " | "
+              uid=1_645 link "Politique de confidentialité" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/prompt-engineering-guide-complete.html#"
+                uid=1_646 StaticText "Politique de confidentialité"
+                  uid=1_647 InlineTextBox "Politique de confidentialité"

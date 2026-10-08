@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Internal Server Error</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://safonas.com/error/500.html" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fd7e14 0%, #e55d87 100%);
+            color: #333;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .error-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .error-code {
+            font-size: 8em;
+            font-weight: bold;
+            color: #e55d87;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 300;
+        }
+        
+        .error-message {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .technical-info {
+            background: #f8f9fa;
+            border-left: 4px solid #e55d87;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 5px;
+        }
+        
+        .technical-info h3 {
+            color: #e55d87;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .technical-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .technical-info li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .technical-info li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #e55d87;
+            font-weight: bold;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #fd7e14, #e55d87);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .error-id {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+            font-family: monospace;
+        }
+        
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 40px 20px;
+                margin: 10px;
+            }
+            
+            .error-code {
+                font-size: 5em;
+            }
+            
+            .error-title {
+                font-size: 2em;
+            }
+            
+            .error-message {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">500</div>
+        <div class="error-title">Internal Server Error</div>
+        <div class="error-message">
+            Something went wrong on our end. Our technical team has been notified and is working to fix this issue.
+        </div>
+        
+        <div class="technical-info">
+            <h3>What happened?</h3>
+            <ul>
+                <li>The server encountered an unexpected condition</li>
+                <li>This error has been automatically logged</li>
+                <li>Our team will investigate and resolve the issue</li>
+                <li>Please try again in a few minutes</li>
+            </ul>
+        </div>
+        
+        <a href="/" class="back-button">Return to Homepage</a>
+        <a href="javascript:location.reload()" class="back-button">Try Again</a>
+        
+        <div class="error-id">
+            Error ID: <?php echo uniqid('500_'); ?>
+        </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer class="py-20 bg-charcoal-light relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 left-1/4 w-96 h-96 bg-electric-mint rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-1/4 w-80 h-80 bg-purple rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 max-w-7xl relative" data-aos="fade-up">
+        <!-- Main footer content -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand section -->
+          <div class="lg:col-span-1">
+            <div class="logo font-satoshi text-3xl font-bold mb-6">Safonas</div>
+            <p class="text-graphite-light mb-8 leading-relaxed">
+              Révolutionnons ensemble l'avenir de votre entreprise avec
+              l'intelligence artificielle. Des solutions sur mesure pour
+              accélérer votre croissance.
+            </p>
+          </div>
+
+          <!-- Product section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Produit
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="../index.html#features"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Fonctionnalités
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  API
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Sécurité
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Ressources
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="../blog/"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../blog/"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Guides
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Webinaires
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Entreprise
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  À propos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Carrières
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Presse
+                </a>
+              </li>
+              <li>
+                <a
+                  id="footerContactLink"
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom footer -->
+        <div class="border-t border-graphite border-opacity-30 pt-12">
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="text-graphite text-sm mb-6 lg:mb-0 flex items-center">
+              <span>© 2025 Safonas. Tous droits réservés.</span>
+              <div class="ml-4 flex items-center text-xs">
+                <span
+                  class="w-2 h-2 bg-green-500 rounded-full mr-2 pulse"
+                ></span>
+                <span class="text-green-500">Tous systèmes opérationnels</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 text-sm">
+              <a
+                href="../docs/politique-de-confidentialite"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Confidentialité
+              </a>
+              <a
+                href="../pages/mentions-legales"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Mentions légales
+              </a>
+              <a
+                href="../docs/CGU_Safonas"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                CGU
+              </a>
+              <a
+                href="../pages/cookies-policy"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Cookies
+              </a>
+              <a
+                href="../legal/disclaimer-services-ia"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Avis IA
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

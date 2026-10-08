@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403 - Accès Interdit | Safonas</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://safonas.com/403.shtml" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .error-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+
+        .error-code {
+            font-size: 8em;
+            font-weight: bold;
+            color: #e74c3c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 300;
+        }
+
+        .error-message {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .security-info {
+            background: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .security-info h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .security-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .security-info li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .security-info li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .incident-id {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+            font-family: monospace;
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 40px 20px;
+            }
+
+            .error-code {
+                font-size: 5em;
+            }
+
+            .error-title {
+                font-size: 2em;
+            }
+
+            .error-message {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">403</div>
+        <div class="error-title">Accès Interdit</div>
+        <div class="error-message">
+            Vous n'avez pas la permission d'accéder à cette ressource. Cet incident a été enregistré pour des raisons de sécurité.
+        </div>
+
+        <div class="security-info">
+            <h3>Notice de Sécurité</h3>
+            <ul>
+                <li>Votre demande a été bloquée par notre système de sécurité</li>
+                <li>Cela peut être dû à une activité suspecte ou aux politiques de sécurité</li>
+                <li>Si vous pensez qu'il s'agit d'une erreur, veuillez contacter l'administrateur</li>
+                <li>Des tentatives répétées peuvent entraîner un blocage de l'IP</li>
+            </ul>
+        </div>
+
+        <a href="/" class="back-button">Retour à l'Accueil</a>
+
+        <div class="incident-id">
+            ID de l'incident: 403_<!--#echo var="UNIQUE_ID" -->
+        </div>
+    </div>
+</body>
+</html>

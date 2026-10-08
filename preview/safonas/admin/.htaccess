@@ -1,0 +1,63 @@
+# =================================================================
+# ADMIN DIRECTORY SECURITY - SAFONAS AI AGENCY
+# =================================================================
+# High-security zone for admin panel access
+# =================================================================
+
+# IP whitelist for admin access (customize with your IPs)
+# <RequireAll>
+#     Require ip 192.168.1.0/24
+#     Require ip 10.0.0.0/8
+#     Require ip YOUR_OFFICE_IP
+#     Require ip YOUR_HOME_IP
+# </RequireAll>
+
+# Time-based access restrictions (business hours only)
+# RewriteEngine On
+# RewriteCond %{TIME_HOUR} >18 [OR]
+# RewriteCond %{TIME_HOUR} <08
+# RewriteRule ^.*$ - [F,L]
+
+# Enhanced security headers for admin panel
+Header always set X-Frame-Options "DENY"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-XSS-Protection "1; mode=block"
+Header always set Referrer-Policy "no-referrer"
+
+# Strict CSP for admin panel
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; media-src 'self'; frame-src 'none'; child-src 'none'; worker-src 'none'; manifest-src 'self'"
+
+# Force HTTPS for admin area
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Session security
+<IfModule mod_php.c>
+    php_value session.cookie_httponly 1
+    php_value session.cookie_secure 1
+    php_value session.use_only_cookies 1
+    php_value session.cookie_samesite "Strict"
+</IfModule>
+
+# Block common attack patterns for admin
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (union|select|insert|delete|drop) [NC]
+RewriteRule .* - [F,L]
+
+# Rate limiting for admin login attempts
+<Files "login.php">
+    <IfModule mod_evasive24.c>
+        DOSPageCount 2
+        DOSPageInterval 1
+        DOSBlockingPeriod 300
+    </IfModule>
+</Files>
+
+# Disable directory browsing
+Options -Indexes
+
+# Hide sensitive files
+<FilesMatch "(\.log|\.conf|\.config|\.bak|\.backup)$">
+    Require all denied
+</FilesMatch>

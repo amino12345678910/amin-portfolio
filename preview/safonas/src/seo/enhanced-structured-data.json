@@ -1,0 +1,218 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://safonas.com/#organization",
+      "name": "Safonas",
+      "alternateName": "Agence IA Safonas",
+      "url": "https://safonas.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://safonas.com/images/logo.png",
+        "width": 300,
+        "height": 100
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+216-XX-XXX-XXX",
+        "contactType": "customer service",
+        "areaServed": "TN",
+        "availableLanguage": ["fr", "ar", "en"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TN",
+        "addressRegion": "Tunis",
+        "addressLocality": "Tunis",
+        "postalCode": "1000",
+        "streetAddress": "Avenue Habib Bourguiba"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/safonas",
+        "https://facebook.com/safonas",
+        "https://twitter.com/safonas",
+        "https://instagram.com/safonas"
+      ],
+      "foundingDate": "2024",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 10,
+        "maxValue": 50
+      },
+      "naics": "541511",
+      "industry": "Intelligence Artificielle",
+      "description": "Agence IA leader en Tunisie spécialisée dans les solutions d'intelligence artificielle pour entreprises. Chatbots, automatisation, analytics prédictives.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services IA Safonas",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://safonas.com/services/chatbots-ia-tunisie/",
+              "name": "Développement Chatbots IA",
+              "description": "Création de chatbots intelligents personnalisés pour améliorer l'expérience client",
+              "provider": {
+                "@id": "https://safonas.com/#organization"
+              },
+              "areaServed": "TN",
+              "serviceType": "Chatbot Development",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "TND"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://safonas.com/services/analytics-predictives-tunisie/",
+              "name": "Analytics Prédictives",
+              "description": "Solutions d'analyse de données et prédictions IA pour optimiser les décisions business",
+              "provider": {
+                "@id": "https://safonas.com/#organization"
+              },
+              "areaServed": "TN",
+              "serviceType": "Predictive Analytics",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "TND"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://safonas.com/services/automatisation-processus-ia/",
+              "name": "Automatisation Processus IA",
+              "description": "Automatisation intelligente des processus métier pour réduire les coûts et améliorer l'efficacité",
+              "provider": {
+                "@id": "https://safonas.com/#organization"
+              },
+              "areaServed": "TN",
+              "serviceType": "Process Automation",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "TND"
+              }
+            }
+          }
+        ]
+      },
+      "award": [
+        "Leader IA Tunisie 2024",
+        "Innovation Digitale Award 2024"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://safonas.com/#localbusiness",
+      "name": "Safonas - Agence IA Tunisie",
+      "image": "https://safonas.com/images/office-tunis.jpg",
+      "telephone": "+216-XX-XXX-XXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenue Habib Bourguiba",
+        "addressLocality": "Tunis",
+        "addressRegion": "Tunis",
+        "postalCode": "1000",
+        "addressCountry": "TN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.8065,
+        "longitude": 10.1815
+      },
+      "url": "https://safonas.com",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+      "currenciesAccepted": "TND, EUR, USD"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://safonas.com/#website",
+      "url": "https://safonas.com",
+      "name": "Safonas - Agence IA Tunisie",
+      "description": "Agence IA Tunisie leader en solutions d'intelligence artificielle. Chatbots, automatisation, marketing avec IA. +40% ROI garanti.",
+      "publisher": {
+        "@id": "https://safonas.com/#organization"
+      },
+      "inLanguage": "fr-TN",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": "https://safonas.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://safonas.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://safonas.com/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://safonas.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'une agence IA en Tunisie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une agence IA en Tunisie est une entreprise spécialisée dans le développement et l'implémentation de solutions d'intelligence artificielle pour les entreprises tunisiennes, incluant chatbots, automatisation et analytics prédictives."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien coûte un chatbot IA en Tunisie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le coût d'un chatbot IA en Tunisie varie selon la complexité et les fonctionnalités. Contactez Safonas pour un devis personnalisé gratuit adapté à vos besoins spécifiques."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel ROI peut-on attendre avec l'IA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nos clients observent généralement une amélioration du ROI de +40% grâce à nos solutions IA, via l'automatisation des processus et l'optimisation des décisions business."
+          }
+        }
+      ]
+    }
+  ]
+}

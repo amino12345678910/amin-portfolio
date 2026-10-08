@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Force clean URLs everywhere (local and production) -->
+    <script>
+      window.FORCE_CLEAN_URLS = true;
+    </script>
+
+    <title>Guide Complet Prompt Engineering | Maîtrisez l'Art de Communiquer avec l'IA - Safonas</title>
+
+    <!-- Enhanced Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=()" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:; img-src 'self' data: https: blob:; connect-src 'self' https://ejonogfzwsrmuzgiywge.supabase.co wss://ejonogfzwsrmuzgiywge.supabase.co https:; frame-src 'none'; object-src 'none'; media-src 'self' data:; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guide complet de Prompt Engineering avec le framework RODES. Apprenez les techniques avancées pour créer des prompts efficaces et optimiser vos interactions avec l'intelligence artificielle." />
+    <meta name="keywords" content="prompt engineering, IA, intelligence artificielle, RODES framework, optimisation IA, chatGPT, Claude, communication IA" />
+    <meta name="author" content="Safonas" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://safonas.com/blog/prompt-engineering-guide-advanced-visual/" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Guide Complet Prompt Engineering | Maîtrisez l'Art de Communiquer avec l'IA" />
+    <meta property="og:description" content="Guide complet de Prompt Engineering avec le framework RODES. Techniques avancées pour optimiser vos interactions avec l'IA." />
+    <meta property="og:url" content="https://safonas.com/blog/prompt-engineering-guide-advanced-visual/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="fr_TN" />
+    <meta property="article:published_time" content="2024-01-20T10:00:00+01:00" />
+    <meta property="article:modified_time" content="2024-01-20T10:00:00+01:00" />
+    <meta property="article:section" content="Prompt Engineering" />
+    <meta property="article:tag" content="Prompt Engineering, IA, RODES, Communication" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Guide Complet Prompt Engineering - Maîtrisez l'Art de Communiquer avec l'IA",
+        "description": "Guide complet de Prompt Engineering avec le framework RODES. Techniques avancées pour créer des prompts efficaces.",
+        "image": "https://safonas.com/images/prompt-engineering-guide.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Safonas",
+            "url": "https://safonas.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Safonas",
+            "url": "https://safonas.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://safonas.com/images/logo.png"
+            }
+        },
+        "datePublished": "2024-01-20T10:00:00+01:00",
+        "dateModified": "2024-01-20T10:00:00+01:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://safonas.com/blog/prompt-engineering-guide-advanced-visual/"
+        },
+        "articleSection": "Guide Technique",
+        "wordCount": "3000",
+        "keywords": ["Prompt Engineering", "IA", "RODES", "Communication", "Intelligence Artificielle"]
+    }
+    </script>
+
+    <!-- External CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=1.3" />
+    <link rel="stylesheet" href="blog-styles.css?v=1.5" />
+
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .article-content h2 { color: #374151; font-size: 2rem; font-weight: 700; margin: 2rem 0 1rem 0; }
+        .article-content h3 { color: #4B5563; font-size: 1.5rem; font-weight: 600; margin: 1.5rem 0 1rem 0; }
+        .article-content p { margin-bottom: 1.5rem; color: #6B7280; }
+        .article-content ul, .article-content ol { margin-bottom: 1.5rem; padding-left: 2rem; color: #6B7280; }
+        .article-content li { margin-bottom: 0.5rem; }
+        .article-content blockquote { background: #F3F4F6; border-left: 4px solid #667eea; padding: 1rem; margin: 1.5rem 0; font-style: italic; }
+        .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .article-content th, .article-content td { border: 1px solid #E5E7EB; padding: 0.75rem; text-align: left; }
+        .article-content th { background: #F9FAFB; font-weight: 600; }
+        .toc-link { color: #6B7280; padding: 0.5rem 0; display: block; border-left: 2px solid transparent; }
+        .toc-link:hover, .toc-link.active { color: #667eea; border-left-color: #667eea; }
+        .reading-progress { height: 4px; background: linear-gradient(to right, #667eea, #764ba2); transition: width 0.3s ease; }
+        .highlight-box { background: linear-gradient(135deg, #EBF8FF 0%, #BEE3F8 100%); border: 1px solid #90CDF4; }
+        .stats-counter { color: #667eea; font-weight: 700; font-size: 2.5rem; }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, var(--electric-mint), var(--purple), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Enhanced Visual Components for Prompt Engineering */
+        .rodes-framework {
+            background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-light) 100%);
+            border: 1px solid rgba(0, 255, 148, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .rodes-step {
+            background: rgba(26, 29, 41, 0.8);
+            border: 1px solid rgba(0, 255, 148, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rodes-step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, var(--electric-mint), var(--purple));
+        }
+
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--electric-mint), var(--purple));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .comparison-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .comparison-before {
+            border-color: rgba(239, 68, 68, 0.3);
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .comparison-after {
+            border-color: rgba(0, 255, 148, 0.3);
+            background: rgba(0, 255, 148, 0.05);
+        }
+
+        .code-example {
+            background: #1e293b;
+            border: 1px solid rgba(0, 255, 148, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            overflow-x: auto;
+        }
+
+        .syntax-keyword { color: #f472b6; font-weight: 500; }
+        .syntax-string { color: #34d399; }
+        .syntax-comment { color: #64748b; font-style: italic; }
+        .syntax-variable { color: #60a5fa; }
+
+        /* SIMPLIFIED FIX: Disable zoom animation without breaking layout */
+        #prompt-generator-cta {
+            background-color: var(--charcoal-light) !important;
+            position: relative !important;
+            opacity: 1 !important;
+        }
+
+        /* Override AOS zoom-in animation to prevent scaling */
+        #prompt-generator-cta[data-aos="zoom-in"],
+        #prompt-generator-cta.aos-animate[data-aos="zoom-in"] {
+            transform: scale(1) !important;
+            opacity: 1 !important;
+        }
+
+        /* Also handle fade-up animation */
+        #prompt-generator-cta[data-aos="fade-up"] {
+            transform: translateY(0) !important;
+            opacity: 1 !important;
+        }
+
+        #prompt-generator-cta.aos-animate[data-aos="fade-up"] {
+            transform: translateY(0) !important;
+            opacity: 1 !important;
+        }
+
+        /* Prevent any scaling during all animation states */
+        #prompt-generator-cta.aos-init,
+        #prompt-generator-cta.aos-animate {
+            transform: scale(1) !important;
+            opacity: 1 !important;
+        }
+
+        /* Enhanced Mobile Horizontal Scrolling for Tables */
+        .overflow-x-auto {
+            /* Force horizontal overflow with !important */
+            overflow-x: auto !important;
+            overflow-y: visible !important;
+
+            /* Webkit browsers (Chrome, Safari, Edge) */
+            ::-webkit-scrollbar {
+                height: 6px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: rgba(107, 114, 128, 0.3);
+                border-radius: 3px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgba(107, 114, 128, 0.5);
+            }
+        }
+
+        /* Firefox scrollbar styling */
+        .overflow-x-auto {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(107, 114, 128, 0.3) transparent;
+        }
+
+        /* Mobile-specific table enhancements */
+        @media (max-width: 640px) {
+            .overflow-x-auto {
+                /* Force horizontal overflow on mobile */
+                overflow-x: auto !important;
+                overflow-y: visible !important;
+
+                /* Enhanced touch scrolling for mobile */
+                -webkit-overflow-scrolling: touch;
+                scroll-behavior: smooth;
+
+                /* Visual indicators for scrollable content */
+                position: relative;
+
+                /* Ensure container can be smaller than table */
+                max-width: 100%;
+                width: auto;
+            }
+
+            /* Removed gradient overlay shadow - user requested removal */
+
+            /* Ensure minimum table width for proper scrolling */
+            .overflow-x-auto table {
+                min-width: 600px !important;
+                width: 600px !important;
+                max-width: none !important;
+            }
+
+            /* Override any conflicting styles on mobile */
+            .overflow-x-auto * {
+                box-sizing: border-box;
+            }
+        }
+
+        /* Force minimum width for all viewports to ensure scrolling works */
+        .overflow-x-auto table {
+            min-width: 600px !important;
+        }
+
+        /* Ultra-specific rule to force horizontal scrolling */
+        div.overflow-x-auto {
+            overflow-x: auto !important;
+            overflow-y: visible !important;
+        }
+
+        div.overflow-x-auto table {
+            min-width: 600px !important;
+            width: 600px !important;
+            table-layout: fixed !important;
+        }
+
+        /* Improve table readability on mobile */
+        @media (max-width: 768px) {
+            table th,
+            table td {
+                padding: 12px 8px !important;
+                font-size: 14px;
+            }
+
+            table th {
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body class="gradient-bg loaded">
+    <!-- Enhanced Header with improved navigation -->
+    <header data-aos="fade-down" id="header">
+      <div class="container">
+        <nav role="navigation" aria-label="Main navigation">
+          <div
+            id="logo"
+            class="logo font-display text-2xl font-bold cursor-pointer"
+            role="banner"
+            onclick="window.location.href='../index.html'"
+          >
+            Safonas
+          </div>
+          <div class="nav-links" role="menubar">
+            <a href="../index.html#features" class="nav-link" role="menuitem"
+              >Fonctionnalités</a
+            >
+            <a href="../pages/services" class="nav-link" role="menuitem"
+              >Services</a
+            >
+            <a href="../index.html#testimonials" class="nav-link" role="menuitem"
+              >Témoignages</a
+            >
+            <a href="../index.html#contact" class="nav-link" role="menuitem">Contact</a>
+          </div>
+          <div class="mobile-menu-container">
+            <button
+              id="mobile-menu-btn"
+              class="mobile-menu-btn"
+              aria-label="Toggle mobile menu"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Enhanced Mobile Menu with Slide-out Animation - Moved outside header for full viewport coverage -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay" role="presentation"></div>
+    <div id="mobile-menu" class="mobile-menu" role="menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <span class="font-display text-2xl font-bold text-electric-mint">Safonas</span>
+        </div>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav" role="navigation">
+        <a href="../index.html#features" class="mobile-nav-link">Fonctionnalités</a>
+        <a href="../pages/services" class="mobile-nav-link">Services</a>
+        <a href="../index.html#testimonials" class="mobile-nav-link">Témoignages</a>
+        <a href="../index.html#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section for Blog Post -->
+    <section class="blog-hero-section py-24 pt-32 bg-charcoal relative overflow-hidden">
+        <div class="container mx-auto px-6 max-w-4xl relative">
+            <!-- Enhanced Breadcrumb -->
+            <nav class="breadcrumb mb-8" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center justify-center">
+                    <div class="bg-charcoal-light/50 backdrop-blur-sm rounded-full px-6 py-3 border border-graphite/20">
+                        <div class="flex items-center text-sm">
+                            <a href="../index.html" class="text-graphite-light hover:text-electric-mint transition-all duration-300 flex items-center group">
+                                <i class="fas fa-home mr-2 group-hover:scale-110 transition-transform"></i>
+                                <span>Accueil</span>
+                            </a>
+                            <i class="fas fa-chevron-right mx-3 text-graphite text-xs"></i>
+                            <a href="index.html" class="text-graphite-light hover:text-electric-mint transition-all duration-300 flex items-center group">
+                                <i class="fas fa-blog mr-2 group-hover:scale-110 transition-transform"></i>
+                                <span>Blog</span>
+                            </a>
+                            <i class="fas fa-chevron-right mx-3 text-graphite text-xs"></i>
+                            <span class="text-electric-mint font-medium flex items-center">
+                                <i class="fas fa-code mr-2"></i>
+                                <span>Prompt Engineering</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Article Header -->
+            <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="200">
+                <div class="inline-flex items-center px-4 py-2 rounded-full bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 mb-6">
+                    <i class="fas fa-graduation-cap mr-2 text-electric-mint"></i>
+                    <span class="text-electric-mint text-sm font-medium">Guide Expert</span>
+                </div>
+
+                <h1 class="font-display text-4xl lg:text-5xl font-bold text-cloud mb-6 leading-tight">
+                    Guide Complet de
+                    <span class="gradient-text">Prompt Engineering</span>
+                </h1>
+
+                <p class="text-graphite-light text-xl leading-relaxed max-w-3xl mx-auto mb-8">
+                    Maîtrisez l'art de communiquer avec l'intelligence artificielle grâce au framework RODES et des techniques avancées pour optimiser vos interactions avec l'IA.
+                </p>
+
+                <!-- Article Meta -->
+                <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-graphite-light">
+                    <div class="flex items-center">
+                        <i class="far fa-calendar-alt mr-2 text-electric-mint"></i>
+                        <span>9 novembre 2025</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="far fa-clock mr-2 text-electric-mint"></i>
+                        <span>15 min de lecture</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="far fa-tag mr-2 text-electric-mint"></i>
+                        <span>Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-16 bg-charcoal-light">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="prose prose-lg max-w-none" data-aos="fade-up">
+                <!-- Global Objective Section -->
+            <section id="global-objective" class="mb-16" data-aos="fade-up">
+              <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-electric-mint to-purple rounded-2xl mb-6" data-aos="zoom-in">
+                  <i class="fas fa-bullseye text-3xl text-white"></i>
+                </div>
+                <h2 class="text-cloud font-bold text-4xl mb-6 bg-gradient-to-r from-electric-mint to-purple bg-clip-text text-transparent">
+                  🎯 Objectif Global
+                </h2>
+              </div>
+
+              <div class="bg-gradient-to-br from-charcoal-light/30 to-charcoal/50 rounded-2xl p-8 border border-graphite/20 backdrop-blur-sm">
+                <p class="text-graphite-light text-xl text-center leading-relaxed mb-8">
+                  Concevoir des prompts puissants, cohérents et contrôlés, capables de générer des résultats précis, esthétiques et émotionnellement réalistes.
+                  <br><br>
+                  Les cadres ci-dessous servent à structurer la pensée, clarifier le rôle de l'IA et stabiliser le style de génération.
+                </p>
+
+                <!-- Key Principles Visual -->
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                  <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-electric-mint/20 text-electric-mint rounded-full flex items-center justify-center mx-auto mb-4">
+                      <i class="fas fa-brain text-2xl"></i>
+                    </div>
+                    <h3 class="text-cloud font-semibold mb-2">Puissance</h3>
+                    <p class="text-graphite-light text-sm">Instructions optimales pour des résultats exceptionnels</p>
+                  </div>
+
+                  <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-purple/20 text-purple rounded-full flex items-center justify-center mx-auto mb-4">
+                      <i class="fas fa-balance-scale text-2xl"></i>
+                    </div>
+                    <h3 class="text-cloud font-semibold mb-2">Cohérence</h3>
+                    <p class="text-graphite-light text-sm">Structure logique et maintien du style constant</p>
+                  </div>
+
+                  <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue/20 text-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                      <i class="fas fa-sliders-h text-2xl"></i>
+                    </div>
+                    <h3 class="text-cloud font-semibold mb-2">Contrôle</h3>
+                    <p class="text-graphite-light text-sm">Maîtrise précise des résultats générés</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+                <!-- PART I - Architecture des Prompts -->
+            <section id="architecture-prompts" class="mb-16" data-aos="fade-up">
+              <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-electric-mint to-blue rounded-2xl mb-6" data-aos="zoom-in">
+                  <i class="fas fa-cube text-2xl text-white"></i>
+                </div>
+                <h2 class="text-cloud font-bold text-3xl mb-4">
+                  🧭 PARTIE I — Architecture des Prompts
+                </h2>
+              </div>
+
+            <!-- 1. Prompting par Rôle -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-electric-mint font-bold text-2xl mb-6">
+                    <i class="fas fa-user-tie mr-3"></i>
+                    1. Prompting par Rôle (Persona)
+                  </h3>
+
+                  <p class="text-graphite-light text-lg mb-6">
+                    Attribuer à l'IA une expertise spécifique pour activer automatiquement le ton, le vocabulaire et la rigueur d'un domaine.
+                  </p>
+
+                  <div class="bg-gradient-to-r from-electric-mint/10 to-blue/10 rounded-xl p-6 border border-electric-mint/30 mb-6">
+                    <h4 class="text-cloud font-semibold mb-3">Exemple :</h4>
+                    <div class="bg-charcoal p-4 rounded-lg border border-graphite/20">
+                      <code class="text-electric-mint">
+                        Agis comme un scénariste de thrillers psychologiques. Écris une scène d'ouverture tendue et immersive.
+                      </code>
+                    </div>
+                  </div>
+
+                  <div class="bg-purple/10 rounded-xl p-6 border border-purple/30">
+                    <h4 class="text-purple font-semibold mb-3">
+                      <i class="fas fa-star mr-2"></i>Avantage :
+                    </h4>
+                    <p class="text-graphite-light">
+                      Le rôle crée un contexte implicite. Il garantit une cohérence de style et de ton sans devoir tout expliciter.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Few-Shot Prompting -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-purple font-bold text-2xl mb-6">
+                    <i class="fas fa-layer-group mr-3"></i>
+                    2. Few-Shot Prompting
+                  </h3>
+
+                  <p class="text-graphite-light text-lg mb-6">
+                    Fournir 1 à 3 exemples de sortie attendue pour guider le modèle.
+                    Cette méthode aligne la forme, le ton et la structure du résultat.
+                  </p>
+
+                  <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-graphite/50 scrollbar-track-transparent hover:scrollbar-thumb-graphite/70 -mx-4 px-4 sm:mx-0 sm:px-0">
+                    <table class="w-full min-w-[600px] bg-charcoal-light/50 rounded-lg border border-graphite/20">
+                      <thead>
+                        <tr class="border-b border-graphite/20">
+                          <th class="text-electric-mint font-semibold p-4 text-left">Composante</th>
+                          <th class="text-blue font-semibold p-4 text-left">Fonction</th>
+                          <th class="text-purple font-semibold p-4 text-left">Exemple</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Rôle</td>
+                          <td class="text-graphite-light p-4">Définir l'expertise</td>
+                          <td class="text-electric-mint p-4 text-sm">« Agis comme un professeur en design thinking »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Objectif</td>
+                          <td class="text-graphite-light p-4">Résultat mesurable</td>
+                          <td class="text-electric-mint p-4 text-sm">« Crée le plan d'un cours de 4 h »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Contraintes</td>
+                          <td class="text-graphite-light p-4">Format ou public</td>
+                          <td class="text-electric-mint p-4 text-sm">« Public : professionnels en reconversion ; format : tableau Markdown »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Exemples</td>
+                          <td class="text-graphite-light p-4">Démonstration attendue</td>
+                          <td class="text-electric-mint p-4 text-sm">1 à 2 sorties illustratives</td>
+                        </tr>
+                        <tr>
+                          <td class="text-graphite-light p-4 font-medium">Sense Check</td>
+                          <td class="text-graphite-light p-4">Validation avant génération</td>
+                          <td class="text-electric-mint p-4 text-sm">L'IA reformule la consigne avant d'exécuter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Raisonnement Étape par Étape -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-blue font-bold text-2xl mb-6">
+                    <i class="fas fa-brain mr-3"></i>
+                    3. Raisonnement Étape par Étape (Chain-of-Thought, CoT)
+                  </h3>
+
+                  <p class="text-graphite-light text-lg mb-6">
+                    Faire raisonner le modèle de manière séquentielle pour résoudre des incohérences et améliorer la qualité de génération.
+                  </p>
+
+                  <div class="bg-gradient-to-r from-blue/10 to-purple/10 rounded-xl p-6 border border-blue/30">
+                    <h4 class="text-cloud font-semibold mb-4">Exemple pratique :</h4>
+                    <div class="space-y-4">
+                      <div class="bg-charcoal p-4 rounded-lg border border-graphite/20">
+                        <p class="text-graphite-light mb-2"><strong>Rôle :</strong> Directeur photo cinématographique</p>
+                        <p class="text-graphite-light mb-2"><strong>Problème :</strong> prompt incohérent entre contexte médiéval et environnement spatial.</p>
+                        <p class="text-blue font-semibold mb-3"><strong>Méthode CoT :</strong></p>
+                        <ol class="text-graphite-light space-y-2 list-decimal list-inside">
+                          <li>Analyser la cohérence thématique.</li>
+                          <li>Ajuster la lumière selon le décor.</li>
+                          <li>Renforcer un détail visuel fort.</li>
+                          <li>Générer un prompt révisé cohérent.</li>
+                          <li>Comparer 3 à 5 variantes, choisir la plus crédible.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Prompt Chaining -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-orange font-bold text-2xl mb-6">
+                    <i class="fas fa-link mr-3"></i>
+                    4. Prompt Chaining (Chaînage Séquentiel)
+                  </h3>
+
+                  <p class="text-graphite-light text-lg mb-6">
+                    Relier plusieurs tâches successives : la sortie d'une étape devient l'entrée de la suivante.
+                    Permet de construire une production complexe et cohérente.
+                  </p>
+
+                  <div class="bg-gradient-to-r from-orange/10 to-pink/10 rounded-xl p-6 border border-orange/30">
+                    <h4 class="text-cloud font-semibold mb-4">Exemple de chaîne :</h4>
+                    <div class="space-y-3">
+                      <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <p class="text-graphite-light">Générer le profil JSON d'un personnage.</p>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center font-bold">2</div>
+                        <p class="text-graphite-light">Écrire un dialogue complet avec ce personnage.</p>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-orange text-white rounded-full flex items-center justify-center font-bold">3</div>
+                        <p class="text-graphite-light">Créer une description d'image pour chaque scène du dialogue.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </section>
+
+            <!-- PART II - Cadre du Directeur Créatif -->
+            <section id="cinematic-prompt-design" class="mb-16" data-aos="fade-up">
+              <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple to-pink rounded-2xl mb-6" data-aos="zoom-in">
+                  <i class="fas fa-film text-2xl text-white"></i>
+                </div>
+                <h2 class="text-cloud font-bold text-3xl mb-4">
+                  🎬 PARTIE II — Cadre du Directeur Créatif (Cinematic Prompt Design)
+                </h2>
+              </div>
+
+              <!-- Objectif Section -->
+              <div class="mb-12">
+                <div class="bg-gradient-to-br from-purple/10 to-pink/10 rounded-2xl p-8 border border-purple/30">
+                  <h3 class="text-purple font-bold text-2xl mb-6 text-center">Objectif</h3>
+                  <p class="text-graphite-light text-xl text-center leading-relaxed">
+                    Transformer n'importe quel concept, idée ou image en une description cinématographique détaillée, émotionnelle et réaliste.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Composants Clés Table -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-pink font-bold text-2xl mb-6">
+                    <i class="fas fa-cogs mr-3"></i>
+                    Composants Clés du Prompt
+                  </h3>
+
+                  <div class="overflow-x-auto">
+                    <table class="w-full bg-charcoal-light/50 rounded-lg border border-graphite/20">
+                      <thead>
+                        <tr class="border-b border-graphite/20">
+                          <th class="text-electric-mint font-semibold p-4 text-left">Catégorie</th>
+                          <th class="text-purple font-semibold p-4 text-left">Élément à décrire</th>
+                          <th class="text-pink font-semibold p-4 text-left">Exemple</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Sujet & Action</td>
+                          <td class="text-graphite-light p-4">Qui fait quoi ?</td>
+                          <td class="text-electric-mint p-4 text-sm">« Vieil homme contemplatif en gros plan »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Environnement</td>
+                          <td class="text-graphite-light p-4">Lieu / contexte spatial</td>
+                          <td class="text-electric-mint p-4 text-sm">« Arrière-plan bleu-gris, brume légère »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Caméra</td>
+                          <td class="text-graphite-light p-4">Cadrage, focale, angle</td>
+                          <td class="text-electric-mint p-4 text-sm">« Sony A7III, 50 mm, faible profondeur de champ »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Éclairage</td>
+                          <td class="text-graphite-light p-4">Source et direction</td>
+                          <td class="text-electric-mint p-4 text-sm">« Lumière naturelle froide et directionnelle »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Couleur & Ambiance</td>
+                          <td class="text-graphite-light p-4">Palette dominante, émotion</td>
+                          <td class="text-electric-mint p-4 text-sm">« Tons bleu-gris désaturés, solitude arctique »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Détails stylistiques</td>
+                          <td class="text-graphite-light p-4">Tenue, texture, accessoires</td>
+                          <td class="text-electric-mint p-4 text-sm">« Casquette en laine, barbe blanche, peau marquée »</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Post-traitement</td>
+                          <td class="text-graphite-light p-4">Effets visuels</td>
+                          <td class="text-electric-mint p-4 text-sm">« Grain fin, vignettage subtil, contraste doux »</td>
+                        </tr>
+                        <tr>
+                          <td class="text-graphite-light p-4 font-medium">Tags</td>
+                          <td class="text-graphite-light p-4">Mots-clés techniques</td>
+                          <td class="text-electric-mint p-4 text-sm">« cinematic, analog realism, soft grain »</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Principes Esthétiques -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-purple font-bold text-2xl mb-6">
+                    <i class="fas fa-palette mr-3"></i>
+                    Principes Esthétiques
+                  </h3>
+
+                  <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-purple/10 to-blue/10 rounded-xl p-6 border border-purple/30">
+                      <h4 class="text-purple font-semibold mb-3">
+                        <i class="fas fa-gem mr-2"></i>
+                        L'imperfection est un signe de réalisme.
+                      </h4>
+                      <p class="text-graphite-light mb-3">
+                        Intégrer des irrégularités : grain, flou, lumière inégale, dérive de couleur.
+                      </p>
+                      <div class="bg-charcoal p-4 rounded-lg border border-graphite/20">
+                        <code class="text-purple text-sm">
+                          Exemple : "Grain subtil, légère aberration chromatique, lumière naturelle avec ombres douces"
+                        </code>
+                      </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-blue/10 to-cyan/10 rounded-xl p-6 border border-blue/30">
+                      <h4 class="text-blue font-semibold mb-3">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        La lumière crée l'émotion.
+                      </h4>
+                      <p class="text-graphite-light mb-3">
+                        Mentionner la direction, la température, le contraste et la texture lumineuse.
+                      </p>
+                      <div class="bg-charcoal p-4 rounded-lg border border-graphite/20">
+                        <code class="text-blue text-sm">
+                          Exemple : "Lumière latérale froide, contrastes élevés, ombres profondes, reflets discrets"
+                        </code>
+                      </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-cyan/10 to-green-400/10 rounded-xl p-6 border border-cyan/30">
+                      <h4 class="text-cyan font-semibold mb-3">
+                        <i class="fas fa-camera-retro mr-2"></i>
+                        Le réalisme analogique prime sur la perfection numérique.
+                      </h4>
+                      <p class="text-graphite-light mb-3">
+                        Privilégier les caractéristiques des systèmes analogiques pour un rendu authentique.
+                      </p>
+                      <div class="bg-charcoal p-4 rounded-lg border border-graphite/20">
+                        <code class="text-cyan text-sm">
+                          Exemple : "Pellicule 35mm, grain argentique naturel, couleurs légèrement désaturées, exposition parfaite"
+                        </code>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- PART III - Contrôle Qualité et Prompts Négatifs -->
+            <section id="quality-control" class="mb-16" data-aos="fade-up">
+              <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-orange rounded-2xl mb-6" data-aos="zoom-in">
+                  <i class="fas fa-shield-alt text-2xl text-white"></i>
+                </div>
+                <h2 class="text-cloud font-bold text-3xl mb-4">
+                  ⚙️ PARTIE III — Contrôle Qualité et Prompts Négatifs
+                </h2>
+              </div>
+
+              <!-- Objectif Section -->
+              <div class="mb-12">
+                <div class="bg-gradient-to-br from-red-500/10 to-orange/10 rounded-2xl p-8 border border-red-500/30">
+                  <h3 class="text-red-400 font-bold text-2xl mb-6 text-center">But : éviter les artefacts visuels ou les erreurs fréquentes</h3>
+                  <p class="text-graphite-light text-lg text-center leading-relaxed">
+                    Utiliser des prompts négatifs pour préciser ce qui doit être évité dans la génération d'images.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Negative Prompts Table -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-orange font-bold text-2xl mb-6">
+                    <i class="fas fa-ban mr-3"></i>
+                    Termes à Exclure par Catégorie
+                  </h3>
+
+                  <div class="overflow-x-auto">
+                    <table class="w-full bg-charcoal-light/50 rounded-lg border border-graphite/20">
+                      <thead>
+                        <tr class="border-b border-graphite/20">
+                          <th class="text-red-400 font-semibold p-4 text-left">Catégorie</th>
+                          <th class="text-orange font-semibold p-4 text-left">Termes à exclure</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Anatomie</td>
+                          <td class="text-red-400 p-4 text-sm font-mono">bad anatomy, extra fingers, poorly drawn hands</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Qualité</td>
+                          <td class="text-red-400 p-4 text-sm font-mono">lowres, blurry, watermark, text, signature</td>
+                        </tr>
+                        <tr class="border-b border-graphite/10">
+                          <td class="text-graphite-light p-4 font-medium">Style</td>
+                          <td class="text-red-400 p-4 text-sm font-mono">cartoon, 3d render, anime</td>
+                        </tr>
+                        <tr>
+                          <td class="text-graphite-light p-4 font-medium">Lumière</td>
+                          <td class="text-red-400 p-4 text-sm font-mono">harsh lighting, overexposed, out of frame</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Weighting Tips -->
+              <div class="mb-12">
+                <div class="bg-gradient-to-r from-orange/10 to-red-500/10 rounded-xl p-8 border border-orange/30">
+                  <h3 class="text-orange font-bold text-xl mb-6">
+                    <i class="fas fa-balance-scale mr-3"></i>
+                    Astuce : Pondérer certains éléments pour ajuster l'intensité
+                  </h3>
+
+                  <div class="bg-charcoal p-6 rounded-lg border border-graphite/20">
+                    <div class="space-y-4">
+                      <div class="flex items-center space-x-4">
+                        <div class="bg-gradient-to-r from-orange to-red-500 text-white px-4 py-2 rounded-lg font-bold">
+                          EXEMPLE
+                        </div>
+                        <code class="text-orange text-lg">
+                          réalisme :1.3 → augmente le réalisme de 30 %
+                        </code>
+                      </div>
+                      <div class="grid md:grid-cols-2 gap-4 mt-6">
+                        <div class="bg-charcoal-light/50 p-4 rounded-lg border border-graphite/20">
+                          <h4 class="text-orange font-semibold mb-2">Plus d'intensité</h4>
+                          <code class="text-red-400 text-sm">détail:1.5, texture:1.4</code>
+                        </div>
+                        <div class="bg-charcoal-light/50 p-4 rounded-lg border border-graphite/20">
+                          <h4 class="text-orange font-semibold mb-2">Moins d'intensité</h4>
+                          <code class="text-red-400 text-sm">couleur:0.7, contraste:0.6</code>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- PART IV - Cycle Itératif de Production -->
+            <section id="iterative-production" class="mb-16" data-aos="fade-up">
+              <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan rounded-2xl mb-6" data-aos="zoom-in">
+                  <i class="fas fa-sync-alt text-2xl text-white"></i>
+                </div>
+                <h2 class="text-cloud font-bold text-3xl mb-4">
+                  🔁 PARTIE IV — Cycle Itératif de Production
+                </h2>
+              </div>
+
+              <!-- Process Steps -->
+              <div class="mb-12">
+                <div class="bg-gradient-to-br from-blue-500/10 to-cyan/10 rounded-2xl p-8 border border-blue-500/30">
+                  <div class="space-y-8">
+                    <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-delay="100">
+                      <div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                        1
+                      </div>
+                      <div class="flex-1">
+                        <h3 class="text-blue font-bold text-xl mb-2">Générer 3 à 5 variantes</h3>
+                        <p class="text-graphite-light">Créer plusieurs variations d'un même prompt pour explorer les possibilités</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-delay="200">
+                      <div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                        2
+                      </div>
+                      <div class="flex-1">
+                        <h3 class="text-blue font-bold text-xl mb-2">Comparer et analyser</h3>
+                        <p class="text-graphite-light">Évaluer les différences et identifier les éléments les plus réussis</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-delay="300">
+                      <div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                        3
+                      </div>
+                      <div class="flex-1">
+                        <h3 class="text-blue font-bold text-xl mb-2">Ajuster un paramètre</h3>
+                        <p class="text-graphite-light">Modifier lumière, ton, ou composition pour affiner le résultat</p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4" data-aos="fade-right" data-aos-delay="400">
+                      <div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                        4
+                      </div>
+                      <div class="flex-1">
+                        <h3 class="text-blue font-bold text-xl mb-2">Reproduire le cycle</h3>
+                        <p class="text-graphite-light">Répéter jusqu'à obtention du style souhaité</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visual Workflow -->
+              <div class="mb-12">
+                <div class="bg-charcoal rounded-2xl p-8 border border-graphite/20">
+                  <h3 class="text-cyan font-bold text-2xl mb-6 text-center">
+                    <i class="fas fa-project-diagram mr-3"></i>
+                    Workflow Visuel
+                  </h3>
+
+                  <div class="grid md:grid-cols-4 gap-4">
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                      <div class="bg-blue-500/20 rounded-xl p-6 border border-blue-500/30">
+                        <i class="fas fa-code text-3xl text-blue-500 mb-4"></i>
+                        <h4 class="text-blue font-semibold mb-2">Prompt Initial</h4>
+                        <p class="text-graphite-light text-sm">Définir le concept de base</p>
+                      </div>
+                    </div>
+
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="bg-cyan/20 rounded-xl p-6 border border-cyan/30">
+                        <i class="fas fa-layer-group text-3xl text-cyan mb-4"></i>
+                        <h4 class="text-cyan font-semibold mb-2">Variations</h4>
+                        <p class="text-graphite-light text-sm">Générer 3-5 versions</p>
+                      </div>
+                    </div>
+
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="bg-blue-500/20 rounded-xl p-6 border border-blue-500/30">
+                        <i class="fas fa-search text-3xl text-blue-500 mb-4"></i>
+                        <h4 class="text-blue font-semibold mb-2">Analyse</h4>
+                        <p class="text-graphite-light text-sm">Comparer les résultats</p>
+                      </div>
+                    </div>
+
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                      <div class="bg-cyan/20 rounded-xl p-6 border border-cyan/30">
+                        <i class="fas fa-sliders-h text-3xl text-cyan mb-4"></i>
+                        <h4 class="text-cyan font-semibold mb-2">Optimisation</h4>
+                        <p class="text-graphite-light text-sm">Ajuster et itérer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Principes Directeurs -->
+            <section id="guiding-principles" class="mb-16" data-aos="fade-up">
+              <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-electric-mint to-purple rounded-2xl mb-6" data-aos="zoom-in">
+                  <i class="fas fa-compass text-2xl text-white"></i>
+                </div>
+                <h2 class="text-cloud font-bold text-3xl mb-4">
+                  📌 Principes Directeurs
+                </h2>
+              </div>
+
+              <!-- Principles Grid -->
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-electric-mint/10 to-purple/10 rounded-xl p-6 border border-electric-mint/30" data-aos="fade-up" data-aos-delay="100">
+                  <div class="w-12 h-12 bg-electric-mint/20 text-electric-mint rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-puzzle-piece text-xl"></i>
+                  </div>
+                  <h3 class="text-electric-mint font-bold text-lg mb-2">Cohérence</h3>
+                  <p class="text-graphite-light text-sm">Définir rôle, objectif et format avant la génération</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple/10 to-pink/10 rounded-xl p-6 border border-purple/30" data-aos="fade-up" data-aos-delay="200">
+                  <div class="w-12 h-12 bg-purple/20 text-purple rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-sitemap text-xl"></i>
+                  </div>
+                  <h3 class="text-purple font-bold text-lg mb-2">Contrôle</h3>
+                  <p class="text-graphite-light text-sm">Utiliser raisonnement séquentiel (CoT)</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue/10 to-cyan/10 rounded-xl p-6 border border-blue/30" data-aos="fade-up" data-aos-delay="300">
+                  <div class="w-12 h-12 bg-blue/20 text-blue rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-palette text-xl"></i>
+                  </div>
+                  <h3 class="text-blue font-bold text-lg mb-2">Créativité</h3>
+                  <p class="text-graphite-light text-sm">Exploiter les personas pour ancrer un ton distinctif</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan/10 to-green-400/10 rounded-xl p-6 border border-cyan/30" data-aos="fade-up" data-aos-delay="400">
+                  <div class="w-12 h-12 bg-cyan/20 text-cyan rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-gem text-xl"></i>
+                  </div>
+                  <h3 class="text-cyan font-bold text-lg mb-2">Réalisme</h3>
+                  <p class="text-graphite-light text-sm">Privilégier les imperfections naturelles</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange/10 to-red-500/10 rounded-xl p-6 border border-orange/30" data-aos="fade-up" data-aos-delay="500">
+                  <div class="w-12 h-12 bg-orange/20 text-orange rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-redo text-xl"></i>
+                  </div>
+                  <h3 class="text-orange font-bold text-lg mb-2">Répétition maîtrisée</h3>
+                  <p class="text-graphite-light text-sm">Itérer méthodiquement jusqu'à la stabilité du style</p>
+                </div>
+              </div>
+            </section>
+  
+          </div>
+        </div>
+    </article>
+
+    <!-- Prompt Generator CTA Section -->
+    <section id="prompt-generator-cta" class="bg-charcoal-light relative overflow-hidden py-16" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">
+      <div class="container mx-auto px-6 max-w-4xl relative">
+        <!-- Background gradient effects -->
+        <div class="absolute inset-0 bg-gradient-to-br from-electric-mint/3 via-transparent to-purple/3 pointer-events-none"></div>
+        <div class="absolute top-0 left-1/4 w-64 h-64 bg-electric-mint/5 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-purple/5 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="text-center relative z-10">
+          <div class="inline-flex items-center px-4 py-2 rounded-full bg-electric-mint/10 border border-electric-mint/20 backdrop-blur-sm mb-6">
+            <i class="fas fa-magic mr-2 text-electric-mint"></i>
+            <span class="text-electric-mint text-sm font-medium">Outil IA Gratuit</span>
+          </div>
+
+          <h2 class="font-display text-4xl lg:text-5xl font-bold text-cloud mb-6">
+            Prêt à Appliquer <span class="gradient-text">Ces Techniques</span> ?
+          </h2>
+
+          <p class="text-graphite-light text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            Essayez notre générateur de prompts IA gratuit basé sur le framework RODES.
+            Créez des prompts optimisés en quelques secondes et améliorez immédiatement vos interactions avec l'intelligence artificielle.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-6 justify-center mx-auto max-w-md mb-8">
+            <a href="../pages/generateur-prompts.html" class="bg-electric-mint text-charcoal px-8 py-3 rounded-lg font-semibold hover:bg-electric-mint/90 transition-all transform hover:scale-105 inline-flex items-center justify-center hover-lift sm:w-auto w-full">
+              <i class="fas fa-magic mr-2"></i>
+              Essayer le Générateur
+            </a>
+            <a href="../blog/" class="border-2 border-electric-mint text-electric-mint px-8 py-3 rounded-lg font-semibold hover:bg-electric-mint hover:text-charcoal transition-all inline-flex items-center justify-center hover-lift sm:w-auto w-full">
+              <i class="fas fa-arrow-left mr-2"></i>
+              Retour au Blog
+            </a>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-graphite-light">
+            <div class="flex items-center">
+              <i class="fas fa-certificate mr-2 text-electric-mint"></i>
+              <span>100% Gratuit</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-user-shield mr-2 text-electric-mint"></i>
+              <span>Aucune inscription requise</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-cogs mr-2 text-electric-mint"></i>
+              <span>Basé sur le framework RODES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-electric-mint to-purple rounded-lg flex items-center justify-center">
+                            <span class="text-charcoal font-bold text-sm">S</span>
+                        </div>
+                        <span class="text-xl font-bold text-electric-mint">Safonas</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Votre partenaire expert en intelligence artificielle et transformation digitale en Tunisie.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-electric-mint transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-electric-mint transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-electric-mint transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../pages/services.html" class="hover:text-electric-mint transition-colors">Développement IA</a></li>
+                        <li><a href="../pages/services.html" class="hover:text-electric-mint transition-colors">Consulting</a></li>
+                        <li><a href="../pages/services.html" class="hover:text-electric-mint transition-colors">Formation</a></li>
+                        <li><a href="../pages/services.html" class="hover:text-electric-mint transition-colors">Support Technique</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Ressources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-electric-mint transition-colors">Blog</a></li>
+                        <li><a href="outils-ai-creation-site-gratuit.html" class="hover:text-electric-mint transition-colors">Outils IA</a></li>
+                        <li><a href="../pages/faq.html" class="hover:text-electric-mint transition-colors">FAQ</a></li>
+                        <li><a href="../legal/mentions-legales.html" class="hover:text-electric-mint transition-colors">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Safonas. Tous droits réservés. | Agence IA Tunisie</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../assets/js/ui-components.js?v=1.1"></script>
+    <script src="../assets/js/main.js?v=1.1"></script>
+
+    <script>
+        // Gentle animation override for CTA section
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaSection = document.getElementById('prompt-generator-cta');
+            if (ctaSection) {
+                // Set zoom-in to use scale(1) to prevent expansion
+                ctaSection.style.transform = 'scale(1)';
+                ctaSection.style.opacity = '1';
+            }
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

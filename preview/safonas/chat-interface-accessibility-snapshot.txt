@@ -1,0 +1,235 @@
+uid=6_0 RootWebArea "Générateur de Prompts IA | Outil Gratuit | Safonas" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/pages/generateur-prompts.html"
+  uid=6_1 ignored
+    uid=6_2 generic
+      uid=6_3 banner
+        uid=6_4 ignored
+          uid=6_5 navigation "Main navigation"
+            uid=6_6 banner
+              uid=6_7 StaticText "Safonas"
+                uid=6_8 InlineTextBox "Safonas"
+            uid=6_9 menubar orientation="horizontal"
+              uid=6_10 menuitem "Fonctionnalités"
+                uid=6_11 StaticText "Fonctionnalités"
+                  uid=6_12 InlineTextBox "Fonctionnalités"
+              uid=6_13 menuitem "Services"
+                uid=6_14 StaticText "Services"
+                  uid=6_15 InlineTextBox "Services"
+              uid=6_16 menuitem "Témoignages"
+                uid=6_17 StaticText "Témoignages"
+                  uid=6_18 InlineTextBox "Témoignages"
+              uid=6_19 menuitem "Contact"
+                uid=6_20 StaticText "Contact"
+                  uid=6_21 InlineTextBox "Contact"
+              uid=6_22 menuitem "Chat IA"
+                uid=6_23 StaticText "Chat IA"
+                  uid=6_24 InlineTextBox "Chat IA"
+      uid=6_25 ignored
+        uid=6_26 ignored
+          uid=6_27 heading "Assistant IA" level="1"
+            uid=6_28 StaticText "Assistant IA"
+              uid=6_29 InlineTextBox "Assistant IA"
+          uid=6_30 paragraph
+            uid=6_31 StaticText "Votre assistant intelligent pour créer et optimiser des prompts"
+              uid=6_32 InlineTextBox "Votre assistant intelligent pour créer et optimiser des prompts"
+        uid=6_33 generic
+          uid=6_34 ignored
+            uid=6_35 heading "Comment puis-je vous aider ?" level="2"
+              uid=6_36 StaticText "Comment puis-je vous aider ?"
+                uid=6_37 InlineTextBox "Comment puis-je vous aider ?"
+            uid=6_38 paragraph
+              uid=6_39 StaticText "Je suis votre assistant IA spécialisé dans la création de prompts efficaces. Je peux vous aider avec le framework RODES, l'optimisation d'instructions, ou répondre à vos questions sur l'intelligence artificielle."
+                uid=6_40 InlineTextBox "Je suis votre assistant IA spécialisé dans la création de prompts efficaces. Je peux "
+                uid=6_41 InlineTextBox "vous aider avec le framework RODES, l'optimisation d'instructions, ou répondre à vos "
+                uid=6_42 InlineTextBox "questions sur l'intelligence artificielle."
+            uid=6_43 ignored
+              uid=6_44 generic
+                uid=6_45 generic
+                  uid=6_46 StaticText "📝 Framework RODES"
+                    uid=6_47 InlineTextBox "📝 Framework RODES"
+                uid=6_48 generic
+                  uid=6_49 StaticText "Découvrez la méthode structurée pour créer des prompts efficaces"
+                    uid=6_50 InlineTextBox "Découvrez la méthode "
+                    uid=6_51 InlineTextBox "structurée pour créer des "
+                    uid=6_52 InlineTextBox "prompts efficaces"
+              uid=6_53 generic
+                uid=6_54 generic
+                  uid=6_55 StaticText "🎯 Prompt Marketing"
+                    uid=6_56 InlineTextBox "🎯 Prompt Marketing"
+                uid=6_57 generic
+                  uid=6_58 StaticText "Générez des instructions précises pour le marketing"
+                    uid=6_59 InlineTextBox "Générez des instructions "
+                    uid=6_60 InlineTextBox "précises pour le marketing"
+              uid=6_61 generic
+                uid=6_62 generic
+                  uid=6_63 StaticText "⚡ Optimisation"
+                    uid=6_64 InlineTextBox "⚡ Optimisation"
+                uid=6_65 generic
+                  uid=6_66 StaticText "Améliorez la qualité de vos instructions"
+                    uid=6_67 InlineTextBox "Améliorez la qualité de vos "
+                    uid=6_68 InlineTextBox "instructions"
+              uid=6_69 generic
+                uid=6_70 generic
+                  uid=6_71 StaticText "💡 Exemples Pratiques"
+                    uid=6_72 InlineTextBox "💡 Exemples Pratiques"
+                uid=6_73 generic
+                  uid=6_74 StaticText "Découvrez des cas d'usage concrets"
+                    uid=6_75 InlineTextBox "Découvrez des cas d'usage "
+                    uid=6_76 InlineTextBox "concrets"
+        uid=6_77 ignored
+          uid=6_78 textbox "Écrivez votre message..." multiline
+            uid=6_79 ignored
+            uid=6_80 generic
+          uid=6_81 button " Envoyer"
+            uid=6_82 generic
+              uid=6_83 ignored
+                uid=6_84 StaticText ""
+                  uid=6_85 InlineTextBox ""
+            uid=6_86 StaticText "Envoyer"
+              uid=6_87 InlineTextBox "Envoyer"
+      uid=6_88 contentinfo
+        uid=6_89 generic
+          uid=6_90 generic
+          uid=6_91 generic
+        uid=6_92 generic
+          uid=6_93 ignored
+            uid=6_94 ignored
+              uid=6_95 generic
+                uid=6_96 StaticText "Safonas"
+                  uid=6_97 InlineTextBox "Safonas"
+              uid=6_98 paragraph
+                uid=6_99 StaticText "Révolutionnons ensemble l'avenir de votre entreprise avec l'intelligence artificielle. Des solutions sur mesure pour accélérer votre croissance."
+                  uid=6_100 InlineTextBox "Révolutionnons ensemble l'avenir "
+                  uid=6_101 InlineTextBox "de votre entreprise avec "
+                  uid=6_102 InlineTextBox "l'intelligence artificielle. Des "
+                  uid=6_103 InlineTextBox "solutions sur mesure pour "
+                  uid=6_104 InlineTextBox "accélérer votre croissance."
+            uid=6_105 ignored
+              uid=6_106 heading "Produit" level="4"
+                uid=6_107 StaticText "Produit"
+                  uid=6_108 InlineTextBox "Produit"
+              uid=6_109 list
+                uid=6_110 listitem level="1"
+                  uid=6_111 link " Fonctionnalités" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#features"
+                    uid=6_112 generic
+                      uid=6_113 ignored
+                        uid=6_114 StaticText ""
+                          uid=6_115 InlineTextBox ""
+                    uid=6_116 StaticText "Fonctionnalités"
+                      uid=6_117 InlineTextBox "Fonctionnalités"
+                uid=6_118 listitem level="1"
+                  uid=6_119 link " Documentation" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_120 generic
+                      uid=6_121 ignored
+                        uid=6_122 StaticText ""
+                          uid=6_123 InlineTextBox ""
+                    uid=6_124 StaticText "Documentation"
+                      uid=6_125 InlineTextBox "Documentation"
+                uid=6_126 listitem level="1"
+                  uid=6_127 link " API" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_128 generic
+                      uid=6_129 ignored
+                        uid=6_130 StaticText ""
+                          uid=6_131 InlineTextBox ""
+                    uid=6_132 StaticText "API"
+                      uid=6_133 InlineTextBox "API"
+                uid=6_134 listitem level="1"
+                  uid=6_135 link " Sécurité" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_136 generic
+                      uid=6_137 ignored
+                        uid=6_138 StaticText ""
+                          uid=6_139 InlineTextBox ""
+                    uid=6_140 StaticText "Sécurité"
+                      uid=6_141 InlineTextBox "Sécurité"
+            uid=6_142 ignored
+              uid=6_143 heading "Ressources" level="4"
+                uid=6_144 StaticText "Ressources"
+                  uid=6_145 InlineTextBox "Ressources"
+              uid=6_146 list
+                uid=6_147 listitem level="1"
+                  uid=6_148 link " Blog" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/blog/"
+                    uid=6_149 generic
+                      uid=6_150 ignored
+                        uid=6_151 StaticText ""
+                          uid=6_152 InlineTextBox ""
+                    uid=6_153 StaticText "Blog"
+                      uid=6_154 InlineTextBox "Blog"
+                uid=6_155 listitem level="1"
+                  uid=6_156 link " Webinaires" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_157 generic
+                      uid=6_158 ignored
+                        uid=6_159 StaticText ""
+                          uid=6_160 InlineTextBox ""
+                    uid=6_161 StaticText "Webinaires"
+                      uid=6_162 InlineTextBox "Webinaires"
+                uid=6_163 listitem level="1"
+                  uid=6_164 link " Support" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_165 generic
+                      uid=6_166 ignored
+                        uid=6_167 StaticText ""
+                          uid=6_168 InlineTextBox ""
+                    uid=6_169 StaticText "Support"
+                      uid=6_170 InlineTextBox "Support"
+            uid=6_171 ignored
+              uid=6_172 heading "Entreprise" level="4"
+                uid=6_173 StaticText "Entreprise"
+                  uid=6_174 InlineTextBox "Entreprise"
+              uid=6_175 list
+                uid=6_176 listitem level="1"
+                  uid=6_177 link " À propos" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_178 generic
+                      uid=6_179 ignored
+                        uid=6_180 StaticText ""
+                          uid=6_181 InlineTextBox ""
+                    uid=6_182 StaticText "À propos"
+                      uid=6_183 InlineTextBox "À propos"
+                uid=6_184 listitem level="1"
+                  uid=6_185 link " Carrières" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_186 generic
+                      uid=6_187 ignored
+                        uid=6_188 StaticText ""
+                          uid=6_189 InlineTextBox ""
+                    uid=6_190 StaticText "Carrières"
+                      uid=6_191 InlineTextBox "Carrières"
+                uid=6_192 listitem level="1"
+                  uid=6_193 link " Presse" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_194 generic
+                      uid=6_195 ignored
+                        uid=6_196 StaticText ""
+                          uid=6_197 InlineTextBox ""
+                    uid=6_198 StaticText "Presse"
+                      uid=6_199 InlineTextBox "Presse"
+                uid=6_200 listitem level="1"
+                  uid=6_201 link " Contact" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/index.html#contact"
+                    uid=6_202 generic
+                      uid=6_203 ignored
+                        uid=6_204 StaticText ""
+                          uid=6_205 InlineTextBox ""
+                    uid=6_206 StaticText "Contact"
+                      uid=6_207 InlineTextBox "Contact"
+          uid=6_208 ignored
+            uid=6_209 ignored
+              uid=6_210 ignored
+                uid=6_211 ignored
+                  uid=6_212 StaticText "© 2025 Safonas. Tous droits réservés."
+                    uid=6_213 InlineTextBox "© 2025 Safonas. Tous droits réservés."
+                uid=6_214 ignored
+                  uid=6_215 ignored
+                  uid=6_216 ignored
+                    uid=6_217 StaticText "Tous systèmes opérationnels"
+                      uid=6_218 InlineTextBox "Tous systèmes opérationnels"
+              uid=6_219 ignored
+                uid=6_220 link "Confidentialité" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/legal/politique-de-confidentialite.html"
+                  uid=6_221 StaticText "Confidentialité"
+                    uid=6_222 InlineTextBox "Confidentialité"
+                uid=6_223 link "Mentions légales" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/legal/mentions-legales.html"
+                  uid=6_224 StaticText "Mentions légales"
+                    uid=6_225 InlineTextBox "Mentions légales"
+                uid=6_226 link "CGU" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/legal/CGU_Safonas.html"
+                  uid=6_227 StaticText "CGU"
+                    uid=6_228 InlineTextBox "CGU"
+                uid=6_229 link "Cookies" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/legal/cookies-policy.html"
+                  uid=6_230 StaticText "Cookies"
+                    uid=6_231 InlineTextBox "Cookies"
+                uid=6_232 link "Avis IA" url="file:///C:/Users/Anas%20Essafi/Desktop/Safonas/legal/disclaimer-services-ia.html"
+                  uid=6_233 StaticText "Avis IA"
+                    uid=6_234 InlineTextBox "Avis IA"

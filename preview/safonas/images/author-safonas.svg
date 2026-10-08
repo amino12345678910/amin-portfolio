@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <rect width="60" height="60" fill="#1a1a1a"/>
+  <circle cx="30" cy="25" r="10" fill="#8b5cf6"/>
+  <path d="M15 45 Q30 35 45 45" fill="#8b5cf6"/>
+  <text x="30" y="55" text-anchor="middle" fill="#ffffff" font-size="8" font-family="Arial">Safonas</text>
+</svg>

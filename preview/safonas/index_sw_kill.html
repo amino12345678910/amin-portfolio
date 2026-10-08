@@ -1,0 +1,2296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32YPLYV9T5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-32YPLYV9T5');
+
+    // Force clean URLs everywhere (local and production)
+    window.FORCE_CLEAN_URLS = true;
+
+    // EMERGENCY SERVICE WORKER KELLER
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          console.log('Unregistering SW:', registration);
+          registration.unregister();
+        }
+      });
+      caches.keys().then(function (names) {
+        for (let name of names) caches.delete(name);
+      });
+    }
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+  <title>Agence IA Tunisie #1 | Chatbots & Automatisation - Safonas</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236366f1'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.35em' fill='white' font-family='Arial, sans-serif' font-size='20' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236366f1'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.35em' fill='white' font-family='Arial, sans-serif' font-size='20' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+
+  <!-- Enhanced Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <!-- X-Frame-Options must be set via HTTP header, not meta tag -->
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=()" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:; img-src 'self' data: https: blob:; connect-src 'self' https://ejonogfzwsrmuzgiywge.supabase.co wss://ejonogfzwsrmuzgiywge.supabase.co https:; frame-src 'none'; object-src 'none'; media-src 'self' data:; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="security-protection" content="enabled" />
+  <meta name="csrf-protection" content="active" />
+
+  <!-- Cache-busting for mobile chatbot fix -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- SEO and Social Meta Tags -->
+  <meta name="description"
+    content="Agence IA #1 en Tunisie. Chatbots WhatsApp, automatisation business, +40% ROI garanti. Consultation gratuite. ✓ Expert IA Tunis ✓ Support 24/7" />
+  <meta name="keywords"
+    content="agence IA Tunisie, intelligence artificielle Tunisie, chatbot développement Tunisie, automatisation entreprise Tunisie, solutions IA PME, marketing avec IA, assistant virtuel, ROI intelligence artificielle" />
+  <meta name="author" content="Safonas" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://safonas.com/" />
+
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="Safonas Blog IA Tunisie"
+    href="https://safonas.com/feed.xml" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Safonas",
+      "alternateName": "Agence IA Safonas",
+      "url": "https://safonas.com",
+      "logo": "https://safonas.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+216 28 283 843",
+        "contactType": "customer service",
+        "areaServed": "TN",
+        "availableLanguage": ["fr", "ar"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TN",
+        "addressRegion": "Tunis",
+        "addressLocality": "Tunis"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/safonas",
+        "https://facebook.com/safonas",
+        "https://twitter.com/safonas"
+      ],
+      "foundingDate": "2024",
+      "numberOfEmployees": "10-50",
+      "industry": "Intelligence Artificielle",
+      "description": "Agence IA leader en Tunisie spécialisée dans les solutions d'intelligence artificielle pour entreprises. Chatbots, automatisation, analytics prédictives.",
+      "service": [
+        {
+          "@type": "Service",
+          "name": "Développement Chatbots IA",
+          "description": "Création de chatbots intelligents personnalisés",
+          "provider": {
+            "@type": "Organization",
+            "name": "Safonas"
+          }
+        },
+        {
+          "@type": "Service", 
+          "name": "Analytics Prédictives",
+          "description": "Solutions d'analyse de données et prédictions IA",
+          "provider": {
+            "@type": "Organization",
+            "name": "Safonas"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Automatisation Processus IA", 
+          "description": "Automatisation intelligente des processus métier",
+          "provider": {
+            "@type": "Organization",
+            "name": "Safonas"
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- Critical LocalBusiness Schema for Quick SEO Boost -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Safonas - Agence IA Tunisie",
+      "image": "https://safonas.com/logo.png",
+      "priceRange": "$$",
+      "telephone": "+216 28 283 843",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tunis",
+        "addressRegion": "Tunis",
+        "addressCountry": "TN"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "15"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services IA Tunisie",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chatbot WhatsApp IA",
+              "description": "Chatbots WhatsApp personnalisés avec IA pour entreprises tunisiennes"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automatisation Business IA",
+              "description": "Solutions d'automatisation intelligente des processus d'entreprise"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Agence IA Tunisie | Solutions Intelligence Artificielle - Safonas" />
+  <meta property="og:description"
+    content="Agence IA Tunisie leader en automatisation intelligente. Chatbots, marketing avec IA, +40% ROI. Support 24/7. Consultation gratuite." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://safonas.com/" />
+  <meta property="og:site_name" content="Safonas - Agence IA Tunisie" />
+  <meta property="og:image" content="https://safonas.com/images/safonas-og-image.jpg" />
+  <meta property="og:locale" content="fr_TN" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Agence IA Tunisie | Solutions Intelligence Artificielle - Safonas" />
+  <meta name="twitter:description"
+    content="Agence IA Tunisie leader. Chatbots, automatisation, marketing avec IA. +40% ROI garanti. Support 24/7. Consultation gratuite." />
+  <meta name="twitter:image" content="https://safonas.com/images/safonas-twitter-card.jpg" />
+  <meta name="twitter:site" content="@SafonasAI" />
+  <link href="assets/css/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=1.3" />
+
+</head>
+
+<body class="antialiased text-gray-900 bg-white">
+  <script src="assets/js/aos.js"></script>
+  <script>
+    console.log("Attempting AOS Init...");
+    AOS.init({
+      offset: 120,
+      delay: 0,
+      duration: 400,
+      easing: 'ease',
+      once: true,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
+    console.log("AOS Init done.");
+  </script>
+  <script src="assets/js/security.js?v=2025-secure" crossorigin="anonymous"></script>
+  <script src="assets/js/ui-components.js?v=2025-ui" crossorigin="anonymous"></script>
+  <script src="assets/js/form-handler.js?v=2025-forms" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js?v=2025-core" defer></script>
+  "@id": "https://safonas.com/#business",
+  "name": "Safonas",
+  "alternateName": "Safonas Agence IA",
+  "description": "Agence spécialisée en intelligence artificielle et automatisation pour entreprises tunisiennes et
+  francophones. Solutions chatbots, analytics prédictives, intégrations IA.",
+  "url": "https://safonas.com",
+  "logo": "https://safonas.com/images/logo.png",
+  "image": "https://safonas.com/images/safonas-office.jpg",
+  "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Tunis",
+  "addressCountry": "TN",
+  "addressRegion": "Tunis"
+  },
+  "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": "36.8065",
+  "longitude": "10.1815"
+  },
+  "telephone": "+216 28 283 843",
+  "email": "contact@safonas.com",
+  "openingHoursSpecification": {
+  "@type": "OpeningHoursSpecification",
+  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "opens": "09:00",
+  "closes": "18:00"
+  },
+  "areaServed": ["Tunisia", "France", "Morocco", "Algeria"],
+  "serviceArea": {
+  "@type": "GeoCircle",
+  "geoMidpoint": {
+  "@type": "GeoCoordinates",
+  "latitude": "36.8065",
+  "longitude": "10.1815"
+  },
+  "geoRadius": "10000"
+  },
+  "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Services Intelligence Artificielle",
+  "itemListElement": [
+  {
+  "@type": "Offer",
+  "itemOffered": {
+  "@type": "Service",
+  "name": "Développement Chatbots IA",
+  "description": "Chatbots intelligents sur mesure avec NLP avancé"
+  }
+  },
+  {
+  "@type": "Offer",
+  "itemOffered": {
+  "@type": "Service",
+  "name": "Marketing avec IA",
+  "description": "Campagnes marketing intelligentes et automatisées"
+  }
+  },
+  {
+  "@type": "Offer",
+  "itemOffered": {
+  "@type": "Service",
+  "name": "Automatisation Processus IA",
+  "description": "Automatisation intelligente des workflows d'entreprise"
+  }
+  }
+  ]
+  },
+  "aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": "5.0",
+  "reviewCount": "27",
+  "bestRating": "5",
+  "worstRating": "1"
+  },
+  "review": [
+  {
+  "@type": "Review",
+  "reviewRating": {
+  "@type": "Rating",
+  "ratingValue": "5"
+  },
+  "author": {
+  "@type": "Organization",
+  "name": "Cristallus"
+  },
+  "reviewBody": "Safonas a révolutionné notre e-commerce de verrerie. Nous avons augmenté notre taux de conversion de
+  45% en seulement 3 mois grâce à leur chatbot IA personnalisé."
+  }
+  ],
+  "sameAs": [
+  "https://www.linkedin.com/company/safonas",
+  "https://twitter.com/SafonasAI",
+  "https://github.com/safonas"
+  ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Combien de temps faut-il pour déployer un agent IA personnalisé ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le délai de déploiement varie selon la complexité de vos besoins. Un agent IA simple peut commencer à automatiser vos processus en 2-4 semaines, avec des retours sur investissement mesurables dès les premiers mois."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment mes données sont-elles protégées ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nous utilisons des protocoles de chiffrement avancés, des environnements sécurisés et des pratiques conformes au RGPD. Tous nos agents IA sont développés avec des garanties strictes de confidentialité."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Puis-je intégrer l'agent IA à mes systèmes existants ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nos agents IA sont conçus pour s'intégrer facilement à votre infrastructure technologique existante, incluant CRM, ERP, systèmes de gestion et plateformes de communication."
+            }
+          }
+        ]
+      }
+    </script>
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+
+  <body class="gradient-bg loaded">
+    <!-- Enhanced Header with improved navigation -->
+    <header data-aos="fade-down" id="header">
+      <div class="container">
+        <nav role="navigation" aria-label="Main navigation">
+          <div id="logo" class="logo font-display text-2xl font-bold cursor-pointer" role="banner">
+            Safonas
+          </div>
+          <div class="nav-links" role="menubar">
+            <a href="#features" class="nav-link" role="menuitem">Fonctionnalités</a>
+            <a href="pages/services" class="nav-link" role="menuitem">Services</a>
+            <a href="#testimonials" class="nav-link" role="menuitem">Témoignages</a>
+            <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+          </div>
+          <div class="mobile-menu-container">
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Enhanced Mobile Menu with Slide-out Animation - Moved outside header for full viewport coverage -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay" role="presentation"></div>
+    <div id="mobile-menu" class="mobile-menu" role="menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <span class="font-display text-xl font-bold text-cloud">Safonas</span>
+        </div>
+        <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Fermer le menu">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="#features" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-star mobile-nav-icon"></i>
+          <span>Fonctionnalités</span>
+        </a>
+        <a href="pages/services" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-cogs mobile-nav-icon"></i>
+          <span>Services</span>
+        </a>
+        <a href="#testimonials" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-comments mobile-nav-icon"></i>
+          <span>Témoignages</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-envelope mobile-nav-icon"></i>
+          <span>Contact</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Enhanced Hero Section -->
+    <main id="main-content">
+      <section class="hero-section">
+        <div class="container mx-auto px-6 max-w-7xl">
+          <div class="hero-grid grid lg:grid-cols-2 gap-16 items-center">
+            <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
+              <div
+                class="inline-flex items-center px-4 py-2 rounded-full bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 mb-6"
+                data-aos="fade-in" data-aos-delay="100">
+                <span class="text-electric-mint text-sm font-medium">✨ Nouvelle génération d'IA</span>
+              </div>
+              <h1 class="font-display text-4xl lg:text-6xl xl:text-7xl font-bold text-cloud mb-8 leading-tight"
+                data-aos="fade-up" data-aos-delay="300">
+                Agence IA Tunisie - Garantissez
+                <span class="animate-gradient">+40% ROI</span> avec l'IA intelligente
+              </h1>
+
+              <!-- Mobile-only Chatbot Section (right after title) -->
+              <div class="chatbot-mobile-only mb-8" data-aos="fade-up" data-aos-delay="350">
+                <div class="chatbot-hero-container">
+                  <div class="chatbot-hero glass-effect">
+                    <div class="chatbot-hero-header">
+                      <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                          <div class="chatbot-avatar-small">
+                            <i class="fas fa-robot"></i>
+                          </div>
+                          <div class="ml-3">
+                            <h3 class="text-cloud font-semibold">Sparrow</h3>
+                            <p class="text-electric-mint text-xs">En ligne</p>
+                          </div>
+                        </div>
+                        <div class="flex space-x-1">
+                          <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                          <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                          <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chatbot-hero-messages" id="heroChatMessagesMobile">
+                      <div class="message bot-message">
+                        <div class="message-content">
+                          👋 Bonjour ! Je suis Sparrow, votre assistant IA.
+                          Comment puis-je transformer votre business aujourd'hui
+                          ?
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chatbot-hero-input">
+                      <input type="text" id="heroChatInputMobile" placeholder="Posez votre question..."
+                        class="chatbot-input" maxlength="500" autocomplete="off" spellcheck="false" />
+                      <button id="heroSendMessageMobile" class="chatbot-send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-graphite-light text-xl lg:text-2xl mb-10 leading-relaxed max-w-2xl" data-aos="fade-up"
+                data-aos-delay="400">
+                Automatisez vos processus critiques et éliminez les erreurs
+                humaines.
+                <span class="text-electric-mint font-medium">Économisez du temps et de l'argent tout en boostant vos
+                  performances.</span>
+              </p>
+              <div class="flex flex-col sm:flex-row gap-6 mb-12" data-aos="fade-up" data-aos-delay="500">
+                <button id="heroStartBtn" class="btn-electric-mint font-semibold hover-lift">
+                  <i class="fas fa-rocket mr-2"></i>
+                  Démarrer maintenant
+                </button>
+                <button id="heroDemoBtn" class="border-electric-mint hover-lift">
+                  <i class="fas fa-play mr-2"></i>
+                  Voir la démo
+                </button>
+              </div>
+              <div class="glass p-4 rounded-lg font-mono text-sm" data-aos="fade-up" data-aos-delay="600">
+                <div class="text-graphite mb-1">
+                  // Automatisation intelligente
+                </div>
+                <div class="text-cloud">
+                  <span class="text-electric-mint">$</span> npm install
+                  @safonas/ai-toolkit
+                  <span class="text-purple animate-pulse">→ +40% ROI garanti!</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Chatbot Section -->
+            <div class="desktop-chatbot-only flex justify-center lg:justify-end" data-aos="fade-left"
+              data-aos-delay="300">
+              <div class="chatbot-hero-container">
+                <div class="chatbot-hero glass-effect">
+                  <div class="chatbot-hero-header">
+                    <div class="flex items-center justify-between mb-4">
+                      <div class="flex items-center">
+                        <div class="chatbot-avatar-small">
+                          <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="ml-3">
+                          <h3 class="text-cloud font-semibold">Sparrow</h3>
+                          <p class="text-electric-mint text-xs">En ligne</p>
+                        </div>
+                      </div>
+                      <div class="flex space-x-1">
+                        <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                        <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chatbot-hero-messages" id="heroChatMessages">
+                    <div class="message bot-message">
+                      <div class="message-content">
+                        👋 Bonjour ! Je suis Sparrow, votre assistant IA.
+                        Comment puis-je transformer votre business aujourd'hui
+                        ?
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chatbot-hero-input">
+                    <input type="text" id="heroChatInput" placeholder="Posez votre question..." class="chatbot-input"
+                      maxlength="500" autocomplete="off" spellcheck="false" />
+                    <button id="heroSendMessage" class="chatbot-send-btn">
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enhanced Features Section -->
+      <section id="features" class="py-24 relative">
+        <div class="container mx-auto px-6 max-w-7xl">
+          <div class="text-center mb-20" data-aos="fade-up">
+            <div
+              class="inline-flex items-center px-4 py-2 rounded-full bg-purple bg-opacity-10 border border-purple border-opacity-20 mb-6">
+              <span class="text-purple text-sm font-medium">🚀 Technologies avancées</span>
+            </div>
+            <h2 class="font-satoshi text-4xl lg:text-5xl font-bold text-cloud mb-6">
+              Solutions IA Tunisie - Fonctionnalités
+              <span class="gradient-text">Intelligentes</span>
+            </h2>
+            <p class="text-graphite-light text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
+              Des outils d'IA avancés conçus pour transformer votre business et
+              accélérer votre croissance
+            </p>
+          </div>
+
+          <div class="features-grid grid md:grid-cols-3 gap-8 lg:gap-10">
+            <div class="feature-card hover-lift" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">
+                <i class="fas fa-robot text-electric-mint text-2xl"></i>
+              </div>
+              <h3 class="font-satoshi text-xl font-bold text-cloud mb-4">
+                Chatbots IA Tunisie - Intelligents 24/7
+              </h3>
+              <p class="text-graphite-light leading-relaxed">
+                Éliminez 95% des erreurs de service client et réduisez vos coûts
+                opérationnels avec des chatbots IA qui travaillent 24/7 sans
+                fatigue.
+              </p>
+            </div>
+
+            <div class="feature-card hover-lift" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line text-electric-mint text-2xl"></i>
+              </div>
+              <h3 class="font-satoshi text-xl font-bold text-cloud mb-4">
+                Marketing avec IA Tunisie - Automation
+              </h3>
+              <p class="text-graphite-light leading-relaxed">
+                Maximisez vos conversions avec des campagnes marketing
+                intelligentes, personnalisées et automatisées grâce à notre IA
+                marketing avancée.
+              </p>
+            </div>
+
+            <div class="feature-card hover-lift" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-icon">
+                <i class="fas fa-plug text-electric-mint text-2xl"></i>
+              </div>
+              <h3 class="font-satoshi text-xl font-bold text-cloud mb-4">
+                Intégrations IA Fluides - Automatisation
+              </h3>
+              <p class="text-graphite-light leading-relaxed">
+                Intégrez nos solutions sans risque d'interruption, préservez
+                votre investissement existant et automatisez instantanément vos
+                workflows.
+              </p>
+            </div>
+          </div>
+
+          <!-- Additional Features Grid -->
+          <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-effect p-6 rounded-lg text-center hover-lift" data-aos="fade-up" data-aos-delay="400">
+              <div class="text-electric-mint text-2xl font-bold mb-2">
+                99.9%
+              </div>
+              <div class="text-graphite text-sm">Temps de fonctionnement</div>
+            </div>
+            <div class="glass-effect p-6 rounded-lg text-center hover-lift" data-aos="fade-up" data-aos-delay="500">
+              <div class="text-electric-mint text-2xl font-bold mb-2">-60%</div>
+              <div class="text-graphite text-sm">
+                Erreurs humaines éliminées
+              </div>
+            </div>
+            <div class="glass-effect p-6 rounded-lg text-center hover-lift" data-aos="fade-up" data-aos-delay="600">
+              <div class="text-electric-mint text-2xl font-bold mb-2">24/7</div>
+              <div class="text-graphite text-sm">Support technique</div>
+            </div>
+            <div class="glass-effect p-6 rounded-lg text-center hover-lift" data-aos="fade-up" data-aos-delay="700">
+              <div class="text-electric-mint text-2xl font-bold mb-2">+40%</div>
+              <div class="text-graphite text-sm">Amélioration ROI</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enhanced Testimonials Section -->
+      <section id="testimonials" class="py-24 bg-charcoal relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 opacity-20">
+          <div class="absolute top-10 left-10 w-20 h-20 bg-electric-mint rounded-full blur-xl"></div>
+          <div class="absolute bottom-20 right-20 w-32 h-32 bg-purple rounded-full blur-2xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative">
+          <div class="text-center mb-20" data-aos="fade-up">
+            <div
+              class="inline-flex items-center px-4 py-2 rounded-full bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 mb-6">
+              <span class="text-electric-mint text-sm font-medium">💬 Retours clients</span>
+            </div>
+            <h2 class="font-satoshi text-4xl lg:text-5xl font-bold text-cloud mb-6">
+              Ce que disent nos <span class="gradient-text">clients</span>
+            </h2>
+            <p class="text-graphite-light text-xl max-w-2xl mx-auto">
+              Découvrez comment nos solutions transforment les entreprises
+            </p>
+          </div>
+
+          <div class="carousel-container max-w-5xl mx-auto relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="carousel-track" id="testimonialTrack">
+              <div class="carousel-item">
+                <div class="testimonial-card hover-lift">
+                  <div class="quote-mark">"</div>
+                  <div class="flex items-center mb-6">
+                    <div class="flex text-electric-mint text-lg">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-2 text-sm text-graphite">5.0/5</span>
+                  </div>
+                  <p class="text-cloud text-lg mb-8 italic leading-relaxed">
+                    Safonas a révolutionné notre e-commerce de verrerie. Nous
+                    avons augmenté notre taux de conversion de
+                    <span class="text-electric-mint font-semibold">45% en seulement 3 mois</span>
+                    grâce à leur chatbot IA personnalisé. L'équipe est
+                    exceptionnelle et le support technique réactif.
+                  </p>
+                  <div class="flex items-center">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-br from-electric-mint to-purple rounded-full flex items-center justify-center mr-4 hover-lift">
+                      <span class="text-deep-navy font-bold text-lg">C</span>
+                    </div>
+                    <div>
+                      <div class="text-cloud font-semibold text-lg">
+                        Équipe Cristallus
+                      </div>
+                      <div class="text-electric-mint text-sm font-medium">
+                        E-commerce Verrerie
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonial-card hover-lift">
+                  <div class="quote-mark">"</div>
+                  <div class="flex items-center mb-6">
+                    <div class="flex text-electric-mint text-lg">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-2 text-sm text-graphite">5.0/5</span>
+                  </div>
+                  <p class="text-cloud text-lg mb-8 italic leading-relaxed">
+                    L'automatisation de nos processus de distribution nous a
+                    permis de
+                    <span class="text-electric-mint font-semibold">réduire nos coûts opérationnels de 40%</span>
+                    tout en éliminant les erreurs de gestion des stocks. Le ROI
+                    a été exceptionnel et mesurable dès le premier mois.
+                  </p>
+                  <div class="flex items-center">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-br from-purple to-blue rounded-full flex items-center justify-center mr-4 hover-lift">
+                      <span class="text-white font-bold text-lg">K</span>
+                    </div>
+                    <div>
+                      <div class="text-cloud font-semibold text-lg">
+                        Équipe Keyserclout
+                      </div>
+                      <div class="text-electric-mint text-sm font-medium">
+                        Distribution
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center mt-10 space-x-3">
+              <button class="carousel-dot active" data-slide="0"></button>
+              <button class="carousel-dot" data-slide="1"></button>
+            </div>
+
+            <!-- Navigation arrows -->
+            <button id="prevBtn"
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 rounded-full flex items-center justify-center text-electric-mint hover:bg-opacity-20 transition-all">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="nextBtn"
+              class="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 rounded-full flex items-center justify-center text-electric-mint hover:bg-opacity-20 transition-all">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Ready to Start Section -->
+    <section class="py-24 bg-charcoal relative overflow-hidden">
+      <div class="container mx-auto px-6 max-w-7xl relative">
+        <div class="text-center" data-aos="fade-up">
+          <h2 class="font-display text-4xl lg:text-5xl font-bold text-cloud mb-6">
+            Prêt à <span class="gradient-text">commencer</span> ?
+          </h2>
+          <p class="text-graphite-light text-xl max-w-2xl mx-auto mb-10">
+            Rejoignez les entreprises qui ont déjà automatisé leurs processus,
+            éliminé les erreurs coûteuses et boosté leur ROI de
+            <span class="text-electric-mint">+200%</span>
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center mx-auto max-w-md">
+            <button id="startNowBtn" class="btn-electric-mint font-semibold hover-lift sm:w-auto w-full">
+              <i class="fas fa-rocket mr-2"></i>
+              Démarrer maintenant
+            </button>
+            <button id="scheduleDemoBtn" class="border-electric-mint hover-lift sm:w-auto w-full">
+              <i class="fas fa-calendar mr-2"></i>
+              Planifier une démo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-form-section py-16 bg-charcoal relative overflow-hidden">
+      <div class="container mx-auto px-6 max-w-7xl relative">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <div
+            class="inline-flex items-center px-4 py-2 rounded-full bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 mb-6">
+            <span class="text-electric-mint text-sm font-medium">✉️ Contactez-nous</span>
+          </div>
+          <h2 class="font-display text-3xl lg:text-4xl font-bold text-cloud mb-4">
+            Parlez avec notre <span class="gradient-text">équipe</span>
+          </h2>
+          <p class="text-graphite-light text-lg max-w-2xl mx-auto">
+            Notre équipe d'experts est prête à vous accompagner dans votre
+            transformation IA
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+          <form id="contactForm" class="contact-form" method="POST" action="#" autocomplete="on" spellcheck="false"
+            novalidate>
+            <!-- Client Type Selection -->
+            <div class="form-group mb-6">
+              <label class="form-label">Type de client</label>
+              <div class="flex gap-4">
+                <label class="flex items-center cursor-pointer">
+                  <input type="radio" name="clientType" value="individual"
+                    class="mr-2 text-electric-mint focus:ring-electric-mint" checked />
+                  <span class="text-cloud">Particulier</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                  <input type="radio" name="clientType" value="company"
+                    class="mr-2 text-electric-mint focus:ring-electric-mint" />
+                  <span class="text-cloud">Entreprise</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div class="form-group">
+                <label for="name" class="form-label">Nom complet</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" maxlength="100"
+                  pattern="[A-Za-zÀ-ÿ\s\-']{2,100}" autocomplete="name" spellcheck="false" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.com"
+                  maxlength="254" autocomplete="email" spellcheck="false"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+              </div>
+              <div class="form-group company-field">
+                <label for="company" class="form-label">Entreprise</label>
+                <input type="text" id="company" name="company" class="form-input" placeholder="Nom de votre entreprise"
+                  maxlength="200" autocomplete="organization" spellcheck="false" />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Téléphone</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Votre numéro" maxlength="25"
+                  pattern="[0-9+\-\(\)\s]{8,25}" autocomplete="tel" spellcheck="false" />
+              </div>
+              <div class="form-group individual-subject">
+                <label for="subject" class="form-label">Sujet</label>
+                <select id="subject" name="subject-individual" class="form-input">
+                  <option value="" disabled selected>
+                    Choisissez un sujet
+                  </option>
+                  <option value="demo">Planifier une démo</option>
+                  <option value="pricing">Informations tarifaires</option>
+                  <option value="support">Support technique</option>
+                  <option value="partnership">Partenariat</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Company-specific fields -->
+            <div id="companyFields" class="hidden">
+              <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="form-group">
+                  <label for="position" class="form-label">Votre position</label>
+                  <select id="position" name="position" class="form-input">
+                    <option value="">Choisissez votre position</option>
+                    <option value="CEO">CEO / Dirigeant</option>
+                    <option value="CTO">CTO / Directeur Technique</option>
+                    <option value="CFO">CFO / Directeur Financier</option>
+                    <option value="COO">COO / Directeur des Opérations</option>
+                    <option value="CMO">CMO / Directeur Marketing</option>
+                    <option value="Manager">Manager / Chef de Projet</option>
+                    <option value="Developer">Développeur / Ingénieur</option>
+                    <option value="Employee">Employé</option>
+                    <option value="Consultant">Consultant</option>
+                    <option value="Other">Autre</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="revenue" class="form-label">Chiffre d'affaires annuel</label>
+                  <select id="revenue" name="revenue" class="form-input">
+                    <option value="">Sélectionnez une tranche</option>
+                    <option value="0-100k">Moins de 100K €</option>
+                    <option value="100k-500k">100K - 500K €</option>
+                    <option value="500k-1M">500K - 1M €</option>
+                    <option value="1M-5M">1M - 5M €</option>
+                    <option value="5M-10M">5M - 10M €</option>
+                    <option value="10M-50M">10M - 50M €</option>
+                    <option value="50M+">Plus de 50M €</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Subject field for companies -->
+              <div class="form-group mb-6">
+                <label for="subject-company" class="form-label">Sujet</label>
+                <select id="subject-company" name="subject-company" class="form-input">
+                  <option value="" disabled selected>
+                    Choisissez un sujet
+                  </option>
+                  <option value="demo">Planifier une démo</option>
+                  <option value="pricing">Informations tarifaires</option>
+                  <option value="support">Support technique</option>
+                  <option value="partnership">Partenariat</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group mb-6">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input"
+                placeholder="Décrivez votre projet ou vos questions..." maxlength="8000" rows="6" autocomplete="off"
+                spellcheck="true" required></textarea>
+            </div>
+            <div class="form-group mb-6">
+              <div class="g-recaptcha flex justify-center" data-sitekey="6LdVlkksAAAAALbvuGh2Iu-cz-1M8EPtrPiRDqq8">
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn-electric-mint form-submit-btn">
+                <i class="fas fa-paper-plane mr-2"></i>
+                Envoyer le message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="fixed top-20 right-5 z-50 hidden">
+      <div class="bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3 animate-slide-in">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+        <div>
+          <p class="font-semibold">Message envoyé avec succès!</p>
+          <p class="text-sm">Nous vous répondrons dans les 24h.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Handler -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const contactForm = document.getElementById('contactForm');
+        const successPopup = document.getElementById('successPopup');
+        let isSubmitting = false; // Flag to prevent duplicate submissions
+
+        if (contactForm) {
+          contactForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            e.stopPropagation(); // Stop event propagation
+            e.stopImmediatePropagation(); // Stop all other handlers
+
+            // Prevent duplicate submissions
+            if (isSubmitting) {
+              return false;
+            }
+            isSubmitting = true;
+
+            const submitBtn = this.querySelector('.form-submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Envoi en cours...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+
+            try {
+              const response = await fetch('api/contact_simple.php', {
+                method: 'POST',
+                body: formData
+              });
+
+              const result = await response.json();
+
+              if (result.success) {
+                // Show success popup
+                successPopup.classList.remove('hidden');
+                successPopup.classList.add('animate-slide-in');
+
+                // Reset form
+                contactForm.reset();
+
+                // Hide popup after 5 seconds
+                setTimeout(() => {
+                  successPopup.classList.add('animate-slide-out');
+                  setTimeout(() => {
+                    successPopup.classList.add('hidden');
+                    successPopup.classList.remove('animate-slide-out');
+                  }, 300);
+                }, 5000);
+              } else {
+                alert(result.message || 'Une erreur est survenue. Veuillez réessayer.');
+              }
+            } catch (error) {
+              console.error('Error:', error);
+              alert('Une erreur est survenue. Veuillez réessayer.');
+            } finally {
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+              isSubmitting = false; // Reset the flag
+            }
+
+            return false; // Ensure form doesn't submit normally
+          });
+        }
+
+        // Client Type Form Switching
+        const clientTypeRadios = document.querySelectorAll('input[name="clientType"]');
+        const companyFields = document.getElementById('companyFields');
+        const individualSubject = document.querySelector('.individual-subject');
+        const companyField = document.querySelector('.company-field');
+
+        function toggleFormFields() {
+          const selectedType = document.querySelector('input[name="clientType"]:checked').value;
+
+          if (selectedType === 'company') {
+            companyFields.classList.remove('hidden');
+            individualSubject.classList.add('hidden');
+            if (companyField) companyField.style.display = 'block';
+          } else {
+            companyFields.classList.add('hidden');
+            individualSubject.classList.remove('hidden');
+            if (companyField) companyField.style.display = 'block'; // Keep company field visible for both
+          }
+        }
+
+        // Add event listeners to radio buttons
+        clientTypeRadios.forEach(radio => {
+          radio.addEventListener('change', toggleFormFields);
+        });
+
+        // Initialize form state
+        toggleFormFields();
+      });
+    </script>
+
+    <style>
+      @keyframes slide-in {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-out {
+        from {
+          transform: translateX(0);
+          opacity: 1;
+        }
+
+        to {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+      }
+
+      .animate-slide-in {
+        animation: slide-in 0.3s ease-out;
+      }
+
+      .animate-slide-out {
+        animation: slide-out 0.3s ease-out;
+      }
+
+      /* Hide mobile menu on desktop (screens larger than 768px) */
+      @media (min-width: 769px) {
+
+        .mobile-menu-container,
+        .mobile-menu-btn {
+          display: none !important;
+        }
+      }
+
+      /* Show mobile menu only on mobile devices (screens 768px and below) */
+      @media (max-width: 768px) {
+
+        .mobile-menu-container,
+        .mobile-menu-btn {
+          display: block;
+        }
+      }
+    </style>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-charcoal relative overflow-hidden">
+      <div class="container mx-auto px-6 max-w-7xl relative">
+        <div class="text-center mb-20" data-aos="fade-up">
+          <div
+            class="inline-flex items-center px-4 py-2 rounded-full bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 mb-6">
+            <span class="text-electric-mint text-sm font-medium">❓ Questions fréquentes</span>
+          </div>
+          <h2 class="font-display text-4xl lg:text-5xl font-bold text-cloud mb-6">
+            Questions <span class="gradient-text">Fréquentes</span>
+          </h2>
+          <p class="text-graphite-light text-xl max-w-2xl mx-auto">
+            Trouvez rapidement les réponses à vos questions les plus courantes
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question glass-effect p-6 rounded-lg cursor-pointer">
+              <div class="flex justify-between items-center">
+                <h3 class="font-satoshi text-lg font-semibold text-cloud">
+                  Combien de temps faut-il pour déployer un agent IA
+                  personnalisé ?
+                </h3>
+                <i class="fas fa-chevron-down text-electric-mint transition-transform duration-300"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-charcoal-light p-6 rounded-lg mt-2 hidden">
+              <p class="text-graphite-light">
+                Le délai de déploiement varie selon la complexité de vos
+                besoins. Nos solutions sont conçues pour générer un ROI rapide :
+                un agent IA simple peut commencer à automatiser vos processus en
+                2-4 semaines, avec des retours sur investissement mesurables dès
+                les premiers mois. Chaque projet inclut une analyse ROI
+                prédictive pour maximiser vos économies.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question glass-effect p-6 rounded-lg cursor-pointer">
+              <div class="flex justify-between items-center">
+                <h3 class="font-satoshi text-lg font-semibold text-cloud">
+                  Comment mes données sont-elles protégées ?
+                </h3>
+                <i class="fas fa-chevron-down text-electric-mint transition-transform duration-300"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-charcoal-light p-6 rounded-lg mt-2 hidden">
+              <p class="text-graphite-light">
+                La sécurité de vos données est notre priorité absolue. Nous
+                utilisons des protocoles de chiffrement avancés, des
+                environnements sécurisés et des pratiques conformes au RGPD.
+                Tous nos agents IA sont développés avec des garanties strictes
+                de confidentialité et nous ne partageons jamais vos données avec
+                des tiers.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-question glass-effect p-6 rounded-lg cursor-pointer">
+              <div class="flex justify-between items-center">
+                <h3 class="font-satoshi text-lg font-semibold text-cloud">
+                  Puis-je intégrer l'agent IA à mes systèmes existants ?
+                </h3>
+                <i class="fas fa-chevron-down text-electric-mint transition-transform duration-300"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-charcoal-light p-6 rounded-lg mt-2 hidden">
+              <p class="text-graphite-light">
+                Absolument. Nos agents IA sont conçus pour s'intégrer facilement
+                à votre infrastructure technologique existante. Nous proposons
+                des intégrations avec la plupart des CRM, ERP, systèmes de
+                gestion et plateformes de communication courants. Notre équipe
+                technique travaillera avec vous pour assurer une intégration
+                fluide.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-question glass-effect p-6 rounded-lg cursor-pointer">
+              <div class="flex justify-between items-center">
+                <h3 class="font-satoshi text-lg font-semibold text-cloud">
+                  Quel type de support fournissez-vous après le déploiement ?
+                </h3>
+                <i class="fas fa-chevron-down text-electric-mint transition-transform duration-300"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-charcoal-light p-6 rounded-lg mt-2 hidden">
+              <p class="text-graphite-light">
+                Nous offrons un support continu après le déploiement, incluant
+                la maintenance technique, les mises à jour régulières et
+                l'optimisation des performances. Nos forfaits de support
+                comprennent également une assistance dédiée, une surveillance
+                proactive et des rapports de performance périodiques.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="faq-question glass-effect p-6 rounded-lg cursor-pointer">
+              <div class="flex justify-between items-center">
+                <h3 class="font-satoshi text-lg font-semibold text-cloud">
+                  Est-ce que l'agent IA peut apprendre et s'améliorer avec le
+                  temps ?
+                </h3>
+                <i class="fas fa-chevron-down text-electric-mint transition-transform duration-300"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-charcoal-light p-6 rounded-lg mt-2 hidden">
+              <p class="text-graphite-light">
+                Oui, tous nos agents IA sont dotés de capacités d'apprentissage
+                automatique qui leur permettent de s'améliorer continuellement.
+                Ils apprennent de chaque interaction, affinent leurs réponses et
+                s'adaptent aux nouveaux scénarios. Nous effectuons également des
+                revues périodiques pour optimiser leurs performances.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="faq-question glass-effect p-6 rounded-lg cursor-pointer">
+              <div class="flex justify-between items-center">
+                <h3 class="font-satoshi text-lg font-semibold text-cloud">
+                  Quels sont vos tarifs pour un agent IA personnalisé ?
+                </h3>
+                <i class="fas fa-chevron-down text-electric-mint transition-transform duration-300"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-charcoal-light p-6 rounded-lg mt-2 hidden">
+              <div class="text-graphite-light space-y-4">
+                <p>
+                  Nos solutions d'IA génèrent un ROI moyen de +250% en
+                  automatisant vos processus critiques et en éliminant les
+                  erreurs coûteuses. L'investissement se justifie rapidement :
+                  réduction des coûts opérationnels de 35-60%, gain de temps de
+                  40% sur les tâches répétitives, et augmentation de la
+                  productivité globale.
+                </p>
+                <p>
+                  L'automatisation intelligente élimine les erreurs humaines
+                  coûteuses (jusqu'à -95% d'erreurs), libère vos équipes des
+                  tâches répétitives, et optimise vos processus 24/7. Vos
+                  employés peuvent alors se concentrer sur des activités à plus
+                  forte valeur ajoutée.
+                </p>
+                <p>
+                  Nous établissons un devis personnalisé après notre
+                  consultation initiale, une fois que nous avons une
+                  compréhension approfondie de vos besoins spécifiques.
+                  Contactez-nous pour discuter de votre projet et obtenir une
+                  proposition sur mesure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-24 bg-charcoal relative overflow-hidden">
+      <!-- Animated Background Pattern -->
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple to-blue rounded-full filter blur-3xl animate-pulse">
+        </div>
+        <div
+          class="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-electric-mint to-purple rounded-full filter blur-3xl animate-pulse"
+          style="animation-delay: 2s;"></div>
+      </div>
+
+      <div class="container mx-auto px-6 max-w-7xl relative">
+        <div class="text-center mb-20" data-aos="fade-up">
+          <div
+            class="inline-flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r from-purple/20 to-electric-mint/20 backdrop-blur-sm border border-purple/30 mb-8 hover:scale-105 transition-transform duration-300">
+            <span class="text-purple text-sm font-semibold">📚 Centre de Connaissances IA</span>
+          </div>
+          <h2 class="font-display text-5xl lg:text-6xl font-bold text-cloud mb-8">
+            Explorez Notre <span class="gradient-text animate-gradient">Blog</span>
+          </h2>
+          <p class="text-graphite-light text-xl max-w-3xl mx-auto leading-relaxed">
+            Découvrez les dernières innovations, stratégies et insights de notre équipe d'experts
+            pour transformer votre entreprise avec l'intelligence artificielle.
+          </p>
+        </div>
+
+        <div id="blog-posts" class="grid md:grid-cols-2 gap-6 md:gap-10 lg:gap-12">
+          <!-- Blog posts will be dynamically loaded here by blog-loader.js -->
+          <!-- Latest posts including Nano Banana article will appear automatically -->
+        </div>
+
+        <!-- View All Articles Button -->
+        <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
+          <a href="blog/"
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple to-electric-mint text-white font-bold rounded-full hover:shadow-2xl hover:shadow-purple/40 transform hover:scale-105 transition-all duration-300">
+            <span>Voir tous les articles</span>
+            <i class="fas fa-arrow-right ml-3"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elegant Separator -->
+    <div class="relative bg-charcoal-light">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-electric-mint/20 to-transparent"></div>
+      <div class="container mx-auto px-6 py-12">
+        <div class="flex items-center justify-center">
+          <div class="flex items-center space-x-4">
+            <div class="h-px bg-gradient-to-r from-transparent via-electric-mint to-transparent flex-1 max-w-32"></div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-electric-mint rounded-full animate-pulse"></div>
+              <div class="w-3 h-3 bg-purple rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+              <div class="w-2 h-2 bg-blue rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+            </div>
+            <div class="h-px bg-gradient-to-r from-transparent via-electric-mint to-transparent flex-1 max-w-32"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer class="py-20 bg-charcoal-light relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-electric-mint rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-purple rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="container mx-auto px-6 max-w-7xl relative" data-aos="fade-up">
+        <!-- Main footer content -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand section -->
+          <div class="lg:col-span-1">
+            <div class="logo font-satoshi text-3xl font-bold mb-6">Safonas</div>
+            <p class="text-graphite-light mb-8 leading-relaxed">
+              Révolutionnons ensemble l'avenir de votre entreprise avec
+              l'intelligence artificielle. Des solutions sur mesure pour
+              accélérer votre croissance.
+            </p>
+          </div>
+
+          <!-- Product section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Produit
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#features"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Fonctionnalités
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  API
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Sécurité
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Ressources
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="blog/"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Webinaires
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Entreprise
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  À propos
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Carrières
+                </a>
+              </li>
+              <li>
+                <a href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Presse
+                </a>
+              </li>
+              <li>
+                <a id="footerContactLink" href="#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom footer -->
+        <div class="border-t border-graphite border-opacity-30 pt-12">
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="text-graphite text-sm mb-6 lg:mb-0 flex items-center">
+              <span>© 2025 Safonas. Tous droits réservés.</span>
+              <div class="ml-4 flex items-center text-xs">
+                <span class="w-2 h-2 bg-green-500 rounded-full mr-2 pulse"></span>
+                <span class="text-green-500">Tous systèmes opérationnels</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 text-sm">
+              <a href="legal/politique-de-confidentialite.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors">
+                Confidentialité
+              </a>
+              <a href="legal/mentions-legales.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors">
+                Mentions légales
+              </a>
+              <a href="legal/CGU_Safonas.html" class="text-graphite-light hover:text-electric-mint transition-colors">
+                CGU
+              </a>
+              <a href="legal/cookies-policy.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors">
+                Cookies
+              </a>
+              <a href="legal/disclaimer-services-ia.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors">
+                Avis IA
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Secure Configuration System (replaces environment detection) -->
+    <!-- Secure config script disabled to prevent conflicts with inline chatbot system -->
+    <!-- <script src="src/security/secure-config.js?v=2025-secure-environment" crossorigin="anonymous"></script> -->
+    <!-- Environment init script disabled to prevent chatbot conflicts -->
+    <!-- <script src="src/environment-init.js?v=2025-uuid-environment" crossorigin="anonymous"></script> -->
+
+    <!-- Supabase integration removed - using N8N webhook for data storage -->
+
+    <!-- Chatbot Session Management -->
+    <script>
+      // Session ID management for chatbot conversations
+      document.addEventListener('DOMContentLoaded', function () {
+
+        // Session ID management (inline fallback)
+        window.getChatSessionId = function () {
+          let sessionId = localStorage.getItem("safonas_chatbot_session_id");
+
+          // Clear old session ID format (session_TIMESTAMP_RANDOM)
+          if (sessionId && sessionId.startsWith('session_')) {
+            localStorage.removeItem("safonas_chatbot_session_id");
+            sessionId = null;
+          }
+
+          if (!sessionId) {
+            sessionId = crypto.randomUUID();
+            localStorage.setItem("safonas_chatbot_session_id", sessionId);
+          }
+          return sessionId;
+        };
+
+        // ULTRA SIMPLE chat save function - no complexity!
+        window.saveChatInteraction = async function (userMessage, botResponse) {
+          try {
+            const sessionId = window.getChatSessionId();
+
+            const data = {
+              user_message: userMessage,
+              chatbot_response: botResponse,
+              session_id: sessionId
+            };
+
+            const response = await fetch('api/simple-chat-save.php', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+              return { success: true, data: result.data };
+            } else {
+              return { success: false, error: result.error };
+            }
+
+          } catch (error) {
+            return { success: false, error: error.message };
+          }
+        };
+      }
+
+        // Start the initialization process
+        waitForEnvironmentSystem();
+        
+          
+      });
+    </script>
+
+    <script src="assets/js/aos.js"></script>
+    <!-- Modular JavaScript Architecture -->
+    <script src="assets/js/security.js?v=2025-secure" crossorigin="anonymous"></script>
+    <!-- Supabase integration removed -->
+    <script src="assets/js/ui-components.js?v=2025-secure" crossorigin="anonymous"></script>
+    <script src="assets/js/form-handler.js?v=2025-secure" crossorigin="anonymous"></script>
+    <!-- External chatbot script disabled to prevent conflicts with inline system -->
+    <!-- <script src="assets/js/chatbot.js?v=2025-production" crossorigin="anonymous"></script> -->
+    <!-- Main script disabled to prevent chatbot manager conflicts -->
+    <!-- <script src="assets/js/main.js?v=2025091214503291" crossorigin="anonymous"></script> -->
+
+    <!-- Blog Automator for Footer Posts -->
+    <script src="blog/assets/js/blog-loader.js"></script>
+    <script>
+      // Initialize blog automator manually with fallback data
+      document.addEventListener('DOMContentLoaded', function () {
+        // Force immediate fallback rendering
+        setTimeout(function () {
+          const blogContainer = document.getElementById('blog-posts');
+          if (blogContainer && (blogContainer.innerHTML.includes('Blog posts will be dynamically loaded') || blogContainer.children.length === 0)) {
+            console.log('Blog posts not loaded, using fallback data...');
+
+            // Fallback blog data including Nano Banana post
+            const fallbackPosts = [
+              {
+                title: "Nano Banana vs Qwen Image Edit 2509 vs Seedream-4 : Le Duel des Géants de l'IA Image 2025",
+                excerpt: "🎯 Découvrez les 3 modèles d'IA révolutionnaires qui transforment l'édition d'images en 2025. Analyse comparative complète, benchmarks, et guide d'implémentation pour choisir la solution parfaite pour vos projets.",
+                date: "2025-10-05",
+                readTime: 15,
+                category: "outils",
+                url: "blog/nano-banana-qwen-seedream-ia-editing-backup",
+                categoryName: "Outils IA",
+                categoryIcon: "fas fa-tools"
+              },
+              {
+                title: "Les 17 Meilleurs Outils IA pour Créer un Site Web Gratuitement",
+                excerpt: "Créez votre site web professionnel en quelques minutes avec ces outils révolutionnaires d'intelligence artificielle, sans aucune connaissance technique requise. Découvrez notre sélection complète.",
+                date: "2025-08-27",
+                readTime: 12,
+                category: "outils",
+                url: "outils-ai-creation-site-gratuit",
+                categoryName: "Outils IA",
+                categoryIcon: "fas fa-tools"
+              }
+            ];
+
+            const blogCards = fallbackPosts.map((post, index) => {
+              const formattedDate = new Date(post.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+              const aosDelay = 200 + (index * 100);
+
+              return `
+                <article class="blog-card group relative bg-gradient-to-br from-charcoal-light to-charcoal rounded-3xl overflow-hidden border border-graphite/20 hover:border-purple/40 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-purple/30" data-aos="fade-up" data-aos-delay="${aosDelay}">
+                  <!-- Gradient Overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-br from-purple/10 to-blue/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                  <!-- Image Container -->
+                  <div class="relative overflow-hidden h-48 md:h-56">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple via-blue to-electric-mint opacity-90"></div>
+                    <div class="absolute inset-0 bg-black/20"></div>
+                    <div class="relative h-full w-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-700">
+                      <div class="relative">
+                        <div class="absolute inset-0 bg-white/20 rounded-full blur-xl animate-pulse"></div>
+                        <i class="${post.categoryIcon} text-6xl text-white/90 relative z-10"></i>
+                      </div>
+                    </div>
+                    <!-- Category Badge -->
+                    <div class="absolute top-4 left-4">
+                      <span class="px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-full text-white text-xs font-semibold border border-white/20">
+                        <i class="${post.categoryIcon} mr-1.5"></i>${post.categoryName}
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="relative p-6 md:p-8">
+                    <!-- Date and Reading Time -->
+                    <div class="flex flex-wrap items-center gap-2 md:gap-4 mb-4 md:mb-5">
+                      <span class="inline-flex items-center px-3 py-1.5 rounded-full bg-gradient-to-r from-electric-mint/10 to-electric-mint/5 text-electric-mint text-xs font-medium border border-electric-mint/20">
+                        <i class="far fa-calendar-alt mr-1.5"></i>${formattedDate}
+                      </span>
+                      <span class="text-graphite-light text-xs font-medium">
+                        <i class="far fa-clock mr-1"></i>${post.readTime} min de lecture
+                      </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="font-satoshi text-xl md:text-2xl font-bold text-cloud mb-3 md:mb-4 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple group-hover:to-electric-mint transition-all duration-300">
+                      ${post.title}
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-graphite-light text-sm md:text-base mb-6 md:mb-8 leading-relaxed line-clamp-3">
+                      ${post.excerpt}
+                    </p>
+
+                    <!-- CTA Button -->
+                    <a href="${post.url}" class="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-purple to-blue text-white font-semibold rounded-full group-hover:shadow-lg group-hover:shadow-purple/30 transition-all duration-300 hover:scale-105">
+                      <span>Découvrir l'article</span>
+                      <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                    </a>
+                  </div>
+
+                  <!-- Decorative Corner -->
+                  <div class="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br from-purple/20 to-electric-mint/20 rounded-tl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </article>
+              `;
+            }).join('');
+
+            blogContainer.innerHTML = blogCards;
+          }
+        }, 2000);
+      });
+    </script>
+
+    <!-- iPhone 7 Safari Compatibility Polyfills -->
+    <script>
+      // iPhone 7 Safari Compatibility Polyfills
+      (function () {
+        'use strict';
+
+        // Polyfill for crypto.randomUUID for older browsers (iPhone 7 Safari)
+        if (!window.crypto || !window.crypto.randomUUID) {
+          if (!window.crypto) window.crypto = {};
+          window.crypto.randomUUID = function () {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+              var r = Math.random() * 16 | 0;
+              var v = c === 'x' ? r : (r & 0x3 | 0x8);
+              return v.toString(16);
+            });
+          };
+        }
+
+        // Old conflicting chatbot implementation removed
+        // Now using comprehensive inline system below
+
+      })();
+    </script>
+    <script>
+      // Additional initialization after DOM content loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize AOS animations with proper settings
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            duration: 800,
+            once: true,
+            offset: 120,
+            easing: 'ease-out-cubic',
+            // Enable animations on mobile with shorter duration
+            disable: function () {
+              return window.innerWidth < 480; // Only disable on very small screens
+            },
+            // Mobile-optimized settings
+            startEvent: 'DOMContentLoaded',
+            animatedClassName: 'aos-animate',
+            initClassName: 'aos-init'
+          });
+
+          // Refresh AOS to ensure all elements are detected
+          setTimeout(() => {
+            AOS.refresh();
+          }, 100);
+
+        } else {
+          // AOS library not loaded, skip animations
+        }
+
+        // Force cache refresh for mobile chatbot functionality
+
+        // CORS-resistant chatbot functionality (inline fallback)
+        // Basic chatbot UI elements (corrected selectors matching actual HTML)
+        const heroChatInput = document.getElementById('heroChatInput');
+        const heroChatInputMobile = document.getElementById('heroChatInputMobile');
+        const heroSendMessage = document.getElementById('heroSendMessage');
+        const heroSendMessageMobile = document.getElementById('heroSendMessageMobile');
+
+        // Supabase manager removed - data storage handled by N8N webhook
+        window.dataStorageManager = {
+          init() {
+            return true; // Always succeed - data handled by N8N
+          },
+          generateSessionId() {
+            return crypto.randomUUID ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+              var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+              return v.toString(16);
+            });
+          },
+          async saveChatInteraction(userMessage, botResponse, sessionId) {
+            if (!this.client) return false;
+
+            const data = {
+              user_message: userMessage,
+              chatbot_response: botResponse,
+              session_id: sessionId,
+              created_at: new Date().toISOString()
+            };
+
+            try {
+              const { data: result, error } = await this.client
+                .from('chatbot_interactions')
+                .insert([data])
+                .select();
+
+              if (error) {
+                return false;
+              }
+
+              return true;
+            } catch (error) {
+              return false;
+            }
+          }
+        };
+
+        // Initialize Supabase manager
+        window.dataStorageManager.init();
+
+        // Get or create session ID
+        window.getChatSessionIdInline = function () {
+          let sessionId = localStorage.getItem('safonas_chatbot_session_id');
+          if (!sessionId || sessionId.startsWith('session_')) {
+            sessionId = window.dataStorageManager.generateSessionId();
+            localStorage.setItem('safonas_chatbot_session_id', sessionId);
+          }
+          return sessionId;
+        };
+
+        // Enhanced chatbot functionality with platform-aware debugging and Supabase integration
+        window.sendMessageInline = async function (input, isMobile = false) {
+          if (!input) return;
+
+          const message = input.value.trim();
+          const platform = isMobile ? 'MOBILE' : 'DESKTOP';
+
+          if (!message) {
+            return;
+          }
+
+
+          try {
+            // Add user message to chat UI
+            window.addMessageToChatInline(message, "user", isMobile);
+            input.value = "";
+
+            // Add typing indicator
+            const typingId = window.addTypingIndicatorInline(isMobile);
+
+            // Direct N8N webhook call with CORS headers and error handling
+            const webhookUrl = 'https://n8n.safonas.com/webhook/d0cdbca7-2772-4e64-9230-0f06e7a53c75/chat';
+            const sessionId = window.getChatSessionIdInline();
+            const isMobileDetected = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            const requestData = {
+              message: message,
+              chatId: sessionId
+            };
+
+
+            const fetchOptions = {
+              method: 'POST',
+              mode: 'cors', // Explicitly enable CORS
+              credentials: 'omit', // Don't send cookies
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Cache-Control': 'no-cache',
+                'X-Requested-With': 'XMLHttpRequest',
+                'Origin': window.location.origin
+              },
+              body: JSON.stringify(requestData)
+            };
+
+            const startTime = Date.now();
+
+            // Add timeout to prevent hanging
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
+            fetchOptions.signal = controller.signal;
+
+            const response = await fetch(webhookUrl, fetchOptions);
+            clearTimeout(timeoutId);
+            const endTime = Date.now();
+
+
+            // Remove typing indicator
+            window.removeTypingIndicatorInline(typingId);
+
+            if (response.ok) {
+              const data = await response.json();
+
+              const botMessage = data.output || data.reply || data.response || data.message || data.chatbot_response || "Désolé, je n'ai pas pu traiter votre demande.";
+
+              // Add bot response
+              window.addMessageToChatInline(botMessage, "bot", isMobile);
+
+              // Data storage handled by N8N webhook in chat processing
+              // No local database storage needed
+
+            } else {
+
+              try {
+                const errorText = await response.text();
+              } catch (e) {
+                // Could not read error response
+              }
+
+              // REMOVE ALL "Connexion en cours" messages - use only specific errors
+              if (response.status === 404) {
+                window.addMessageToChatInline("🔧 Service temporairement indisponible. Réessayez dans un moment.", "bot", isMobile);
+              } else if (response.status >= 500) {
+                window.addMessageToChatInline("⚡ Erreur serveur. Veuillez réessayer.", "bot", isMobile);
+              } else {
+                window.addMessageToChatInline("❌ Erreur de connexion. Vérifiez votre réseau.", "bot", isMobile);
+              }
+            }
+
+          } catch (error) {
+
+            window.removeTypingIndicatorInline();
+            console.error('Chatbot fetch error:', error);
+
+            // More specific error messages
+            let errorMessage = "🚫 Erreur de connexion. Veuillez réessayer.";
+
+            if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+              errorMessage = "🔄 Service temporairement indisponible. Réessayez dans un instant.";
+            } else if (error.name === 'AbortError') {
+              errorMessage = "⏱️ Délai d'attente dépassé. Réessayez.";
+            }
+
+            window.addMessageToChatInline(errorMessage, "bot", isMobile);
+          }
+        }
+
+        // Minimal chat UI functions (make globally accessible)
+        window.addMessageToChatInline = function (message, sender, isMobile = false) {
+          const chatContainer = isMobile ?
+            document.getElementById('heroChatMessagesMobile') :
+            document.getElementById('heroChatMessages');
+
+          if (chatContainer) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            messageDiv.innerHTML = `
+              <div class="message-content">
+                ${message}
+              </div>
+              <div class="message-time">${new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}</div>
+            `;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+          }
+        }
+
+        let typingCounter = 0;
+        window.addTypingIndicatorInline = function (isMobile = false) {
+          const id = 'typing-' + (++typingCounter);
+          const chatContainer = isMobile ?
+            document.getElementById('heroChatMessagesMobile') :
+            document.getElementById('heroChatMessages');
+
+          if (chatContainer) {
+            const typingDiv = document.createElement('div');
+            typingDiv.id = id;
+            typingDiv.className = 'message bot-message typing-message';
+            typingDiv.innerHTML = `
+              <div class="message-content">
+                <div class="typing-indicator">
+                  <div class="typing-dot"></div>
+                  <div class="typing-dot"></div>
+                  <div class="typing-dot"></div>
+                </div>
+              </div>
+            `;
+            chatContainer.appendChild(typingDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+          }
+          return id;
+        }
+
+        window.removeTypingIndicatorInline = function (id) {
+          if (id) {
+            const indicator = document.getElementById(id);
+            if (indicator) indicator.remove();
+          } else {
+            // Remove all typing indicators
+            document.querySelectorAll('.typing-indicator').forEach(el => el.remove());
+          }
+        }
+
+        // Attach event listeners (fallback for when script.js fails to load)
+        setTimeout(() => {
+          // Always attach fallback listeners since external scripts fail to load due to CORS
+
+          // Desktop chat
+          if (heroChatInput) {
+            heroChatInput.addEventListener('keypress', function (e) {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                window.sendMessageInline(this, false);
+              }
+            });
+          }
+
+          // Desktop send button
+          if (heroSendMessage) {
+            heroSendMessage.addEventListener('click', function () {
+              window.sendMessageInline(heroChatInput, false);
+            });
+          }
+
+          // Mobile chat
+          if (heroChatInputMobile) {
+            heroChatInputMobile.addEventListener('keypress', function (e) {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                window.sendMessageInline(this, true);
+              }
+            });
+          }
+
+          // Mobile send button with proper touch events
+          if (heroSendMessageMobile) {
+            // Touch events for immediate response on mobile devices
+            heroSendMessageMobile.addEventListener('touchstart', function (e) {
+              e.preventDefault();
+              window.sendMessageInline(heroChatInputMobile, true);
+            }, { passive: false });
+
+            // Keep click as fallback
+            heroSendMessageMobile.addEventListener('click', function (e) {
+              // Only fire if touchstart didn't already handle it
+              if (!e.isTrusted || e.detail === 0) return;
+              window.sendMessageInline(heroChatInputMobile, true);
+            });
+          }
+
+          // Also add touch support for desktop button when on mobile
+          if (heroSendMessage && /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            heroSendMessage.addEventListener('touchstart', function (e) {
+              e.preventDefault();
+              window.sendMessageInline(heroChatInput, false);
+            }, { passive: false });
+          }
+
+        }, 1000);
+
+        // Add any additional custom initialization here
+
+        // Mobile Menu Functionality - Execute immediately without waiting for DOMContentLoaded
+        (function () {
+          // Function to initialize mobile menu
+          function initMobileMenu() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+
+            if (mobileMenuBtn && mobileMenu && mobileMenuOverlay && mobileMenuClose) {
+
+              // Remove any existing event listeners to avoid duplicates
+              mobileMenuBtn.onclick = null;
+
+              // Open mobile menu
+              mobileMenuBtn.onclick = function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                mobileMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'true');
+                mobileMenu.setAttribute('aria-hidden', 'false');
+
+                // Prevent body scroll when menu is open
+                document.body.style.overflow = 'hidden';
+
+                return false;
+              };
+
+              // Close mobile menu
+              function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+
+                // Restore body scroll
+                document.body.style.overflow = '';
+
+              }
+
+              mobileMenuClose.onclick = closeMobileMenu;
+              mobileMenuOverlay.onclick = closeMobileMenu;
+
+              // Close menu when clicking on menu links
+              const mobileNavLinks = mobileMenu.querySelectorAll('.mobile-nav-link');
+              mobileNavLinks.forEach(function (link) {
+                link.onclick = closeMobileMenu;
+              });
+
+              // Close menu with Escape key
+              document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                  closeMobileMenu();
+                }
+              });
+
+              return true;
+            } else {
+              console.error('Mobile menu elements missing:', {
+                mobileMenuBtn: !!mobileMenuBtn,
+                mobileMenu: !!mobileMenu,
+                mobileMenuOverlay: !!mobileMenuOverlay,
+                mobileMenuClose: !!mobileMenuClose
+              });
+              return false;
+            }
+          }
+
+          // Try to initialize immediately
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initMobileMenu);
+          } else {
+            initMobileMenu();
+          }
+
+          // Also try with a small delay as fallback
+          setTimeout(initMobileMenu, 100);
+        })();
+
+        // Add smooth hover effects for feature cards
+        const featureCards = document.querySelectorAll(".feature-card");
+        featureCards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-8px) scale(1.02)";
+          });
+
+          card.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0) scale(1)";
+          });
+        });
+
+        // Add glow effect to buttons on hover
+        const buttons = document.querySelectorAll(
+          ".btn-electric-mint, .border-electric-mint"
+        );
+        buttons.forEach((button) => {
+          button.addEventListener("mouseenter", function () {
+            this.style.boxShadow =
+              "0 0 30px rgba(0, 255, 148, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3)";
+          });
+
+          button.addEventListener("mouseleave", function () {
+            this.style.boxShadow = "";
+          });
+        });
+
+        // Testimonials Carousel Functionality
+        initializeTestimonialsCarousel();
+
+        // Initialize main action buttons
+        initializeActionButtons();
+
+        // Initialize FAQ functionality
+        initializeFAQ();
+      });
+
+      // Testimonials Carousel Functions
+      function initializeTestimonialsCarousel() {
+        const track = document.getElementById("testimonialTrack");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dots = document.querySelectorAll(".carousel-dot");
+
+        if (!track || !prevBtn || !nextBtn) return;
+
+        let currentSlide = 0;
+        const totalSlides = document.querySelectorAll(".carousel-item").length;
+
+        function updateCarousel() {
+          const translateX = -currentSlide * 100;
+          track.style.transform = `translateX(${translateX}%)`;
+
+          // Update dots
+          dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentSlide);
+          });
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateCarousel();
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+
+        // Event listeners
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        // Dot navigation
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentSlide = index;
+            updateCarousel();
+          });
+        });
+
+        // Auto-play every 6 seconds for better engagement
+        setInterval(nextSlide, 6000);
+      }
+
+      // Action Buttons Functionality
+      function initializeActionButtons() {
+        const startBtn = document.getElementById('heroStartBtn');
+        const demoBtn = document.getElementById('heroDemoBtn');
+        const startNowBtn = document.getElementById('startNowBtn');
+        const scheduleDemoBtn = document.getElementById('scheduleDemoBtn');
+
+        // Main hero buttons
+        if (startBtn) {
+          startBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            // Scroll to contact form
+            const contactForm = document.getElementById('contact');
+            if (contactForm) {
+              contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        }
+
+        if (demoBtn) {
+          demoBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            // Scroll to contact form and pre-select "Planifier une démo"
+            const contactForm = document.getElementById('contact');
+            const subjectSelect = document.getElementById('subject');
+
+            if (contactForm) {
+              contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+              // Pre-select demo option if available
+              if (subjectSelect) {
+                setTimeout(() => {
+                  subjectSelect.value = 'Planifier une démo';
+                }, 500);
+              }
+            }
+          });
+        }
+
+        // Secondary action buttons
+        if (startNowBtn) {
+          startNowBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const contactForm = document.getElementById('contact');
+            if (contactForm) {
+              contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        }
+
+        if (scheduleDemoBtn) {
+          scheduleDemoBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const contactForm = document.getElementById('contact');
+            const subjectSelect = document.getElementById('subject');
+
+            if (contactForm) {
+              contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+              if (subjectSelect) {
+                setTimeout(() => {
+                  subjectSelect.value = 'Planifier une démo';
+                }, 500);
+              }
+            }
+          });
+        }
+      }
+
+      // FAQ Functionality
+      function initializeFAQ() {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          const answer = item.querySelector('.faq-answer');
+          const icon = question ? question.querySelector('svg') : null;
+
+          if (question && answer) {
+            question.addEventListener('click', function () {
+              const isOpen = !answer.classList.contains('hidden');
+
+              // Close all other FAQ items
+              faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                  const otherAnswer = otherItem.querySelector('.faq-answer');
+                  const otherIcon = otherItem.querySelector('.faq-question svg');
+
+                  if (otherAnswer) {
+                    otherAnswer.classList.add('hidden');
+                  }
+                  if (otherIcon) {
+                    otherIcon.style.transform = 'rotate(0deg)';
+                  }
+                }
+              });
+
+              // Toggle current item
+              if (isOpen) {
+                answer.classList.add('hidden');
+                if (icon) {
+                  icon.style.transform = 'rotate(0deg)';
+                }
+              } else {
+                answer.classList.remove('hidden');
+                if (icon) {
+                  icon.style.transform = 'rotate(45deg)';
+                }
+              }
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+
+</html>

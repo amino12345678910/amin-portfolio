@@ -1,0 +1,242 @@
+{
+  "posts": [
+    {
+      "id": "prompt-engineering-guide-advanced",
+      "title": "Guide Complet de Prompt Engineering : Maîtrisez la Communication avec l'IA",
+      "excerpt": "🎯 Maîtrisez l'art de communiquer avec l'intelligence artificielle grâce au framework RODES et des techniques avancées. Guide expert pour optimiser vos interactions avec l'IA.",
+      "date": "2025-11-09",
+      "category": "guides",
+      "tags": ["PromptEngineering", "IA", "RODES", "Communication", "IntelligenceArtificielle"],
+      "readTime": 15,
+      "featured": true,
+      "image": "https://safonas.com/assets/blog-prompt-engineering-social.jpg",
+      "url": "prompt-engineering-guide-advanced-visual.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "seo": {
+        "description": "Guide complet de prompt engineering avec framework RODES. Techniques avancées pour maîtriser la communication avec l'IA et optimiser vos prompts.",
+        "keywords": "prompt engineering, RODES framework, communication IA, optimisation prompts, intelligence artificielle, guide IA, techniques avancées IA"
+      }
+    },
+    {
+      "id": "nano-banana-qwen-seedream-ia-editing",
+      "title": "Nano Banana vs Qwen Image Edit 2509 vs Seedream-4 : Le Duel des Géants de l'IA Image 2025",
+      "excerpt": "🎯 Découvrez les 3 modèles d'IA révolutionnaires qui transforment l'édition d'images en 2025. Analyse comparative complète, benchmarks, et guide d'implémentation pour choisir la solution parfaite pour vos projets.",
+      "date": "2025-10-05",
+      "category": "outils",
+      "tags": ["Nano Banana", "Qwen Image Edit", "Seedream-4", "IA Image", "Benchmark"],
+      "readTime": 15,
+      "featured": true,
+      "image": "https://safonas.com/assets/blog-ia-editing-showdown.jpg",
+      "url": "nano-banana-qwen-seedream-ia-editing.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 1450,
+      "likes": 95,
+      "comments": 22,
+      "seo": {
+        "description": "🎯 Découvrez les 3 modèles d'IA révolutionnaires qui transforment l'édition d'images en 2025. Analyse comparative complète, benchmarks, et guide d'implémentation pour choisir la solution parfaite pour vos projets.",
+        "keywords": "Nano Banana, Qwen Image Edit, Seedream-4, IA Image 2025, benchmark IA, édition d'images, intelligence artificielle image"
+      }
+    },
+    {
+      "id": "outils-ai-creation-site-gratuit",
+      "title": "17 Outils IA Gratuits pour Créer un Site Web Professionnel",
+      "excerpt": "🚀 Découvrez notre sélection exclusive de 17 outils d'IA 100% gratuits pour créer facilement votre site web professionnel, même sans aucune connaissance technique. Économisez des milliers d'euros en frais de développement !",
+      "date": "2025-08-27",
+      "category": "outils",
+      "tags": ["OutilsGratuits", "SiteWeb", "NoCode", "IA", "DéveloppementWeb"],
+      "readTime": 12,
+      "featured": true,
+      "image": "https://safonas.com/assets/blog-ai-tools-social.jpg",
+      "url": "outils-ai-creation-site-gratuit.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 1250,
+      "likes": 89,
+      "comments": 15,
+      "seo": {
+        "description": "🚀 Guide complet des meilleurs outils d'intelligence artificielle gratuits pour créer votre site web sans connaissances techniques. Comparatif détaillé avec avantages et inconvénients.",
+        "keywords": "outils IA gratuits, créer site web, intelligence artificielle 2025, développement web sans code, no-code, low-code, générateur site IA, Replit, Bolt.new, V0 Vercel, Claude AI, Bubble.io, création site gratuit"
+      }
+    },
+    {
+      "id": "hugging-face-spaces-guide",
+      "title": "Guide Complet Hugging Face Spaces - 400K+ Apps IA Gratuites",
+      "excerpt": "🚀 Découvrez la plus grande boutique d'applications d'IA au monde avec plus de 400 000 applications gratuites. Guide complet étape par étape pour maîtriser cette plateforme révolutionnaire et accéder à l'IA sans limites.",
+      "date": "2025-08-11",
+      "category": "plateformes",
+      "tags": ["HuggingFace", "PlateformeIA", "AppsGratuites", "MachineLearning", "IA"],
+      "readTime": 8,
+      "featured": true,
+      "image": "https://safonas.com/assets/blog-hugging-face-social.jpg",
+      "url": "hugging-face-spaces-guide.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 980,
+      "likes": 76,
+      "comments": 12,
+      "seo": {
+        "description": "🚀 Découvrez 400,000+ applications IA 100% gratuites sur Hugging Face Spaces ! 2.5M visites/semaine, 2K nouvelles apps/jour. Tutoriels complets, astuces d'experts, meilleures applications sélectionnées.",
+        "keywords": "Hugging Face Spaces, applications IA gratuites, intelligence artificielle 2025, machine learning gratuit, IA accessible, démo IA, modèles IA, NLP, vision par ordinateur, chatbots IA"
+      }
+    },
+    {
+      "id": "chatbot-whatsapp-tunisie",
+      "title": "Chatbot WhatsApp Tunisie : Guide Complet pour Entreprises",
+      "excerpt": "Découvrez comment implémenter un chatbot WhatsApp performant pour votre entreprise tunisienne. Guide complet avec astuces locales, intégration paiement et support client arabe/français.",
+      "date": "2025-07-22",
+      "category": "guides",
+      "tags": ["Chatbot", "WhatsApp", "Tunisie", "Automatisation", "SupportClient"],
+      "readTime": 10,
+      "featured": false,
+      "image": "https://safonas.com/assets/blog-whatsapp-chatbot.jpg",
+      "url": "chatbot-whatsapp-tunisie.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 756,
+      "likes": 58,
+      "comments": 9,
+      "seo": {
+        "description": "Guide complet pour créer un chatbot WhatsApp pour entreprises tunisiennes. Automatisation, support client 24/7, intégration paiement locale.",
+        "keywords": "chatbot WhatsApp Tunisie, automatisation entreprise, intelligence artificielle Tunis, support client automatique, chatbot arabe français"
+      }
+    },
+    {
+      "id": "guide-intelligence-artificielle-tunisie",
+      "title": "Guide Intelligence Artificielle Tunisie : Transformation Digitale 2025",
+      "excerpt": "Guide complet pour entreprises tunisiennes sur l'adoption de l'IA. Opportunités, défis réglementaires, solutions locales et retour sur investissement concret.",
+      "date": "2025-07-15",
+      "category": "guides",
+      "tags": ["IntelligenceArtificielle", "Tunisie", "TransformationDigitale", "Entreprises", "ROI"],
+      "readTime": 15,
+      "featured": false,
+      "image": "https://safonas.com/assets/blog-ia-tunisie-guide.jpg",
+      "url": "guide-intelligence-artificielle-tunisie.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 892,
+      "likes": 71,
+      "comments": 18,
+      "seo": {
+        "description": "Guide complet intelligence artificielle pour entreprises tunisiennes 2025. Stratégies IA, transformation digitale, opportunités locales.",
+        "keywords": "intelligence artificielle Tunisie, transformation digitale entreprises IA, guide IA Tunis, stratégie IA PME, adoption intelligence artificielle"
+      }
+    },
+    {
+      "id": "automatisation-pme-tunisie",
+      "title": "Automatisation PME Tunisie : 15 Solutions IA pour Booster votre Productivité",
+      "excerpt": "Découvrez 15 solutions d'automatisation IA adaptées aux PME tunisiennes. Guide pratique avec exemples concrets, coûts et retour sur investissement mesurable.",
+      "date": "2025-06-28",
+      "category": "outils",
+      "tags": ["Automatisation", "PME", "Tunisie", "Productivité", "IA"],
+      "readTime": 13,
+      "featured": false,
+      "image": "https://safonas.com/assets/blog-automatisation-pme.jpg",
+      "url": "automatisation-pme-tunisie.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 645,
+      "likes": 52,
+      "comments": 7,
+      "seo": {
+        "description": "15 solutions d'automatisation IA pour PME tunisiennes. Guide complet avec coûts, ROI et exemples pratiques pour augmenter productivité.",
+        "keywords": "automatisation PME Tunisie, intelligence artificielle petites entreprises, productivité IA Tunis, solutions automatisation PME"
+      }
+    },
+    {
+      "id": "ia-transformation-digitale-tunisie",
+      "title": "IA et Transformation Digitale en Tunisie : Opportunités et Stratégies Gagnantes",
+      "excerpt": "Analyse complète de l'impact de l'IA sur la transformation digitale en Tunisie. Opportunités uniques, stratégies d'implémentation et études de cas locales réussies.",
+      "date": "2025-06-10",
+      "category": "guides",
+      "tags": ["IA", "TransformationDigitale", "Tunisie", "Stratégie", "Innovation"],
+      "readTime": 11,
+      "featured": false,
+      "image": "https://safonas.com/assets/blog-ia-transformation.jpg",
+      "url": "ia-transformation-digitale-tunisie.html",
+      "author": "Équipe Safonas",
+      "published": true,
+      "views": 523,
+      "likes": 41,
+      "comments": 6,
+      "seo": {
+        "description": "IA transformation digitale Tunisie : opportunités, stratégies gagnantes et études de cas locales. Guide complet pour entreprises.",
+        "keywords": "IA transformation digitale Tunisie, intelligence artificielle entreprises Tunis, opportunités IA marché tunisien, stratégies innovation digitale"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "outils",
+      "name": "Outils IA",
+      "description": "Meilleurs outils et logiciels d'intelligence artificielle",
+      "icon": "fas fa-tools",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "plateformes",
+      "name": "Plateformes IA",
+      "description": "Plateformes et environnements pour développeurs IA",
+      "icon": "fas fa-cube",
+      "color": "#00ff94"
+    },
+    {
+      "id": "guides",
+      "name": "Guides",
+      "description": "Tutoriels et guides pratiques",
+      "icon": "fas fa-book",
+      "color": "#3b82f6"
+    }
+  ],
+  "tags": [
+    {"name": "PromptEngineering", "count": 1},
+    {"name": "RODES", "count": 1},
+    {"name": "Communication", "count": 1},
+    {"name": "IntelligenceArtificielle", "count": 1},
+    {"name": "OutilsGratuits", "count": 3},
+    {"name": "SiteWeb", "count": 2},
+    {"name": "NoCode", "count": 2},
+    {"name": "IA", "count": 7},
+    {"name": "Tunisie", "count": 5},
+    {"name": "HuggingFace", "count": 1},
+    {"name": "PlateformeIA", "count": 2},
+    {"name": "MachineLearning", "count": 2},
+    {"name": "Automatisation", "count": 2},
+    {"name": "PME", "count": 1},
+    {"name": "TransformationDigitale", "count": 3}
+  ],
+  "settings": {
+    "postsPerPage": 7,
+    "featuredPostsCount": 3,
+    "relatedPostsCount": 3,
+    "recentPostsCount": 4,
+    "popularPostsCount": 3,
+    "enableComments": true,
+    "enableSharing": true,
+    "enableNewsletter": true,
+    "defaultImage": "https://safonas.com/assets/blog-default-image.jpg",
+    "author": {
+      "name": "Équipe Safonas",
+      "bio": "Experts en intelligence artificielle et transformation digitale",
+      "avatar": "https://safonas.com/assets/team-avatar.jpg",
+      "social": {
+        "twitter": "@SafonasAI",
+        "linkedin": "safonas",
+        "github": "safonas"
+      }
+    },
+    "seo": {
+      "defaultDescription": "Blog Safonas - Votre référence en intelligence artificielle en Tunisie. Guides pratiques, outils gratuits et stratégies d'experts.",
+      "defaultKeywords": "blog IA Tunisie, intelligence artificielle, guides IA, tutoriels IA, actualités IA, outils IA gratuits",
+      "siteName": "Safonas - Agence IA Tunisie",
+      "siteUrl": "https://safonas.com",
+      "logo": "https://safonas.com/assets/safonas-logo.png"
+    }
+  },
+  "lastUpdated": "2025-11-09T12:30:00Z",
+  "version": "1.2.0"
+}

@@ -1,0 +1,235 @@
+uid=1_0 RootWebArea "Générateur de Prompts IA | Outil Gratuit | Safonas" url="http://127.0.0.1:5501/pages/generateur-prompts.html"
+  uid=1_1 ignored
+    uid=1_2 generic
+      uid=1_3 banner
+        uid=1_4 ignored
+          uid=1_5 navigation "Main navigation"
+            uid=1_6 banner
+              uid=1_7 StaticText "Safonas"
+                uid=1_8 InlineTextBox "Safonas"
+            uid=1_9 menubar orientation="horizontal"
+              uid=1_10 menuitem "Fonctionnalités"
+                uid=1_11 StaticText "Fonctionnalités"
+                  uid=1_12 InlineTextBox "Fonctionnalités"
+              uid=1_13 menuitem "Services"
+                uid=1_14 StaticText "Services"
+                  uid=1_15 InlineTextBox "Services"
+              uid=1_16 menuitem "Témoignages"
+                uid=1_17 StaticText "Témoignages"
+                  uid=1_18 InlineTextBox "Témoignages"
+              uid=1_19 menuitem "Contact"
+                uid=1_20 StaticText "Contact"
+                  uid=1_21 InlineTextBox "Contact"
+              uid=1_22 menuitem "Chat IA"
+                uid=1_23 StaticText "Chat IA"
+                  uid=1_24 InlineTextBox "Chat IA"
+      uid=1_25 ignored
+        uid=1_26 ignored
+          uid=1_27 heading "Assistant IA" level="1"
+            uid=1_28 StaticText "Assistant IA"
+              uid=1_29 InlineTextBox "Assistant IA"
+          uid=1_30 paragraph
+            uid=1_31 StaticText "Votre assistant intelligent pour créer et optimiser des prompts"
+              uid=1_32 InlineTextBox "Votre assistant intelligent pour créer et optimiser des prompts"
+        uid=1_33 generic
+          uid=1_34 ignored
+            uid=1_35 heading "Comment puis-je vous aider ?" level="2"
+              uid=1_36 StaticText "Comment puis-je vous aider ?"
+                uid=1_37 InlineTextBox "Comment puis-je vous aider ?"
+            uid=1_38 paragraph
+              uid=1_39 StaticText "Je suis votre assistant IA spécialisé dans la création de prompts efficaces. Je peux vous aider avec le framework RODES, l'optimisation d'instructions, ou répondre à vos questions sur l'intelligence artificielle."
+                uid=1_40 InlineTextBox "Je suis votre assistant IA spécialisé dans la création de prompts efficaces. Je peux "
+                uid=1_41 InlineTextBox "vous aider avec le framework RODES, l'optimisation d'instructions, ou répondre à vos "
+                uid=1_42 InlineTextBox "questions sur l'intelligence artificielle."
+            uid=1_43 ignored
+              uid=1_44 generic
+                uid=1_45 generic
+                  uid=1_46 StaticText "📝 Framework RODES"
+                    uid=1_47 InlineTextBox "📝 Framework RODES"
+                uid=1_48 generic
+                  uid=1_49 StaticText "Découvrez la méthode structurée pour créer des prompts efficaces"
+                    uid=1_50 InlineTextBox "Découvrez la méthode "
+                    uid=1_51 InlineTextBox "structurée pour créer des "
+                    uid=1_52 InlineTextBox "prompts efficaces"
+              uid=1_53 generic
+                uid=1_54 generic
+                  uid=1_55 StaticText "🎯 Prompt Marketing"
+                    uid=1_56 InlineTextBox "🎯 Prompt Marketing"
+                uid=1_57 generic
+                  uid=1_58 StaticText "Générez des instructions précises pour le marketing"
+                    uid=1_59 InlineTextBox "Générez des instructions "
+                    uid=1_60 InlineTextBox "précises pour le marketing"
+              uid=1_61 generic
+                uid=1_62 generic
+                  uid=1_63 StaticText "⚡ Optimisation"
+                    uid=1_64 InlineTextBox "⚡ Optimisation"
+                uid=1_65 generic
+                  uid=1_66 StaticText "Améliorez la qualité de vos instructions"
+                    uid=1_67 InlineTextBox "Améliorez la qualité de vos "
+                    uid=1_68 InlineTextBox "instructions"
+              uid=1_69 generic
+                uid=1_70 generic
+                  uid=1_71 StaticText "💡 Exemples Pratiques"
+                    uid=1_72 InlineTextBox "💡 Exemples Pratiques"
+                uid=1_73 generic
+                  uid=1_74 StaticText "Découvrez des cas d'usage concrets"
+                    uid=1_75 InlineTextBox "Découvrez des cas d'usage "
+                    uid=1_76 InlineTextBox "concrets"
+        uid=1_77 ignored
+          uid=1_78 textbox "Écrivez votre message..." multiline
+            uid=1_79 ignored
+            uid=1_80 generic
+          uid=1_81 button " Envoyer"
+            uid=1_82 generic
+              uid=1_83 ignored
+                uid=1_84 StaticText ""
+                  uid=1_85 InlineTextBox ""
+            uid=1_86 StaticText "Envoyer"
+              uid=1_87 InlineTextBox "Envoyer"
+      uid=1_88 contentinfo
+        uid=1_89 generic
+          uid=1_90 generic
+          uid=1_91 generic
+        uid=1_92 generic
+          uid=1_93 ignored
+            uid=1_94 ignored
+              uid=1_95 generic
+                uid=1_96 StaticText "Safonas"
+                  uid=1_97 InlineTextBox "Safonas"
+              uid=1_98 paragraph
+                uid=1_99 StaticText "Révolutionnons ensemble l'avenir de votre entreprise avec l'intelligence artificielle. Des solutions sur mesure pour accélérer votre croissance."
+                  uid=1_100 InlineTextBox "Révolutionnons ensemble l'avenir "
+                  uid=1_101 InlineTextBox "de votre entreprise avec "
+                  uid=1_102 InlineTextBox "l'intelligence artificielle. Des "
+                  uid=1_103 InlineTextBox "solutions sur mesure pour "
+                  uid=1_104 InlineTextBox "accélérer votre croissance."
+            uid=1_105 ignored
+              uid=1_106 heading "Produit" level="4"
+                uid=1_107 StaticText "Produit"
+                  uid=1_108 InlineTextBox "Produit"
+              uid=1_109 list
+                uid=1_110 listitem level="1"
+                  uid=1_111 link " Fonctionnalités" url="http://127.0.0.1:5501/index.html#features"
+                    uid=1_112 generic
+                      uid=1_113 ignored
+                        uid=1_114 StaticText ""
+                          uid=1_115 InlineTextBox ""
+                    uid=1_116 StaticText "Fonctionnalités"
+                      uid=1_117 InlineTextBox "Fonctionnalités"
+                uid=1_118 listitem level="1"
+                  uid=1_119 link " Documentation" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_120 generic
+                      uid=1_121 ignored
+                        uid=1_122 StaticText ""
+                          uid=1_123 InlineTextBox ""
+                    uid=1_124 StaticText "Documentation"
+                      uid=1_125 InlineTextBox "Documentation"
+                uid=1_126 listitem level="1"
+                  uid=1_127 link " API" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_128 generic
+                      uid=1_129 ignored
+                        uid=1_130 StaticText ""
+                          uid=1_131 InlineTextBox ""
+                    uid=1_132 StaticText "API"
+                      uid=1_133 InlineTextBox "API"
+                uid=1_134 listitem level="1"
+                  uid=1_135 link " Sécurité" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_136 generic
+                      uid=1_137 ignored
+                        uid=1_138 StaticText ""
+                          uid=1_139 InlineTextBox ""
+                    uid=1_140 StaticText "Sécurité"
+                      uid=1_141 InlineTextBox "Sécurité"
+            uid=1_142 ignored
+              uid=1_143 heading "Ressources" level="4"
+                uid=1_144 StaticText "Ressources"
+                  uid=1_145 InlineTextBox "Ressources"
+              uid=1_146 list
+                uid=1_147 listitem level="1"
+                  uid=1_148 link " Blog" url="http://127.0.0.1:5501/blog/"
+                    uid=1_149 generic
+                      uid=1_150 ignored
+                        uid=1_151 StaticText ""
+                          uid=1_152 InlineTextBox ""
+                    uid=1_153 StaticText "Blog"
+                      uid=1_154 InlineTextBox "Blog"
+                uid=1_155 listitem level="1"
+                  uid=1_156 link " Webinaires" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_157 generic
+                      uid=1_158 ignored
+                        uid=1_159 StaticText ""
+                          uid=1_160 InlineTextBox ""
+                    uid=1_161 StaticText "Webinaires"
+                      uid=1_162 InlineTextBox "Webinaires"
+                uid=1_163 listitem level="1"
+                  uid=1_164 link " Support" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_165 generic
+                      uid=1_166 ignored
+                        uid=1_167 StaticText ""
+                          uid=1_168 InlineTextBox ""
+                    uid=1_169 StaticText "Support"
+                      uid=1_170 InlineTextBox "Support"
+            uid=1_171 ignored
+              uid=1_172 heading "Entreprise" level="4"
+                uid=1_173 StaticText "Entreprise"
+                  uid=1_174 InlineTextBox "Entreprise"
+              uid=1_175 list
+                uid=1_176 listitem level="1"
+                  uid=1_177 link " À propos" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_178 generic
+                      uid=1_179 ignored
+                        uid=1_180 StaticText ""
+                          uid=1_181 InlineTextBox ""
+                    uid=1_182 StaticText "À propos"
+                      uid=1_183 InlineTextBox "À propos"
+                uid=1_184 listitem level="1"
+                  uid=1_185 link " Carrières" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_186 generic
+                      uid=1_187 ignored
+                        uid=1_188 StaticText ""
+                          uid=1_189 InlineTextBox ""
+                    uid=1_190 StaticText "Carrières"
+                      uid=1_191 InlineTextBox "Carrières"
+                uid=1_192 listitem level="1"
+                  uid=1_193 link " Presse" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_194 generic
+                      uid=1_195 ignored
+                        uid=1_196 StaticText ""
+                          uid=1_197 InlineTextBox ""
+                    uid=1_198 StaticText "Presse"
+                      uid=1_199 InlineTextBox "Presse"
+                uid=1_200 listitem level="1"
+                  uid=1_201 link " Contact" url="http://127.0.0.1:5501/index.html#contact"
+                    uid=1_202 generic
+                      uid=1_203 ignored
+                        uid=1_204 StaticText ""
+                          uid=1_205 InlineTextBox ""
+                    uid=1_206 StaticText "Contact"
+                      uid=1_207 InlineTextBox "Contact"
+          uid=1_208 ignored
+            uid=1_209 ignored
+              uid=1_210 ignored
+                uid=1_211 ignored
+                  uid=1_212 StaticText "© 2025 Safonas. Tous droits réservés."
+                    uid=1_213 InlineTextBox "© 2025 Safonas. Tous droits réservés."
+                uid=1_214 ignored
+                  uid=1_215 ignored
+                  uid=1_216 ignored
+                    uid=1_217 StaticText "Tous systèmes opérationnels"
+                      uid=1_218 InlineTextBox "Tous systèmes opérationnels"
+              uid=1_219 ignored
+                uid=1_220 link "Confidentialité" url="http://127.0.0.1:5501/legal/politique-de-confidentialite.html"
+                  uid=1_221 StaticText "Confidentialité"
+                    uid=1_222 InlineTextBox "Confidentialité"
+                uid=1_223 link "Mentions légales" url="http://127.0.0.1:5501/legal/mentions-legales.html"
+                  uid=1_224 StaticText "Mentions légales"
+                    uid=1_225 InlineTextBox "Mentions légales"
+                uid=1_226 link "CGU" url="http://127.0.0.1:5501/legal/CGU_Safonas.html"
+                  uid=1_227 StaticText "CGU"
+                    uid=1_228 InlineTextBox "CGU"
+                uid=1_229 link "Cookies" url="http://127.0.0.1:5501/legal/cookies-policy.html"
+                  uid=1_230 StaticText "Cookies"
+                    uid=1_231 InlineTextBox "Cookies"
+                uid=1_232 link "Avis IA" url="http://127.0.0.1:5501/legal/disclaimer-services-ia.html"
+                  uid=1_233 StaticText "Avis IA"
+                    uid=1_234 InlineTextBox "Avis IA"

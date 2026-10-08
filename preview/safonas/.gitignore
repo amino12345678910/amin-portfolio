@@ -1,0 +1,131 @@
+# Security and Environment Files
+.env
+.env.local
+.env.production
+.env.test
+*.key
+*.pem
+secrets/
+private/
+
+# Logs and Cache
+logs/*.log
+cache/
+tmp/
+temp/
+*.log
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# PHP Composer
+vendor/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Security Test Reports (keep structure, not reports)
+tests/security/reports/*.json
+tests/security/reports/*.html
+tests/security/reports/*.xml
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Playwright screenshots (development only)
+.playwright-mcp/
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Security monitoring logs (keep structure)
+monitoring/security/logs/*.log
+monitoring/security/alerts/*.json
+
+# Temporary uploads
+uploads/temp/
+uploads/tmp/
+
+# Database files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration overrides (keep base configs)
+config/local.conf
+config/production.conf
+config/development.conf
+
+# CPanel deployment files (keep in repo for reference)
+scripts/setup-cpanel-git.sh
+scripts/cpanel-git-deploy.sh
+
+# Development and deployment files (exclude from production)
+webhook-*.php
+webhook-*.md
+webhook-*.txt
+setup-git-repo.php
+git-test-*.php
+deploy-*.php
+manual-deploy.php
+
+# Documentation (keep structure, exclude from deployment)
+*.md
+docs/
+BLOG_GUIDE.md
+README-*.md
+CLAUDE.md
+webhook-*.md
+
+# OpenSpec files (keep for development workflow)
+!openspec/**/*.md
+!openspec/**/
+
+# Local development files
+start-local-server.js
+start-server.bat
+package.json
+package-lock.json
+node_modules/
+
+# Logs and temporary files
+*.log
+log.txt
+.tmp/
+temp/
+tmp/
+
+# System and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+.claude-flow/
+.playwright-mcp/
+
+# Backup files
+*.backup
+*.bak
+*~
+docs.zip

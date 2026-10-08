@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Erreur Serveur | Safonas</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://safonas.com/500.shtml" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .error-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+
+        .error-code {
+            font-size: 8em;
+            font-weight: bold;
+            color: #f39c12;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 300;
+        }
+
+        .error-message {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .technical-info {
+            background: #fff3cd;
+            border-left: 4px solid #f39c12;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .technical-info h3 {
+            color: #f39c12;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .technical-info p {
+            margin-bottom: 10px;
+        }
+
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            background: #d4edda;
+            color: #155724;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: #28a745;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .action-buttons {
+            margin: 30px 0;
+        }
+
+        .action-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 0 10px;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .refresh-button {
+            background: linear-gradient(45deg, #28a745, #20c997);
+        }
+
+        .error-details {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+            font-family: monospace;
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 40px 20px;
+            }
+
+            .error-code {
+                font-size: 5em;
+            }
+
+            .error-title {
+                font-size: 2em;
+            }
+
+            .error-message {
+                font-size: 1.1em;
+            }
+
+            .action-button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">500</div>
+        <div class="error-title">Erreur Serveur Interne</div>
+        <div class="error-message">
+            Une erreur inattendue s'est produite sur nos serveurs. Notre équipe a été notifiée et travaille à résoudre le problème.
+        </div>
+
+        <div class="status-indicator">
+            <div class="status-dot"></div>
+            L'incident a été signalé à l'équipe technique
+        </div>
+
+        <div class="technical-info">
+            <h3>Informations Techniques</h3>
+            <p>• Erreur de serveur interne (HTTP 500)</p>
+            <p>• L'incident a été automatiquement enregistré</p>
+            <p>• Temps de résolution estimé: 15-30 minutes</p>
+            <p>• Vos données sont sécurisées</p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="javascript:location.reload()" class="action-button refresh-button">Actualiser la Page</a>
+            <a href="/" class="action-button">Retour à l'Accueil</a>
+        </div>
+
+        <div class="error-details">
+            ID de l'erreur: <!--#echo var="UNIQUE_ID" --> |
+            Heure: <!--#echo var="DATE_LOCAL" -->
+        </div>
+    </div>
+</body>
+</html>

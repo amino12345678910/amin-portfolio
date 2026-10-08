@@ -1,0 +1,41 @@
+# =================================================================
+# UPLOADS DIRECTORY SECURITY - SAFONAS AI AGENCY
+# =================================================================
+# Maximum security for file upload directory
+# =================================================================
+
+# Completely disable PHP execution
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
+
+# Disable script execution
+Options -ExecCGI -Includes
+RemoveHandler .php .php3 .php4 .php5 .phtml .pl .py .jsp .asp .sh .cgi
+
+# Allow only safe file types
+<FilesMatch "^[^.]+$|\.(?i:gif|jpe?g|png|webp|pdf|txt|docx?|xlsx?|pptx?)$">
+    Require all granted
+</FilesMatch>
+
+# Deny everything else
+<FilesMatch ".*">
+    Require all denied
+</FilesMatch>
+
+# Force download for uploaded files (prevent execution)
+<FilesMatch "\.(gif|jpe?g|png|webp|pdf|txt|docx?|xlsx?|pptx?)$">
+    Header set Content-Disposition "attachment"
+    Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
+
+# File size limits
+LimitRequestBody 5242880  # 5MB limit for uploads
+
+# Disable directory browsing
+Options -Indexes
+
+# Block direct access to hidden files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

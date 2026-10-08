@@ -1,0 +1,58 @@
+# Robots.txt for Safonas.com - AI Agency Tunisia
+# Optimized for search engine crawling
+
+User-agent: *
+
+# Allow crawling of main content
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /docs/
+Allow: /legal/
+Allow: /pages/
+
+# Disallow crawling of sensitive directories
+Disallow: /admin/
+Disallow: /api/
+Disallow: /config/
+Disallow: /src/
+Disallow: /tests/
+Disallow: /logs/
+Disallow: /monitoring/
+Disallow: /scripts/
+Disallow: /backups/
+Disallow: /uploads/
+Disallow: /.git/
+Disallow: /.claude/
+Disallow: /.claude-flow/
+Disallow: /.playwright-mcp/
+
+# Disallow temporary and debug files
+Disallow: /*debug*
+Disallow: /*test*
+Disallow: /*check-files*
+Disallow: /error/
+
+# Allow specific important files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /.well-known/
+
+# Block specific file types from indexing
+Disallow: /*.json$
+Disallow: /*.xml$ 
+Allow: /sitemap.xml
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.tmp$
+
+# Crawl delay (respectful crawling)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://safonas.com/sitemap.xml
+
+# Additional sitemaps (if created in the future)
+# Sitemap: https://safonas.com/blog-sitemap.xml
+# Sitemap: https://safonas.com/services-sitemap.xml

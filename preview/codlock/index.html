@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CODLOCK — The Trust Layer for Cash on Delivery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0908; --panel:rgba(24,21,18,.72); --panel-2:rgba(32,28,24,.6);
+  --gold:#e2c392; --gold-2:#c8a369; --line:rgba(226,195,146,.16);
+  --line-2:rgba(255,255,255,.07);
+  --tx:#f6f0e7; --tx2:#a49a8e; --tx3:#6f675e;
+  --em:#10b981; --red:#ef4444; --blue:#60a5fa; --amber:#f5b544;
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--bg);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% -10%, rgba(226,195,146,.10), transparent 68%),
+    radial-gradient(ellipse 50% 40% at 110% 110%, rgba(16,185,129,.06), transparent 60%),
+    radial-gradient(ellipse 40% 40% at -10% 80%, rgba(96,165,250,.05), transparent 60%);
+  background-attachment:fixed;
+  color:var(--tx); font-family:var(--sans); font-size:14px; line-height:1.55;
+  -webkit-font-smoothing:antialiased; overflow:hidden;
+}
+body::after{ /* film grain + vignette, keeps the recording from looking flat */
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:60;
+  background:radial-gradient(ellipse 90% 80% at 50% 50%, transparent 55%, rgba(0,0,0,.45) 100%);
+}
+
+/* ============ shell ============ */
+.stage{
+  position:fixed; inset:0; display:flex; flex-direction:column;
+  padding:22px 30px 16px; gap:16px;
+}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:13px}
+.mark{
+  width:40px;height:40px;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,#f0d9ad,#a8824b);
+  display:grid;place-items:center;color:#0b0908;font-family:var(--serif);
+  font-weight:700;font-size:19px;box-shadow:0 0 22px rgba(226,195,146,.32);
+  animation:breathe 4.5s ease-in-out infinite;
+}
+@keyframes breathe{0%,100%{box-shadow:0 0 18px rgba(226,195,146,.24)}50%{box-shadow:0 0 34px rgba(226,195,146,.46)}}
+.bname{font-family:var(--serif);font-size:23px;font-weight:700;letter-spacing:.4px;line-height:1.1}
+.bsub{font-size:9.5px;text-transform:uppercase;letter-spacing:2.4px;color:var(--gold);opacity:.8}
+
+/* act rail */
+.rail{display:flex;align-items:center;gap:6px;flex:1;max-width:760px}
+.rstep{flex:1;min-width:0}
+.rbar{height:3px;border-radius:3px;background:rgba(255,255,255,.09);overflow:hidden}
+.rbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold-2),var(--gold));border-radius:3px}
+.rstep.done .rbar i{width:100%}
+.rlab{font-size:9px;text-transform:uppercase;letter-spacing:1.3px;color:var(--tx3);margin-top:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color .4s}
+.rstep.on .rlab{color:var(--gold)} .rstep.done .rlab{color:var(--tx2)}
+
+.controls{display:flex;align-items:center;gap:8px}
+.kbtn{
+  background:transparent;border:1px solid var(--line);color:var(--tx2);
+  padding:7px 13px;border-radius:40px;font-size:11.5px;font-weight:600;
+  font-family:var(--sans);cursor:pointer;transition:.2s;letter-spacing:.3px;
+}
+.kbtn:hover{background:rgba(226,195,146,.09);color:var(--tx);border-color:var(--gold)}
+.clock{font-family:var(--mono);font-size:11px;color:var(--tx3);min-width:42px;text-align:right}
+.sess{font-family:var(--mono);font-size:10.5px;color:var(--tx3);letter-spacing:.4px;border:1px solid var(--line-2);border-radius:20px;padding:5px 12px}
+.sess b{color:var(--gold);font-weight:500}
+
+/* ============ main grid ============ */
+.grid{flex:1;display:grid;grid-template-columns:340px 1fr;gap:22px;min-height:0}
+
+/* ---- phone ---- */
+.phone-wrap{display:flex;align-items:center;justify-content:center;min-height:0}
+.phone{
+  width:308px;height:100%;max-height:640px;border-radius:44px;
+  background:linear-gradient(160deg,#1c1916,#111 60%);
+  border:1px solid rgba(226,195,146,.2);
+  box-shadow:0 30px 80px rgba(0,0,0,.7), inset 0 0 0 6px #080706, 0 0 60px rgba(226,195,146,.06);
+  padding:9px;display:flex;flex-direction:column;position:relative;
+}
+.island{position:absolute;top:18px;left:50%;transform:translateX(-50%);width:92px;height:24px;background:#000;border-radius:20px;z-index:5}
+.pscreen{flex:1;background:#0e0c0b;border-radius:36px;overflow:hidden;display:flex;flex-direction:column;min-height:0}
+.phead{
+  padding:44px 16px 12px;display:flex;align-items:center;gap:10px;
+  border-bottom:1px solid var(--line-2);background:rgba(20,17,15,.9)
+}
+.pav{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#e2c392,#b98d52);display:grid;place-items:center;color:#0b0908;font-weight:800;font-size:12px}
+.pname{font-size:12.5px;font-weight:700}
+.phandle{font-size:9.5px;color:var(--tx3);letter-spacing:.4px}
+.plive{margin-left:auto;font-size:8px;letter-spacing:1.4px;color:var(--em);border:1px solid rgba(16,185,129,.35);border-radius:20px;padding:3px 7px}
+.chat{flex:1;overflow:hidden;padding:14px 13px;display:flex;flex-direction:column;gap:9px;justify-content:flex-end}
+.msg{
+  max-width:82%;padding:8px 12px;border-radius:16px;font-size:12.2px;line-height:1.45;
+  animation:pop .45s cubic-bezier(.16,1,.3,1) both;position:relative
+}
+.msg.them{background:#231f1b;color:#ece5da;align-self:flex-start;border-bottom-left-radius:5px}
+.msg.us{background:linear-gradient(135deg,#e2c392,#c8a369);color:#191512;align-self:flex-end;border-bottom-right-radius:5px;font-weight:500}
+.msg .tr{display:block;font-size:9.5px;opacity:.55;margin-top:4px;font-style:italic}
+.msg.sys{align-self:center;background:rgba(226,195,146,.09);border:1px solid var(--line);color:var(--gold);font-size:9.5px;letter-spacing:.8px;text-transform:uppercase;padding:5px 11px;border-radius:20px}
+@keyframes pop{from{opacity:0;transform:translateY(9px) scale(.97)}to{opacity:1;transform:none}}
+.typing{align-self:flex-start;background:#231f1b;padding:11px 14px;border-radius:16px;border-bottom-left-radius:5px;display:flex;gap:4px}
+.typing span{width:5px;height:5px;border-radius:50%;background:#7d746a;animation:blink 1.3s infinite}
+.typing span:nth-child(2){animation-delay:.18s}.typing span:nth-child(3){animation-delay:.36s}
+@keyframes blink{0%,60%,100%{opacity:.28;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+
+/* ---- right canvas ---- */
+.canvas{position:relative;min-height:0;display:flex;flex-direction:column;gap:14px}
+.scene{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  opacity:0;pointer-events:none;transform:translateY(14px) scale(.995);
+  transition:opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1);
+}
+.scene.on{opacity:1;transform:none;pointer-events:auto}
+.scene-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+
+.eyebrow{font-size:10px;letter-spacing:2.6px;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:9px}
+h1.title{font-family:var(--serif);font-size:44px;font-weight:700;line-height:1.08;letter-spacing:-.4px}
+h2.title{font-family:var(--serif);font-size:30px;font-weight:700;line-height:1.15;margin-bottom:6px}
+.lede{color:var(--tx2);font-size:14.5px;max-width:640px;margin-top:10px}
+
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px 20px;
+  backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(0,0,0,.36)
+}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.card-t{font-family:var(--serif);font-size:17px;font-weight:700}
+.chip{font-family:var(--mono);font-size:10.5px;color:var(--gold);border:1px solid var(--line);border-radius:20px;padding:4px 10px;letter-spacing:.4px}
+.chip.em{color:var(--em);border-color:rgba(16,185,129,.35)}
+.chip.blue{color:var(--blue);border-color:rgba(96,165,250,.35)}
+
+/* JSON extraction */
+.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+.kvi{
+  background:var(--panel-2);border:1px solid var(--line-2);border-radius:11px;padding:10px 13px;
+  opacity:0;transform:translateY(8px);transition:.45s cubic-bezier(.16,1,.3,1)
+}
+.kvi.in{opacity:1;transform:none;border-color:var(--line)}
+.kvk{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3)}
+.kvv{font-family:var(--mono);font-size:14px;color:var(--tx);margin-top:3px}
+.kvv.gold{color:var(--gold)}
+
+/* SKU match */
+.sku-row{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center}
+.sku-card{background:var(--panel-2);border:1px solid var(--line-2);border-radius:14px;padding:14px;text-align:center}
+.swatch{height:86px;border-radius:10px;margin-bottom:10px;box-shadow:inset 0 0 40px rgba(0,0,0,.28)}
+.match-beam{display:grid;place-items:center;gap:6px}
+.beam-line{width:64px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);background-size:200% 100%;animation:sweep 1.6s linear infinite}
+@keyframes sweep{from{background-position:200% 0}to{background-position:-200% 0}}
+
+/* try-on */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fbox{position:relative;background:linear-gradient(180deg,#181513,#100e0d);border:1px solid var(--line-2);border-radius:14px;overflow:hidden;display:grid;place-items:center;padding:8px}
+.fbox svg{width:100%;height:100%;max-height:260px}
+.fbox img{width:100%;height:100%;max-height:270px;object-fit:cover;object-position:50% 22%;border-radius:9px;display:block}
+.fbox.ai img{filter:saturate(1.04) contrast(1.02)}
+.ftag{position:absolute;top:9px;left:9px;font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx2);border:1px solid var(--line-2);background:rgba(0,0,0,.5);border-radius:20px;padding:3px 9px;z-index:3}
+.fbox.ai .ftag{color:var(--gold);border-color:var(--line)}
+.reveal{position:absolute;inset:0;background:var(--bg);z-index:2;transition:transform 1.15s cubic-bezier(.65,0,.35,1)}
+.fbox.ai.revealed .reveal{transform:translateY(-101%)}
+.scanline{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);box-shadow:0 0 14px var(--gold);z-index:3;opacity:0}
+.fbox.ai.scanning .scanline{opacity:1;animation:scan 1.15s cubic-bezier(.65,0,.35,1)}
+@keyframes scan{from{top:100%}to{top:0}}
+
+/* risk */
+.risk{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center}
+.dial{position:relative;display:grid;place-items:center}
+.dial svg{transform:rotate(-90deg)}
+.dnum{position:absolute;text-align:center}
+.dnum b{font-family:var(--serif);font-size:40px;font-weight:700;color:var(--gold);display:block;line-height:1}
+.dnum span{font-size:8.5px;letter-spacing:1.8px;color:var(--tx3);text-transform:uppercase}
+.factors{display:flex;flex-direction:column;gap:8px}
+.fac{
+  display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--tx2);
+  opacity:0;transform:translateX(-10px);transition:.4s
+}
+.fac.in{opacity:1;transform:none}
+.fac b{margin-left:auto;font-family:var(--mono);font-size:12px}
+.fac .dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.fac.up b{color:var(--red)} .fac.down b{color:var(--em)}
+.fac.up .dot{background:var(--red)} .fac.down .dot{background:var(--em)}
+
+/* payment */
+.pay{display:grid;grid-template-columns:1fr 250px;gap:18px;align-items:stretch}
+.paylist{display:flex;flex-direction:column;gap:10px}
+.payline{display:flex;justify-content:space-between;font-size:13px;padding:9px 0;border-bottom:1px dashed var(--line-2);color:var(--tx2)}
+.payline b{color:var(--tx);font-family:var(--mono)}
+.payline.total{border:0;padding-top:12px;font-size:15px}
+.payline.total b{color:var(--gold);font-size:19px;font-family:var(--serif)}
+.gravv{
+  background:linear-gradient(165deg,#14110f,#1d1915);border:1px solid var(--line);border-radius:16px;
+  padding:16px;display:flex;flex-direction:column;gap:10px;justify-content:center;text-align:center
+}
+.glogo{font-family:var(--serif);font-size:19px;font-weight:700;letter-spacing:.5px}
+.glogo em{color:var(--gold);font-style:normal}
+.gbtn{
+  background:linear-gradient(135deg,#e2c392,#c8a369);color:#141110;font-weight:800;font-size:13px;
+  padding:11px;border-radius:40px;border:0;box-shadow:0 6px 20px rgba(226,195,146,.24);position:relative;overflow:hidden
+}
+.gbtn.tapped{animation:tap .5s cubic-bezier(.16,1,.3,1)}
+@keyframes tap{40%{transform:scale(.94)}100%{transform:scale(1)}}
+.gdone{color:var(--em);font-size:12.5px;font-weight:700;opacity:0;transition:.5s;display:flex;align-items:center;justify-content:center;gap:7px}
+.gdone.in{opacity:1}
+.tick{width:17px;height:17px;border-radius:50%;border:1.6px solid var(--em);display:grid;place-items:center;font-size:10px}
+.gurl{font-family:var(--mono);font-size:9.5px;color:var(--tx3);word-break:break-all}
+
+/* settlement */
+.settle{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.scol{border-radius:16px;padding:16px 18px;border:1px solid var(--line-2);background:var(--panel-2)}
+.scol.with{border-color:rgba(16,185,129,.3);background:linear-gradient(180deg,rgba(16,185,129,.07),transparent)}
+.scol.without{border-color:rgba(239,68,68,.24)}
+.stitle{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--tx3);margin-bottom:12px}
+.scol.with .stitle{color:var(--em)} .scol.without .stitle{color:var(--red)}
+.sline{display:flex;justify-content:space-between;font-size:12.5px;color:var(--tx2);padding:5px 0}
+.sline b{font-family:var(--mono);color:var(--tx)}
+.stotal{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--tx3)}
+.stotal b{font-family:var(--serif);font-size:27px}
+.red{color:var(--red)} .em{color:var(--em)} .gold{color:var(--gold)}
+
+/* agent bus */
+.bus{display:flex;align-items:center;gap:7px;padding:11px 14px;background:var(--panel);border:1px solid var(--line-2);border-radius:14px;backdrop-filter:blur(10px)}
+.blab{font-size:8.5px;letter-spacing:2px;text-transform:uppercase;color:var(--tx3);margin-right:4px}
+.agent{
+  display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--tx3);
+  border:1px solid var(--line-2);border-radius:20px;padding:4px 10px;transition:.35s;white-space:nowrap
+}
+.agent .led{width:5px;height:5px;border-radius:50%;background:#3b352f;transition:.35s}
+.agent.on{color:var(--gold);border-color:var(--line);background:rgba(226,195,146,.07)}
+.agent.on .led{background:var(--gold);box-shadow:0 0 9px var(--gold);animation:pulse .9s ease-in-out infinite}
+.agent.ok{color:var(--em);border-color:rgba(16,185,129,.28)}
+.agent.ok .led{background:var(--em);box-shadow:none;animation:none}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.bus .arrow{color:var(--tx3);opacity:.4;font-size:10px}
+
+/* title / closing cards */
+.cardscene{align-items:flex-start;justify-content:center;display:flex;flex-direction:column;height:100%}
+.big-stat{display:flex;gap:44px;margin-top:26px}
+.stat b{font-family:var(--serif);font-size:38px;color:var(--gold);display:block;line-height:1}
+.stat span{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--tx3)}
+.fadein{opacity:0;transform:translateY(12px);transition:.7s cubic-bezier(.16,1,.3,1)}
+.fadein.in{opacity:1;transform:none}
+.note{font-size:10.5px;color:var(--tx3);border-left:2px solid var(--line);padding-left:10px;margin-top:14px;max-width:560px;line-height:1.5}
+
+/* start overlay */
+.veil{
+  position:fixed;inset:0;z-index:70;background:rgba(8,7,6,.94);backdrop-filter:blur(8px);
+  display:grid;place-items:center;text-align:center;transition:opacity .7s;
+}
+.veil.gone{opacity:0;pointer-events:none}
+.veil h1{font-family:var(--serif);font-size:58px;letter-spacing:-1px}
+.veil p{color:var(--tx2);margin-top:12px}
+.veil .keys{margin-top:26px;font-size:11px;color:var(--tx3);font-family:var(--mono);letter-spacing:.5px}
+.startbtn{margin-top:26px;background:linear-gradient(135deg,#e2c392,#c8a369);color:#0b0908;font-weight:800;font-size:14px;padding:14px 34px;border-radius:40px;border:0;cursor:pointer;box-shadow:0 10px 34px rgba(226,195,146,.28);font-family:var(--sans)}
+.startbtn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+@media (max-width:1200px){ .grid{grid-template-columns:290px 1fr} h1.title{font-size:36px} }
+</style>
+</head>
+<body>
+
+<div class="veil" id="veil">
+  <div>
+    <div class="mark" style="margin:0 auto 20px;width:56px;height:56px;font-size:26px">C</div>
+    <h1>CODLOCK</h1>
+    <p>The trust layer between the chat and the delivery.</p>
+    <button class="startbtn" id="startBtn">Open the order</button>
+    <div class="keys" style="opacity:.28">space · ← → · r</div>
+  </div>
+</div>
+
+<div class="stage">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="mark">C</div>
+      <div>
+        <div class="bname">CODLOCK</div>
+        <div class="bsub">Trust Layer for Social Commerce</div>
+      </div>
+    </div>
+    <div class="rail" id="rail"></div>
+    <div class="controls">
+      <span class="sess">Session <b>ORD-4471</b></span>
+      <span class="clock" id="clock" hidden>0:00</span>
+      <button class="kbtn" id="pauseBtn" hidden>❚❚ Pause</button>
+      <button class="kbtn" id="restartBtn" hidden>↻ Restart</button>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- phone -->
+    <div class="phone-wrap">
+      <div class="phone">
+        <div class="island"></div>
+        <div class="pscreen">
+          <div class="phead">
+            <div class="pav">A</div>
+            <div>
+              <div class="pname">Amira Ben Salah</div>
+              <div class="phandle">Instagram Direct · Ariana</div>
+            </div>
+            <div class="plive">LIVE</div>
+          </div>
+          <div class="chat" id="chat"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right canvas -->
+    <div class="canvas">
+      <div style="position:relative;flex:1;min-height:0" id="scenes">
+
+        <!-- 0 · opening -->
+        <section class="scene" data-i="0">
+          <div class="scene-body cardscene">
+            <div class="eyebrow fadein" data-d="0">Tunisia · Cash on Delivery</div>
+            <h1 class="title fadein" data-d="1">A customer says yes for free,<br>and refuses at the door.</h1>
+            <p class="lede fadein" data-d="2">Nothing was ever on the line, and the dress never looked the way they imagined.
+              The courier bills the seller for the round trip either way. CODLOCK sits between the chat and the
+              delivery and removes both reasons to refuse.</p>
+            <div class="big-stat">
+              <div class="stat fadein" data-d="3"><b>~30%</b><span>COD orders refused</span></div>
+              <div class="stat fadein" data-d="4"><b>8 TND</b><span>Courier round trip, seller pays</span></div>
+              <div class="stat fadein" data-d="5"><b>0 TND</b><span>Seller loss with CODLOCK</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 1 · ingest -->
+        <section class="scene" data-i="1">
+          <div class="scene-body">
+            <div class="eyebrow">Step 01 · Channel ingest</div>
+            <h2 class="title">The order arrives where it already happens.</h2>
+            <p class="lede">No forms, no dashboard, no behaviour change asked of the seller. CODLOCK listens on the
+              Instagram Direct and WhatsApp Business thread the sale was always going to happen in — in Darja,
+              the way customers actually write.</p>
+            <div class="card" style="margin-top:20px">
+              <div class="card-h"><div class="card-t">Inbound thread</div><div class="chip">instagram_direct · @amira.bs</div></div>
+              <div class="kv" id="ingestKV">
+                <div class="kvi"><div class="kvk">Channel</div><div class="kvv">Instagram Direct</div></div>
+                <div class="kvi"><div class="kvk">Language detected</div><div class="kvv gold">Tunisian Darja + FR</div></div>
+                <div class="kvi"><div class="kvk">Seller</div><div class="kvv">@lamaison.tn · Tunis</div></div>
+                <div class="kvi"><div class="kvk">Delivery zone</div><div class="kvv">Ariana</div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 · extraction -->
+        <section class="scene" data-i="2">
+          <div class="scene-body">
+            <div class="eyebrow">Step 02 · AI order extraction</div>
+            <h2 class="title">Free-form Darja becomes a structured order.</h2>
+            <p class="lede">An LLM reads the whole thread — code-switching, missing accents, "9ad" for price —
+              and emits the fields an order actually needs. Nobody typed any of this.</p>
+            <div class="card" style="margin-top:18px">
+              <div class="card-h"><div class="card-t">Extracted order</div><div class="chip em" id="exConf">confidence —</div></div>
+              <div class="kv" id="exKV">
+                <div class="kvi"><div class="kvk">Item</div><div class="kvv">Robe lin — beige</div></div>
+                <div class="kvi"><div class="kvk">Size</div><div class="kvv">M</div></div>
+                <div class="kvi"><div class="kvk">Colour</div><div class="kvv gold">Beige sable</div></div>
+                <div class="kvi"><div class="kvk">Quantity</div><div class="kvv">1</div></div>
+                <div class="kvi"><div class="kvk">Price</div><div class="kvv gold">149.000 TND</div></div>
+                <div class="kvi"><div class="kvk">Customer</div><div class="kvv">CUS-4471 · Amira B.</div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 · vision match -->
+        <section class="scene" data-i="3">
+          <div class="scene-body">
+            <div class="eyebrow">Step 03 · Vision matching</div>
+            <h2 class="title">"El robe beige" is resolved to one exact SKU.</h2>
+            <p class="lede">Image plus text understanding maps the words in the chat onto a real row in the
+              catalogue — the specific cut, the specific beige, the size that is actually in stock.</p>
+            <div class="card" style="margin-top:18px">
+              <div class="card-h"><div class="card-t">Catalogue resolution</div><div class="chip blue" id="skuChip">searching…</div></div>
+              <div class="sku-row">
+                <div class="sku-card">
+                  <div class="swatch" style="background:linear-gradient(150deg,#c9b79c,#8f7a5e)"></div>
+                  <div style="font-size:11px;color:var(--tx3);letter-spacing:1.2px;text-transform:uppercase">From the chat</div>
+                  <div style="font-family:var(--mono);font-size:13px;margin-top:3px">"el robe beige · taille M"</div>
+                </div>
+                <div class="match-beam">
+                  <div class="beam-line"></div>
+                  <div style="font-family:var(--mono);font-size:11px;color:var(--gold)" id="matchPct">—</div>
+                  <div class="beam-line"></div>
+                </div>
+                <div class="sku-card">
+                  <div class="swatch" style="background:linear-gradient(150deg,#ddc9a8,#a68a63)"></div>
+                  <div style="font-size:11px;color:var(--tx3);letter-spacing:1.2px;text-transform:uppercase">Catalogue SKU</div>
+                  <div style="font-family:var(--mono);font-size:13px;margin-top:3px">LIN-BEIGE-M · in stock</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4 · try-on -->
+        <section class="scene" data-i="4">
+          <div class="scene-body">
+            <div class="eyebrow">Step 04 · Virtual fitting room</div>
+            <h2 class="title">She sees herself in it before she commits.</h2>
+            <p class="lede">The generative try-on renders the SKU onto the customer's own photo — her pose,
+              her light. This is the lever on the <em>visual</em> reason for refusal: a customer who has already
+              seen herself in the dress has talked herself into it.</p>
+            <div class="card" style="margin-top:16px">
+              <div class="card-h"><div class="card-t">Fitting mirror</div><div class="chip" id="fitChip">rendering…</div></div>
+              <div class="fit">
+                <div class="fbox"><span class="ftag">Customer photo</span><div id="figBefore"></div></div>
+                <div class="fbox ai" id="fboxAI"><span class="ftag">AI try-on · LIN-BEIGE-M</span><div class="scanline"></div><div class="reveal"></div><div id="figAfter"></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5 · risk -->
+        <section class="scene" data-i="5">
+          <div class="scene-body">
+            <div class="eyebrow">Step 05 · Risk scoring</div>
+            <h2 class="title">The deposit is earned, not a flat rule.</h2>
+            <p class="lede">Per-customer order and refusal history, zone refusal rates, basket value. A clean
+              returning customer can pay nothing up front. A first order into a high-refusal zone pays more.
+              The model sharpens every time an order settles.</p>
+            <div class="card" style="margin-top:16px">
+              <div class="card-h"><div class="card-t">Risk decision</div><div class="chip" id="riskChip">scoring…</div></div>
+              <div class="risk">
+                <div class="dial">
+                  <svg viewBox="0 0 100 100" width="150" height="150">
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="7"/>
+                    <circle id="arc" cx="50" cy="50" r="42" fill="none" stroke="var(--gold)" stroke-width="7"
+                            stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264"
+                            style="transition:stroke-dashoffset 1.5s cubic-bezier(.16,1,.3,1)"/>
+                  </svg>
+                  <div class="dnum"><b id="scoreN">0</b><span>Risk score</span></div>
+                </div>
+                <div class="factors" id="factors">
+                  <div class="fac up"><span class="dot"></span>First order with this seller<b>+18</b></div>
+                  <div class="fac up"><span class="dot"></span>Ariana zone refusal rate 27%<b>+11</b></div>
+                  <div class="fac down"><span class="dot"></span>Try-on viewed · 34s dwell<b>−9</b></div>
+                  <div class="fac up"><span class="dot"></span>Basket above zone average<b>+12</b></div>
+                  <div class="fac" style="border-top:1px solid var(--line-2);padding-top:10px;margin-top:4px;color:var(--gold)">
+                    <span class="dot"></span>Deposit rate<b style="color:var(--gold)">20% · 29.800 TND</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6 · gravv -->
+        <section class="scene" data-i="6">
+          <div class="scene-body">
+            <div class="eyebrow">Step 06 · Deposit via Gravv</div>
+            <h2 class="title">One tap, into the seller's first formal account.</h2>
+            <p class="lede">CODLOCK opens a Gravv collection and returns a hosted checkout link straight into the
+              thread. For most of these sellers this is the first money they have ever taken outside cash —
+              and the account outlives the order.</p>
+            <div class="card" style="margin-top:16px">
+              <div class="card-h"><div class="card-t">Deposit collection</div><div class="chip" id="payChip">creating collection…</div></div>
+              <div class="pay">
+                <div class="paylist">
+                  <div class="payline"><span>Order total</span><b>149.000 TND</b></div>
+                  <div class="payline"><span>Deposit rate · risk 32</span><b>20%</b></div>
+                  <div class="payline"><span>Collected now</span><b>29.800 TND</b></div>
+                  <div class="payline"><span>Due to courier on delivery</span><b>119.200 TND</b></div>
+                  <div class="payline total"><span>Deposit</span><b>29.800 TND</b></div>
+                </div>
+                <div class="gravv">
+                  <div class="glogo">gr<em>a</em>vv</div>
+                  <div style="font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--tx3)">Hosted checkout</div>
+                  <button class="gbtn" id="gbtn">Pay 29.800 TND</button>
+                  <div class="gurl" id="gurl">pay.gravv.io/c/…</div>
+                  <div class="gdone" id="gdone"><span class="tick">✓</span> Deposit captured</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7 · settlement -->
+        <section class="scene" data-i="7">
+          <div class="scene-body">
+            <div class="eyebrow">Step 07 · Delivery &amp; settlement</div>
+            <h2 class="title">Even the worst case costs the seller nothing.</h2>
+            <p class="lede">The order ships. Say it goes wrong and Amira refuses at the door anyway — the
+              deposit absorbs the courier's round trip and the remainder goes back to her. The seller's loss
+              is zero, not eight dinars.</p>
+            <div class="settle" style="margin-top:18px">
+              <div class="scol without">
+                <div class="stitle">Refused · without CODLOCK</div>
+                <div class="sline"><span>Goods sold</span><b>0.000</b></div>
+                <div class="sline"><span>Courier round trip</span><b class="red">−8.000</b></div>
+                <div class="sline"><span>Deposit held</span><b>0.000</b></div>
+                <div class="stotal"><span>Seller net</span><b class="red" id="woNet">−8.000 TND</b></div>
+              </div>
+              <div class="scol with">
+                <div class="stitle">Refused · with CODLOCK</div>
+                <div class="sline"><span>Deposit collected</span><b>29.800</b></div>
+                <div class="sline"><span>Courier round trip covered</span><b class="em">−8.000</b></div>
+                <div class="sline"><span>Returned to customer</span><b>21.800</b></div>
+                <div class="stotal"><span>Seller net</span><b class="em" id="wiNet">0.000 TND</b></div>
+              </div>
+            </div>
+            <div class="note">CODLOCK eliminates the loss; it does not profit from a refusal. The remainder of the
+              deposit always returns to the customer.</div>
+          </div>
+        </section>
+
+        <!-- 8 · closing -->
+        <section class="scene" data-i="8">
+          <div class="scene-body cardscene">
+            <div class="eyebrow fadein" data-d="0">Two causes, two mechanisms</div>
+            <h1 class="title fadein" data-d="1">The deposit makes refusing <em>cost</em> something.<br>
+              The fitting room makes her <em>not want</em> to.</h1>
+            <p class="lede fadein" data-d="2">Chat in, structured order out, the item resolved to a real SKU, the
+              customer shown herself wearing it, a deposit priced to her actual risk, collected through Gravv,
+              settled on delivery. Seven steps, one thread, no behaviour change asked of anyone.</p>
+            <div class="big-stat">
+              <div class="stat fadein" data-d="3"><b>149.000</b><span>Order value TND</span></div>
+              <div class="stat fadein" data-d="4"><b>29.800</b><span>Deposit collected</span></div>
+              <div class="stat fadein" data-d="5"><b>0.000</b><span>Seller loss, worst case</span></div>
+            </div>
+            <div class="fadein" data-d="6" style="margin-top:28px;font-family:var(--serif);font-size:22px;color:var(--gold)">
+              CODLOCK — the trust layer for cash on delivery.</div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- agent bus -->
+      <div class="bus" id="bus">
+        <span class="blab">Agents</span>
+        <span class="agent" data-a="orch"><span class="led"></span>Orchestrator</span><span class="arrow">→</span>
+        <span class="agent" data-a="ext"><span class="led"></span>Extraction</span><span class="arrow">→</span>
+        <span class="agent" data-a="vis"><span class="led"></span>Vision</span><span class="arrow">→</span>
+        <span class="agent" data-a="fit"><span class="led"></span>Fitting</span><span class="arrow">→</span>
+        <span class="agent" data-a="risk"><span class="led"></span>Risk</span><span class="arrow">→</span>
+        <span class="agent" data-a="pay"><span class="led"></span>Payment · Gravv</span><span class="arrow">→</span>
+        <span class="agent" data-a="ord"><span class="led"></span>Orders</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   CODLOCK · order console
+   ============================================================ */
+
+const ACTS = ['Problem','Chat ingest','Extraction','SKU match','Try-on','Risk','Gravv deposit','Settlement','Close'];
+
+/* ---------- act rail ---------- */
+const rail = document.getElementById('rail');
+ACTS.forEach(a=>{
+  const d=document.createElement('div'); d.className='rstep';
+  d.innerHTML='<div class="rbar"><i></i></div><div class="rlab">'+a+'</div>';
+  rail.appendChild(d);
+});
+const railSteps=[...rail.children];
+
+/* ---------- run control ---------- */
+let runId=0, paused=false, t0=0, elapsed=0, jumpTo=null;
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+
+function wait(ms, id){
+  return new Promise((resolve,reject)=>{
+    let left=ms, last=performance.now(), raf;
+    const tick=now=>{
+      if(id!==runId) return reject('abort');
+      if(!paused){ left-=(now-last); }
+      last=now;
+      if(left<=0) return resolve();
+      raf=requestAnimationFrame(tick);
+    };
+    raf=requestAnimationFrame(tick);
+  });
+}
+
+/* ---------- scenes ---------- */
+const scenes=[...document.querySelectorAll('.scene')];
+function show(i){
+  scenes.forEach(s=>s.classList.toggle('on', +s.dataset.i===i));
+  railSteps.forEach((s,k)=>{
+    s.classList.toggle('on',k===i);
+    s.classList.toggle('done',k<i);
+    s.querySelector('i').style.width = k<i?'100%':(k===i?'':'0');
+  });
+  const bar=railSteps[i]?.querySelector('i');
+  if(bar){ bar.style.transition='none'; bar.style.width='0'; void bar.offsetWidth; }
+}
+function fillBar(i,ms){
+  const bar=railSteps[i]?.querySelector('i'); if(!bar) return;
+  bar.style.transition='width '+ms+'ms linear'; bar.style.width='100%';
+}
+
+/* ---------- agents ---------- */
+function agent(key,state){
+  const el=document.querySelector('.agent[data-a="'+key+'"]'); if(!el) return;
+  el.classList.remove('on','ok');
+  if(state) el.classList.add(state);
+}
+function resetAgents(){ document.querySelectorAll('.agent').forEach(a=>a.classList.remove('on','ok')); }
+
+/* ---------- chat ---------- */
+const chat=document.getElementById('chat');
+function bubble(who,text,tr){
+  const d=document.createElement('div');
+  d.className='msg '+who;
+  d.innerHTML = text + (tr?'<span class="tr">'+tr+'</span>':'');
+  chat.appendChild(d);
+  while(chat.children.length>9) chat.removeChild(chat.firstChild);
+  return d;
+}
+async function typing(id,ms){
+  const d=document.createElement('div'); d.className='typing';
+  d.innerHTML='<span></span><span></span><span></span>';
+  chat.appendChild(d);
+  try{ await wait(ms,id); } finally { d.remove(); }
+}
+
+/* ---------- fitting render ---------- */
+function figure(mode){
+  const skin='#d8b79a', hair='#241a14';
+  const dress = mode==='after'
+    ? '<path d="M74 108 L126 108 L150 268 L50 268 Z" fill="url(#lin)"/>'+
+      '<path d="M74 108 L126 108 L131 150 L69 150 Z" fill="#c9ae86" opacity=".55"/>'+
+      '<path d="M100 108 L100 268" stroke="#b39a74" stroke-width="1.2" opacity=".5"/>'
+    : '<path d="M76 108 L124 108 L128 176 L72 176 Z" fill="#8d8a85"/>'+
+      '<path d="M74 176 L126 176 L122 268 L78 268 Z" fill="#3f4b60"/>'+
+      '<path d="M100 176 L100 268" stroke="#334054" stroke-width="1.2"/>';
+  const arms = mode==='after'
+    ? '<path d="M76 112 L60 190" stroke="'+skin+'" stroke-width="11" stroke-linecap="round"/>'+
+      '<path d="M124 112 L140 190" stroke="'+skin+'" stroke-width="11" stroke-linecap="round"/>'
+    : '<path d="M78 112 L64 188" stroke="'+skin+'" stroke-width="11" stroke-linecap="round"/>'+
+      '<path d="M122 112 L136 188" stroke="'+skin+'" stroke-width="11" stroke-linecap="round"/>';
+  return `<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="lin" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#efdcbb"/><stop offset="55%" stop-color="#ddc7a2"/><stop offset="100%" stop-color="#b99e77"/>
+      </linearGradient>
+      <radialGradient id="halo" cx="50%" cy="35%"><stop offset="0%" stop-color="rgba(226,195,146,.16)"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+    </defs>
+    <rect width="200" height="300" fill="url(#halo)"/>
+    <ellipse cx="100" cy="284" rx="46" ry="7" fill="#000" opacity=".35"/>
+    ${arms}
+    <path d="M92 74 h16 v22 h-16 z" fill="${skin}"/>
+    ${dress}
+    <path d="M100 22 c-19 0 -27 14 -25 30 c1 12 6 22 12 27 c5 4 21 4 26 0 c6 -5 11 -15 12 -27 c2 -16 -6 -30 -25 -30 z" fill="${skin}"/>
+    <path d="M100 18 c-21 0 -30 13 -28 32 c6 -9 16 -12 28 -12 c12 0 22 3 28 12 c2 -19 -7 -32 -28 -32 z" fill="${hair}"/>
+    <path d="M72 44 c-3 22 2 36 6 42 c-9 -4 -12 -26 -6 -42 z" fill="${hair}"/>
+    <path d="M128 44 c3 22 -2 36 -6 42 c9 -4 12 -26 6 -42 z" fill="${hair}"/>
+  </svg>`;
+}
+document.getElementById('figBefore').innerHTML='<img src="before.jpg" alt="">';
+document.getElementById('figAfter').innerHTML='<img src="after.jpg" alt="">';
+
+/* ---------- counters ---------- */
+function countTo(el,to,ms,fmt){
+  const from=0, s=performance.now();
+  const step=now=>{
+    const p=Math.min(1,(now-s)/ms), e=1-Math.pow(1-p,3);
+    el.textContent = fmt? fmt(from+(to-from)*e) : Math.round(from+(to-from)*e);
+    if(p<1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+/* ---------- reset ---------- */
+function hardReset(){
+  chat.innerHTML=''; resetAgents();
+  document.querySelectorAll('.kvi,.fac,.fadein').forEach(e=>e.classList.remove('in'));
+  document.getElementById('arc').style.strokeDashoffset=264;
+  document.getElementById('scoreN').textContent='0';
+  document.getElementById('exConf').textContent='confidence —';
+  document.getElementById('skuChip').textContent='searching…';
+  document.getElementById('matchPct').textContent='—';
+  document.getElementById('fitChip').textContent='rendering…';
+  document.getElementById('riskChip').textContent='scoring…';
+  document.getElementById('payChip').textContent='creating collection…';
+  document.getElementById('gurl').textContent='pay.gravv.io/c/…';
+  document.getElementById('gdone').classList.remove('in');
+  document.getElementById('gbtn').classList.remove('tapped');
+  document.getElementById('fboxAI').classList.remove('revealed','scanning');
+  railSteps.forEach(s=>{s.classList.remove('on','done');const i=s.querySelector('i');i.style.transition='none';i.style.width='0';});
+}
+
+/* ---------- the film ---------- */
+const ACT = []; // ACT[i] = async (id) => {}
+
+ACT[0] = async id => {
+  show(0); fillBar(0,7000);
+  const items=[...scenes[0].querySelectorAll('.fadein')];
+  for(const el of items){ el.classList.add('in'); await wait(340,id); }
+  await wait(5200,id);
+};
+
+ACT[1] = async id => {
+  show(1); fillBar(1,13500);
+  agent('orch','on');
+  const kv=[...document.querySelectorAll('#ingestKV .kvi')];
+  kv.forEach((e,i)=>setTimeout(()=>e.classList.add('in'), 300+i*160));
+  await wait(900,id);
+  await typing(id,1100);
+  bubble('them','salem 😊 3andek el robe beige li fel post?','“hi — do you have the beige dress from the post?”');
+  await wait(1400,id);
+  await typing(id,900);
+  bubble('them','9adeh el prix? w 3andek taille M?','“how much is it? and do you have size M?”');
+  await wait(1600,id);
+  bubble('us','Ahla Amira 🤍 el robe lin beige · 149 TND · taille M mawjouda','“hi Amira — beige linen dress, 149 TND, size M in stock”');
+  await wait(1700,id);
+  await typing(id,900);
+  bubble('them','baheya, n7eb ne5ou wa7da 🙏','“great, I want to take one”');
+  await wait(1500,id);
+  bubble('sys','CODLOCK intercepted the thread');
+  agent('orch','ok');
+  await wait(1600,id);
+};
+
+ACT[2] = async id => {
+  show(2); fillBar(2,8500);
+  agent('ext','on');
+  const kv=[...document.querySelectorAll('#exKV .kvi')];
+  for(const e of kv){ e.classList.add('in'); await wait(230,id); }
+  await wait(700,id);
+  countTo(document.getElementById('exConf'),96,900,v=>'confidence '+v.toFixed(1)+'%');
+  await wait(1200,id);
+  agent('ext','ok');
+  bubble('sys','Order extracted · 6 fields');
+  await wait(4200,id);
+};
+
+ACT[3] = async id => {
+  show(3); fillBar(3,8000);
+  agent('vis','on');
+  await wait(1500,id);
+  countTo(document.getElementById('matchPct'),97.4,1000,v=>v.toFixed(1)+'% match');
+  document.getElementById('skuChip').textContent='matching against 1,284 SKUs…';
+  await wait(1500,id);
+  document.getElementById('skuChip').textContent='LIN-BEIGE-M · resolved';
+  document.getElementById('skuChip').className='chip em';
+  agent('vis','ok');
+  await wait(4500,id);
+};
+
+ACT[4] = async id => {
+  show(4); fillBar(4,12000);
+  agent('fit','on');
+  await wait(900,id);
+  const box=document.getElementById('fboxAI');
+  box.classList.add('scanning');
+  await wait(300,id);
+  box.classList.add('revealed');
+  await wait(1400,id);
+  document.getElementById('fitChip').textContent='rendered in 3.1s';
+  document.getElementById('fitChip').className='chip em';
+  box.classList.remove('scanning');
+  agent('fit','ok');
+  await wait(900,id);
+  bubble('us','Chouf 😍 hakka bech tji 3lik','“look — this is how it will look on you”');
+  await wait(2000,id);
+  await typing(id,1100);
+  bubble('them','wowww behya barcha 😍 zeda n7ebha','“wow, really beautiful — I want it”');
+  await wait(2400,id);
+};
+
+ACT[5] = async id => {
+  show(5); fillBar(5,11000);
+  agent('risk','on');
+  await wait(700,id);
+  const facs=[...document.querySelectorAll('#factors .fac')];
+  for(const f of facs){ f.classList.add('in'); await wait(420,id); }
+  document.getElementById('arc').style.strokeDashoffset = 264 - 264*0.32;
+  countTo(document.getElementById('scoreN'),32,1400);
+  await wait(1600,id);
+  document.getElementById('riskChip').textContent='moderate · deposit 20%';
+  document.getElementById('riskChip').className='chip em';
+  agent('risk','ok');
+  await wait(4200,id);
+};
+
+ACT[6] = async id => {
+  show(6); fillBar(6,12500);
+  agent('pay','on');
+  await wait(1200,id);
+  document.getElementById('payChip').textContent='collection col_9f3a71 created';
+  document.getElementById('gurl').textContent='pay.gravv.io/c/9f3a71c4';
+  await wait(900,id);
+  bubble('us','Deposit 29.800 TND — pay.gravv.io/c/9f3a71c4 🔒','“20% deposit, the rest to the courier”');
+  await wait(1800,id);
+  const b=document.getElementById('gbtn'); b.classList.add('tapped');
+  await wait(900,id);
+  document.getElementById('gdone').classList.add('in');
+  document.getElementById('payChip').textContent='captured · Gravv';
+  document.getElementById('payChip').className='chip em';
+  agent('pay','ok');
+  await wait(1100,id);
+  bubble('them','khlest ✅','“paid”');
+  await wait(1300,id);
+  bubble('sys','Deposit captured · order locked');
+  await wait(3200,id);
+};
+
+ACT[7] = async id => {
+  show(7); fillBar(7,11000);
+  agent('ord','on');
+  await wait(1400,id);
+  bubble('sys','Shipped · courier assigned · Ariana');
+  await wait(2200,id);
+  bubble('sys','Delivery refused at the door');
+  await wait(1600,id);
+  agent('ord','ok');
+  await wait(5000,id);
+};
+
+ACT[8] = async id => {
+  show(8); fillBar(8,9000);
+  document.querySelectorAll('.agent').forEach(a=>{a.classList.remove('on');a.classList.add('ok');});
+  const items=[...scenes[8].querySelectorAll('.fadein')];
+  for(const el of items){ el.classList.add('in'); await wait(330,id); }
+  await wait(6000,id);
+};
+
+/* ---------- runner ---------- */
+async function play(from=0){
+  const id=++runId;
+  hardReset();
+  t0=performance.now(); elapsed=0;
+  for(let i=from;i<ACT.length;i++){
+    if(id!==runId) return;
+    try{ await ACT[i](id); }
+    catch(e){ return; }
+    if(jumpTo!==null){ const j=jumpTo; jumpTo=null; return play(j); }
+  }
+  railSteps.forEach(s=>s.classList.add('done'));
+}
+
+/* clock */
+setInterval(()=>{
+  if(paused||!t0) return;
+  elapsed+=1;
+  const s=elapsed, m=Math.floor(s/60);
+  document.getElementById('clock').textContent = m+':'+String(s%60).padStart(2,'0');
+},1000);
+
+/* ---------- controls ---------- */
+let current=0;
+scenes.forEach(s=>new MutationObserver(()=>{ if(s.classList.contains('on')) current=+s.dataset.i; })
+  .observe(s,{attributes:true,attributeFilter:['class']}));
+
+const pauseBtn=document.getElementById('pauseBtn');
+function togglePause(){ paused=!paused; pauseBtn.textContent = paused?'▶ Resume':'❚❚ Pause'; }
+pauseBtn.onclick=togglePause;
+document.getElementById('restartBtn').onclick=()=>{ paused=false; pauseBtn.textContent='❚❚ Pause'; play(0); };
+
+addEventListener('keydown',e=>{
+  if(e.code==='Space'){ e.preventDefault(); togglePause(); }
+  else if(e.key==='ArrowRight'){ paused=false; pauseBtn.textContent='❚❚ Pause'; play(Math.min(ACT.length-1,current+1)); }
+  else if(e.key==='ArrowLeft'){ paused=false; pauseBtn.textContent='❚❚ Pause'; play(Math.max(0,current-1)); }
+  else if(e.key.toLowerCase()==='r'){ paused=false; pauseBtn.textContent='❚❚ Pause'; play(0); }
+  else if(e.key.toLowerCase()==='f'){ document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen(); }
+});
+
+/* ---------- start ---------- */
+const veil=document.getElementById('veil');
+document.getElementById('startBtn').onclick=()=>{
+  veil.classList.add('gone');
+  setTimeout(()=>play(0),450);
+};
+show(0);
+</script>
+</body>
+</html>

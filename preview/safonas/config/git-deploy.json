@@ -1,0 +1,126 @@
+{
+  "deployment": {
+    "name": "CPanel Shared Hosting",
+    "environment": "production",
+    "type": "shared-hosting"
+  },
+  "repository": {
+    "remote": "origin",
+    "production_branch": "main",
+    "staging_branch": "development"
+  },
+  "paths": {
+    "local_repo": "/Users/Anas Essafi/Desktop/Safonas",
+    "remote_root": "/home/safonas/public_html",
+    "backup_dir": "/home/safonas/backups",
+    "temp_dir": "/home/safonas/tmp/deploy"
+  },
+  "exclude_patterns": [
+    ".git/",
+    "node_modules/",
+    "*.log",
+    ".env.*",
+    "tests/",
+    "docs/",
+    ".DS_Store",
+    "Thumbs.db",
+    "*.backup",
+    "*.bak",
+    ".claude/",
+    ".claude-flow/",
+    ".vscode/",
+    ".playwright-mcp/",
+    "scripts/",
+    "config/local.conf",
+    "README-*.md",
+    "CLAUDE.md",
+    "webhook-*.php",
+    "webhook-*.md",
+    "webhook-*.txt",
+    "setup-git-repo.php",
+    "git-test-*.php",
+    "deploy-*.php",
+    "manual-deploy.php"
+  ],
+  "include_patterns": [
+    "*.html",
+    "*.php",
+    "*.css",
+    "*.js",
+    "*.json",
+    "*.xml",
+    "*.txt",
+    "*.svg",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.gif",
+    "*.ico",
+    "*.webp",
+    "*.woff",
+    "*.woff2",
+    "*.ttf",
+    "*.eot",
+    "assets/",
+    "images/",
+    "css/",
+    "js/",
+    "pages/",
+    "legal/",
+    "error/",
+    "blog/",
+    "admin/",
+    "api/",
+    "uploads/",
+    "data/",
+    "monitoring/",
+    "src/",
+    ".htaccess",
+    "favicon.*",
+    "robots.txt",
+    "sitemap*.xml",
+    "feed.xml"
+  ],
+  "backup": {
+    "enabled": true,
+    "max_backups": 10,
+    "backup_before_deploy": true,
+    "compress_backups": true
+  },
+  "deployment": {
+    "method": "rsync",
+    "delete_removed": true,
+    "preserve_permissions": true,
+    "dry_run": false
+  },
+  "notifications": {
+    "enabled": true,
+    "email": "dev@safonas.com",
+    "slack_webhook": "",
+    "discord_webhook": ""
+  },
+  "security": {
+    "verify_ssl": true,
+    "check_file_integrity": true,
+    "scan_for_malware": true,
+    "validate_php_syntax": true
+  },
+  "hooks": {
+    "pre_deploy": [
+      "php -l config/security.conf",
+      "npm run lint",
+      "npm run test"
+    ],
+    "post_deploy": [
+      "chmod 755 .",
+      "chmod 644 *.html *.css *.js *.php *.xml *.txt *.svg",
+      "chmod 755 admin api uploads data monitoring",
+      "chown -R safonas:safonas ."
+    ]
+  },
+  "rollback": {
+    "enabled": true,
+    "auto_rollback_on_error": true,
+    "rollback_timeout": 300
+  }
+}

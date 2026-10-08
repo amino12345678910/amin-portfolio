@@ -1,0 +1,32 @@
+# =================================================================
+# SOURCE CODE DIRECTORY SECURITY - SAFONAS AI AGENCY
+# =================================================================
+# Protect source code and sensitive scripts
+# =================================================================
+
+# Allow only specific safe files to be accessed
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|svg|woff|woff2|ttf|otf)$">
+    Require all granted
+</FilesMatch>
+
+# Deny access to PHP source files (unless explicitly needed)
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
+
+# Block access to development and configuration files
+<FilesMatch "\.(inc|conf|config|ini|log|sql|json|xml|yml|yaml|env|bak|backup|old|tmp|class|vendor)$">
+    Require all denied
+</FilesMatch>
+
+# Disable directory browsing
+Options -Indexes
+
+# Remove script execution for non-essential files
+RemoveHandler .php .php3 .php4 .php5 .phtml .pl .py .jsp .asp .sh .cgi
+
+# Security headers for assets
+<FilesMatch "\.(css|js)$">
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Cache-Control "public, max-age=31536000"
+</FilesMatch>

@@ -1,0 +1,1767 @@
+uid=1_0 RootWebArea "Nano Banana vs Qwen Image Edit 2509 vs Seedream-4 : 3 Outils IA GRATUITS pour Édition d'Images 2025 | Safonas" url="https://safonas.com/blog/nano-banana-qwen-seedream-ia-editing"
+  uid=1_1 ignored
+    uid=1_2 generic
+      uid=1_3 banner
+        uid=1_4 ignored
+          uid=1_5 navigation "Main navigation"
+            uid=1_6 banner
+              uid=1_7 StaticText "Safonas"
+                uid=1_8 InlineTextBox "Safonas"
+            uid=1_9 menubar orientation="horizontal"
+              uid=1_10 menuitem "Fonctionnalités"
+                uid=1_11 StaticText "Fonctionnalités"
+                  uid=1_12 InlineTextBox "Fonctionnalités"
+              uid=1_13 menuitem "Services"
+                uid=1_14 StaticText "Services"
+                  uid=1_15 InlineTextBox "Services"
+              uid=1_16 menuitem "Témoignages"
+                uid=1_17 StaticText "Témoignages"
+                  uid=1_18 InlineTextBox "Témoignages"
+              uid=1_19 menuitem "Contact"
+                uid=1_20 StaticText "Contact"
+                  uid=1_21 InlineTextBox "Contact"
+      uid=1_22 ignored
+      uid=1_23 main
+        uid=1_24 generic
+          uid=1_25 generic
+            uid=1_26 navigation
+              uid=1_27 ignored
+                uid=1_28 ignored
+                  uid=1_29 ignored
+                    uid=1_30 link " Accueil" url="https://safonas.com/"
+                      uid=1_31 generic
+                        uid=1_32 ignored
+                          uid=1_33 StaticText ""
+                            uid=1_34 InlineTextBox ""
+                      uid=1_35 ignored
+                        uid=1_36 StaticText "Accueil"
+                          uid=1_37 InlineTextBox "Accueil"
+                    uid=1_38 generic
+                      uid=1_39 ignored
+                        uid=1_40 StaticText ""
+                          uid=1_41 InlineTextBox ""
+                    uid=1_42 link " Blog" url="https://safonas.com/index.html#blog"
+                      uid=1_43 generic
+                        uid=1_44 ignored
+                          uid=1_45 StaticText ""
+                            uid=1_46 InlineTextBox ""
+                      uid=1_47 ignored
+                        uid=1_48 StaticText "Blog"
+                          uid=1_49 InlineTextBox "Blog"
+                    uid=1_50 generic
+                      uid=1_51 ignored
+                        uid=1_52 StaticText ""
+                          uid=1_53 InlineTextBox ""
+                    uid=1_54 ignored
+                      uid=1_55 generic
+                        uid=1_56 ignored
+                          uid=1_57 StaticText ""
+                            uid=1_58 InlineTextBox ""
+                      uid=1_59 ignored
+                        uid=1_60 StaticText "Outils IA"
+                          uid=1_61 InlineTextBox "Outils IA"
+            uid=1_62 ignored
+              uid=1_63 generic
+                uid=1_64 generic
+                  uid=1_65 ignored
+                    uid=1_66 StaticText ""
+                      uid=1_67 InlineTextBox ""
+                uid=1_68 ignored
+                  uid=1_69 StaticText "Analyse Comparative"
+                    uid=1_70 InlineTextBox "Analyse Comparative"
+                uid=1_71 generic
+              uid=1_72 heading "3 Outils IA 100% GRATUITS pour Édition d'Images" level="1"
+                uid=1_73 StaticText "3 Outils IA "
+                  uid=1_74 InlineTextBox "3 Outils IA "
+                uid=1_75 StaticText "100% GRATUITS"
+                  uid=1_76 InlineTextBox "100% GRATUITS"
+                uid=1_77 StaticText " pour Édition d'Images"
+                  uid=1_78 InlineTextBox " pour Édition d'Images"
+              uid=1_79 paragraph
+                uid=1_80 StaticText "🎯 Découvrez Nano Banana, Qwen Image Edit 2509 et Seedream-4 - trois modèles d'IA révolutionnaires "
+                  uid=1_81 InlineTextBox "🎯 Découvrez Nano Banana, Qwen Image Edit 2509 et Seedream-4 - trois "
+                  uid=1_82 InlineTextBox "modèles d'IA révolutionnaires "
+                uid=1_83 strong
+                  uid=1_84 StaticText "entièrement gratuits pour les particuliers"
+                    uid=1_85 InlineTextBox "entièrement gratuits pour les particuliers"
+                uid=1_86 StaticText ". Guides complets d'utilisation, accès direct, et astuces pour transformer vos images sans aucun coût."
+                  uid=1_87 InlineTextBox ". Guides "
+                  uid=1_88 InlineTextBox "complets d'utilisation, accès direct, et astuces pour transformer vos images sans "
+                  uid=1_89 InlineTextBox "aucun coût."
+              uid=1_90 ignored
+                uid=1_91 ignored
+                  uid=1_92 generic
+                    uid=1_93 ignored
+                      uid=1_94 StaticText ""
+                        uid=1_95 InlineTextBox ""
+                  uid=1_96 ignored
+                    uid=1_97 StaticText "5 Octobre 2025"
+                      uid=1_98 InlineTextBox "5 Octobre 2025"
+                uid=1_99 ignored
+                  uid=1_100 generic
+                    uid=1_101 ignored
+                      uid=1_102 StaticText ""
+                        uid=1_103 InlineTextBox ""
+                  uid=1_104 ignored
+                    uid=1_105 StaticText "Par Équipe Safonas"
+                      uid=1_106 InlineTextBox "Par Équipe Safonas"
+                uid=1_107 ignored
+                  uid=1_108 generic
+                    uid=1_109 ignored
+                      uid=1_110 StaticText ""
+                        uid=1_111 InlineTextBox ""
+                  uid=1_112 ignored
+                    uid=1_113 StaticText "15 min de lecture"
+                      uid=1_114 InlineTextBox "15 min de lecture"
+                uid=1_115 ignored
+                  uid=1_116 generic
+                    uid=1_117 ignored
+                      uid=1_118 StaticText ""
+                        uid=1_119 InlineTextBox ""
+                  uid=1_120 ignored
+                    uid=1_121 StaticText "IA • Benchmark • Outils"
+                      uid=1_122 InlineTextBox "IA • Benchmark • Outils"
+            uid=1_123 ignored
+              uid=1_124 ignored
+                uid=1_125 ignored
+                  uid=1_126 generic
+                    uid=1_127 ignored
+                      uid=1_128 StaticText ""
+                        uid=1_129 InlineTextBox ""
+                  uid=1_130 generic
+                    uid=1_131 StaticText "Nano Banana vs Seedream-4"
+                      uid=1_132 InlineTextBox "Nano Banana vs Seedream-4"
+                  uid=1_133 generic
+                    uid=1_134 StaticText "Duel des Géants IA Image"
+                      uid=1_135 InlineTextBox "Duel des Géants IA Image"
+        uid=1_136 article
+          uid=1_137 ignored
+            uid=1_138 ignored
+              uid=1_139 ignored
+                uid=1_140 ignored
+                  uid=1_141 generic
+                    uid=1_142 ignored
+                      uid=1_143 StaticText ""
+                        uid=1_144 InlineTextBox ""
+                  uid=1_145 ignored
+                    uid=1_146 heading "🎁 Introduction : 3 Géants de l'IA 100% GRATUITS pour les Particuliers" level="3"
+                      uid=1_147 StaticText "🎁 Introduction : 3 Géants de l'IA 100% GRATUITS pour les Particuliers"
+                        uid=1_148 InlineTextBox "🎁 Introduction : 3 Géants de l'IA 100% GRATUITS pour les Particuliers"
+                    uid=1_149 paragraph
+                      uid=1_150 strong
+                        uid=1_151 StaticText "LA RÉVOLUTION GRATUITE A COMMENCÉ !"
+                          uid=1_152 InlineTextBox "LA RÉVOLUTION GRATUITE A COMMENCÉ !"
+                      uid=1_153 StaticText " Trois géants technologiques — "
+                        uid=1_154 InlineTextBox " Trois géants technologiques — "
+                      uid=1_155 strong
+                        uid=1_156 StaticText "Google"
+                          uid=1_157 InlineTextBox "Google"
+                      uid=1_158 StaticText ", "
+                        uid=1_159 InlineTextBox ", "
+                      uid=1_160 strong
+                        uid=1_161 StaticText "Alibaba"
+                          uid=1_162 InlineTextBox "Alibaba"
+                      uid=1_163 StaticText " et "
+                        uid=1_164 InlineTextBox " et "
+                      uid=1_165 strong
+                        uid=1_166 StaticText "ByteDance"
+                          uid=1_167 InlineTextBox "ByteDance"
+                      uid=1_168 StaticText " — ont mis à disposition des modèles d'IA révolutionnaires "
+                        uid=1_169 InlineTextBox " — ont mis à disposition des "
+                        uid=1_170 InlineTextBox "modèles d'IA révolutionnaires "
+                      uid=1_171 strong
+                        uid=1_172 StaticText "entièrement gratuits pour les particuliers"
+                          uid=1_173 InlineTextBox "entièrement gratuits pour les particuliers"
+                      uid=1_174 StaticText ". Fini les coûts prohibitifs, place à la créativité sans limites !"
+                        uid=1_175 InlineTextBox ". Fini les coûts prohibitifs, place à la créativité sans limites !"
+                    uid=1_176 ignored
+                      uid=1_177 heading "🆓 CE QUE VOUS AUREZ ACCÈS GRATUITEMENT :" level="4"
+                        uid=1_178 StaticText "🆓 CE QUE VOUS AUREZ ACCÈS GRATUITEMENT :"
+                          uid=1_179 InlineTextBox "🆓 CE QUE VOUS AUREZ ACCÈS GRATUITEMENT :"
+                      uid=1_180 list
+                        uid=1_181 listitem level="1"
+                          uid=1_182 StaticText "✅ "
+                            uid=1_183 InlineTextBox "✅ "
+                          uid=1_184 strong
+                            uid=1_185 StaticText "Nano Banana"
+                              uid=1_186 InlineTextBox "Nano Banana"
+                          uid=1_187 StaticText " : Éditeur d'images de Google, accès gratuit via Gemini"
+                            uid=1_188 InlineTextBox " : Éditeur d'images de Google, accès gratuit via Gemini"
+                        uid=1_189 listitem level="1"
+                          uid=1_190 StaticText "✅ "
+                            uid=1_191 InlineTextBox "✅ "
+                          uid=1_192 strong
+                            uid=1_193 StaticText "Qwen Image Edit 2509"
+                              uid=1_194 InlineTextBox "Qwen Image Edit 2509"
+                          uid=1_195 StaticText " : Modèle 20B paramètres, accès gratuit via chat.qwen.ai"
+                            uid=1_196 InlineTextBox " : Modèle 20B paramètres, accès gratuit via chat.qwen.ai"
+                        uid=1_197 listitem level="1"
+                          uid=1_198 StaticText "✅ "
+                            uid=1_199 InlineTextBox "✅ "
+                          uid=1_200 strong
+                            uid=1_201 StaticText "Seedream-4"
+                              uid=1_202 InlineTextBox "Seedream-4"
+                          uid=1_203 StaticText " : Résolution 4K, accès gratuit via LMArena.ai"
+                            uid=1_204 InlineTextBox " : Résolution 4K, accès gratuit via LMArena.ai"
+                        uid=1_205 listitem level="1"
+                          uid=1_206 StaticText "✅ "
+                            uid=1_207 InlineTextBox "✅ "
+                          uid=1_208 strong
+                            uid=1_209 StaticText "Guides complets"
+                              uid=1_210 InlineTextBox "Guides complets"
+                          uid=1_211 StaticText " : Instructions pas-à-pas pour utiliser chaque outil"
+                            uid=1_212 InlineTextBox " : Instructions pas-à-pas pour utiliser chaque outil"
+                        uid=1_213 listitem level="1"
+                          uid=1_214 StaticText "✅ "
+                            uid=1_215 InlineTextBox "✅ "
+                          uid=1_216 strong
+                            uid=1_217 StaticText "Aucune carte bancaire"
+                              uid=1_218 InlineTextBox "Aucune carte bancaire"
+                          uid=1_219 StaticText " : Vraiment gratuit, sans engagement"
+                            uid=1_220 InlineTextBox " : Vraiment gratuit, sans engagement"
+              uid=1_221 ignored
+                uid=1_222 ignored
+                  uid=1_223 generic
+                    uid=1_224 StaticText "🍌"
+                      uid=1_225 InlineTextBox "🍌"
+                  uid=1_226 generic
+                    uid=1_227 StaticText "Nano Banana"
+                      uid=1_228 InlineTextBox "Nano Banana"
+                  uid=1_229 generic
+                    uid=1_230 StaticText "100% GRATUIT"
+                      uid=1_231 InlineTextBox "100% GRATUIT"
+                  uid=1_232 generic
+                    uid=1_233 StaticText "Accès via Gemini"
+                      uid=1_234 InlineTextBox "Accès via Gemini"
+                uid=1_235 ignored
+                  uid=1_236 generic
+                    uid=1_237 StaticText "🐼"
+                      uid=1_238 InlineTextBox "🐼"
+                  uid=1_239 generic
+                    uid=1_240 StaticText "Qwen Image Edit"
+                      uid=1_241 InlineTextBox "Qwen Image Edit"
+                  uid=1_242 generic
+                    uid=1_243 StaticText "100% GRATUIT"
+                      uid=1_244 InlineTextBox "100% GRATUIT"
+                  uid=1_245 generic
+                    uid=1_246 StaticText "Open Source"
+                      uid=1_247 InlineTextBox "Open Source"
+                uid=1_248 ignored
+                  uid=1_249 generic
+                    uid=1_250 StaticText "✨"
+                      uid=1_251 InlineTextBox "✨"
+                  uid=1_252 generic
+                    uid=1_253 StaticText "Seedream-4"
+                      uid=1_254 InlineTextBox "Seedream-4"
+                  uid=1_255 generic
+                    uid=1_256 StaticText "100% GRATUIT"
+                      uid=1_257 InlineTextBox "100% GRATUIT"
+                  uid=1_258 generic
+                    uid=1_259 StaticText "LMArena.ai"
+                      uid=1_260 InlineTextBox "LMArena.ai"
+              uid=1_261 heading " 🍌 Nano Banana : 100% GRATUIT via Gemini" level="2"
+                uid=1_262 generic
+                  uid=1_263 ignored
+                    uid=1_264 StaticText ""
+                      uid=1_265 InlineTextBox ""
+                uid=1_266 StaticText " 🍌 Nano Banana : 100% GRATUIT via Gemini"
+                  uid=1_267 InlineTextBox " 🍌 Nano Banana : 100% GRATUIT via Gemini"
+              uid=1_268 ignored
+                uid=1_269 ignored
+                  uid=1_270 generic
+                    uid=1_271 generic
+                      uid=1_272 ignored
+                        uid=1_273 StaticText ""
+                          uid=1_274 InlineTextBox ""
+                    uid=1_275 ignored
+                      uid=1_276 StaticText "ACCÈS 100% GRATUIT - AUCUN COÛT CACHÉ"
+                        uid=1_277 InlineTextBox "ACCÈS 100% GRATUIT - AUCUN COÛT CACHÉ"
+                  uid=1_278 paragraph
+                    uid=1_279 strong
+                      uid=1_280 StaticText "Nano Banana"
+                        uid=1_281 InlineTextBox "Nano Banana"
+                    uid=1_282 StaticText " est l'éditeur d'images dernière génération de Google, "
+                      uid=1_283 InlineTextBox " est l'éditeur d'images dernière génération de Google, "
+                    uid=1_284 strong
+                      uid=1_285 StaticText "entièrement gratuit pour les particuliers"
+                        uid=1_286 InlineTextBox "entièrement gratuit pour les particuliers"
+                    uid=1_287 StaticText " via l'interface Gemini. Fini les abonnements coûteux, profitez de la technologie de pointe de Google sans dépenser un centime !"
+                      uid=1_288 InlineTextBox " via l'interface Gemini. Fini les "
+                      uid=1_289 InlineTextBox "abonnements coûteux, profitez de la technologie de pointe de Google sans dépenser un centime !"
+                uid=1_290 ignored
+                  uid=1_291 heading "🚀 GUIDE D'UTILISATION - PAS À PAS" level="4"
+                    uid=1_292 StaticText "🚀 GUIDE D'UTILISATION - PAS À PAS"
+                      uid=1_293 InlineTextBox "🚀 GUIDE D'UTILISATION - PAS À PAS"
+                  uid=1_294 ignored
+                    uid=1_295 ignored
+                      uid=1_296 ignored
+                        uid=1_297 StaticText "1"
+                          uid=1_298 InlineTextBox "1"
+                      uid=1_299 ignored
+                        uid=1_300 strong
+                          uid=1_301 StaticText "Rendez-vous sur Gemini"
+                            uid=1_302 InlineTextBox "Rendez-vous sur Gemini"
+                        uid=1_303 paragraph
+                          uid=1_304 StaticText "Allez sur "
+                            uid=1_305 InlineTextBox "Allez sur "
+                          uid=1_306 link "gemini.google.com" url="https://gemini.google.com/"
+                            uid=1_307 StaticText "gemini.google.com"
+                              uid=1_308 InlineTextBox "gemini.google.com"
+                          uid=1_309 StaticText " et connectez-vous avec votre compte Google"
+                            uid=1_310 InlineTextBox " et connectez-vous avec votre compte Google"
+                    uid=1_311 ignored
+                      uid=1_312 ignored
+                        uid=1_313 StaticText "2"
+                          uid=1_314 InlineTextBox "2"
+                      uid=1_315 ignored
+                        uid=1_316 strong
+                          uid=1_317 StaticText "Téléchargez votre image"
+                            uid=1_318 InlineTextBox "Téléchargez votre image"
+                        uid=1_319 paragraph
+                          uid=1_320 StaticText "Cliquez sur l'icône 📎 pour uploader l'image que vous souhaitez modifier"
+                            uid=1_321 InlineTextBox "Cliquez sur l'icône 📎 pour uploader l'image que vous souhaitez modifier"
+                    uid=1_322 ignored
+                      uid=1_323 ignored
+                        uid=1_324 StaticText "3"
+                          uid=1_325 InlineTextBox "3"
+                      uid=1_326 ignored
+                        uid=1_327 strong
+                          uid=1_328 StaticText "Décrivez vos modifications"
+                            uid=1_329 InlineTextBox "Décrivez vos modifications"
+                        uid=1_330 paragraph
+                          uid=1_331 StaticText "Écrivez simplement ce que vous voulez changer : "Change la couleur de la voiture en rouge", "Ajoute des nuages dans le ciel", "Enlève cette personne""
+                            uid=1_332 InlineTextBox "Écrivez simplement ce que vous voulez changer : "Change la couleur de la voiture en rouge", "Ajoute des nuages dans le ciel", "
+                            uid=1_333 InlineTextBox ""Enlève cette personne""
+                    uid=1_334 ignored
+                      uid=1_335 ignored
+                        uid=1_336 StaticText "4"
+                          uid=1_337 InlineTextBox "4"
+                      uid=1_338 ignored
+                        uid=1_339 strong
+                          uid=1_340 StaticText "Téléchargez le résultat"
+                            uid=1_341 InlineTextBox "Téléchargez le résultat"
+                        uid=1_342 paragraph
+                          uid=1_343 StaticText "Cliquez sur l'image modifiée pour la télécharger en haute qualité"
+                            uid=1_344 InlineTextBox "Cliquez sur l'image modifiée pour la télécharger en haute qualité"
+                uid=1_345 ignored
+                  uid=1_346 ignored
+                    uid=1_347 heading "✅ Avantages Gratuit" level="4"
+                      uid=1_348 StaticText "✅ Avantages Gratuit"
+                        uid=1_349 InlineTextBox "✅ Avantages Gratuit"
+                    uid=1_350 list
+                      uid=1_351 listitem level="1"
+                        uid=1_352 StaticText "• "
+                          uid=1_353 InlineTextBox "• "
+                        uid=1_354 strong
+                          uid=1_355 StaticText "Absolument gratuit"
+                            uid=1_356 InlineTextBox "Absolument gratuit"
+                        uid=1_357 StaticText " pour les particuliers"
+                          uid=1_358 InlineTextBox " pour les particuliers"
+                      uid=1_359 listitem level="1"
+                        uid=1_360 StaticText "• "
+                          uid=1_361 InlineTextBox "• "
+                        uid=1_362 strong
+                          uid=1_363 StaticText "Pas de limite"
+                            uid=1_364 InlineTextBox "Pas de limite"
+                        uid=1_365 StaticText " de téléchargements"
+                          uid=1_366 InlineTextBox " de téléchargements"
+                      uid=1_367 listitem level="1"
+                        uid=1_368 StaticText "• "
+                          uid=1_369 InlineTextBox "• "
+                        uid=1_370 strong
+                          uid=1_371 StaticText "Interface simple"
+                            uid=1_372 InlineTextBox "Interface simple"
+                        uid=1_373 StaticText " et intuitive"
+                          uid=1_374 InlineTextBox " et intuitive"
+                      uid=1_375 listitem level="1"
+                        uid=1_376 StaticText "• "
+                          uid=1_377 InlineTextBox "• "
+                        uid=1_378 strong
+                          uid=1_379 StaticText "Qualité professionnelle"
+                            uid=1_380 InlineTextBox "Qualité professionnelle"
+                        uid=1_381 StaticText " des résultats"
+                          uid=1_382 InlineTextBox " des résultats"
+                      uid=1_383 listitem level="1"
+                        uid=1_384 StaticText "• "
+                          uid=1_385 InlineTextBox "• "
+                        uid=1_386 strong
+                          uid=1_387 StaticText "Aucune inscription"
+                            uid=1_388 InlineTextBox "Aucune inscription"
+                        uid=1_389 StaticText " supplémentaire"
+                          uid=1_390 InlineTextBox " supplémentaire"
+                  uid=1_391 ignored
+                    uid=1_392 heading "💡 Cas d'Usage Parfait" level="4"
+                      uid=1_393 StaticText "💡 Cas d'Usage Parfait"
+                        uid=1_394 InlineTextBox "💡 Cas d'Usage Parfait"
+                    uid=1_395 list
+                      uid=1_396 listitem level="1"
+                        uid=1_397 StaticText "• Retouches photos personnelles"
+                          uid=1_398 InlineTextBox "• Retouches photos personnelles"
+                      uid=1_399 listitem level="1"
+                        uid=1_400 StaticText "• Créations de contenu social"
+                          uid=1_401 InlineTextBox "• Créations de contenu social"
+                      uid=1_402 listitem level="1"
+                        uid=1_403 StaticText "• Projets créatifs amateurs"
+                          uid=1_404 InlineTextBox "• Projets créatifs amateurs"
+                      uid=1_405 listitem level="1"
+                        uid=1_406 StaticText "• Modifications d'images rapides"
+                          uid=1_407 InlineTextBox "• Modifications d'images rapides"
+                      uid=1_408 listitem level="1"
+                        uid=1_409 StaticText "• Apprentissage de l'IA image"
+                          uid=1_410 InlineTextBox "• Apprentissage de l'IA image"
+              uid=1_411 heading " 🐼 Qwen Image Edit 2509 : 100% OPEN SOURCE GRATUIT" level="2"
+                uid=1_412 generic
+                  uid=1_413 ignored
+                    uid=1_414 StaticText ""
+                      uid=1_415 InlineTextBox ""
+                uid=1_416 StaticText " 🐼 Qwen Image Edit 2509 : 100% OPEN SOURCE GRATUIT"
+                  uid=1_417 InlineTextBox " 🐼 Qwen Image Edit 2509 : 100% OPEN SOURCE GRATUIT"
+              uid=1_418 ignored
+                uid=1_419 ignored
+                  uid=1_420 generic
+                    uid=1_421 generic
+                      uid=1_422 ignored
+                        uid=1_423 StaticText ""
+                          uid=1_424 InlineTextBox ""
+                    uid=1_425 ignored
+                      uid=1_426 StaticText "OPEN SOURCE 100% GRATUIT - LIBRE UTILISATION"
+                        uid=1_427 InlineTextBox "OPEN SOURCE 100% GRATUIT - LIBRE UTILISATION"
+                  uid=1_428 paragraph
+                    uid=1_429 strong
+                      uid=1_430 StaticText "Qwen Image Edit 2509"
+                        uid=1_431 InlineTextBox "Qwen Image Edit 2509"
+                    uid=1_432 StaticText " est le modèle open-source d'Alibaba, "
+                      uid=1_433 InlineTextBox " est le modèle open-source d'Alibaba, "
+                    uid=1_434 strong
+                      uid=1_435 StaticText "complètement gratuit et sans restriction"
+                        uid=1_436 InlineTextBox "complètement gratuit et sans restriction"
+                    uid=1_437 StaticText " pour les particuliers. Avec ses 20 milliards de paramètres, il offre une précision d'édition exceptionnelle accessible à tous, sans aucun coût."
+                      uid=1_438 InlineTextBox " pour les particuliers. Avec ses 20 "
+                      uid=1_439 InlineTextBox "milliards de paramètres, il offre une précision d'édition exceptionnelle accessible à tous, sans aucun coût."
+                uid=1_440 ignored
+                  uid=1_441 heading "🚀 GUIDE D'UTILISATION - ACCÈS OFFICIEL" level="4"
+                    uid=1_442 StaticText "🚀 GUIDE D'UTILISATION - ACCÈS OFFICIEL"
+                      uid=1_443 InlineTextBox "🚀 GUIDE D'UTILISATION - ACCÈS OFFICIEL"
+                  uid=1_444 ignored
+                    uid=1_445 ignored
+                      uid=1_446 ignored
+                        uid=1_447 StaticText "1"
+                          uid=1_448 InlineTextBox "1"
+                      uid=1_449 ignored
+                        uid=1_450 strong
+                          uid=1_451 StaticText "Accédez à Qwen Chat"
+                            uid=1_452 InlineTextBox "Accédez à Qwen Chat"
+                        uid=1_453 paragraph
+                          uid=1_454 StaticText "Rendez-vous sur "
+                            uid=1_455 InlineTextBox "Rendez-vous sur "
+                          uid=1_456 link "chat.qwen.ai" url="https://chat.qwen.ai/"
+                            uid=1_457 StaticText "chat.qwen.ai"
+                              uid=1_458 InlineTextBox "chat.qwen.ai"
+                          uid=1_459 StaticText " - plateforme officielle et entièrement gratuite"
+                            uid=1_460 InlineTextBox " - plateforme officielle et entièrement gratuite"
+                    uid=1_461 ignored
+                      uid=1_462 ignored
+                        uid=1_463 StaticText "2"
+                          uid=1_464 InlineTextBox "2"
+                      uid=1_465 ignored
+                        uid=1_466 strong
+                          uid=1_467 StaticText "Sélectionnez "Image Edit""
+                            uid=1_468 InlineTextBox "Sélectionnez "Image Edit""
+                        uid=1_469 paragraph
+                          uid=1_470 StaticText "Dans l'interface principale, choisissez le mode "Image Edit" pour accéder aux fonctionnalités d'édition d'images"
+                            uid=1_471 InlineTextBox "Dans l'interface principale, choisissez le mode "Image Edit" pour accéder aux fonctionnalités d'édition d'images"
+                    uid=1_472 ignored
+                      uid=1_473 ignored
+                        uid=1_474 StaticText "3"
+                          uid=1_475 InlineTextBox "3"
+                      uid=1_476 ignored
+                        uid=1_477 strong
+                          uid=1_478 StaticText "Téléchargez votre image"
+                            uid=1_479 InlineTextBox "Téléchargez votre image"
+                        uid=1_480 paragraph
+                          uid=1_481 StaticText "Cliquez sur l'icône d'upload pour charger l'image que vous souhaitez modifier"
+                            uid=1_482 InlineTextBox "Cliquez sur l'icône d'upload pour charger l'image que vous souhaitez modifier"
+                    uid=1_483 ignored
+                      uid=1_484 ignored
+                        uid=1_485 StaticText "4"
+                          uid=1_486 InlineTextBox "4"
+                      uid=1_487 ignored
+                        uid=1_488 strong
+                          uid=1_489 StaticText "Décrivez précisément les changements"
+                            uid=1_490 InlineTextBox "Décrivez précisément les changements"
+                        uid=1_491 paragraph
+                          uid=1_492 StaticText "Qwen comprend l'anglais et le chinois : "Replace the blue car with a red motorcycle", "Remove the background", "Change hair color to blonde""
+                            uid=1_493 InlineTextBox "Qwen comprend l'anglais et le chinois : "Replace the blue car with a red motorcycle", "Remove the background", "Change hair "
+                            uid=1_494 InlineTextBox "color to blonde""
+                    uid=1_495 ignored
+                      uid=1_496 ignored
+                        uid=1_497 StaticText "5"
+                          uid=1_498 InlineTextBox "5"
+                      uid=1_499 ignored
+                        uid=1_500 strong
+                          uid=1_501 StaticText "Téléchargez gratuitement"
+                            uid=1_502 InlineTextBox "Téléchargez gratuitement"
+                        uid=1_503 paragraph
+                          uid=1_504 StaticText "Une fois l'image modifiée, cliquez sur le bouton de téléchargement pour sauvegarder votre travail - aucune limite"
+                            uid=1_505 InlineTextBox "Une fois l'image modifiée, cliquez sur le bouton de téléchargement pour sauvegarder votre travail - aucune limite"
+                uid=1_506 ignored
+                  uid=1_507 ignored
+                    uid=1_508 heading "✅ Avantages Open Source" level="4"
+                      uid=1_509 StaticText "✅ Avantages Open Source"
+                        uid=1_510 InlineTextBox "✅ Avantages Open Source"
+                    uid=1_511 list
+                      uid=1_512 listitem level="1"
+                        uid=1_513 StaticText "• "
+                          uid=1_514 InlineTextBox "• "
+                        uid=1_515 strong
+                          uid=1_516 StaticText "Entièrement gratuit"
+                            uid=1_517 InlineTextBox "Entièrement gratuit"
+                        uid=1_518 StaticText " et open source"
+                          uid=1_519 InlineTextBox " et open source"
+                      uid=1_520 listitem level="1"
+                        uid=1_521 StaticText "• "
+                          uid=1_522 InlineTextBox "• "
+                        uid=1_523 strong
+                          uid=1_524 StaticText "Interface officielle"
+                            uid=1_525 InlineTextBox "Interface officielle"
+                        uid=1_526 StaticText " optimisée"
+                          uid=1_527 InlineTextBox " optimisée"
+                      uid=1_528 listitem level="1"
+                        uid=1_529 StaticText "• "
+                          uid=1_530 InlineTextBox "• "
+                        uid=1_531 strong
+                          uid=1_532 StaticText "20 milliards"
+                            uid=1_533 InlineTextBox "20 milliards"
+                        uid=1_534 StaticText " de paramètres"
+                          uid=1_535 InlineTextBox " de paramètres"
+                      uid=1_536 listitem level="1"
+                        uid=1_537 StaticText "• "
+                          uid=1_538 InlineTextBox "• "
+                        uid=1_539 strong
+                          uid=1_540 StaticText "Support bilingue"
+                            uid=1_541 InlineTextBox "Support bilingue"
+                        uid=1_542 StaticText " Anglais/Chinois"
+                          uid=1_543 InlineTextBox " Anglais/Chinois"
+                      uid=1_544 listitem level="1"
+                        uid=1_545 StaticText "• "
+                          uid=1_546 InlineTextBox "• "
+                        uid=1_547 strong
+                          uid=1_548 StaticText "Précision chirurgicale"
+                            uid=1_549 InlineTextBox "Précision chirurgicale"
+                        uid=1_550 StaticText " des modifications"
+                          uid=1_551 InlineTextBox " des modifications"
+                  uid=1_552 ignored
+                    uid=1_553 heading "💡 Cas d'Usage Idéal" level="4"
+                      uid=1_554 StaticText "💡 Cas d'Usage Idéal"
+                        uid=1_555 InlineTextBox "💡 Cas d'Usage Idéal"
+                    uid=1_556 list
+                      uid=1_557 listitem level="1"
+                        uid=1_558 StaticText "• Éditions techniques précises"
+                          uid=1_559 InlineTextBox "• Éditions techniques précises"
+                      uid=1_560 listitem level="1"
+                        uid=1_561 StaticText "• Modifications d'architecture"
+                          uid=1_562 InlineTextBox "• Modifications d'architecture"
+                      uid=1_563 listitem level="1"
+                        uid=1_564 StaticText "• Rétouches produits"
+                          uid=1_565 InlineTextBox "• Rétouches produits"
+                      uid=1_566 listitem level="1"
+                        uid=1_567 StaticText "• Projets multilingues"
+                          uid=1_568 InlineTextBox "• Projets multilingues"
+                      uid=1_569 listitem level="1"
+                        uid=1_570 StaticText "• Apprentissage deep learning"
+                          uid=1_571 InlineTextBox "• Apprentissage deep learning"
+              uid=1_572 heading " ✨ Seedream-4 : ACCÈS GRATUIT via LMArena.ai" level="2"
+                uid=1_573 generic
+                  uid=1_574 ignored
+                    uid=1_575 StaticText ""
+                      uid=1_576 InlineTextBox ""
+                uid=1_577 StaticText " ✨ Seedream-4 : ACCÈS GRATUIT via LMArena.ai"
+                  uid=1_578 InlineTextBox " ✨ Seedream-4 : ACCÈS GRATUIT via LMArena.ai"
+              uid=1_579 ignored
+                uid=1_580 ignored
+                  uid=1_581 generic
+                    uid=1_582 generic
+                      uid=1_583 ignored
+                        uid=1_584 StaticText ""
+                          uid=1_585 InlineTextBox ""
+                    uid=1_586 ignored
+                      uid=1_587 StaticText "ACCÈS 100% GRATUIT - RÉSOLUTION 4K SANS COÛT"
+                        uid=1_588 InlineTextBox "ACCÈS 100% GRATUIT - RÉSOLUTION 4K SANS COÛT"
+                  uid=1_589 paragraph
+                    uid=1_590 strong
+                      uid=1_591 StaticText "Seedream-4"
+                        uid=1_592 InlineTextBox "Seedream-4"
+                    uid=1_593 StaticText " de ByteDance (TikTok) offre une qualité d'image 4K exceptionnelle "
+                      uid=1_594 InlineTextBox " de ByteDance (TikTok) offre une qualité d'image 4K exceptionnelle "
+                    uid=1_595 strong
+                      uid=1_596 StaticText "entièrement gratuite"
+                        uid=1_597 InlineTextBox "entièrement gratuite"
+                    uid=1_598 StaticText " via la plateforme LMArena.ai. Profitez de la technologie la plus avancée pour des éditions d'images ultra-haute définition sans aucun abonnement."
+                      uid=1_599 InlineTextBox " via la plateforme LMArena.ai. Profitez "
+                      uid=1_600 InlineTextBox "de la technologie la plus avancée pour des éditions d'images ultra-haute définition sans aucun abonnement."
+                uid=1_601 ignored
+                  uid=1_602 heading "🚀 GUIDE D'UTILISATION DÉTAILLÉ - LMArena.ai" level="4"
+                    uid=1_603 StaticText "🚀 GUIDE D'UTILISATION DÉTAILLÉ - LMArena.ai"
+                      uid=1_604 InlineTextBox "🚀 GUIDE D'UTILISATION DÉTAILLÉ - LMArena.ai"
+                  uid=1_605 ignored
+                    uid=1_606 ignored
+                      uid=1_607 ignored
+                        uid=1_608 StaticText "1"
+                          uid=1_609 InlineTextBox "1"
+                      uid=1_610 ignored
+                        uid=1_611 strong
+                          uid=1_612 StaticText "Accédez à LMArena.ai"
+                            uid=1_613 InlineTextBox "Accédez à LMArena.ai"
+                        uid=1_614 paragraph
+                          uid=1_615 StaticText "Rendez-vous sur "
+                            uid=1_616 InlineTextBox "Rendez-vous sur "
+                          uid=1_617 link "lmarena.ai" url="https://lmarena.ai/"
+                            uid=1_618 StaticText "lmarena.ai"
+                              uid=1_619 InlineTextBox "lmarena.ai"
+                          uid=1_620 StaticText " - plateforme entièrement gratuite"
+                            uid=1_621 InlineTextBox " - plateforme entièrement gratuite"
+                    uid=1_622 ignored
+                      uid=1_623 ignored
+                        uid=1_624 StaticText "2"
+                          uid=1_625 InlineTextBox "2"
+                      uid=1_626 ignored
+                        uid=1_627 strong
+                          uid=1_628 StaticText "Sélectionnez "Image" en haut"
+                            uid=1_629 InlineTextBox "Sélectionnez "Image" en haut"
+                        uid=1_630 paragraph
+                          uid=1_631 StaticText "Dans le menu supérieur, cliquez sur l'onglet "Image" pour accéder aux modèles de génération et édition d'images"
+                            uid=1_632 InlineTextBox "Dans le menu supérieur, cliquez sur l'onglet "Image" pour accéder aux modèles de génération et édition d'images"
+                    uid=1_633 ignored
+                      uid=1_634 ignored
+                        uid=1_635 StaticText "3"
+                          uid=1_636 InlineTextBox "3"
+                      uid=1_637 ignored
+                        uid=1_638 strong
+                          uid=1_639 StaticText "Cliquez sur "Direct Chat" (coin supérieur droit)"
+                            uid=1_640 InlineTextBox "Cliquez sur "Direct Chat" (coin supérieur droit)"
+                        uid=1_641 paragraph
+                          uid=1_642 StaticText "Dans le coin supérieur droit de l'interface, cliquez sur le bouton "Direct Chat" pour activer le mode conversation direct"
+                            uid=1_643 InlineTextBox "Dans le coin supérieur droit de l'interface, cliquez sur le bouton "Direct Chat" pour activer le mode conversation direct"
+                    uid=1_644 ignored
+                      uid=1_645 ignored
+                        uid=1_646 StaticText "4"
+                          uid=1_647 InlineTextBox "4"
+                      uid=1_648 ignored
+                        uid=1_649 strong
+                          uid=1_650 StaticText "Choisissez "seedream-4-high-res-fal""
+                            uid=1_651 InlineTextBox "Choisissez "seedream-4-high-res-fal""
+                        uid=1_652 paragraph
+                          uid=1_653 StaticText "Dans la liste des modèles disponibles, sélectionnez "seedream-4-high-res-fal" pour accéder au modèle 4K haute résolution"
+                            uid=1_654 InlineTextBox "Dans la liste des modèles disponibles, sélectionnez "seedream-4-high-res-fal" pour accéder au modèle 4K haute résolution"
+                    uid=1_655 ignored
+                      uid=1_656 ignored
+                        uid=1_657 StaticText "5"
+                          uid=1_658 InlineTextBox "5"
+                      uid=1_659 ignored
+                        uid=1_660 strong
+                          uid=1_661 StaticText "Décrivez votre image ou édition"
+                            uid=1_662 InlineTextBox "Décrivez votre image ou édition"
+                        uid=1_663 paragraph
+                          uid=1_664 StaticText "Exemples : "Generate a photorealistic landscape at sunset in 4K quality", "Edit this photo to make the sky more dramatic", "Create a futuristic city scene with ultra-high resolution""
+                            uid=1_665 InlineTextBox "Exemples : "Generate a photorealistic landscape at sunset in 4K quality", "Edit this photo to make the sky more dramatic", "Create "
+                            uid=1_666 InlineTextBox "a futuristic city scene with ultra-high resolution""
+                    uid=1_667 ignored
+                      uid=1_668 ignored
+                        uid=1_669 StaticText "6"
+                          uid=1_670 InlineTextBox "6"
+                      uid=1_671 ignored
+                        uid=1_672 strong
+                          uid=1_673 StaticText "Téléchargez en 4K"
+                            uid=1_674 InlineTextBox "Téléchargez en 4K"
+                        uid=1_675 paragraph
+                          uid=1_676 StaticText "Une fois l'image générée/modifiée, faites un clic droit et "Enregistrer l'image sous" pour obtenir votre fichier 4K gratuitement"
+                            uid=1_677 InlineTextBox "Une fois l'image générée/modifiée, faites un clic droit et "Enregistrer l'image sous" pour obtenir votre fichier 4K gratuitement"
+                uid=1_678 ignored
+                  uid=1_679 ignored
+                    uid=1_680 heading "✅ Avantages Exceptionnels" level="4"
+                      uid=1_681 StaticText "✅ Avantages Exceptionnels"
+                        uid=1_682 InlineTextBox "✅ Avantages Exceptionnels"
+                    uid=1_683 list
+                      uid=1_684 listitem level="1"
+                        uid=1_685 StaticText "• "
+                          uid=1_686 InlineTextBox "• "
+                        uid=1_687 strong
+                          uid=1_688 StaticText "Résolution 4K"
+                            uid=1_689 InlineTextBox "Résolution 4K"
+                        uid=1_690 StaticText " (4096x4096 pixels)"
+                          uid=1_691 InlineTextBox " (4096x4096 pixels)"
+                      uid=1_692 listitem level="1"
+                        uid=1_693 StaticText "• "
+                          uid=1_694 InlineTextBox "• "
+                        uid=1_695 strong
+                          uid=1_696 StaticText "Vitesse fulgurante"
+                            uid=1_697 InlineTextBox "Vitesse fulgurante"
+                        uid=1_698 StaticText " de génération"
+                          uid=1_699 InlineTextBox " de génération"
+                      uid=1_700 listitem level="1"
+                        uid=1_701 StaticText "• "
+                          uid=1_702 InlineTextBox "• "
+                        uid=1_703 strong
+                          uid=1_704 StaticText "Entièrement gratuit"
+                            uid=1_705 InlineTextBox "Entièrement gratuit"
+                        uid=1_706 StaticText " via LMArena"
+                          uid=1_707 InlineTextBox " via LMArena"
+                      uid=1_708 listitem level="1"
+                        uid=1_709 StaticText "• "
+                          uid=1_710 InlineTextBox "• "
+                        uid=1_711 strong
+                          uid=1_712 StaticText "Qualité professionnelle"
+                            uid=1_713 InlineTextBox "Qualité professionnelle"
+                        uid=1_714 StaticText " exceptionnelle"
+                          uid=1_715 InlineTextBox " exceptionnelle"
+                      uid=1_716 listitem level="1"
+                        uid=1_717 StaticText "• "
+                          uid=1_718 InlineTextBox "• "
+                        uid=1_719 strong
+                          uid=1_720 StaticText "Interface simple"
+                            uid=1_721 InlineTextBox "Interface simple"
+                        uid=1_722 StaticText " et intuitive"
+                          uid=1_723 InlineTextBox " et intuitive"
+                  uid=1_724 ignored
+                    uid=1_725 heading "💡 Cas d'Usage Parfait" level="4"
+                      uid=1_726 StaticText "💡 Cas d'Usage Parfait"
+                        uid=1_727 InlineTextBox "💡 Cas d'Usage Parfait"
+                    uid=1_728 list
+                      uid=1_729 listitem level="1"
+                        uid=1_730 StaticText "• Créations artistiques 4K"
+                          uid=1_731 InlineTextBox "• Créations artistiques 4K"
+                      uid=1_732 listitem level="1"
+                        uid=1_733 StaticText "• Modifications photos haute résolution"
+                          uid=1_734 InlineTextBox "• Modifications photos haute résolution"
+                      uid=1_735 listitem level="1"
+                        uid=1_736 StaticText "• Projets professionnels"
+                          uid=1_737 InlineTextBox "• Projets professionnels"
+                      uid=1_738 listitem level="1"
+                        uid=1_739 StaticText "• Impressions grand format"
+                          uid=1_740 InlineTextBox "• Impressions grand format"
+                      uid=1_741 listitem level="1"
+                        uid=1_742 StaticText "• Contenu pour réseaux sociaux HD"
+                          uid=1_743 InlineTextBox "• Contenu pour réseaux sociaux HD"
+              uid=1_744 heading " Comparaison : 3 Outils 100% GRATUITS" level="2"
+                uid=1_745 generic
+                  uid=1_746 ignored
+                    uid=1_747 StaticText ""
+                      uid=1_748 InlineTextBox ""
+                uid=1_749 StaticText " Comparaison : 3 Outils 100% GRATUITS"
+                  uid=1_750 InlineTextBox " Comparaison : 3 Outils 100% GRATUITS"
+              uid=1_751 ignored
+                uid=1_752 generic
+                  uid=1_753 generic
+                    uid=1_754 ignored
+                      uid=1_755 StaticText ""
+                        uid=1_756 InlineTextBox ""
+                  uid=1_757 ignored
+                    uid=1_758 StaticText "TOUS LES 3 OUTILS SONT 100% GRATUITS POUR LES PARTICULIERS"
+                      uid=1_759 InlineTextBox "TOUS LES 3 OUTILS SONT 100% GRATUITS POUR LES PARTICULIERS"
+                uid=1_760 ignored
+                  uid=1_761 table
+                    uid=1_762 rowgroup
+                      uid=1_763 row
+                        uid=1_764 columnheader "Caractéristique"
+                          uid=1_765 StaticText "Caractéristique"
+                            uid=1_766 InlineTextBox "Caractéristique"
+                        uid=1_767 columnheader "🍌 Nano Banana"
+                          uid=1_768 StaticText "🍌 Nano Banana"
+                            uid=1_769 InlineTextBox "🍌 Nano Banana"
+                        uid=1_770 columnheader "🐼 Qwen"
+                          uid=1_771 StaticText "🐼 Qwen"
+                            uid=1_772 InlineTextBox "🐼 Qwen"
+                        uid=1_773 columnheader "✨ Seedream-4"
+                          uid=1_774 StaticText "✨ Seedream-4"
+                            uid=1_775 InlineTextBox "✨ Seedream-4"
+                    uid=1_776 ignored
+                      uid=1_777 row
+                        uid=1_778 cell "🆓 Accès Particuliers"
+                          uid=1_779 strong
+                            uid=1_780 StaticText "🆓 Accès Particuliers"
+                              uid=1_781 InlineTextBox "🆓 Accès Particuliers"
+                        uid=1_782 cell "100% GRATUIT"
+                          uid=1_783 StaticText "100% GRATUIT"
+                            uid=1_784 InlineTextBox "100% GRATUIT"
+                        uid=1_785 cell "100% GRATUIT"
+                          uid=1_786 StaticText "100% GRATUIT"
+                            uid=1_787 InlineTextBox "100% GRATUIT"
+                        uid=1_788 cell "100% GRATUIT"
+                          uid=1_789 StaticText "100% GRATUIT"
+                            uid=1_790 InlineTextBox "100% GRATUIT"
+                      uid=1_791 row
+                        uid=1_792 cell "🔗 Lien Direct"
+                          uid=1_793 strong
+                            uid=1_794 StaticText "🔗 Lien Direct"
+                              uid=1_795 InlineTextBox "🔗 Lien Direct"
+                        uid=1_796 cell "gemini.google.com"
+                          uid=1_797 link "gemini.google.com" url="https://gemini.google.com/"
+                            uid=1_798 StaticText "gemini.google.com"
+                              uid=1_799 InlineTextBox "gemini.google.com"
+                        uid=1_800 cell "chat.qwen.ai"
+                          uid=1_801 link "chat.qwen.ai" url="https://chat.qwen.ai/"
+                            uid=1_802 StaticText "chat.qwen.ai"
+                              uid=1_803 InlineTextBox "chat.qwen.ai"
+                        uid=1_804 cell "LMArena.ai"
+                          uid=1_805 link "LMArena.ai" url="https://lmarena.ai/"
+                            uid=1_806 StaticText "LMArena.ai"
+                              uid=1_807 InlineTextBox "LMArena.ai"
+                      uid=1_808 row
+                        uid=1_809 cell "🎯 Facilité d'Utilisation"
+                          uid=1_810 strong
+                            uid=1_811 StaticText "🎯 Facilité d'Utilisation"
+                              uid=1_812 InlineTextBox "🎯 Facilité d'Utilisation"
+                        uid=1_813 cell "⭐⭐⭐⭐⭐"
+                          uid=1_814 StaticText "⭐⭐⭐⭐⭐"
+                            uid=1_815 InlineTextBox "⭐⭐⭐⭐⭐"
+                        uid=1_816 cell "⭐⭐⭐⭐"
+                          uid=1_817 StaticText "⭐⭐⭐⭐"
+                            uid=1_818 InlineTextBox "⭐⭐⭐⭐"
+                        uid=1_819 cell "⭐⭐⭐"
+                          uid=1_820 StaticText "⭐⭐⭐"
+                            uid=1_821 InlineTextBox "⭐⭐⭐"
+                      uid=1_822 row
+                        uid=1_823 cell "🖼️ Résolution Max"
+                          uid=1_824 strong
+                            uid=1_825 StaticText "🖼️ Résolution Max"
+                              uid=1_826 InlineTextBox "🖼️ Résolution Max"
+                        uid=1_827 cell "2048x2048"
+                          uid=1_828 StaticText "2048x2048"
+                            uid=1_829 InlineTextBox "2048x2048"
+                        uid=1_830 cell "1024x1024"
+                          uid=1_831 StaticText "1024x1024"
+                            uid=1_832 InlineTextBox "1024x1024"
+                        uid=1_833 cell "4096x4096"
+                          uid=1_834 StaticText "4096x4096"
+                            uid=1_835 InlineTextBox "4096x4096"
+                      uid=1_836 row
+                        uid=1_837 cell "⚡ Vitesse"
+                          uid=1_838 strong
+                            uid=1_839 StaticText "⚡ Vitesse"
+                              uid=1_840 InlineTextBox "⚡ Vitesse"
+                        uid=1_841 cell "⚡⚡⚡"
+                          uid=1_842 StaticText "⚡⚡⚡"
+                            uid=1_843 InlineTextBox "⚡⚡⚡"
+                        uid=1_844 cell "⚡⚡"
+                          uid=1_845 StaticText "⚡⚡"
+                            uid=1_846 InlineTextBox "⚡⚡"
+                        uid=1_847 cell "⚡⚡⚡⚡"
+                          uid=1_848 StaticText "⚡⚡⚡⚡"
+                            uid=1_849 InlineTextBox "⚡⚡⚡⚡"
+                      uid=1_850 row
+                        uid=1_851 cell "💰 Coût Réel"
+                          uid=1_852 strong
+                            uid=1_853 StaticText "💰 Coût Réel"
+                              uid=1_854 InlineTextBox "💰 Coût Réel"
+                        uid=1_855 cell "0€"
+                          uid=1_856 StaticText "0€"
+                            uid=1_857 InlineTextBox "0€"
+                        uid=1_858 cell "0€"
+                          uid=1_859 StaticText "0€"
+                            uid=1_860 InlineTextBox "0€"
+                        uid=1_861 cell "0€"
+                          uid=1_862 StaticText "0€"
+                            uid=1_863 InlineTextBox "0€"
+              uid=1_864 heading " 🧠 Context Engineering : L'Art du Prompt Parfait" level="2"
+                uid=1_865 generic
+                  uid=1_866 ignored
+                    uid=1_867 StaticText ""
+                      uid=1_868 InlineTextBox ""
+                uid=1_869 StaticText " 🧠 Context Engineering : L'Art du Prompt Parfait"
+                  uid=1_870 InlineTextBox " 🧠 Context Engineering : L'Art du Prompt Parfait"
+              uid=1_871 ignored
+                uid=1_872 ignored
+                  uid=1_873 generic
+                    uid=1_874 generic
+                      uid=1_875 ignored
+                        uid=1_876 StaticText ""
+                          uid=1_877 InlineTextBox ""
+                    uid=1_878 ignored
+                      uid=1_879 StaticText "MAÎTRISEZ L'ART DE LA COMMUNICATION IA"
+                        uid=1_880 InlineTextBox "MAÎTRISEZ L'ART DE LA COMMUNICATION IA"
+                  uid=1_881 paragraph
+                    uid=1_882 strong
+                      uid=1_883 StaticText "Le context engineering"
+                        uid=1_884 InlineTextBox "Le context engineering"
+                    uid=1_885 StaticText " (ou prompt engineering) est la compétence essentielle qui transforme vos simples descriptions en résultats d'exception. Découvrez les meilleures pratiques et prompts prêts-à-l'emploi pour maximiser le potentiel de ces trois outils IA gratuits."
+                      uid=1_886 InlineTextBox " (ou prompt engineering) est la compétence essentielle qui transforme vos simples descriptions en résultats "
+                      uid=1_887 InlineTextBox "d'exception. Découvrez les meilleures pratiques et prompts prêts-à-l'emploi pour maximiser le potentiel de ces trois outils IA gratuits."
+                uid=1_888 ignored
+                  uid=1_889 heading "✨ Les 7 Règles d'Or du Context Engineering" level="4"
+                    uid=1_890 StaticText "✨ Les 7 Règles d'Or du Context Engineering"
+                      uid=1_891 InlineTextBox "✨ Les 7 Règles d'Or du Context Engineering"
+                  uid=1_892 ignored
+                    uid=1_893 ignored
+                      uid=1_894 ignored
+                        uid=1_895 ignored
+                          uid=1_896 StaticText "1"
+                            uid=1_897 InlineTextBox "1"
+                        uid=1_898 ignored
+                          uid=1_899 heading "Soyez Spécifique et Détaillé" level="5"
+                            uid=1_900 StaticText "Soyez Spécifique et Détaillé"
+                              uid=1_901 InlineTextBox "Soyez Spécifique et Détaillé"
+                          uid=1_902 paragraph
+                            uid=1_903 StaticText "Plus votre description est précise, meilleur sera le résultat. Évitez les termes vagues."
+                              uid=1_904 InlineTextBox "Plus votre description est précise, meilleur sera le résultat. "
+                              uid=1_905 InlineTextBox "Évitez les termes vagues."
+                      uid=1_906 ignored
+                        uid=1_907 ignored
+                          uid=1_908 StaticText "2"
+                            uid=1_909 InlineTextBox "2"
+                        uid=1_910 ignored
+                          uid=1_911 heading "Utilisez des Adjectifs Descriptifs" level="5"
+                            uid=1_912 StaticText "Utilisez des Adjectifs Descriptifs"
+                              uid=1_913 InlineTextBox "Utilisez des Adjectifs Descriptifs"
+                          uid=1_914 paragraph
+                            uid=1_915 StaticText "Qualifiez couleurs, textures, lumières, et ambiances pour guider l'IA."
+                              uid=1_916 InlineTextBox "Qualifiez couleurs, textures, lumières, et ambiances pour "
+                              uid=1_917 InlineTextBox "guider l'IA."
+                      uid=1_918 ignored
+                        uid=1_919 ignored
+                          uid=1_920 StaticText "3"
+                            uid=1_921 InlineTextBox "3"
+                        uid=1_922 ignored
+                          uid=1_923 heading "Structurez Votre Demande" level="5"
+                            uid=1_924 StaticText "Structurez Votre Demande"
+                              uid=1_925 InlineTextBox "Structurez Votre Demande"
+                          uid=1_926 paragraph
+                            uid=1_927 StaticText "Commencez par l'action principale, puis ajoutez les détails contextuels."
+                              uid=1_928 InlineTextBox "Commencez par l'action principale, puis ajoutez les détails "
+                              uid=1_929 InlineTextBox "contextuels."
+                      uid=1_930 ignored
+                        uid=1_931 ignored
+                          uid=1_932 StaticText "4"
+                            uid=1_933 InlineTextBox "4"
+                        uid=1_934 ignored
+                          uid=1_935 heading "Précisez le Style Artistique" level="5"
+                            uid=1_936 StaticText "Précisez le Style Artistique"
+                              uid=1_937 InlineTextBox "Précisez le Style Artistique"
+                          uid=1_938 paragraph
+                            uid=1_939 StaticText "Mentionnez le style visuel souhaité : photoréaliste, cartoon, peinture à l'huile, etc."
+                              uid=1_940 InlineTextBox "Mentionnez le style visuel souhaité : photoréaliste, cartoon, "
+                              uid=1_941 InlineTextBox "peinture à l'huile, etc."
+                    uid=1_942 ignored
+                      uid=1_943 ignored
+                        uid=1_944 ignored
+                          uid=1_945 StaticText "5"
+                            uid=1_946 InlineTextBox "5"
+                        uid=1_947 ignored
+                          uid=1_948 heading "Indiquez la Résolution et Format" level="5"
+                            uid=1_949 StaticText "Indiquez la Résolution et Format"
+                              uid=1_950 InlineTextBox "Indiquez la Résolution et Format"
+                          uid=1_951 paragraph
+                            uid=1_952 StaticText "Précisez les dimensions souhaitées pour optimiser le rendu."
+                              uid=1_953 InlineTextBox "Précisez les dimensions souhaitées pour optimiser le rendu."
+                      uid=1_954 ignored
+                        uid=1_955 ignored
+                          uid=1_956 StaticText "6"
+                            uid=1_957 InlineTextBox "6"
+                        uid=1_958 ignored
+                          uid=1_959 heading "Utilisez des Références" level="5"
+                            uid=1_960 StaticText "Utilisez des Références"
+                              uid=1_961 InlineTextBox "Utilisez des Références"
+                          uid=1_962 paragraph
+                            uid=1_963 StaticText "Comparez avec des styles connus : "style Uncharted", "ambiance Studio Ghibli"."
+                              uid=1_964 InlineTextBox "Comparez avec des styles connus : "style Uncharted", "
+                              uid=1_965 InlineTextBox ""ambiance Studio Ghibli"."
+                      uid=1_966 ignored
+                        uid=1_967 ignored
+                          uid=1_968 StaticText "7"
+                            uid=1_969 InlineTextBox "7"
+                        uid=1_970 ignored
+                          uid=1_971 heading "Itérez et Affinez" level="5"
+                            uid=1_972 StaticText "Itérez et Affinez"
+                              uid=1_973 InlineTextBox "Itérez et Affinez"
+                          uid=1_974 paragraph
+                            uid=1_975 StaticText "N'hésitez pas à demander des ajustements successifs pour perfectionner."
+                              uid=1_976 InlineTextBox "N'hésitez pas à demander des ajustements successifs pour "
+                              uid=1_977 InlineTextBox "perfectionner."
+                uid=1_978 ignored
+                  uid=1_979 heading "🚀 Prompts Prêts-à-l'Emploi : Copiez-Collez" level="4"
+                    uid=1_980 StaticText "🚀 Prompts Prêts-à-l'Emploi : Copiez-Collez"
+                      uid=1_981 InlineTextBox "🚀 Prompts Prêts-à-l'Emploi : Copiez-Collez"
+                  uid=1_982 ignored
+                    uid=1_983 heading "📸 Amélioration Photos" level="5"
+                      uid=1_984 StaticText "📸 Amélioration Photos"
+                        uid=1_985 InlineTextBox "📸 Amélioration Photos"
+                    uid=1_986 ignored
+                      uid=1_987 ignored
+                        uid=1_988 paragraph
+                          uid=1_989 StaticText ""Améliore la qualité de cette photo : augmente la netteté, corrige l'exposition, renforce les couleurs naturelles, et applique une légère réduction de bruit pour un rendu professionnel""
+                            uid=1_990 InlineTextBox ""Améliore la qualité de cette photo : augmente la netteté, corrige l'exposition, renforce les couleurs "
+                            uid=1_991 InlineTextBox "naturelles, et applique une légère réduction de bruit pour un rendu professionnel""
+                      uid=1_992 ignored
+                        uid=1_993 paragraph
+                          uid=1_994 StaticText ""Transforme cette photo en portrait professionnel : lissage subtil de la peau, éclairage studio, fond flou, et correction des couleurs pour un look corporate""
+                            uid=1_995 InlineTextBox ""Transforme cette photo en portrait professionnel : lissage subtil de la peau, éclairage studio, fond flou, et "
+                            uid=1_996 InlineTextBox "correction des couleurs pour un look corporate""
+                      uid=1_997 ignored
+                        uid=1_998 paragraph
+                          uid=1_999 StaticText ""Restaure cette vieille photo : élimine les rayures, corrige les couleurs fanées, améliore la netteté, et préserve l'aspect vintage authentique""
+                            uid=1_1000 InlineTextBox ""Restaure cette vieille photo : élimine les rayures, corrige les couleurs fanées, améliore la netteté, et "
+                            uid=1_1001 InlineTextBox "préserve l'aspect vintage authentique""
+                  uid=1_1002 ignored
+                    uid=1_1003 heading "🎨 Créations Artistiques" level="5"
+                      uid=1_1004 StaticText "🎨 Créations Artistiques"
+                        uid=1_1005 InlineTextBox "🎨 Créations Artistiques"
+                    uid=1_1006 ignored
+                      uid=1_1007 ignored
+                        uid=1_1008 paragraph
+                          uid=1_1009 StaticText ""Crée un paysage épique à la sauce Studio Ghibli : collines verdoyantes, nuages flottants, cottage traditionnel, lumière dorée du crépuscule, style anime doux et poétique""
+                            uid=1_1010 InlineTextBox ""Crée un paysage épique à la sauce Studio Ghibli : collines verdoyantes, nuages flottants, cottage traditionnel, "
+                            uid=1_1011 InlineTextBox "lumière dorée du crépuscule, style anime doux et poétique""
+                      uid=1_1012 ignored
+                        uid=1_1013 paragraph
+                          uid=1_1014 StaticText ""Génère une ville cyberpunk néo-tokyoite : gratte-ciels lumineux, néons roses et bleus, pluie de batteries basses, hologrammes flottants, atmosphère Blade Runner meets anime""
+                            uid=1_1015 InlineTextBox ""Génère une ville cyberpunk néo-tokyoite : gratte-ciels lumineux, néons roses et bleus, pluie de batteries "
+                            uid=1_1016 InlineTextBox "basses, hologrammes flottants, atmosphère Blade Runner meets anime""
+                      uid=1_1017 ignored
+                        uid=1_1018 paragraph
+                          uid=1_1019 StaticText ""Illustration fantasy : forêt enchantée avec arbres lumineux, créatures magiques, champignons bioluminescents, feuilles d'or, lumière féerique, style watercolor détaillé""
+                            uid=1_1020 InlineTextBox ""Illustration fantasy : forêt enchantée avec arbres lumineux, créatures magiques, champignons bioluminescents, "
+                            uid=1_1021 InlineTextBox "feuilles d'or, lumière féerique, style watercolor détaillé""
+                  uid=1_1022 ignored
+                    uid=1_1023 heading "🏪 Visualisation Produits" level="5"
+                      uid=1_1024 StaticText "🏪 Visualisation Produits"
+                        uid=1_1025 InlineTextBox "🏪 Visualisation Produits"
+                    uid=1_1026 ignored
+                      uid=1_1027 ignored
+                        uid=1_1028 paragraph
+                          uid=1_1029 StaticText ""Mets en valeur ce produit sur fond blanc : éclairage professionnel doux, ombres subtiles, haute résolution, textures visibles, composition centrée, style catalogue e-commerce premium""
+                            uid=1_1030 InlineTextBox ""Mets en valeur ce produit sur fond blanc : éclairage professionnel doux, ombres subtiles, haute résolution, "
+                            uid=1_1031 InlineTextBox "textures visibles, composition centrée, style catalogue e-commerce premium""
+                      uid=1_1032 ignored
+                        uid=1_1033 paragraph
+                          uid=1_1034 StaticText ""Crée un lifestyle moderne : intégre ce produit dans un intérieur minimaliste, lumière naturelle, palette de couleurs neutres, ambiance scandinave, résolution 4K""
+                            uid=1_1035 InlineTextBox ""Crée un lifestyle moderne : intégre ce produit dans un intérieur minimaliste, lumière naturelle, palette de "
+                            uid=1_1036 InlineTextBox "couleurs neutres, ambiance scandinave, résolution 4K""
+                      uid=1_1037 ignored
+                        uid=1_1038 paragraph
+                          uid=1_1039 StaticText ""Transforme en packaging luxueux : matériaux premium, éclairage dramatique, reflets métalliques, typographie élégante, fond sombre sophistiqué, style produit haut de gamme""
+                            uid=1_1040 InlineTextBox ""Transforme en packaging luxueux : matériaux premium, éclairage dramatique, reflets métalliques, typographie "
+                            uid=1_1041 InlineTextBox "élégante, fond sombre sophistiqué, style produit haut de gamme""
+                  uid=1_1042 ignored
+                    uid=1_1043 heading "🌄 Manipulation d'Arrière-Plans" level="5"
+                      uid=1_1044 StaticText "🌄 Manipulation d'Arrière-Plans"
+                        uid=1_1045 InlineTextBox "🌄 Manipulation d'Arrière-Plans"
+                    uid=1_1046 ignored
+                      uid=1_1047 ignored
+                        uid=1_1048 paragraph
+                          uid=1_1049 StaticText ""Remplace l'arrière-plan par un coucher de soleil tropical : plage paradisiaque, palmiers, eau turquoise, nuages orange et rose, lumière chaude, harmonie parfaite avec le sujet""
+                            uid=1_1050 InlineTextBox ""Remplace l'arrière-plan par un coucher de soleil tropical : plage paradisiaque, palmiers, eau turquoise, nuages "
+                            uid=1_1051 InlineTextBox "orange et rose, lumière chaude, harmonie parfaite avec le sujet""
+                      uid=1_1052 ignored
+                        uid=1_1053 paragraph
+                          uid=1_1054 StaticText ""Crée un fond abstrait moderne : formes géométriques, dégradé de bleus et violets, texture subtile, style minimaliste, haute résolution pour impression professionnelle""
+                            uid=1_1055 InlineTextBox ""Crée un fond abstrait moderne : formes géométriques, dégradé de bleus et violets, texture subtile, style "
+                            uid=1_1056 InlineTextBox "minimaliste, haute résolution pour impression professionnelle""
+                      uid=1_1057 ignored
+                        uid=1_1058 paragraph
+                          uid=1_1059 StaticText ""Ajoute un effet de profondeur : flou d'arrière-plan artistique, bokeh lumineux, couleurs complémentaires, mise en valeur du sujet principal, style portrait professionnel""
+                            uid=1_1060 InlineTextBox ""Ajoute un effet de profondeur : flou d'arrière-plan artistique, bokeh lumineux, couleurs complémentaires, mise "
+                            uid=1_1061 InlineTextBox "en valeur du sujet principal, style portrait professionnel""
+                uid=1_1062 ignored
+                  uid=1_1063 ignored
+                    uid=1_1064 heading "🍌 Nano Banana Tips" level="5"
+                      uid=1_1065 StaticText "🍌 Nano Banana Tips"
+                        uid=1_1066 InlineTextBox "🍌 Nano Banana Tips"
+                    uid=1_1067 list
+                      uid=1_1068 listitem level="1"
+                        uid=1_1069 StaticText "• Utilisez le langage naturel et conversationnel"
+                          uid=1_1070 InlineTextBox "• Utilisez le langage naturel et conversationnel"
+                      uid=1_1071 listitem level="1"
+                        uid=1_1072 StaticText "• Soyez amical et précis dans vos demandes"
+                          uid=1_1073 InlineTextBox "• Soyez amical et précis dans vos demandes"
+                      uid=1_1074 listitem level="1"
+                        uid=1_1075 StaticText "• Demandez des ajustements progressifs"
+                          uid=1_1076 InlineTextBox "• Demandez des ajustements progressifs"
+                      uid=1_1077 listitem level="1"
+                        uid=1_1078 StaticText "• Expérimentez avec des descriptions imagées"
+                          uid=1_1079 InlineTextBox "• Expérimentez avec des descriptions imagées"
+                  uid=1_1080 ignored
+                    uid=1_1081 heading "🐼 Qwen Edit Tips" level="5"
+                      uid=1_1082 StaticText "🐼 Qwen Edit Tips"
+                        uid=1_1083 InlineTextBox "🐼 Qwen Edit Tips"
+                    uid=1_1084 list
+                      uid=1_1085 listitem level="1"
+                        uid=1_1086 StaticText "• Privilégiez l'anglais pour de meilleurs résultats"
+                          uid=1_1087 InlineTextBox "• Privilégiez l'anglais pour de meilleurs résultats"
+                      uid=1_1088 listitem level="1"
+                        uid=1_1089 StaticText "• Structurez vos demandes avec des virgules"
+                          uid=1_1090 InlineTextBox "• Structurez vos demandes avec des virgules"
+                      uid=1_1091 listitem level="1"
+                        uid=1_1092 StaticText "• Soyez technique et précis dans les termes"
+                          uid=1_1093 InlineTextBox "• Soyez technique et précis dans les termes"
+                      uid=1_1094 listitem level="1"
+                        uid=1_1095 StaticText "• Utilisez des termes d'édition professionnelle"
+                          uid=1_1096 InlineTextBox "• Utilisez des termes d'édition professionnelle"
+                  uid=1_1097 ignored
+                    uid=1_1098 heading "✨ Seedream-4 Tips" level="5"
+                      uid=1_1099 StaticText "✨ Seedream-4 Tips"
+                        uid=1_1100 InlineTextBox "✨ Seedream-4 Tips"
+                    uid=1_1101 list
+                      uid=1_1102 listitem level="1"
+                        uid=1_1103 StaticText "• Mentionnez "4K" ou "ultra haute résolution""
+                          uid=1_1104 InlineTextBox "• Mentionnez "4K" ou "ultra haute résolution""
+                      uid=1_1105 listitem level="1"
+                        uid=1_1106 StaticText "• Décrivez les détails fins et les textures"
+                          uid=1_1107 InlineTextBox "• Décrivez les détails fins et les textures"
+                      uid=1_1108 listitem level="1"
+                        uid=1_1109 StaticText "• Précisez le style artistique souhaité"
+                          uid=1_1110 InlineTextBox "• Précisez le style artistique souhaité"
+                      uid=1_1111 listitem level="1"
+                        uid=1_1112 StaticText "• Demandez des compositions équilibrées"
+                          uid=1_1113 InlineTextBox "• Demandez des compositions équilibrées"
+                uid=1_1114 ignored
+                  uid=1_1115 heading "🎯 Techniques Avancées" level="4"
+                    uid=1_1116 StaticText "🎯 Techniques Avancées"
+                      uid=1_1117 InlineTextBox "🎯 Techniques Avancées"
+                  uid=1_1118 ignored
+                    uid=1_1119 ignored
+                      uid=1_1120 heading "Prompt Chaining" level="5"
+                        uid=1_1121 StaticText "Prompt Chaining"
+                          uid=1_1122 InlineTextBox "Prompt Chaining"
+                      uid=1_1123 paragraph
+                        uid=1_1124 StaticText "Enchaînez plusieurs prompts pour des résultats complexes :"
+                          uid=1_1125 InlineTextBox "Enchaînez plusieurs prompts pour des résultats complexes :"
+                      uid=1_1126 ignored
+                        uid=1_1127 paragraph
+                          uid=1_1128 StaticText "1. "Crée un portrait réaliste...""
+                            uid=1_1129 InlineTextBox "1. "Crée un portrait réaliste...""
+                        uid=1_1130 paragraph
+                          uid=1_1131 StaticText "2. "Ajoute un éclairage dramatique...""
+                            uid=1_1132 InlineTextBox "2. "Ajoute un éclairage dramatique...""
+                        uid=1_1133 paragraph
+                          uid=1_1134 StaticText "3. "Améliore les détails du visage...""
+                            uid=1_1135 InlineTextBox "3. "Améliore les détails du visage...""
+                    uid=1_1136 ignored
+                      uid=1_1137 heading "Negative Prompts" level="5"
+                        uid=1_1138 StaticText "Negative Prompts"
+                          uid=1_1139 InlineTextBox "Negative Prompts"
+                      uid=1_1140 paragraph
+                        uid=1_1141 StaticText "Précisez ce que vous NE voulez PAS :"
+                          uid=1_1142 InlineTextBox "Précisez ce que vous NE voulez PAS :"
+                      uid=1_1143 ignored
+                        uid=1_1144 paragraph
+                          uid=1_1145 StaticText ""...sans flou, sans artefacts, sans distorsion""
+                            uid=1_1146 InlineTextBox ""...sans flou, sans artefacts, sans distorsion""
+                        uid=1_1147 paragraph
+                          uid=1_1148 StaticText ""...évite les couleurs saturées excessivement""
+                            uid=1_1149 InlineTextBox ""...évite les couleurs saturées excessivement""
+                        uid=1_1150 paragraph
+                          uid=1_1151 StaticText ""...pas d'éléments discordants""
+                            uid=1_1152 InlineTextBox ""...pas d'éléments discordants""
+              uid=1_1153 heading " Cas d'Usage et Recommandations" level="2"
+                uid=1_1154 generic
+                  uid=1_1155 ignored
+                    uid=1_1156 StaticText ""
+                      uid=1_1157 InlineTextBox ""
+                uid=1_1158 StaticText " Cas d'Usage et Recommandations"
+                  uid=1_1159 InlineTextBox " Cas d'Usage et Recommandations"
+              uid=1_1160 ignored
+                uid=1_1161 ignored
+                  uid=1_1162 ignored
+                    uid=1_1163 generic
+                      uid=1_1164 StaticText "🍌"
+                        uid=1_1165 InlineTextBox "🍌"
+                    uid=1_1166 heading "Nano Banana" level="3"
+                      uid=1_1167 StaticText "Nano Banana"
+                        uid=1_1168 InlineTextBox "Nano Banana"
+                    uid=1_1169 paragraph
+                      uid=1_1170 StaticText "Entreprises"
+                        uid=1_1171 InlineTextBox "Entreprises"
+                  uid=1_1172 list
+                    uid=1_1173 listitem level="1"
+                      uid=1_1174 StaticText "• Volume élevé"
+                        uid=1_1175 InlineTextBox "• Volume élevé"
+                    uid=1_1176 listitem level="1"
+                      uid=1_1177 StaticText "• Intégration Google"
+                        uid=1_1178 InlineTextBox "• Intégration Google"
+                    uid=1_1179 listitem level="1"
+                      uid=1_1180 StaticText "• Support enterprise"
+                        uid=1_1181 InlineTextBox "• Support enterprise"
+                uid=1_1182 ignored
+                  uid=1_1183 ignored
+                    uid=1_1184 generic
+                      uid=1_1185 StaticText "🐼"
+                        uid=1_1186 InlineTextBox "🐼"
+                    uid=1_1187 heading "Qwen" level="3"
+                      uid=1_1188 StaticText "Qwen"
+                        uid=1_1189 InlineTextBox "Qwen"
+                    uid=1_1190 paragraph
+                      uid=1_1191 StaticText "Créatifs"
+                        uid=1_1192 InlineTextBox "Créatifs"
+                  uid=1_1193 list
+                    uid=1_1194 listitem level="1"
+                      uid=1_1195 StaticText "• Précision technique"
+                        uid=1_1196 InlineTextBox "• Précision technique"
+                    uid=1_1197 listitem level="1"
+                      uid=1_1198 StaticText "• Support bilingue"
+                        uid=1_1199 InlineTextBox "• Support bilingue"
+                    uid=1_1200 listitem level="1"
+                      uid=1_1201 StaticText "• Open source"
+                        uid=1_1202 InlineTextBox "• Open source"
+                uid=1_1203 ignored
+                  uid=1_1204 ignored
+                    uid=1_1205 generic
+                      uid=1_1206 StaticText "✨"
+                        uid=1_1207 InlineTextBox "✨"
+                    uid=1_1208 heading "Seedream-4" level="3"
+                      uid=1_1209 StaticText "Seedream-4"
+                        uid=1_1210 InlineTextBox "Seedream-4"
+                    uid=1_1211 paragraph
+                      uid=1_1212 StaticText "Startups"
+                        uid=1_1213 InlineTextBox "Startups"
+                  uid=1_1214 list
+                    uid=1_1215 listitem level="1"
+                      uid=1_1216 StaticText "• Haute qualité"
+                        uid=1_1217 InlineTextBox "• Haute qualité"
+                    uid=1_1218 listitem level="1"
+                      uid=1_1219 StaticText "• Rapide"
+                        uid=1_1220 InlineTextBox "• Rapide"
+                    uid=1_1221 listitem level="1"
+                      uid=1_1222 StaticText "• Prix compétitif"
+                        uid=1_1223 InlineTextBox "• Prix compétitif"
+              uid=1_1224 heading " Guide d'Implémentation" level="2"
+                uid=1_1225 generic
+                  uid=1_1226 ignored
+                    uid=1_1227 StaticText ""
+                      uid=1_1228 InlineTextBox ""
+                uid=1_1229 StaticText " Guide d'Implémentation"
+                  uid=1_1230 InlineTextBox " Guide d'Implémentation"
+              uid=1_1231 ignored
+                uid=1_1232 ignored
+                  uid=1_1233 ignored
+                    uid=1_1234 ignored
+                      uid=1_1235 StaticText "1"
+                        uid=1_1236 InlineTextBox "1"
+                    uid=1_1237 ignored
+                      uid=1_1238 heading "Choisir le Bon Modèle" level="4"
+                        uid=1_1239 StaticText "Choisir le Bon Modèle"
+                          uid=1_1240 InlineTextBox "Choisir le Bon Modèle"
+                      uid=1_1241 paragraph
+                        uid=1_1242 StaticText "Évaluez vos besoins en termes de volume, précision, et budget."
+                          uid=1_1243 InlineTextBox "Évaluez vos besoins en termes de volume, précision, et budget."
+                uid=1_1244 ignored
+                  uid=1_1245 ignored
+                    uid=1_1246 ignored
+                      uid=1_1247 StaticText "2"
+                        uid=1_1248 InlineTextBox "2"
+                    uid=1_1249 ignored
+                      uid=1_1250 heading "Configurer l'Accès API" level="4"
+                        uid=1_1251 StaticText "Configurer l'Accès API"
+                          uid=1_1252 InlineTextBox "Configurer l'Accès API"
+                      uid=1_1253 paragraph
+                        uid=1_1254 StaticText "Obtenez vos clés d'API auprès du fournisseur choisi."
+                          uid=1_1255 InlineTextBox "Obtenez vos clés d'API auprès du fournisseur choisi."
+                uid=1_1256 ignored
+                  uid=1_1257 ignored
+                    uid=1_1258 ignored
+                      uid=1_1259 StaticText "3"
+                        uid=1_1260 InlineTextBox "3"
+                    uid=1_1261 ignored
+                      uid=1_1262 heading "Intégrer dans Votre Workflow" level="4"
+                        uid=1_1263 StaticText "Intégrer dans Votre Workflow"
+                          uid=1_1264 InlineTextBox "Intégrer dans Votre Workflow"
+                      uid=1_1265 paragraph
+                        uid=1_1266 StaticText "Utilisez les SDK fournis ou l'API REST."
+                          uid=1_1267 InlineTextBox "Utilisez les SDK fournis ou l'API REST."
+              uid=1_1268 ignored
+                uid=1_1269 generic
+                  uid=1_1270 code
+                    uid=1_1271 StaticText "// Exemple avec Seedream-4 via Replicate
+const replicate = new Replicate({
+  auth: process.env.REPLICATE_API_TOKEN,
+});
+
+const output = await replicate.run(
+  "byteband/seedream-4:latest",
+  {
+    input: {
+      prompt: "Un magnifique paysage montagneux au coucher du soleil",
+      width: 1024,
+      height: 1024,
+      num_outputs: 1
+    }
+  }
+);
+
+console.log("Image générée:", output[0]);"
+                      uid=1_1272 InlineTextBox "// Exemple avec Seedream-4 via Replicate"
+                      uid=1_1273 InlineTextBox "
+"
+                      uid=1_1274 InlineTextBox "const replicate = new Replicate({"
+                      uid=1_1275 InlineTextBox "
+"
+                      uid=1_1276 InlineTextBox "  auth: process.env.REPLICATE_API_TOKEN,"
+                      uid=1_1277 InlineTextBox "
+"
+                      uid=1_1278 InlineTextBox "});"
+                      uid=1_1279 InlineTextBox "
+"
+                      uid=1_1280 InlineTextBox "
+"
+                      uid=1_1281 InlineTextBox "const output = await replicate.run("
+                      uid=1_1282 InlineTextBox "
+"
+                      uid=1_1283 InlineTextBox "  "byteband/seedream-4:latest","
+                      uid=1_1284 InlineTextBox "
+"
+                      uid=1_1285 InlineTextBox "  {"
+                      uid=1_1286 InlineTextBox "
+"
+                      uid=1_1287 InlineTextBox "    input: {"
+                      uid=1_1288 InlineTextBox "
+"
+                      uid=1_1289 InlineTextBox "      prompt: "Un magnifique paysage montagneux au coucher du soleil","
+                      uid=1_1290 InlineTextBox "
+"
+                      uid=1_1291 InlineTextBox "      width: 1024,"
+                      uid=1_1292 InlineTextBox "
+"
+                      uid=1_1293 InlineTextBox "      height: 1024,"
+                      uid=1_1294 InlineTextBox "
+"
+                      uid=1_1295 InlineTextBox "      num_outputs: 1"
+                      uid=1_1296 InlineTextBox "
+"
+                      uid=1_1297 InlineTextBox "    }"
+                      uid=1_1298 InlineTextBox "
+"
+                      uid=1_1299 InlineTextBox "  }"
+                      uid=1_1300 InlineTextBox "
+"
+                      uid=1_1301 InlineTextBox ");"
+                      uid=1_1302 InlineTextBox "
+"
+                      uid=1_1303 InlineTextBox "
+"
+                      uid=1_1304 InlineTextBox "console.log("Image générée:", output[0]);"
+              uid=1_1305 ignored
+                uid=1_1306 heading " Conclusion : 3 Géants IA 100% GRATUITS pour les Particuliers" level="2"
+                  uid=1_1307 generic
+                    uid=1_1308 ignored
+                      uid=1_1309 StaticText ""
+                        uid=1_1310 InlineTextBox ""
+                  uid=1_1311 StaticText " Conclusion : 3 Géants IA 100% GRATUITS pour les Particuliers"
+                    uid=1_1312 InlineTextBox " Conclusion : 3 Géants IA 100% GRATUITS pour les Particuliers"
+                uid=1_1313 ignored
+                  uid=1_1314 generic
+                    uid=1_1315 generic
+                      uid=1_1316 ignored
+                        uid=1_1317 StaticText ""
+                          uid=1_1318 InlineTextBox ""
+                    uid=1_1319 ignored
+                      uid=1_1320 StaticText "LA RÉVOLUTION DE L'IA EST GRATUITE - PROFITEZ-EN MAINTENANT !"
+                        uid=1_1321 InlineTextBox "LA RÉVOLUTION DE L'IA EST GRATUITE - PROFITEZ-EN MAINTENANT !"
+                  uid=1_1322 paragraph
+                    uid=1_1323 strong
+                      uid=1_1324 StaticText "PLUS AUCUN EXCUSE POUR NE PAS CRÉER !"
+                        uid=1_1325 InlineTextBox "PLUS AUCUN EXCUSE POUR NE PAS CRÉER !"
+                    uid=1_1326 StaticText " Ces trois outils d'exception sont désormais accessibles gratuitement à tous les particuliers. Que vous soyez débutant ou expert, vous avez désormais accès à la technologie de pointe sans le moindre coût."
+                      uid=1_1327 InlineTextBox " Ces trois outils d'exception sont désormais accessibles gratuitement à tous les particuliers. "
+                      uid=1_1328 InlineTextBox "Que vous soyez débutant ou expert, vous avez désormais accès à la technologie de pointe sans le moindre coût."
+                uid=1_1329 ignored
+                  uid=1_1330 ignored
+                    uid=1_1331 heading "🍌 Nano Banana" level="3"
+                      uid=1_1332 StaticText "🍌 Nano Banana"
+                        uid=1_1333 InlineTextBox "🍌 Nano Banana"
+                    uid=1_1334 paragraph
+                      uid=1_1335 strong
+                        uid=1_1336 StaticText "Le plus simple pour débuter"
+                          uid=1_1337 InlineTextBox "Le plus simple pour débuter"
+                    uid=1_1338 paragraph
+                      uid=1_1339 StaticText "Interface Gemini intuitive, parfait pour les retouches rapides et les créations quotidiennes."
+                        uid=1_1340 InlineTextBox "Interface Gemini intuitive, parfait pour "
+                        uid=1_1341 InlineTextBox "les retouches rapides et les créations "
+                        uid=1_1342 InlineTextBox "quotidiennes."
+                    uid=1_1343 generic
+                      uid=1_1344 link " Essayer Gratuitement" url="https://gemini.google.com/"
+                        uid=1_1345 generic
+                          uid=1_1346 ignored
+                            uid=1_1347 StaticText ""
+                              uid=1_1348 InlineTextBox ""
+                        uid=1_1349 StaticText "Essayer Gratuitement"
+                          uid=1_1350 InlineTextBox "Essayer Gratuitement"
+                  uid=1_1351 ignored
+                    uid=1_1352 heading "🐼 Qwen Edit" level="3"
+                      uid=1_1353 StaticText "🐼 Qwen Edit"
+                        uid=1_1354 InlineTextBox "🐼 Qwen Edit"
+                    uid=1_1355 paragraph
+                      uid=1_1356 strong
+                        uid=1_1357 StaticText "Le plus précis techniquement"
+                          uid=1_1358 InlineTextBox "Le plus précis techniquement"
+                    uid=1_1359 paragraph
+                      uid=1_1360 StaticText "20 milliards de paramètres pour des modifications chirurgicales, idéal pour les projets techniques."
+                        uid=1_1361 InlineTextBox "20 milliards de paramètres pour des "
+                        uid=1_1362 InlineTextBox "modifications chirurgicales, idéal pour "
+                        uid=1_1363 InlineTextBox "les projets techniques."
+                    uid=1_1364 generic
+                      uid=1_1365 link " Accès Gratuit" url="https://chat.qwen.ai/"
+                        uid=1_1366 generic
+                          uid=1_1367 ignored
+                            uid=1_1368 StaticText ""
+                              uid=1_1369 InlineTextBox ""
+                        uid=1_1370 StaticText "Accès Gratuit"
+                          uid=1_1371 InlineTextBox "Accès Gratuit"
+                  uid=1_1372 ignored
+                    uid=1_1373 heading "✨ Seedream-4" level="3"
+                      uid=1_1374 StaticText "✨ Seedream-4"
+                        uid=1_1375 InlineTextBox "✨ Seedream-4"
+                    uid=1_1376 paragraph
+                      uid=1_1377 strong
+                        uid=1_1378 StaticText "Le plus haute qualité"
+                          uid=1_1379 InlineTextBox "Le plus haute qualité"
+                    uid=1_1380 paragraph
+                      uid=1_1381 StaticText "Résolution 4K exceptionnelle, parfait pour les projets professionnels et créations artistiques."
+                        uid=1_1382 InlineTextBox "Résolution 4K exceptionnelle, parfait "
+                        uid=1_1383 InlineTextBox "pour les projets professionnels et "
+                        uid=1_1384 InlineTextBox "créations artistiques."
+                    uid=1_1385 generic
+                      uid=1_1386 link " Utiliser Gratuitement" url="https://lmarena.ai/"
+                        uid=1_1387 generic
+                          uid=1_1388 ignored
+                            uid=1_1389 StaticText ""
+                              uid=1_1390 InlineTextBox ""
+                        uid=1_1391 StaticText "Utiliser Gratuitement"
+                          uid=1_1392 InlineTextBox "Utiliser Gratuitement"
+                uid=1_1393 ignored
+                  uid=1_1394 heading "🎯 Notre Recommandation pour les Particuliers" level="4"
+                    uid=1_1395 StaticText "🎯 Notre Recommandation pour les Particuliers"
+                      uid=1_1396 InlineTextBox "🎯 Notre Recommandation pour les Particuliers"
+                  uid=1_1397 paragraph
+                    uid=1_1398 strong
+                      uid=1_1399 StaticText "Commencez avec Nano Banana"
+                        uid=1_1400 InlineTextBox "Commencez avec Nano Banana"
+                    uid=1_1401 StaticText " pour sa simplicité, "
+                      uid=1_1402 InlineTextBox " pour sa simplicité, "
+                    uid=1_1403 strong
+                      uid=1_1404 StaticText "essayez Qwen"
+                        uid=1_1405 InlineTextBox "essayez Qwen"
+                    uid=1_1406 StaticText " pour la précision technique, et "
+                      uid=1_1407 InlineTextBox " pour la précision technique, et "
+                    uid=1_1408 strong
+                      uid=1_1409 StaticText "utilisez Seedream-4"
+                        uid=1_1410 InlineTextBox "utilisez Seedream-4"
+                    uid=1_1411 StaticText " pour la qualité 4K. Les trois sont gratuits - testez-les tous et choisissez votre préféré !"
+                      uid=1_1412 InlineTextBox " pour la qualité "
+                      uid=1_1413 InlineTextBox "4K. Les trois sont gratuits - testez-les tous et choisissez votre préféré !"
+                  uid=1_1414 ignored
+                    uid=1_1415 link " Formation IA Gratuite" url="https://safonas.com/index.html#contact"
+                      uid=1_1416 generic
+                        uid=1_1417 ignored
+                          uid=1_1418 StaticText ""
+                            uid=1_1419 InlineTextBox ""
+                      uid=1_1420 StaticText "Formation IA Gratuite"
+                        uid=1_1421 InlineTextBox "Formation IA Gratuite"
+                    uid=1_1422 ignored
+                      uid=1_1423 generic
+                        uid=1_1424 ignored
+                          uid=1_1425 StaticText ""
+                            uid=1_1426 InlineTextBox ""
+                      uid=1_1427 StaticText "3 Outils = 0€ Total"
+                        uid=1_1428 InlineTextBox "3 Outils = 0€ Total"
+              uid=1_1429 ignored
+                uid=1_1430 ignored
+                  uid=1_1431 heading " Prêt à Révolutionner Votre Activité avec l'IA ?" level="2"
+                    uid=1_1432 generic
+                      uid=1_1433 ignored
+                        uid=1_1434 StaticText ""
+                          uid=1_1435 InlineTextBox ""
+                    uid=1_1436 StaticText " Prêt à Révolutionner Votre Activité avec l'IA ?"
+                      uid=1_1437 InlineTextBox " Prêt à Révolutionner Votre Activité avec l'IA ?"
+                  uid=1_1438 paragraph
+                    uid=1_1439 StaticText "L'intelligence artificielle n'est plus l'avenir, c'est la réalité. Que vous soyez entrepreneur, créatif, ou passionné par la technologie, notre équipe d'experts vous accompagne dans votre transformation digitale."
+                      uid=1_1440 InlineTextBox "L'intelligence artificielle n'est plus l'avenir, c'est la réalité. Que vous soyez entrepreneur, "
+                      uid=1_1441 InlineTextBox "créatif, ou passionné par la technologie, notre équipe d'experts vous accompagne dans "
+                      uid=1_1442 InlineTextBox "votre transformation digitale."
+                uid=1_1443 ignored
+                  uid=1_1444 ignored
+                    uid=1_1445 heading "Solutions IA pour Entreprises & Professionnels" level="3"
+                      uid=1_1446 StaticText "Solutions IA pour Entreprises & Professionnels"
+                        uid=1_1447 InlineTextBox "Solutions IA pour Entreprises & Professionnels"
+                    uid=1_1448 ignored
+                      uid=1_1449 ignored
+                        uid=1_1450 ignored
+                          uid=1_1451 generic
+                            uid=1_1452 ignored
+                              uid=1_1453 StaticText ""
+                                uid=1_1454 InlineTextBox ""
+                        uid=1_1455 heading "Automatisation" level="4"
+                          uid=1_1456 StaticText "Automatisation"
+                            uid=1_1457 InlineTextBox "Automatisation"
+                        uid=1_1458 paragraph
+                          uid=1_1459 StaticText "Solutions IA sur mesure pour optimiser vos processus"
+                            uid=1_1460 InlineTextBox "Solutions IA sur mesure pour "
+                            uid=1_1461 InlineTextBox "optimiser vos processus"
+                      uid=1_1462 ignored
+                        uid=1_1463 ignored
+                          uid=1_1464 generic
+                            uid=1_1465 ignored
+                              uid=1_1466 StaticText ""
+                                uid=1_1467 InlineTextBox ""
+                        uid=1_1468 heading "Formation" level="4"
+                          uid=1_1469 StaticText "Formation"
+                            uid=1_1470 InlineTextBox "Formation"
+                        uid=1_1471 paragraph
+                          uid=1_1472 StaticText "Accompagnement personnalisé de vos équipes"
+                            uid=1_1473 InlineTextBox "Accompagnement "
+                            uid=1_1474 InlineTextBox "personnalisé de vos équipes"
+                      uid=1_1475 ignored
+                        uid=1_1476 ignored
+                          uid=1_1477 generic
+                            uid=1_1478 ignored
+                              uid=1_1479 StaticText ""
+                                uid=1_1480 InlineTextBox ""
+                        uid=1_1481 heading "Stratégie" level="4"
+                          uid=1_1482 StaticText "Stratégie"
+                            uid=1_1483 InlineTextBox "Stratégie"
+                        uid=1_1484 paragraph
+                          uid=1_1485 StaticText "Transformation digitale guidée par l'IA"
+                            uid=1_1486 InlineTextBox "Transformation digitale guidée "
+                            uid=1_1487 InlineTextBox "par l'IA"
+                      uid=1_1488 ignored
+                        uid=1_1489 ignored
+                          uid=1_1490 generic
+                            uid=1_1491 ignored
+                              uid=1_1492 StaticText ""
+                                uid=1_1493 InlineTextBox ""
+                        uid=1_1494 heading "Développement" level="4"
+                          uid=1_1495 StaticText "Développement"
+                            uid=1_1496 InlineTextBox "Développement"
+                        uid=1_1497 paragraph
+                          uid=1_1498 StaticText "Applications IA adaptées à votre secteur"
+                            uid=1_1499 InlineTextBox "Applications IA adaptées à "
+                            uid=1_1500 InlineTextBox "votre secteur"
+                uid=1_1501 ignored
+                  uid=1_1502 ignored
+                    uid=1_1503 heading "🎯 Pourquoi Choisir Safonas ?" level="4"
+                      uid=1_1504 StaticText "🎯 Pourquoi Choisir Safonas ?"
+                        uid=1_1505 InlineTextBox "🎯 Pourquoi Choisir Safonas ?"
+                    uid=1_1506 ignored
+                      uid=1_1507 ignored
+                        uid=1_1508 generic
+                          uid=1_1509 ignored
+                            uid=1_1510 StaticText ""
+                              uid=1_1511 InlineTextBox ""
+                        uid=1_1512 paragraph
+                          uid=1_1513 strong
+                            uid=1_1514 StaticText "Expertise Locale"
+                              uid=1_1515 InlineTextBox "Expertise Locale"
+                          uid=1_1516 LineBreak "
+"
+                            uid=1_1517 InlineTextBox "
+"
+                          uid=1_1518 StaticText "Spécialistes de l'IA en Tunisie"
+                            uid=1_1519 InlineTextBox "Spécialistes de l'IA en Tunisie"
+                      uid=1_1520 ignored
+                        uid=1_1521 generic
+                          uid=1_1522 ignored
+                            uid=1_1523 StaticText ""
+                              uid=1_1524 InlineTextBox ""
+                        uid=1_1525 paragraph
+                          uid=1_1526 strong
+                            uid=1_1527 StaticText "Solutions Sécurisées"
+                              uid=1_1528 InlineTextBox "Solutions Sécurisées"
+                          uid=1_1529 LineBreak "
+"
+                            uid=1_1530 InlineTextBox "
+"
+                          uid=1_1531 StaticText "Protection de vos données"
+                            uid=1_1532 InlineTextBox "Protection de vos données"
+                      uid=1_1533 ignored
+                        uid=1_1534 generic
+                          uid=1_1535 ignored
+                            uid=1_1536 StaticText ""
+                              uid=1_1537 InlineTextBox ""
+                        uid=1_1538 paragraph
+                          uid=1_1539 strong
+                            uid=1_1540 StaticText "Résultats Mesurables"
+                              uid=1_1541 InlineTextBox "Résultats Mesurables"
+                          uid=1_1542 LineBreak "
+"
+                            uid=1_1543 InlineTextBox "
+"
+                          uid=1_1544 StaticText "ROI garanti et suivi continu"
+                            uid=1_1545 InlineTextBox "ROI garanti et suivi continu"
+                  uid=1_1546 ignored
+                    uid=1_1547 link " Démarrer Projet IA" url="https://safonas.com/index.html#contact"
+                      uid=1_1548 generic
+                        uid=1_1549 ignored
+                          uid=1_1550 StaticText ""
+                            uid=1_1551 InlineTextBox ""
+                      uid=1_1552 StaticText "Démarrer Projet IA"
+                        uid=1_1553 InlineTextBox "Démarrer Projet IA"
+                    uid=1_1554 link " Consultation Gratuite" url="https://safonas.com/index.html#contact"
+                      uid=1_1555 generic
+                        uid=1_1556 ignored
+                          uid=1_1557 StaticText ""
+                            uid=1_1558 InlineTextBox ""
+                      uid=1_1559 StaticText "Consultation Gratuite"
+                        uid=1_1560 InlineTextBox "Consultation Gratuite"
+      uid=1_1561 generic
+        uid=1_1562 generic
+        uid=1_1563 ignored
+          uid=1_1564 ignored
+            uid=1_1565 ignored
+              uid=1_1566 ignored
+              uid=1_1567 ignored
+                uid=1_1568 ignored
+                uid=1_1569 ignored
+                uid=1_1570 ignored
+              uid=1_1571 ignored
+      uid=1_1572 contentinfo
+        uid=1_1573 generic
+          uid=1_1574 generic
+          uid=1_1575 generic
+        uid=1_1576 generic
+          uid=1_1577 ignored
+            uid=1_1578 ignored
+              uid=1_1579 generic
+                uid=1_1580 StaticText "Safonas"
+                  uid=1_1581 InlineTextBox "Safonas"
+              uid=1_1582 paragraph
+                uid=1_1583 StaticText "Révolutionnons ensemble l'avenir de votre entreprise avec l'intelligence artificielle. Des solutions sur mesure pour accélérer votre croissance."
+                  uid=1_1584 InlineTextBox "Révolutionnons ensemble l'avenir "
+                  uid=1_1585 InlineTextBox "de votre entreprise avec "
+                  uid=1_1586 InlineTextBox "l'intelligence artificielle. Des "
+                  uid=1_1587 InlineTextBox "solutions sur mesure pour "
+                  uid=1_1588 InlineTextBox "accélérer votre croissance."
+            uid=1_1589 ignored
+              uid=1_1590 heading "Produit" level="4"
+                uid=1_1591 StaticText "Produit"
+                  uid=1_1592 InlineTextBox "Produit"
+              uid=1_1593 list
+                uid=1_1594 listitem level="1"
+                  uid=1_1595 link " Fonctionnalités" url="https://safonas.com/index.html#features"
+                    uid=1_1596 generic
+                      uid=1_1597 ignored
+                        uid=1_1598 StaticText ""
+                          uid=1_1599 InlineTextBox ""
+                    uid=1_1600 StaticText "Fonctionnalités"
+                      uid=1_1601 InlineTextBox "Fonctionnalités"
+                uid=1_1602 listitem level="1"
+                  uid=1_1603 link " Documentation" url="https://safonas.com/index.html#contact"
+                    uid=1_1604 generic
+                      uid=1_1605 ignored
+                        uid=1_1606 StaticText ""
+                          uid=1_1607 InlineTextBox ""
+                    uid=1_1608 StaticText "Documentation"
+                      uid=1_1609 InlineTextBox "Documentation"
+                uid=1_1610 listitem level="1"
+                  uid=1_1611 link " API" url="https://safonas.com/index.html#contact"
+                    uid=1_1612 generic
+                      uid=1_1613 ignored
+                        uid=1_1614 StaticText ""
+                          uid=1_1615 InlineTextBox ""
+                    uid=1_1616 StaticText "API"
+                      uid=1_1617 InlineTextBox "API"
+                uid=1_1618 listitem level="1"
+                  uid=1_1619 link " Sécurité" url="https://safonas.com/index.html#contact"
+                    uid=1_1620 generic
+                      uid=1_1621 ignored
+                        uid=1_1622 StaticText ""
+                          uid=1_1623 InlineTextBox ""
+                    uid=1_1624 StaticText "Sécurité"
+                      uid=1_1625 InlineTextBox "Sécurité"
+            uid=1_1626 ignored
+              uid=1_1627 heading "Ressources" level="4"
+                uid=1_1628 StaticText "Ressources"
+                  uid=1_1629 InlineTextBox "Ressources"
+              uid=1_1630 list
+                uid=1_1631 listitem level="1"
+                  uid=1_1632 link " Blog" url="https://safonas.com/blog/"
+                    uid=1_1633 generic
+                      uid=1_1634 ignored
+                        uid=1_1635 StaticText ""
+                          uid=1_1636 InlineTextBox ""
+                    uid=1_1637 StaticText "Blog"
+                      uid=1_1638 InlineTextBox "Blog"
+                uid=1_1639 listitem level="1"
+                  uid=1_1640 link " Guides" url="https://safonas.com/blog/"
+                    uid=1_1641 generic
+                      uid=1_1642 ignored
+                        uid=1_1643 StaticText ""
+                          uid=1_1644 InlineTextBox ""
+                    uid=1_1645 StaticText "Guides"
+                      uid=1_1646 InlineTextBox "Guides"
+                uid=1_1647 listitem level="1"
+                  uid=1_1648 link " Webinaires" url="https://safonas.com/index.html#contact"
+                    uid=1_1649 generic
+                      uid=1_1650 ignored
+                        uid=1_1651 StaticText ""
+                          uid=1_1652 InlineTextBox ""
+                    uid=1_1653 StaticText "Webinaires"
+                      uid=1_1654 InlineTextBox "Webinaires"
+                uid=1_1655 listitem level="1"
+                  uid=1_1656 link " Support" url="https://safonas.com/index.html#contact"
+                    uid=1_1657 generic
+                      uid=1_1658 ignored
+                        uid=1_1659 StaticText ""
+                          uid=1_1660 InlineTextBox ""
+                    uid=1_1661 StaticText "Support"
+                      uid=1_1662 InlineTextBox "Support"
+            uid=1_1663 ignored
+              uid=1_1664 heading "Entreprise" level="4"
+                uid=1_1665 StaticText "Entreprise"
+                  uid=1_1666 InlineTextBox "Entreprise"
+              uid=1_1667 list
+                uid=1_1668 listitem level="1"
+                  uid=1_1669 link " À propos" url="https://safonas.com/index.html#contact"
+                    uid=1_1670 generic
+                      uid=1_1671 ignored
+                        uid=1_1672 StaticText ""
+                          uid=1_1673 InlineTextBox ""
+                    uid=1_1674 StaticText "À propos"
+                      uid=1_1675 InlineTextBox "À propos"
+                uid=1_1676 listitem level="1"
+                  uid=1_1677 link " Carrières" url="https://safonas.com/index.html#contact"
+                    uid=1_1678 generic
+                      uid=1_1679 ignored
+                        uid=1_1680 StaticText ""
+                          uid=1_1681 InlineTextBox ""
+                    uid=1_1682 StaticText "Carrières"
+                      uid=1_1683 InlineTextBox "Carrières"
+                uid=1_1684 listitem level="1"
+                  uid=1_1685 link " Presse" url="https://safonas.com/index.html#contact"
+                    uid=1_1686 generic
+                      uid=1_1687 ignored
+                        uid=1_1688 StaticText ""
+                          uid=1_1689 InlineTextBox ""
+                    uid=1_1690 StaticText "Presse"
+                      uid=1_1691 InlineTextBox "Presse"
+                uid=1_1692 listitem level="1"
+                  uid=1_1693 link " Contact" url="https://safonas.com/index.html#contact"
+                    uid=1_1694 generic
+                      uid=1_1695 ignored
+                        uid=1_1696 StaticText ""
+                          uid=1_1697 InlineTextBox ""
+                    uid=1_1698 StaticText "Contact"
+                      uid=1_1699 InlineTextBox "Contact"
+          uid=1_1700 ignored
+            uid=1_1701 ignored
+              uid=1_1702 ignored
+                uid=1_1703 ignored
+                  uid=1_1704 StaticText "© 2025 Safonas. Tous droits réservés."
+                    uid=1_1705 InlineTextBox "© 2025 Safonas. Tous droits réservés."
+                uid=1_1706 ignored
+                  uid=1_1707 ignored
+                  uid=1_1708 ignored
+                    uid=1_1709 StaticText "Tous systèmes opérationnels"
+                      uid=1_1710 InlineTextBox "Tous systèmes opérationnels"
+              uid=1_1711 ignored
+                uid=1_1712 link "Confidentialité" url="https://safonas.com/docs/politique-de-confidentialite"
+                  uid=1_1713 StaticText "Confidentialité"
+                    uid=1_1714 InlineTextBox "Confidentialité"
+                uid=1_1715 link "Mentions légales" url="https://safonas.com/mentions-legales"
+                  uid=1_1716 StaticText "Mentions légales"
+                    uid=1_1717 InlineTextBox "Mentions légales"
+                uid=1_1718 link "CGU" url="https://safonas.com/docs/CGU_Safonas"
+                  uid=1_1719 StaticText "CGU"
+                    uid=1_1720 InlineTextBox "CGU"
+                uid=1_1721 link "Cookies" url="https://safonas.com/cookies-policy"
+                  uid=1_1722 StaticText "Cookies"
+                    uid=1_1723 InlineTextBox "Cookies"
+                uid=1_1724 link "Avis IA" url="https://safonas.com/legal/disclaimer-services-ia"
+                  uid=1_1725 StaticText "Avis IA"
+                    uid=1_1726 InlineTextBox "Avis IA"

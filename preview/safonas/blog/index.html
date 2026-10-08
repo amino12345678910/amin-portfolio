@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Force clean URLs everywhere (local and production) -->
+    <script>
+      window.FORCE_CLEAN_URLS = true;
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <title>Blog Safonas - Actualités IA, Guides & Tutoriels | Agence Intelligence Artificielle Tunisie</title>
+    <meta name="description" content="🚀 Découvrez les dernières actualités IA, guides pratiques et tutoriels experts. Blog Safonas - votre référence en intelligence artificielle en Tunisie. Articles techniques, outils gratuits et stratégies IA." />
+    <meta name="keywords" content="blog IA Tunisie, intelligence artificielle, guides IA, tutoriels IA, actualités IA, outils IA gratuits, Safonas blog, agence IA Tunisie, stratégies IA, technologies émergentes" />
+    <meta name="author" content="Équipe Safonas - Experts IA Tunisie" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://safonas.com/blog/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog Safonas - Actualités IA, Guides & Tutoriels | Experts Tunisie" />
+    <meta property="og:description" content="🚀 Le blog de référence en intelligence artificielle en Tunisie. Découvrez guides pratiques, outils gratuits, actualités IA et stratégies d'experts pour transformer votre entreprise." />
+    <meta property="og:image" content="https://safonas.com/assets/blog-index-social.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Blog Safonas - Centre de Connaissances IA Tunisie" />
+    <meta property="og:url" content="https://safonas.com/blog/" />
+    <meta property="og:site_name" content="Safonas - Agence IA Tunisie" />
+    <meta property="og:locale" content="fr_TN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog Safonas - Centre de Connaissances IA | Experts Tunisie" />
+    <meta name="twitter:description" content="🚀 Guides IA, outils gratuits, actualités et stratégies d'experts. Le blog de référence en intelligence artificielle en Tunisie." />
+    <meta name="twitter:image" content="https://safonas.com/assets/blog-index-social.jpg" />
+    <meta name="twitter:image:alt" content="Blog Safonas - Centre de Connaissances IA" />
+    <meta name="twitter:site" content="@SafonasAI" />
+    <meta name="twitter:creator" content="@SafonasAI" />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#00ff94" />
+    <meta name="msapplication-TileColor" content="#00ff94" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=1.2" />
+    <link rel="stylesheet" href="blog-styles.css?v=1.1" />
+
+    <!-- Schema Markup for Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Safonas - Centre de Connaissances IA",
+      "description": "Blog spécialisé en intelligence artificielle, guides pratiques, outils gratuits et stratégies IA pour les entreprises tunisiennes",
+      "url": "https://safonas.com/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Safonas",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://safonas.com/assets/safonas-logo.png",
+          "width": 400,
+          "height": 100
+        }
+      },
+      "inLanguage": "fr",
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "17 Outils IA Gratuits pour Créer un Site Web Professionnel",
+          "url": "https://safonas.com/blog/outils-ai-creation-site-gratuit",
+          "datePublished": "2025-08-27T10:00:00+01:00",
+          "author": {
+            "@type": "Organization",
+            "name": "Équipe Safonas"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Guide Complet Hugging Face Spaces - 400K+ Apps IA Gratuites",
+          "url": "https://safonas.com/blog/hugging-face-spaces-guide",
+          "datePublished": "2025-08-11T09:00:00+01:00",
+          "author": {
+            "@type": "Organization",
+            "name": "Équipe Safonas"
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body class="gradient-bg loaded">
+    <!-- Enhanced Header -->
+    <header data-aos="fade-down" id="header">
+      <div class="container">
+        <nav role="navigation" aria-label="Main navigation">
+          <div
+            id="logo"
+            class="logo font-display text-2xl font-bold cursor-pointer"
+            role="banner"
+            onclick="window.location.href='../index.html'"
+          >
+            Safonas
+          </div>
+          <div class="nav-links" role="menubar">
+            <a href="../index.html#features" class="nav-link" role="menuitem"
+              >Fonctionnalités</a
+            >
+            <a href="../pages/services" class="nav-link" role="menuitem"
+              >Services</a
+            >
+            <a href="../index.html#testimonials" class="nav-link" role="menuitem"
+              >Témoignages</a
+            >
+            <a href="../index.html#contact" class="nav-link" role="menuitem">Contact</a>
+          </div>
+          <div class="mobile-menu-container">
+            <button
+              id="mobile-menu-btn"
+              class="mobile-menu-btn"
+              aria-label="Toggle mobile menu"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Enhanced Mobile Menu with Slide-out Animation - Moved outside header for full viewport coverage -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay" role="presentation"></div>
+    <div id="mobile-menu" class="mobile-menu" role="menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <span class="font-display text-xl font-bold text-cloud">Safonas</span>
+        </div>
+        <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Fermer le menu">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="../index.html#features" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-star mobile-nav-icon"></i>
+          <span>Fonctionnalités</span>
+        </a>
+        <a href="../pages/services" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-cogs mobile-nav-icon"></i>
+          <span>Services</span>
+        </a>
+        <a href="../index.html#testimonials" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-comments mobile-nav-icon"></i>
+          <span>Témoignages</span>
+        </a>
+        <a href="../index.html#contact" class="mobile-nav-link" role="menuitem">
+          <i class="fas fa-envelope mobile-nav-icon"></i>
+          <span>Contact</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Blog Index Hero Section -->
+    <main id="main-content">
+      <section class="blog-hero-section py-24 pt-32 bg-charcoal relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 opacity-5">
+          <div class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple to-blue rounded-full filter blur-3xl animate-pulse"></div>
+          <div class="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-electric-mint to-purple rounded-full filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="container mx-auto px-6 max-w-6xl relative">
+          <!-- Enhanced Breadcrumb -->
+          <nav class="breadcrumb mb-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-center justify-center">
+              <div class="bg-charcoal-light/50 backdrop-blur-sm rounded-full px-6 py-3 border border-graphite/20">
+                <div class="flex items-center text-sm">
+                  <a href="../index.html" class="text-graphite-light hover:text-electric-mint transition-all duration-300 flex items-center group">
+                    <i class="fas fa-home mr-2 group-hover:scale-110 transition-transform"></i>
+                    <span>Accueil</span>
+                  </a>
+                  <i class="fas fa-chevron-right mx-3 text-graphite text-xs"></i>
+                  <span class="text-electric-mint font-medium flex items-center">
+                    <i class="fas fa-blog mr-2"></i>
+                    <span>Blog</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Hero Content -->
+          <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-electric-mint bg-opacity-10 border border-electric-mint border-opacity-20 mb-6">
+              <i class="fas fa-graduation-cap mr-2 text-electric-mint"></i>
+              <span class="text-electric-mint text-sm font-medium">Centre de Connaissances IA</span>
+            </div>
+
+            <h1 class="font-display text-5xl lg:text-6xl font-bold text-cloud mb-6 leading-tight">
+              Blog <span class="gradient-text">Safonas</span>
+            </h1>
+
+            <p class="text-graphite-light text-xl leading-relaxed max-w-4xl mx-auto mb-8">
+              🚀 Découvrez les dernières innovations en <strong class="text-electric-mint">intelligence artificielle</strong>,
+              nos guides pratiques exclusifs, et les stratégies d'experts pour <span class="text-cloud font-semibold">transformer
+              votre entreprise</span> avec l'IA. Votre référence en Tunisie pour l'IA accessible.
+            </p>
+
+            <!-- Blog Stats -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-8">
+              <div class="bg-charcoal-light/50 backdrop-blur-sm rounded-2xl p-4 border border-graphite/20">
+                <div class="text-electric-mint text-2xl font-bold mb-1">2+</div>
+                <div class="text-graphite-light text-sm">Articles Experts</div>
+              </div>
+              <div class="bg-charcoal-light/50 backdrop-blur-sm rounded-2xl p-4 border border-graphite/20">
+                <div class="text-purple text-2xl font-bold mb-1">17+</div>
+                <div class="text-graphite-light text-sm">Outils Recommandés</div>
+              </div>
+              <div class="bg-charcoal-light/50 backdrop-blur-sm rounded-2xl p-4 border border-graphite/20">
+                <div class="text-blue text-2xl font-bold mb-1">100%</div>
+                <div class="text-graphite-light text-sm">Gratuit</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Posts Grid -->
+      <section class="py-16 bg-charcoal-light">
+        <div class="container mx-auto px-6 max-w-6xl">
+
+          <!-- Filter Tags -->
+          <div class="flex flex-wrap justify-center gap-3 mb-12" data-aos="fade-up">
+            <button class="filter-tag active" data-filter="all">
+              <i class="fas fa-border-all mr-2"></i>Tous les articles
+            </button>
+            <button class="filter-tag" data-filter="outils">
+              <i class="fas fa-tools mr-2"></i>Outils IA
+            </button>
+            <button class="filter-tag" data-filter="plateformes">
+              <i class="fas fa-cube mr-2"></i>Plateformes
+            </button>
+            <button class="filter-tag" data-filter="guides">
+              <i class="fas fa-book mr-2"></i>Guides
+            </button>
+          </div>
+
+          <!-- Articles Grid -->
+          <div id="articles-grid" class="grid md:grid-cols-2 gap-8">
+            <!-- Blog posts will be dynamically loaded here -->
+            <div class="blog-loading">
+              <div class="flex items-center justify-center py-12">
+                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-electric-mint"></div>
+                <span class="ml-3 text-graphite-light">Chargement des articles...</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Load More / Pagination -->
+          <div class="text-center mt-12" data-aos="fade-up">
+            <div class="inline-flex items-center px-8 py-4 bg-charcoal rounded-2xl border border-graphite/20">
+              <i class="fas fa-check-circle text-electric-mint mr-3"></i>
+              <span class="text-cloud font-semibold">Tous les articles sont affichés</span>
+            </div>
+            <p class="text-graphite-light mt-4 text-sm">
+              De nouveaux articles d'experts arrivent bientôt ! Abonnez-vous à notre newsletter pour être informé.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Newsletter Signup Section -->
+      <section class="py-16 bg-charcoal" data-aos="fade-up">
+        <div class="container mx-auto px-6 max-w-4xl">
+          <div class="bg-gradient-to-r from-electric-mint/10 to-purple/10 rounded-3xl p-8 border border-electric-mint/20 text-center">
+            <h2 class="text-cloud text-3xl font-bold mb-4">
+              📧 Restez à la Pointe de l'IA
+            </h2>
+            <p class="text-graphite-light mb-6 max-w-2xl mx-auto text-lg">
+              Recevez chaque semaine les derniers articles, outils IA gratuits et analyses d'experts directement dans votre boîte mail.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <input type="email"
+                     placeholder="votre@email.com"
+                     class="flex-1 px-4 py-3 bg-charcoal-light border border-graphite/30 rounded-full text-cloud placeholder:text-graphite focus:outline-none focus:border-electric-mint transition-colors">
+              <button class="px-6 py-3 bg-gradient-to-r from-electric-mint to-purple text-white font-semibold rounded-full hover:shadow-lg hover:shadow-electric-mint/30 transition-all duration-300">
+                S'abonner Gratuitement
+              </button>
+            </div>
+            <p class="text-graphite text-xs mt-4">
+              ✅ Gratuit • ✅ Pas de spam • ✅ Désabonnement en 1 clic
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="py-20 mt-0 bg-charcoal-light relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 left-1/4 w-96 h-96 bg-electric-mint rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-1/4 w-80 h-80 bg-purple rounded-full blur-3xl"
+        ></div>
+      </div>
+      <div class="container mx-auto px-6 max-w-7xl relative" data-aos="fade-up">
+        <!-- Main footer content -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand section -->
+          <div class="lg:col-span-1">
+            <div class="logo font-satoshi text-3xl font-bold mb-6">Safonas</div>
+            <p class="text-graphite-light mb-8 leading-relaxed">
+              Révolutionnons ensemble l'avenir de votre entreprise avec
+              l'intelligence artificielle. Des solutions sur mesure pour
+              accélérer votre croissance.
+            </p>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="font-semibold text-cloud text-lg mb-6">Services</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="../index.html#features"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Automatisation IA
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#features"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Analyse prédictive
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#features"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Consultation stratégique
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div>
+            <h3 class="font-semibold text-cloud text-lg mb-6">Ressources</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Études de cas
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div>
+            <h3 class="font-semibold text-cloud text-lg mb-6">Entreprise</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  À propos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Carrières
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom footer -->
+        <div class="border-t border-graphite border-opacity-30 pt-12">
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="text-graphite text-sm mb-6 lg:mb-0 flex items-center">
+              <span>© 2025 Safonas. Tous droits réservés.</span>
+              <div class="ml-4 flex items-center text-xs">
+                <span
+                  class="w-2 h-2 bg-green-500 rounded-full mr-2 pulse"
+                ></span>
+                <span class="text-green-500">Tous systèmes opérationnels</span>
+              </div>
+            </div>
+            <div class="flex space-x-6 text-sm">
+              <a
+                href="#"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Politique de confidentialité
+              </a>
+              <a
+                href="#"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Conditions d'utilisation
+              </a>
+              <a
+                href="#"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Cookies
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/blog-loader.js"></script>
+
+    <script>
+      // AOS Initialization
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+
+      // Mobile Menu Functionality
+      (function() {
+        function initMobileMenu() {
+          const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+          const mobileMenu = document.getElementById('mobile-menu');
+          const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+          const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+          if (mobileMenuBtn && mobileMenu && mobileMenuOverlay && mobileMenuClose) {
+            // Remove any existing event listeners to avoid duplicates
+            mobileMenuBtn.onclick = null;
+
+            // Open mobile menu
+            mobileMenuBtn.onclick = function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+
+              mobileMenu.classList.add('active');
+              mobileMenuOverlay.classList.add('active');
+              mobileMenuBtn.setAttribute('aria-expanded', 'true');
+              mobileMenu.setAttribute('aria-hidden', 'false');
+
+              // Prevent body scroll when menu is open
+              document.body.style.overflow = 'hidden';
+
+              return false;
+            };
+
+            // Close mobile menu
+            function closeMobileMenu() {
+              mobileMenu.classList.remove('active');
+              mobileMenuOverlay.classList.remove('active');
+              mobileMenuBtn.setAttribute('aria-expanded', 'false');
+              mobileMenu.setAttribute('aria-hidden', 'true');
+
+              // Restore body scroll
+              document.body.style.overflow = '';
+            }
+
+            mobileMenuClose.onclick = closeMobileMenu;
+            mobileMenuOverlay.onclick = closeMobileMenu;
+
+            // Close menu when clicking menu links
+            const mobileNavLinks = mobileMenu.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+              link.onclick = function() {
+                setTimeout(closeMobileMenu, 100);
+              };
+            });
+
+            // Close menu on escape key
+            document.addEventListener('keydown', function(e) {
+              if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                closeMobileMenu();
+              }
+            });
+
+            return true;
+          }
+          return false;
+        }
+
+        // Try to initialize immediately
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initMobileMenu);
+        } else {
+          initMobileMenu();
+        }
+
+        // Also try with a small delay as fallback
+        setTimeout(initMobileMenu, 100);
+      })();
+    </script>
+
+    <style>
+      /* Additional Blog Index Styles */
+      .filter-tag {
+        @apply px-4 py-2 bg-charcoal border border-graphite/20 text-graphite-light rounded-full text-sm font-medium transition-all duration-300 hover:border-electric-mint/40 hover:text-electric-mint;
+      }
+
+      .filter-tag.active {
+        @apply bg-gradient-to-r from-electric-mint to-purple text-white border-transparent;
+      }
+
+      .blog-post-card {
+        transition: all 0.3s ease;
+      }
+
+      .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      /* Hide mobile menu on desktop (screens larger than 768px) */
+      @media (min-width: 769px) {
+        .mobile-menu-container,
+        .mobile-menu-btn {
+          display: none !important;
+        }
+      }
+
+      /* Show mobile menu only on mobile devices (screens 768px and below) */
+      @media (max-width: 768px) {
+        .mobile-menu-container,
+        .mobile-menu-btn {
+          display: block;
+        }
+      }
+    </style>
+  </body>
+</html>

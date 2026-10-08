@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Gym | Martial Arts & Combat Fitness</title>
+    <meta
+      name="description"
+      content="Monster Gym is a modern martial arts gym for boxing, kickboxing, grappling, and performance training."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="home-view">
+      <header class="site-header">
+      <a class="brand" href="#top" aria-label="Monster Gym home">
+        <span class="brand-logo-wrap">
+          <img class="brand-logo" src="assets/monster-gym-logo.webp" alt="Monster Gym logo">
+        </span>
+        <span>
+          <strong>Monster Gym</strong>
+          <small>Martial Arts</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#programs">Programs <span aria-hidden="true">↓</span></a>
+        <a href="#schedule" data-i18n="nav.schedule">Schedule</a>
+        <a href="#coaches" data-i18n="nav.coaches">Coaches</a>
+        <a href="#membership" data-i18n="nav.membership">Membership</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#trial" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang-switcher" role="group" aria-label="Language switcher">
+        <button class="lang-btn" type="button" data-lang="en" aria-label="Translate page to English">EN</button>
+        <span class="lang-divider" aria-hidden="true">|</span>
+        <button class="lang-btn" type="button" data-lang="fr" aria-label="Traduire la page en francais">FR</button>
+      </div>
+
+      <a class="header-cta" href="#trial">Book a Trial <span aria-hidden="true">→</span></a>
+    </header>
+
+      <main id="top">
+        <section class="hero video-ready" aria-label="Monster Gym martial arts training">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Confidence. Energy. Discipline.</p>
+            <h1>
+              <span>Train hard.</span>
+              <span>Move sharp.</span>
+              <span class="green-text">Become a monster.</span>
+            </h1>
+            <p class="hero-copy">
+              Boxing, kickboxing, grappling, and strength training in a world-class facility built for all levels.
+            </p>
+            <div class="hero-actions" aria-label="Hero actions">
+              <a class="button primary" href="#trial">Start Free Trial <span aria-hidden="true">→</span></a>
+              <a class="button secondary" href="#programs">Explore Classes <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <div class="hero-media" aria-label="Looping Monster Gym training video">
+            <video class="hero-video" autoplay="" muted="" loop="" playsinline="" preload="auto" aria-label="Martial arts athletes training at Monster Gym">
+              <source src="assets/monster-gym-hero.webm" type="video/webm">
+              <source src="assets/monster-gym-hero.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" aria-hidden="true">
+              <span>Training Video</span>
+            </div>
+            <div class="media-shade" aria-hidden="true"></div>
+          </div>
+
+        </div>
+
+       </section>
+
+        <section class="programs" id="programs" aria-labelledby="programs-title">
+          <div class="particles-container"></div>
+          <div class="section-heading animate-on-scroll">
+            <div class="heading-title-wrapper">
+              <p class="section-kicker" data-i18n="programs.kicker">Train Your Way</p>
+              <h2 id="programs-title" class="animated-title" data-i18n="programs.title">Choose Your Fight</h2>
+            </div>
+            <p class="animated-desc" data-i18n="programs.desc">From striking to grappling, strength to conditioning. Find the program that pushes your limits.</p>
+          </div>
+          <div class="program-grid-wrapper animate-on-scroll">
+            <svg class="connector-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M 0,35 L 20,35 L 40,65 L 60,35 L 80,65 L 100,65" fill="none" stroke="rgba(139, 210, 63, 0.12)" stroke-width="0.5" stroke-dasharray="1 1" />
+              <path class="glowing-path" d="M 0,35 L 20,35 L 40,65 L 60,35 L 80,65 L 100,65" fill="none" stroke="url(#line-grad)" stroke-width="0.75" />
+              <defs>
+                <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="rgba(139, 210, 63, 0)" />
+                  <stop offset="30%" stop-color="rgba(139, 210, 63, 0.1)" />
+                  <stop offset="50%" stop-color="rgba(139, 210, 63, 0.7)" />
+                  <stop offset="70%" stop-color="rgba(139, 210, 63, 0.1)" />
+                  <stop offset="100%" stop-color="rgba(139, 210, 63, 0)" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="program-grid">
+              <div class="program-card-wrapper" data-tilt="" data-stagger="-24" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateY(-24px);">
+                <div class="card-backdrop-glow"></div>
+                <a href="#boxing" class="program-card">
+                  <div class="card-inner">
+                    <span class="card-tag" data-i18n="card.tag_boxing">STRIKE</span>
+                    <div class="card-bg-grid"></div>
+                    <div class="card-ghost-text">BOX</div>
+                    <div class="card-glow"></div>
+                    <div class="card-sweep"></div>
+                    <div class="card-scan"></div>
+                    <div class="card-content">
+                      <h3 data-i18n="card.title_boxing">Boxing</h3>
+                      <p data-i18n="card.desc_boxing">Build power, speed and confidence.</p>
+                      <span class="card-action"><span data-i18n="card.action">Enter program</span> <span class="arrow">→</span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="program-card-wrapper" data-tilt data-stagger="24">
+                <div class="card-backdrop-glow"></div>
+                <a href="#kickboxing" class="program-card">
+                  <div class="card-inner">
+                    <span class="card-tag" data-i18n="card.tag_kickbox">POWER</span>
+                    <div class="card-bg-grid"></div>
+                    <div class="card-ghost-text">KICK</div>
+                    <div class="card-glow"></div>
+                    <div class="card-sweep"></div>
+                    <div class="card-scan"></div>
+                    <div class="card-content">
+                      <h3 data-i18n="card.title_kickbox">Kickboxing</h3>
+                      <p data-i18n="card.desc_kickbox">Striking, combinations and conditioning.</p>
+                      <span class="card-action"><span data-i18n="card.action">Enter program</span> <span class="arrow">&rarr;</span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="program-card-wrapper" data-tilt data-stagger="-24">
+                <div class="card-backdrop-glow"></div>
+                <a href="#grappling" class="program-card">
+                  <div class="card-inner">
+                    <span class="card-tag" data-i18n="card.tag_grappling">CONTROL</span>
+                    <div class="card-bg-grid"></div>
+                    <div class="card-ghost-text">GRAP</div>
+                    <div class="card-glow"></div>
+                    <div class="card-sweep"></div>
+                    <div class="card-scan"></div>
+                    <div class="card-content">
+                      <h3 data-i18n="card.title_grappling">Grappling</h3>
+                      <p data-i18n="card.desc_grappling">Control, technique and leverage.</p>
+                      <span class="card-action"><span data-i18n="card.action">Enter program</span> <span class="arrow">&rarr;</span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="program-card-wrapper" data-tilt data-stagger="24">
+                <div class="card-backdrop-glow"></div>
+                <a href="#strength" class="program-card">
+                  <div class="card-inner">
+                    <span class="card-tag" data-i18n="card.tag_strength">FORCE</span>
+                    <div class="card-bg-grid"></div>
+                    <div class="card-ghost-text">LIFT</div>
+                    <div class="card-glow"></div>
+                    <div class="card-sweep"></div>
+                    <div class="card-scan"></div>
+                    <div class="card-content">
+                      <h3 data-i18n="card.title_strength">Strength Training</h3>
+                      <p data-i18n="card.desc_strength">Get strong. Stay strong. Perform better.</p>
+                      <span class="card-action"><span data-i18n="card.action">Enter program</span> <span class="arrow">&rarr;</span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro animate-on-scroll" id="about">
+          <!-- Background Animations & Typography -->
+         
+
+          <!-- Asymmetric Split Grid -->
+          <div class="intro-inner">
+            <!-- Left Side: Headline & Copy -->
+            <div class="intro-headline-wrap">
+              <p class="section-kicker" data-i18n="about.kicker">Team Monster ///</p>
+              <h2 class="intro-title">
+                <span data-i18n="about.title_part1">Serious training</span>
+                <span data-i18n="about.title_part2">without</span>
+                <span class="ego-word-wrap">
+                  <span class="ego-word" data-i18n="about.title_part3">the ego.</span>
+                  <span class="ego-slash"></span>
+                </span>
+              </h2>
+              <p class="intro-copy" data-i18n="about.copy">
+                Monster Gym pairs coach-led technique with conditioning that actually carries over to the mat, ring, and daily life. Show up consistent, leave stronger.
+              </p>
+            </div>
+
+            <!-- Center: Ego Gate Visual -->
+            <div class="ego-gate-wrap" aria-hidden="true">
+              <div class="gate-line"></div>
+              <div class="gate-scanner"></div>
+              <div class="gate-labels">
+                <span class="gate-label-top" data-i18n="about.gate_top">EGO STAYS OUTSIDE</span>
+                <span class="gate-label-bottom" data-i18n="about.gate_bottom">WORK ENTERS HERE</span>
+              </div>
+            </div>
+
+            <!-- Right Side: Standard Board Panel -->
+            <div class="room-standard-panel">
+              <div class="panel-header">
+                <div class="panel-kicker" data-i18n="about.panel_kicker">ACCESS: TRAINING FLOOR //</div>
+                <div class="panel-title-row">
+                  <h3 data-i18n="about.panel_title">THE ROOM STANDARD</h3>
+                  <span class="panel-badge" data-i18n="about.panel_status">STATUS: ACTIVE</span>
+                </div>
+              </div>
+              <div class="principles-list">
+                <div class="principle-row" data-index="1">
+                  <div class="principle-num">01</div>
+                  <div class="principle-body">
+                    <h4 data-i18n="about.p1_title">RESPECT THE ROOM</h4>
+                    <p data-i18n="about.p1_desc">No showing off. No shortcuts. No wasted rounds.</p>
+                  </div>
+                  <div class="principle-active-indicator" data-i18n="about.active_indicator">ACTIVE</div>
+                </div>
+                <div class="principle-row" data-index="2">
+                  <div class="principle-num">02</div>
+                  <div class="principle-body">
+                    <h4 data-i18n="about.p2_title">COACHING FIRST</h4>
+                    <p data-i18n="about.p2_desc">Technique, correction, and feedback every session.</p>
+                  </div>
+                  <div class="principle-active-indicator" data-i18n="about.active_indicator">ACTIVE</div>
+                </div>
+                <div class="principle-row" data-index="3">
+                  <div class="principle-num">03</div>
+                  <div class="principle-body">
+                    <h4 data-i18n="about.p3_title">PRESSURE WITH PURPOSE</h4>
+                    <p data-i18n="about.p3_desc">Train hard, but train smart.</p>
+                  </div>
+                  <div class="principle-active-indicator" data-i18n="about.active_indicator">ACTIVE</div>
+                </div>
+                <div class="principle-row" data-index="4">
+                  <div class="principle-num">04</div>
+                  <div class="principle-body">
+                    <h4 data-i18n="about.p4_title">LEAVE STRONGER</h4>
+                    <p data-i18n="about.p4_desc">Walk in focused. Walk out better.</p>
+                  </div>
+                  <div class="principle-active-indicator" data-i18n="about.active_indicator">ACTIVE</div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <span data-i18n="about.panel_footer_label">NO EGO SYSTEM / 04 PRINCIPLES</span>
+                <span class="sys-code">STATUS: EGO LOCKED OUT</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       <section class="training-band animate-on-scroll">
+        <div class="band-copy">
+          <p class="section-kicker">What You Get</p>
+          <h2>Technique, sweat, recovery, <span>repeat.</span></h2>
+          <p>Smart training. Real results. Built for every round of your journey.</p>
+        </div>
+        <div class="feature-list">
+          <div>
+            <span class="feature-icon" aria-hidden="true">
+              <img src="assets/feature-coach.webp" alt="">
+            </span>
+            <span class="feature-rule" aria-hidden="true"></span>
+            <div>
+              <h3><span>01</span> Coach-led rounds</h3>
+              <p>Every class has a clear focus, progression, and correction from experienced instructors.</p>
+            </div>
+          </div>
+          <div>
+            <span class="feature-icon" aria-hidden="true">
+              <img src="assets/feature-conditioning.webp" alt="">
+            </span>
+            <span class="feature-rule" aria-hidden="true"></span>
+            <div>
+              <h3><span>02</span> Real conditioning</h3>
+              <p>Build power, stamina, mobility, and resilience with combat-ready training blocks.</p>
+            </div>
+          </div>
+          <div>
+            <span class="feature-icon" aria-hidden="true">
+              <img src="assets/feature-intensity.webp" alt="">
+            </span>
+            <span class="feature-rule" aria-hidden="true"></span>
+            <div>
+              <h3><span>03</span> Clean intensity</h3>
+              <p>Hard work, controlled contact, and a team culture that keeps training productive.</p>
+            </div>
+          </div>
+        </div>
+       </section>
+
+        <section class="schedule animate-on-scroll" id="schedule" aria-labelledby="schedule-title">
+          <div class="schedule-heading">
+            <div>
+              <p class="section-kicker schedule-kicker" data-i18n="schedule.kicker">Weekly Flow</p>
+              <h2 id="schedule-title" data-i18n="schedule.title">Classes that fit real life.</h2>
+            </div>
+            <div class="schedule-proof" aria-label="Training promise">
+              <span>Real training.</span>
+              <span>Real results.</span>
+              <span>Real you.</span>
+            </div>
+          </div>
+
+          <div class="schedule-board" aria-label="Monster Gym weekly class schedule">
+            <aside class="schedule-days" aria-label="Training days">
+              <button class="schedule-day is-active" type="button" data-day="mon" aria-pressed="true">
+                <span>Mon</span>
+                <span class="schedule-day-arrow" aria-hidden="true">&rsaquo;</span>
+              </button>
+              <button class="schedule-day" type="button" data-day="tue" aria-pressed="false">
+                <span>Tue</span>
+                <span class="schedule-day-arrow" aria-hidden="true">&rsaquo;</span>
+              </button>
+              <button class="schedule-day" type="button" data-day="wed" aria-pressed="false">
+                <span>Wed</span>
+                <span class="schedule-day-arrow" aria-hidden="true">&rsaquo;</span>
+              </button>
+              <button class="schedule-day" type="button" data-day="thu" aria-pressed="false">
+                <span>Thu</span>
+                <span class="schedule-day-arrow" aria-hidden="true">&rsaquo;</span>
+              </button>
+              <button class="schedule-day" type="button" data-day="sat" aria-pressed="false">
+                <span>Sat</span>
+                <span class="schedule-day-arrow" aria-hidden="true">&rsaquo;</span>
+              </button>
+              <div class="schedule-habit">
+                <span aria-hidden="true">+</span>
+                <p><strong>Consistency</strong> changes everything.</p>
+              </div>
+            </aside>
+
+            <div class="schedule-list" role="list">
+              <article class="schedule-feature" role="listitem">
+                <div class="feature-day">
+                  <span class="today-dot"></span>
+                  <span class="today-label">Today</span>
+                  <strong data-i18n="schedule.day_mon">Monday</strong>
+                  <small>Focus: <em data-i18n="schedule.focus_striking">Striking</em></small>
+                </div>
+                <div class="feature-class">
+                  <span class="time-badge"><strong>07:00</strong><small>AM</small></span>
+                  <div>
+                    <h3 data-i18n="schedule.class_boxing">Boxing</h3>
+                    <p>Builds fundamentals. Sharpens focus.</p>
+                  </div>
+                </div>
+                <div class="feature-class">
+                  <span class="time-badge"><strong>18:30</strong><small>PM</small></span>
+                  <div>
+                    <h3 data-i18n="schedule.class_kickbox">Kickboxing</h3>
+                    <p>Power. Technique. Confidence.</p>
+                  </div>
+                </div>
+                <button class="schedule-toggle" type="button" aria-label="Collapse Monday">-</button>
+              </article>
+
+              <article class="schedule-row" role="listitem">
+                <strong>Tue</strong>
+                <span class="mini-session"><i aria-hidden="true"></i><b>06:30</b><small>AM</small><em data-i18n="schedule.class_strength">Strength</em></span>
+                <span class="mini-session"><i aria-hidden="true"></i><b>19:00</b><small>PM</small><em data-i18n="schedule.class_grappling">Grappling</em></span>
+                <span class="row-focus">Focus: <em data-i18n="schedule.focus_control">Control</em></span>
+                <button class="schedule-toggle" type="button" aria-label="Expand Tuesday">+</button>
+              </article>
+              <article class="schedule-row" role="listitem">
+                <strong>Wed</strong>
+                <span class="mini-session"><i aria-hidden="true"></i><b>07:00</b><small>AM</small><em data-i18n="schedule.class_boxing">Boxing</em></span>
+                <span class="mini-session"><i aria-hidden="true"></i><b>18:30</b><small>PM</small><em data-i18n="schedule.class_sparring">Sparring Lab</em></span>
+                <span class="row-focus">Focus: <em data-i18n="schedule.focus_timing">Timing</em></span>
+                <button class="schedule-toggle" type="button" aria-label="Expand Wednesday">+</button>
+              </article>
+              <article class="schedule-row" role="listitem">
+                <strong>Thu</strong>
+                <span class="mini-session"><i aria-hidden="true"></i><b>06:30</b><small>AM</small><em data-i18n="schedule.class_mobility">Mobility</em></span>
+                <span class="mini-session"><i aria-hidden="true"></i><b>19:00</b><small>PM</small><em data-i18n="schedule.class_kickbox">Kickboxing</em></span>
+                <span class="row-focus">Focus: <em data-i18n="schedule.focus_power">Power</em></span>
+                <button class="schedule-toggle" type="button" aria-label="Expand Thursday">+</button>
+              </article>
+              <article class="schedule-row" role="listitem">
+                <strong>Sat</strong>
+                <span class="mini-session"><i aria-hidden="true"></i><b>10:00</b><small>AM</small><em data-i18n="schedule.class_open">Open Mat</em></span>
+                <span class="mini-session"><i aria-hidden="true"></i><b>12:00</b><small>PM</small><em data-i18n="schedule.class_kids">Kids</em></span>
+                <span class="row-focus">Focus: <em data-i18n="schedule.focus_team">Team</em></span>
+                <button class="schedule-toggle" type="button" aria-label="Expand Saturday">+</button>
+              </article>
+
+              <a class="schedule-cta" href="#trial">
+                <span>Show up. Put in the work. Get real results.</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="coaches" id="coaches" aria-labelledby="coaches-title">
+          <div class="coaches-bg-decorations" aria-hidden="true">
+            <div class="decor-grid"></div>
+            <div class="decor-vignette"></div>
+            <div class="decor-giant-text">MONSTER</div>
+          </div>
+          
+          <div class="section-heading animate-on-scroll">
+            <p class="section-kicker" data-i18n="coaches.kicker">Coaches ///</p>
+            <h2 id="coaches-title" class="animated-title" data-i18n="coaches.title">Led by fighters. Built for members.</h2>
+            <p class="animated-desc" data-i18n="coaches.subtitle">Real coaching. Real feedback. No ego. No wasted rounds.</p>
+          </div>
+
+          <div class="fight-room-container animate-on-scroll">
+            <!-- Left Panel: Active Coach Dossier -->
+            <div class="active-coach-panel" id="active-coach-panel"></div>
+
+            <!-- Right Panel: Selector List -->
+            <div class="coach-selector-list" id="coach-selector-list"></div>
+          </div>
+
+          <!-- Philosophy Strip -->
+          <div class="philosophy-strip animate-on-scroll">
+            <div class="philosophy-item">
+              <span class="philosophy-num">01</span>
+              <div>
+                <h4 data-i18n="coaches.p1_title">Coach-led technique</h4>
+                <p data-i18n="coaches.p1_desc">Real feedback every session.</p>
+              </div>
+            </div>
+            <div class="philosophy-divider"></div>
+            <div class="philosophy-item">
+              <span class="philosophy-num">02</span>
+              <div>
+                <h4 data-i18n="coaches.p2_title">Pressure-tested training</h4>
+                <p data-i18n="coaches.p2_desc">Built for the mat, ring, and daily life.</p>
+              </div>
+            </div>
+            <div class="philosophy-divider"></div>
+            <div class="philosophy-item">
+              <span class="philosophy-num">03</span>
+              <div>
+                <h4 data-i18n="coaches.p3_title">No ego culture</h4>
+                <p data-i18n="coaches.p3_desc">Serious work. Respectful room.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="membership animate-on-scroll" id="membership" aria-labelledby="membership-title">
+          <div>
+            <p class="section-kicker" data-i18n="membership.kicker">Membership</p>
+            <h2 id="membership-title" data-i18n="membership.title">Start with the trial. Stay for the standard.</h2>
+            <p data-i18n="membership.copy">Drop in for a coached trial class, meet the team, and find the right program before choosing a plan.</p>
+          </div>
+          <div class="price-panel">
+            <span class="price-label" data-i18n="membership.price_label">Most popular</span>
+            <h3 data-i18n="membership.price_title">Unlimited Training</h3>
+            <p class="price">$129<span data-i18n="membership.price_sub">/mo</span></p>
+            <ul>
+              <li data-i18n="membership.f1">All adult classes</li>
+              <li data-i18n="membership.f2">Open mat access</li>
+              <li data-i18n="membership.f3">Strength room blocks</li>
+              <li data-i18n="membership.f4">Monthly progress check</li>
+            </ul>
+            <a class="button primary" href="#trial" data-i18n="membership.cta">Claim Trial Spot</a>
+          </div>
+        </section>
+
+        <section class="trial animate-on-scroll" id="trial" aria-labelledby="trial-title">
+        <div class="trial-intro">
+          <div>
+            <p class="section-kicker">Book In</p>
+            <h2 id="trial-title">Your first class is <span>waiting.</span></h2>
+            <p>Tell us a little about yourself and we'll help you get started.</p>
+          </div>
+        </div>
+        <form class="trial-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" autocomplete="name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" autocomplete="email">
+          </label>
+          <label>
+            Program
+            <select name="program">
+              <option>Boxing</option>
+              <option>Kickboxing</option>
+              <option>Grappling</option>
+              <option>Kids Martial Arts</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit">Request Trial</button>
+          <p class="privacy-note">We respect your privacy. Your information is safe with us.</p>
+        </form>
+        </section>
+      </main>
+
+      <footer class="site-footer animate-on-scroll">
+        <div class="footer-main">
+          <a class="footer-brand" href="#top" aria-label="Monster Gym home">
+            <span class="brand-logo-wrap">
+              <img class="brand-logo" src="assets/monster-gym-logo.webp" alt="Monster Gym logo">
+            </span>
+            <span>
+              <strong>Monster Gym</strong>
+              <small data-i18n="footer.tagline">Confidence. Energy. Discipline.</small>
+            </span>
+          </a>
+
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#programs">Programs</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#coaches">Coaches</a>
+            <a href="#membership">Membership</a>
+            <a href="#trial">Contact</a>
+          </nav>
+
+          <div class="footer-programs" aria-label="Training programs">
+            <span>Boxing</span>
+            <span>Kickboxing</span>
+            <span>Grappling</span>
+            <span>Strength</span>
+          </div>
+
+          <div class="footer-contact">
+            <span>hello@monstergym.example</span>
+            <span>Mon-Sat / 06:30-20:00</span>
+            <a class="button primary" href="#trial">Book a Trial</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 Monster Gym. All rights reserved.</span>
+          <span>Real training. Real results.</span>
+        </div>
+      </footer>
+    </div>
+
+    <div id="program-view" class="program-view-hidden" aria-hidden="true"></div>
+
+    <!-- Transition Overlay -->
+    <div id="transition-overlay" class="transition-idle" aria-hidden="true">
+      <div class="overlay-panel panel-left"></div>
+      <div class="overlay-panel panel-right"></div>
+      <div class="overlay-scanline"></div>
+      <div class="overlay-title-wrapper">
+        <h1 class="overlay-title"></h1>
+      </div>
+    </div>
+
+    <!-- Chatbot Floating UI -->
+    <div id="chatbot-container">
+      <!-- Toggle Bubble -->
+      <button id="chatbot-toggle" aria-label="Open chat assistant" aria-haspopup="dialog" aria-expanded="false">
+        <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+        </svg>
+        <svg class="close-icon" viewBox="0 0 24 24" width="24" height="24" style="display: none;">
+          <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+
+      <!-- Chat Window Overlay -->
+      <div id="chatbot-window" class="chatbot-hidden" role="dialog" aria-modal="true" aria-label="Monster Gym AI Assistant">
+        <!-- Chat Header -->
+        <header class="chatbot-header">
+          <div class="chatbot-status-row">
+            <span class="status-indicator"></span>
+            <span class="status-text" data-i18n="chat.status">SYSTEM // ACTIVE</span>
+          </div>
+          <div class="chatbot-title-row">
+            <h3 data-i18n="chat.header_title">MONSTER ASSISTANT</h3>
+            <button id="chatbot-close-btn" aria-label="Close chat assistant">&times;</button>
+          </div>
+        </header>
+
+        <!-- Message History -->
+        <div id="chatbot-history" role="log" aria-live="polite">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Prompt Suggestions -->
+        <div class="chatbot-suggestions" id="chatbot-suggestions">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Input Field footer -->
+        <footer class="chatbot-footer">
+          <input type="text" id="chatbot-input" placeholder="Ask about training..." data-i18n-placeholder="chat.placeholder" autocomplete="off" />
+          <button id="chatbot-send" aria-label="Send message">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

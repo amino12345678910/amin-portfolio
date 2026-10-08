@@ -1,0 +1,143 @@
+{
+  "posts": [
+    {
+      "id": "nano-banana-qwen-seedream-ia-editing",
+      "title": "Nano Banana vs Qwen Image Edit 2509 vs Seedream-4 : Le Duel des Géants de l'IA Image 2025",
+      "excerpt": "🎯 Découvrez les 3 modèles d'IA révolutionnaires qui transforment l'édition d'images en 2025. Analyse comparative complète, benchmarks, et guide d'implémentation pour choisir la solution parfaite pour vos projets.",
+      "date": "2025-10-05",
+      "author": "Équipe Safonas",
+      "category": "outils",
+      "tags": ["Nano Banana", "Qwen Image Edit", "Seedream-4", "IA Image", "Benchmark"],
+      "readTime": 15,
+      "featured": true,
+      "image": "/blog/images/ia-editing-showdown.jpg",
+      "url": "nano-banana-qwen-seedream-ia-editing"
+    },
+    {
+      "id": "outils-ai-creation-site-gratuit",
+      "title": "17 Outils IA Gratuits pour Créer un Site Web Professionnel",
+      "excerpt": "🚀 Découvrez notre sélection exclusive de 17 outils d'IA 100% gratuits pour créer facilement votre site web professionnel, même sans aucune connaissance technique. Économisez des milliers d'euros en frais de développement !",
+      "date": "2025-08-27",
+      "author": "Équipe Safonas",
+      "category": "outils",
+      "tags": ["OutilsGratuits", "SiteWeb", "NoCode", "IA"],
+      "readTime": 12,
+      "featured": true,
+      "image": "/blog/images/outils-ai-gratuits.jpg",
+      "url": "outils-ai-creation-site-gratuit"
+    },
+    {
+      "id": "hugging-face-spaces-guide",
+      "title": "Guide Complet Hugging Face Spaces - 400K+ Apps IA Gratuites",
+      "excerpt": "🚀 Découvrez la plus grande boutique d'applications d'IA au monde avec plus de 400 000 applications gratuites. Guide complet étape par étape pour maîtriser cette plateforme révolutionnaire et accéder à l'IA sans limites.",
+      "date": "2025-08-11",
+      "author": "Équipe Safonas",
+      "category": "plateformes",
+      "tags": ["HuggingFace", "PlateformeIA", "AppsGratuites", "Machine Learning"],
+      "readTime": 8,
+      "featured": true,
+      "image": "/blog/images/hugging-face-spaces.jpg",
+      "url": "hugging-face-spaces-guide"
+    },
+    {
+      "id": "ia-transformation-digitale-tunisie",
+      "title": "Transformation Digitale Tunisie : Comment l'IA Révolutionne les Entreprises",
+      "excerpt": "Découvrez comment l'intelligence artificielle transforme le paysage business tunisien. Études de cas, stratégies d'implémentation et retours d'expérience concrets.",
+      "date": "2025-01-15",
+      "author": "Équipe Safonas",
+      "category": "automatisation",
+      "tags": ["Transformation Digitale", "Tunisie", "IA Business", "Innovation"],
+      "readTime": 8,
+      "featured": true,
+      "image": "/blog/images/transformation-digitale-tunisie.jpg",
+      "url": "ia-transformation-digitale-tunisie"
+    },
+    {
+      "id": "automatisation-pme-tunisie",
+      "title": "Automatisation PME Tunisie : Guide Complet pour Booster votre Productivité",
+      "excerpt": "Solutions d'automatisation adaptées aux PME tunisiennes. Optimisez vos processus et boostez votre productivité avec l'IA.",
+      "date": "2025-01-10",
+      "author": "Équipe Safonas",
+      "category": "automatisation",
+      "tags": ["Automatisation", "PME Tunisie", "Productivité", "IA"],
+      "readTime": 6,
+      "featured": true,
+      "image": "/blog/images/automatisation-pme-tunisie.jpg",
+      "url": "automatisation-pme-tunisie"
+    },
+    {
+      "id": "guide-intelligence-artificielle-tunisie",
+      "title": "Guide Intelligence Artificielle Tunisie 2024 | Tout Savoir sur l'IA",
+      "excerpt": "Le guide complet pour comprendre et implémenter l'intelligence artificielle dans votre entreprise en Tunisie.",
+      "date": "2025-01-05",
+      "author": "Équipe Safonas",
+      "category": "guides",
+      "tags": ["Intelligence Artificielle", "Tunisie", "Guide IA", "Business", "ROI"],
+      "readTime": 12,
+      "featured": true,
+      "image": "/blog/images/guide-ia-tunisie.jpg",
+      "url": "guide-intelligence-artificielle-tunisie"
+    },
+    {
+      "id": "ia-transformation-digitale-tunisie",
+      "title": "Comment l'IA Transforme les Entreprises en Tunisie",
+      "excerpt": "Découvrez les secteurs tunisiens révolutionnés par l'intelligence artificielle. Opportunités uniques, stratégies d'implémentation et études de cas locales réussies.",
+      "date": "2025-06-10",
+      "author": "Équipe Safonas",
+      "category": "guides",
+      "tags": ["IA", "TransformationDigitale", "Tunisie", "Stratégie", "Innovation"],
+      "readTime": 11,
+      "featured": false,
+      "image": "/blog/images/blog-ia-transformation.jpg",
+      "url": "ia-transformation-digitale-tunisie"
+    },
+    {
+      "id": "chatbot-whatsapp-tunisie",
+      "title": "Chatbot WhatsApp Tunisie : Guide Complet pour Entreprises",
+      "excerpt": "Découvrez comment implémenter un chatbot WhatsApp performant pour votre entreprise tunisienne. Guide complet avec astuces locales, intégration paiement et support client arabe/français.",
+      "date": "2025-07-22",
+      "author": "Équipe Safonas",
+      "category": "guides",
+      "tags": ["Chatbot", "WhatsApp", "Tunisie", "Automatisation", "SupportClient"],
+      "readTime": 10,
+      "featured": false,
+      "image": "/blog/images/blog-whatsapp-chatbot.jpg",
+      "url": "chatbot-whatsapp-tunisie"
+    },
+    {
+      "id": "prompt-engineering-guide-advanced-visual",
+      "title": "Guide Complet de Prompt Engineering : Maîtrisez la Communication avec l'IA",
+      "excerpt": "🎯 Maîtrisez l'art de communiquer avec l'intelligence artificielle grâce au framework RODES. Apprenez les techniques avancées pour créer des prompts efficaces et optimiser vos interactions avec l'IA.",
+      "date": "2025-11-09",
+      "author": "Équipe Safonas",
+      "category": "guides",
+      "tags": ["Prompt Engineering", "IA", "RODES", "Communication", "Intelligence Artificielle"],
+      "readTime": 15,
+      "featured": true,
+      "image": "/blog/images/prompt-engineering-guide.jpg",
+      "url": "prompt-engineering-guide-advanced-visual"
+    }
+  ],
+  "categories": [
+    {
+      "id": "guides",
+      "name": "Guides",
+      "icon": "fas fa-book"
+    },
+    {
+      "id": "outils",
+      "name": "Outils IA",
+      "icon": "fas fa-tools"
+    },
+    {
+      "id": "plateformes",
+      "name": "Plateformes",
+      "icon": "fas fa-cube"
+    },
+    {
+      "id": "automatisation",
+      "name": "Automatisation",
+      "icon": "fas fa-robot"
+    }
+  ]
+}

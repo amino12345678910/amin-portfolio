@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales | Safonas - Agence IA Tunisie</title>
+    
+    <!-- Enhanced Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mentions légales de Safonas - Agence IA leader en Tunisie. Informations légales, protection des données RGPD, cookies et responsabilités." />
+    <meta name="keywords" content="mentions légales Safonas, agence IA Tunisie, RGPD, protection données, legal" />
+    <meta name="author" content="Safonas" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://safonas.com/mentions-legales" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/styles.css?v=1.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    
+    <!-- Page-specific styles -->
+    <style>
+        .legal-hero {
+            background: var(--gradient-primary);
+            padding: 12rem 0 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .legal-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(
+                circle at 30% 50%, 
+                rgba(139, 92, 246, 0.15) 0%, 
+                transparent 50%
+            );
+            pointer-events: none;
+        }
+        
+        .legal-content {
+            background: rgba(20, 27, 60, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 148, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .legal-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(100, 116, 139, 0.2);
+        }
+        
+        .legal-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-icon {
+            color: var(--electric-mint);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+        
+        .section-title {
+            color: var(--cloud);
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .subsection-title {
+            color: var(--electric-mint);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .legal-text {
+            color: var(--graphite-light);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .legal-text strong {
+            color: var(--cloud);
+        }
+        
+        .legal-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .legal-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.75rem;
+            color: var(--graphite-light);
+        }
+        
+        .legal-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--electric-mint);
+            font-weight: bold;
+        }
+        
+        .highlight-box {
+            background: rgba(0, 255, 148, 0.05);
+            border: 1px solid rgba(0, 255, 148, 0.2);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .highlight-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+        
+        .contact-info {
+            background: rgba(26, 29, 41, 0.6);
+            border-left: 4px solid var(--electric-mint);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 2rem;
+            color: var(--electric-mint);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border: 2px solid var(--electric-mint);
+            border-radius: var(--radius);
+            background: transparent;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .back-link::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--electric-mint);
+            transition: var(--transition);
+            z-index: -1;
+        }
+        
+        .back-link:hover::before {
+            left: 0;
+        }
+        
+        .back-link:hover {
+            color: var(--deep-navy);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: var(--graphite);
+            font-style: italic;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(100, 116, 139, 0.2);
+        }
+        
+        .breadcrumb {
+            color: var(--graphite-light);
+            margin-bottom: 2rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--electric-mint);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Pulse animation for status indicator */
+        .pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+        
+        /* Grid layout for footer columns */
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(100, 116, 139, 0.3);
+            padding-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        @media (min-width: 1024px) {
+            .footer-bottom {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 0;
+            }
+        }
+        
+        .footer-status {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            color: var(--graphite);
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (min-width: 1024px) {
+            .footer-status {
+                margin-bottom: 0;
+            }
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.875rem;
+            justify-content: center;
+        }
+        
+        @media (min-width: 1024px) {
+            .footer-links {
+                justify-content: flex-start;
+            }
+        }
+        
+        .footer-brand-col {
+            grid-column: span 1;
+        }
+        
+        @media (min-width: 1024px) {
+            .footer-brand-col {
+                grid-column: span 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .legal-hero {
+                padding: 8rem 0 4rem 0;
+            }
+            
+            .legal-content {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .section-icon {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="legal-page">
+    <!-- Enhanced Header with improved navigation -->
+    <header data-aos="fade-down" id="header">
+        <div class="container">
+            <nav role="navigation" aria-label="Main navigation">
+                <div id="logo" class="logo font-display text-2xl font-bold cursor-pointer" role="banner">
+                    <a href="../">Safonas</a>
+                </div>
+                <div class="nav-links" role="menubar">
+                    <a href="../#features" class="nav-link" role="menuitem">Fonctionnalités</a>
+                    <a href="../pages/services" class="nav-link" role="menuitem">Services</a>
+                    <a href="../#testimonials" class="nav-link" role="menuitem">Témoignages</a>
+                    <a href="../#contact" class="nav-link" role="menuitem">Contact</a>
+                </div>
+                <div class="mobile-menu-container">
+                    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Enhanced Mobile Menu -->
+            <div id="mobile-menu-overlay" class="mobile-menu-overlay" role="presentation"></div>
+            <div id="mobile-menu" class="mobile-menu" role="menu" aria-hidden="true">
+                <div class="mobile-menu-header">
+                    <div class="mobile-menu-logo">
+                        <span class="font-display text-xl font-bold text-cloud">Safonas</span>
+                    </div>
+                    <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Fermer le menu">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <nav class="mobile-menu-nav">
+                    <a href="../#features" class="mobile-nav-link" role="menuitem">
+                        <i class="fas fa-star mobile-nav-icon"></i>
+                        <span>Fonctionnalités</span>
+                    </a>
+                    <a href="../pages/services" class="mobile-nav-link" role="menuitem">
+                        <i class="fas fa-cogs mobile-nav-icon"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="../#testimonials" class="mobile-nav-link" role="menuitem">
+                        <i class="fas fa-comments mobile-nav-icon"></i>
+                        <span>Témoignages</span>
+                    </a>
+                    <a href="../#contact" class="mobile-nav-link" role="menuitem">
+                        <i class="fas fa-envelope mobile-nav-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="legal-hero">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center" data-aos="fade-up">
+                <div class="breadcrumb mb-6">
+                    <a href="../">Accueil</a> / <span>Mentions Légales</span>
+                </div>
+                <h1 class="font-display text-4xl lg:text-6xl font-bold text-cloud mb-6">
+                    <i class="fas fa-balance-scale text-electric-mint mr-4"></i>
+                    Mentions Légales
+                </h1>
+                <p class="text-xl text-graphite-light max-w-3xl mx-auto text-center">
+                    Informations légales et réglementaires concernant Safonas, votre agence IA de confiance en Tunisie
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="legal-content text-center" data-aos="fade-up">
+                
+                <div class="contact-info" data-aos="fade-right">
+                    <p class="legal-text">
+                        <strong>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique</strong>, 
+                        il est précisé aux utilisateurs du site internet https://safonas.com les présentes mentions légales.
+                    </p>
+                </div>
+
+                <!-- Section 1: Informations sur l'éditeur -->
+                <div class="legal-section" data-aos="fade-up" data-aos-delay="100">
+                    <div class="section-header">
+                        <i class="section-icon fas fa-building"></i>
+                        <h2 class="section-title">1. Informations sur l'éditeur</h2>
+                    </div>
+                    
+                    <h3 class="subsection-title">Dénomination sociale</h3>
+                    <p class="legal-text"><strong>Safonas</strong> - Agence spécialisée en Intelligence Artificielle</p>
+                    
+                    <h3 class="subsection-title">Statut juridique</h3>
+                    <p class="legal-text">Entreprise individuelle</p>
+                    
+                    <h3 class="subsection-title">Responsable de la publication</h3>
+                    <p class="legal-text"><strong>Anas Essafi</strong><br>Directeur et fondateur de Safonas</p>
+                    
+                    <div class="contact-info">
+                        <h3 class="subsection-title"><i class="fas fa-envelope text-electric-mint mr-2"></i>Coordonnées</h3>
+                        <p class="legal-text">
+                            <strong>Email professionnel :</strong> contact@safonas.com<br>
+                            <strong>Site web :</strong> https://safonas.com<br>
+                            <strong>Téléphone :</strong> +216 XX XXX XXX
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 2: Hébergement -->
+                <div class="legal-section" data-aos="fade-up" data-aos-delay="200">
+                    <div class="section-header">
+                        <i class="section-icon fas fa-server"></i>
+                        <h2 class="section-title">2. Informations sur l'hébergement</h2>
+                    </div>
+                    
+                    <h3 class="subsection-title">Hébergeur du site</h3>
+                    <p class="legal-text">Le site https://safonas.com est hébergé par :</p>
+                    <div class="highlight-box">
+                        <p class="legal-text">
+                            <strong>Nom de l'hébergeur :</strong> [À compléter]<br>
+                            <strong>Adresse :</strong> [À compléter]<br>
+                            <strong>Téléphone :</strong> [À compléter]<br>
+                            <strong>Site web :</strong> [À compléter]
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 3: Propriété intellectuelle -->
+                <div class="legal-section" data-aos="fade-up" data-aos-delay="300">
+                    <div class="section-header">
+                        <i class="section-icon fas fa-shield-alt"></i>
+                        <h2 class="section-title">3. Propriété intellectuelle</h2>
+                    </div>
+                    
+                    <h3 class="subsection-title">Droits d'auteur</h3>
+                    <p class="legal-text">L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.</p>
+                    
+                    <h3 class="subsection-title">Marques et logos</h3>
+                    <p class="legal-text">La reproduction de tout ou partie de ce site sur un support quelconque quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication.</p>
+                    
+                    <h3 class="subsection-title">Contenus tiers</h3>
+                    <p class="legal-text">Les marques citées sur ce site sont déposées par les sociétés qui en sont propriétaires.</p>
+                </div>
+
+                <!-- Section 4: Protection des données -->
+                <div class="legal-section" data-aos="fade-up" data-aos-delay="400">
+                    <div class="section-header">
+                        <i class="section-icon fas fa-user-shield"></i>
+                        <h2 class="section-title">4. Protection des données personnelles</h2>
+                    </div>
+                    
+                    <h3 class="subsection-title">Responsable du traitement</h3>
+                    <p class="legal-text">Le responsable du traitement des données personnelles collectées sur le site safonas.com est <strong>Anas Essafi</strong>.</p>
+                    
+                    <h3 class="subsection-title">Finalités du traitement</h3>
+                    <p class="legal-text">Les données personnelles collectées sur ce site sont traitées pour les finalités suivantes :</p>
+                    <ul class="legal-list">
+                        <li>Gestion des demandes de contact et de devis</li>
+                        <li>Communication marketing avec consentement</li>
+                        <li>Amélioration des services proposés</li>
+                        <li>Respect des obligations légales et réglementaires</li>
+                    </ul>
+                    
+                    <h3 class="subsection-title">Droits des utilisateurs</h3>
+                    <p class="legal-text">Conformément au RGPD, vous disposez des droits suivants :</p>
+                    <ul class="legal-list">
+                        <li>Droit d'accès à vos données personnelles</li>
+                        <li>Droit de rectification</li>
+                        <li>Droit à l'effacement ("droit à l'oubli")</li>
+                        <li>Droit à la limitation du traitement</li>
+                        <li>Droit à la portabilité des données</li>
+                        <li>Droit d'opposition</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p class="legal-text">Pour exercer ces droits : <strong>contact@safonas.com</strong></p>
+                    </div>
+                </div>
+
+                <!-- Section 5: Cookies -->
+                <div class="legal-section" data-aos="fade-up" data-aos-delay="500">
+                    <div class="section-header">
+                        <i class="section-icon fas fa-cookie-bite"></i>
+                        <h2 class="section-title">5. Cookies et technologies similaires</h2>
+                    </div>
+                    
+                    <h3 class="subsection-title">Types de cookies utilisés</h3>
+                    <ul class="legal-list">
+                        <li><strong>Cookies techniques :</strong> Nécessaires au fonctionnement du site</li>
+                        <li><strong>Cookies analytiques :</strong> Pour mesurer l'audience</li>
+                        <li><strong>Cookies de performance :</strong> Pour optimiser le contenu</li>
+                    </ul>
+                </div>
+
+                <!-- Section 6: Limitation de responsabilité -->
+                <div class="legal-section" data-aos="fade-up" data-aos-delay="600">
+                    <div class="section-header">
+                        <i class="section-icon fas fa-exclamation-triangle"></i>
+                        <h2 class="section-title">6. Limitation de responsabilité</h2>
+                    </div>
+                    
+                    <p class="legal-text">Safonas s'efforce d'assurer l'accessibilité du site 24h/24, 7j/7. Cependant, nous ne pouvons garantir une disponibilité absolue et nous nous réservons le droit d'interrompre temporairement l'accès pour des raisons de maintenance ou de force majeure.</p>
+                </div>
+
+                <!-- Section 7: Contact -->
+                <div class="legal-section" data-aos="fade-up" data-aos-delay="700">
+                    <div class="section-header">
+                        <i class="section-icon fas fa-phone"></i>
+                        <h2 class="section-title">7. Contact</h2>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <p class="legal-text">Pour toute question concernant ces mentions légales :</p>
+                        <p class="legal-text">
+                            <strong>Email :</strong> contact@safonas.com<br>
+                            <strong>Objet :</strong> "Mentions légales - Question"
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="800">
+                    <a href="../" class="back-link">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Retour à l'accueil
+                    </a>
+                </div>
+                
+                <div class="last-updated">
+                    <p>Dernière mise à jour : 8 septembre 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="py-20 bg-charcoal-light relative overflow-hidden" data-aos="fade-up">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-electric-mint rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-purple rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative" data-aos="fade-up">
+            <!-- Main footer content -->
+            <div class="footer-grid">
+                <!-- Brand section -->
+                <div class="footer-brand-col">
+                    <div class="logo font-satoshi text-3xl font-bold mb-6">Safonas</div>
+                    <p class="text-graphite-light mb-8 leading-relaxed">
+                        Révolutionnons ensemble l'avenir de votre entreprise avec
+                        l'intelligence artificielle. Des solutions sur mesure pour
+                        accélérer votre croissance.
+                    </p>
+                </div>
+
+                <!-- Product section -->
+                <div>
+                    <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">Produit</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="../#features" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Fonctionnalités
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Documentation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                API
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Sécurité
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Resources section -->
+                <div>
+                    <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">Ressources</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="../blog/" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../blog/" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Guides
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Webinaires
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Company section -->
+                <div>
+                    <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">Entreprise</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Carrières
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Presse
+                            </a>
+                        </li>
+                        <li>
+                            <a id="footerContactLink" href="../#contact" class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom footer -->
+            <div class="footer-bottom">
+                <div class="footer-status">
+                    <span>© 2025 Safonas. Tous droits réservés.</span>
+                    <div class="ml-4 flex items-center text-xs">
+                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 pulse"></span>
+                        <span class="text-green-500">Tous systèmes opérationnels</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="politique-de-confidentialite.html" class="text-graphite-light hover:text-electric-mint transition-colors">
+                        Confidentialité
+                    </a>
+                    <a href="mentions-legales.html" class="text-graphite-light hover:text-electric-mint transition-colors">
+                        Mentions légales
+                    </a>
+                    <a href="CGU_Safonas.html" class="text-graphite-light hover:text-electric-mint transition-colors">
+                        CGU
+                    </a>
+                    <a href="cookies-policy.html" class="text-graphite-light hover:text-electric-mint transition-colors">
+                        Cookies
+                    </a>
+                    <a href="disclaimer-services-ia.html" class="text-graphite-light hover:text-electric-mint transition-colors">
+                        Avis IA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+            function openMobileMenu() {
+                mobileMenu.classList.add('open');
+                mobileMenuOverlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('open');
+                mobileMenuOverlay.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', openMobileMenu);
+            }
+
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', closeMobileMenu);
+            }
+
+            if (mobileMenuOverlay) {
+                mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+            }
+
+            // Close mobile menu when clicking on nav links
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+        });
+    </script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Mentions Légales - Safonas",
+        "description": "Mentions légales de Safonas, agence IA leader en Tunisie",
+        "provider": {
+            "@type": "Organization",
+            "name": "Safonas",
+            "url": "https://safonas.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "contact@safonas.com",
+                "contactType": "customer support"
+            }
+        }
+    }
+    </script>
+</body>
+</html>

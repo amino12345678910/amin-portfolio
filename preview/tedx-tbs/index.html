@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TEDxTBS — Ideas worth spreading at Tunis Business School.">
+  <title>TEDxTBS | Ideas Worth Spreading</title>
+
+  <!-- Bootstrap: useful for CS50 Pset 8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+
+  <!-- ================= MODERN FLOATING NAVBAR ================= -->
+  <header class="navbar-wrapper fixed-top">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+      <div class="container-fluid px-3 px-md-4 px-lg-5">
+        <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="TEDxTBS home">
+          <div class="brand-badge">
+            <span class="ted">TED</span><span class="x">x</span><span class="tbs">TBS</span>
+          </div>
+          <span class="brand-subtext d-none d-sm-inline-block">Tunis Business School</span>
+        </a>
+
+        <button class="navbar-toggler modern-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-bar bar-1"></span>
+          <span class="toggler-bar bar-2"></span>
+          <span class="toggler-bar bar-3"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#home"><span>Home</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#speakers"><span>Speakers</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#team"><span>Team</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#ticket-pass"><span>Ticket Pass</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq"><span>FAQ</span></a></li>
+          </ul>
+          <div class="nav-actions d-flex align-items-center gap-3">
+            <div class="live-indicator d-none d-xl-flex align-items-center">
+              <span class="pulse-dot"></span>
+              <span class="indicator-label">EDITION 2026</span>
+            </div>
+            <a class="btn register-nav-modern" href="#register">
+              <span>REGISTER</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= $15K LEGENDARY HERO SECTION ================= -->
+  <header id="home" class="hero-section">
+    <!-- Cinematic Video Background Container -->
+    <div class="hero-video-stage">
+      <video class="hero-video-player" id="heroVideo" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+        <source src="assets/hero-bg.mp4" type="video/mp4">
+      </video>
+
+      <!-- Multi-Layer Atmospheric Red & Dark Lighting Overlays -->
+      <div class="hero-vignette"></div>
+      <div class="hero-red-cinematic-glow"></div>
+      <div class="hero-ambient-spot-left"></div>
+      <div class="hero-ambient-spot-right"></div>
+      <div class="hero-scanline-grid"></div>
+    </div>
+
+    <!-- Hero Foreground Content -->
+    <div class="container hero-content position-relative">
+      
+      <!-- Top Pill Tag -->
+      <div class="hero-pill-badge" data-aos="fade-down">
+        <span class="pill-beacon">
+          <span class="beacon-ping"></span>
+          <span class="beacon-core"></span>
+        </span>
+        <span class="pill-text">TUNIS BUSINESS SCHOOL &nbsp;&bull;&nbsp; DECEMBER 2026</span>
+      </div>
+
+      <!-- Main Monumental Heading -->
+      <div class="hero-heading-wrapper">
+        <div class="hero-watermark-brand">TEDxTBS</div>
+        <h1 class="hero-main-title">
+          <span class="title-row-eyebrow">IDEAS THAT</span>
+          <span class="title-row-highlight">
+            <span class="glow-text">INSPIRE CHANGE</span>
+          </span>
+        </h1>
+      </div>
+
+      <!-- Hero Lead Paragraph -->
+      <p class="hero-lead-text">
+        Welcome to Tunisia’s premier platform of ideas, breakthrough stories, and bold pioneers. 
+        Step into an electrifying atmosphere where thought leaders challenge assumptions and ignite a new era of impact.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-cta-cluster">
+        <a href="#register" class="btn btn-hero-gold-red">
+          <span class="btn-shine"></span>
+          <span class="btn-text">SECURE YOUR SEAT</span>
+          <span class="btn-icon-bubble">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+        <a href="#about" class="btn btn-hero-glass">
+          <span class="glass-play-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="7,5 19,12 7,19"/></svg>
+          </span>
+          <span class="btn-text">EXPLORE THE THEME</span>
+        </a>
+      </div>
+
+      <!-- Live Event Metrics Strip -->
+      <div class="hero-stats-glass-strip">
+        <div class="hero-stat-block">
+          <span class="stat-number">12+</span>
+          <span class="stat-caption">VISIONARY TALKS</span>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat-block">
+          <span class="stat-number">1,000+</span>
+          <span class="stat-caption">CHANGE-MAKERS</span>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat-block">
+          <span class="stat-number">DEC 12</span>
+          <span class="stat-caption">MAIN AUDITORIUM</span>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat-block highlight-stat">
+          <span class="stat-number" id="heroLiveDays">--</span>
+          <span class="stat-caption">DAYS TO GO</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Modern Animated Scroll Cue -->
+    <a href="#about" class="hero-scroll-cue" aria-label="Scroll to discover">
+      <div class="scroll-mouse-pill">
+        <div class="scroll-wheel-laser"></div>
+      </div>
+      <span class="scroll-cue-title">SCROLL TO DISCOVER</span>
+    </a>
+  </header>
+
+  <!-- ================= $15K WHY ATTEND SECTION (TEDx EXPERIENCE BENTO) ================= -->
+  <section id="about" class="why-experience-section">
+    <!-- Cinematic Background Elements -->
+    <div class="why-bg-stage">
+      <!-- Slashed Architectural X graphic (Inspired by TEDx Creative Posters) -->
+      <div class="why-slashed-x-backdrop">
+        <svg class="slashed-x-svg" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="x-stripes-group">
+            <line x1="120" y1="120" x2="680" y2="680" stroke="#eb0028" stroke-width="42" stroke-dasharray="90 35" stroke-linecap="round" />
+            <line x1="680" y1="120" x2="120" y2="680" stroke="#eb0028" stroke-width="42" stroke-dasharray="90 35" stroke-linecap="round" />
+            <line x1="80" y1="120" x2="640" y2="680" stroke="#ffffff" stroke-width="5" stroke-dasharray="50 30" opacity="0.3" />
+            <line x1="720" y1="120" x2="160" y2="680" stroke="#ffffff" stroke-width="5" stroke-dasharray="50 30" opacity="0.3" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- Stage Overhead Cone Spotlight -->
+      <div class="stage-cone-spotlight"></div>
+      <div class="stage-ambient-red-glow"></div>
+      <div class="stage-grid-pattern"></div>
+    </div>
+
+    <div class="container position-relative z-2">
+      <!-- Section Header -->
+      <div class="why-header text-center">
+        <div class="section-pill-tag">
+          <span class="beacon-core-pulse"></span>
+          <span class="pill-label">THE TEDx EXPERIENCE</span>
+        </div>
+        <h2 class="why-main-heading">
+          <span class="why-heading-top">THE STAGE WHERE IDEAS</span>
+          <span class="why-heading-highlight">
+            <span class="glow-text">BECOME MOVEMENTS</span>
+          </span>
+        </h2>
+        <p class="why-lead-desc">
+          TEDxTBS 2026 is more than a gathering of minds — it is an intellectual catalyst. Step onto the perimeter of the iconic red circle to absorb transformative paradigms, forge high-caliber alliances, and unlock catalytic potential.
+        </p>
+      </div>
+
+      <!-- Bento Grid 4-Pillars Showcase -->
+      <div class="tedx-bento-grid">
+        
+        <!-- BENTO CARD 1: DISCOVER (The Red Dot) - Large Feature Card -->
+        <div class="bento-card bento-card-featured discover-card">
+          <div class="bento-card-spotlight"></div>
+          <div class="bento-card-inner">
+            <div class="bento-top-meta">
+              <span class="bento-num">01</span>
+              <span class="bento-badge red-badge">THE RED DOT</span>
+            </div>
+
+            <div class="bento-visual-center red-dot-visual">
+              <div class="stage-red-carpet-circle">
+                <span class="circle-ring ring-1"></span>
+                <span class="circle-ring ring-2"></span>
+                <span class="circle-ring ring-3"></span>
+                <div class="carpet-core">
+                  <span class="carpet-text">STAGE</span>
+                </div>
+              </div>
+              <div class="soundwave-equalizer">
+                <span class="eq-bar bar-1"></span>
+                <span class="eq-bar bar-2"></span>
+                <span class="eq-bar bar-3"></span>
+                <span class="eq-bar bar-4"></span>
+                <span class="eq-bar bar-5"></span>
+                <span class="eq-bar bar-6"></span>
+                <span class="eq-bar bar-7"></span>
+              </div>
+            </div>
+
+            <div class="bento-content">
+              <h3 class="bento-title">Paradigm-Shifting Talks</h3>
+              <p class="bento-desc">
+                Witness trailblazing thinkers, innovators, and changemakers deliver the talk of their lives. No fluff, no sales pitches — just 18 minutes of distilled intellectual adrenaline designed to shatter comfort zones.
+              </p>
+              <div class="bento-tags-row">
+                <span class="bento-chip">18-Min Power Talks</span>
+                <span class="bento-chip">Curated Excellence</span>
+                <span class="bento-chip">Global TEDx Stage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 2: CONNECT (Synapse Room) -->
+        <div class="bento-card connect-card">
+          <div class="bento-card-spotlight"></div>
+          <div class="bento-card-inner">
+            <div class="bento-top-meta">
+              <span class="bento-num">02</span>
+              <span class="bento-badge white-badge">SYNAPSE ROOM</span>
+            </div>
+
+            <div class="bento-visual-center constellation-visual">
+              <div class="network-cluster">
+                <div class="node-circle node-center"><span class="node-core"></span></div>
+                <div class="node-circle node-tl"><span class="node-core"></span></div>
+                <div class="node-circle node-tr"><span class="node-core"></span></div>
+                <div class="node-circle node-bl"><span class="node-core"></span></div>
+                <div class="node-circle node-br"><span class="node-core"></span></div>
+                <svg class="connection-lines" viewBox="0 0 200 120">
+                  <line x1="100" y1="60" x2="35" y2="30" stroke="rgba(235,0,40,0.6)" stroke-width="1.5" stroke-dasharray="5 3" />
+                  <line x1="100" y1="60" x2="165" y2="30" stroke="rgba(235,0,40,0.6)" stroke-width="1.5" stroke-dasharray="5 3" />
+                  <line x1="100" y1="60" x2="45" y2="95" stroke="rgba(235,0,40,0.6)" stroke-width="1.5" stroke-dasharray="5 3" />
+                  <line x1="100" y1="60" x2="155" y2="95" stroke="rgba(235,0,40,0.6)" stroke-width="1.5" stroke-dasharray="5 3" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="bento-content">
+              <h3 class="bento-title">High-Caliber Alliances</h3>
+              <p class="bento-desc">
+                Demolish the barrier between speaker and audience. Engage directly with founders, researchers, TBS alumni, and future industry disruptors in curated dialogue lounges.
+              </p>
+              <div class="bento-tags-row">
+                <span class="bento-chip">1,000+ Leaders</span>
+                <span class="bento-chip">VIP Networking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 3: ENGAGE (Sensory Labs) -->
+        <div class="bento-card engage-card">
+          <div class="bento-card-spotlight"></div>
+          <div class="bento-card-inner">
+            <div class="bento-top-meta">
+              <span class="bento-num">03</span>
+              <span class="bento-badge white-badge">SENSORY LABS</span>
+            </div>
+
+            <div class="bento-visual-center activation-visual">
+              <div class="radar-scan-box">
+                <div class="scanner-sweep"></div>
+                <div class="scan-target target-1"></div>
+                <div class="scan-target target-2"></div>
+                <div class="scanner-center-cross"></div>
+              </div>
+            </div>
+
+            <div class="bento-content">
+              <h3 class="bento-title">Immersive Activations</h3>
+              <p class="bento-desc">
+                Step beyond passive listening. Experience interactive tech demos, sensory art installations, live Q&amp;As, and student breakthrough venture showcases.
+              </p>
+              <div class="bento-tags-row">
+                <span class="bento-chip">Interactive Pods</span>
+                <span class="bento-chip">Live Dialogue</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 4: ACT (Catalytic Velocity) - Accent Wide Card -->
+        <div class="bento-card bento-card-wide act-card">
+          <div class="bento-card-spotlight"></div>
+          <div class="bento-card-inner d-md-flex align-items-center justify-content-between gap-4">
+            <div class="bento-content-left flex-grow-1">
+              <div class="bento-top-meta">
+                <span class="bento-num">04</span>
+                <span class="bento-badge red-badge">CATALYTIC VELOCITY</span>
+              </div>
+              <h3 class="bento-title">From Inspiration to Concrete Action</h3>
+              <p class="bento-desc mb-0">
+                TEDx does not end when the stage lights dim. You will walk away armed with new frameworks, strategic partnerships, and the relentless momentum required to turn abstract ideas into real-world ventures.
+              </p>
+              <div class="bento-tags-row mt-3">
+                <span class="bento-chip">Action Playbooks</span>
+                <span class="bento-chip">Venture Incubator Connect</span>
+                <span class="bento-chip">TBS Alumni Network</span>
+              </div>
+            </div>
+            <div class="bento-visual-right text-center d-none d-md-block">
+              <div class="kinetic-x-badge">
+                <span class="kinetic-letter">X</span>
+                <span class="kinetic-orbit"></span>
+                <span class="kinetic-glow"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Marquee Typographic Ticker Strip (TEDx Aesthetic) -->
+      <div class="tedx-ticker-marquee mt-5">
+        <div class="marquee-track">
+          <span class="marquee-item">IDEAS WORTH SPREADING</span>
+          <span class="marquee-dot">&bull;</span>
+          <span class="marquee-item highlight-item">TUNIS BUSINESS SCHOOL</span>
+          <span class="marquee-dot">&bull;</span>
+          <span class="marquee-item">DECEMBER 12, 2026</span>
+          <span class="marquee-dot">&bull;</span>
+          <span class="marquee-item highlight-item">ONE STAGE &bull; INFINITE PERSPECTIVES</span>
+          <span class="marquee-dot">&bull;</span>
+          <span class="marquee-item">IDEAS WORTH SPREADING</span>
+          <span class="marquee-dot">&bull;</span>
+          <span class="marquee-item highlight-item">TUNIS BUSINESS SCHOOL</span>
+          <span class="marquee-dot">&bull;</span>
+          <span class="marquee-item">DECEMBER 12, 2026</span>
+          <span class="marquee-dot">&bull;</span>
+          <span class="marquee-item highlight-item">ONE STAGE &bull; INFINITE PERSPECTIVES</span>
+          <span class="marquee-dot">&bull;</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SPEAKERS TEASER (COMING SOON) ================= -->
+  <section id="speakers" class="speakers-teaser-section">
+    <div class="speakers-bg-effects">
+      <div class="speakers-red-ambient"></div>
+      <div class="speakers-scanline"></div>
+    </div>
+
+    <div class="container position-relative z-2">
+      <!-- Section Header -->
+      <div class="speakers-header text-center">
+        <div class="section-pill-tag">
+          <span class="beacon-core-pulse"></span>
+          <span class="pill-label">THE 2026 STAGE &bull; COMING SOON</span>
+        </div>
+        <h2 class="speakers-main-heading">
+          <span class="heading-row-eyebrow">CURATING THE VOICES OF</span>
+          <span class="heading-row-highlight">
+            <span class="glow-text">CHANGE &amp; IMPACT</span>
+          </span>
+        </h2>
+        <p class="speakers-lead-desc">
+          We are currently hand-picking a fearless cohort of disruptors, researchers, founders, and creators to take the iconic red circle. The official speaker reveal will drop in waves.
+        </p>
+      </div>
+
+      <!-- High-End Unified Speaker Announcement Monolith -->
+      <div class="speakers-announcement-stage mt-4">
+        <div class="speakers-monolith-card">
+          <div class="monolith-radar-glow"></div>
+          
+          <div class="monolith-inner">
+            <div class="monolith-badge-strip">
+              <span class="monolith-pill">
+                <span class="monolith-live-beacon"></span>
+                CURATION IN PROGRESS
+              </span>
+              <span class="monolith-edition">DECEMBER 12, 2026 &bull; TEDxTBS</span>
+            </div>
+
+            <div class="monolith-body-content text-center">
+              <div class="monolith-visual-emblem">
+                <div class="emblem-ring-outer"></div>
+                <div class="emblem-ring-inner">
+                  <span class="emblem-x">X</span>
+                </div>
+                <div class="emblem-waves">
+                  <span class="wave wave-1"></span>
+                  <span class="wave wave-2"></span>
+                </div>
+              </div>
+
+              <h3 class="monolith-title">Speakers Will Be Announced Soon</h3>
+              <p class="monolith-subtitle">
+                Our curation division is currently reviewing proposals and finalizing agreements with exceptional thinkers, pioneers, founders, and creators. The official cohort of speakers taking the iconic red circle will be revealed in upcoming waves.
+              </p>
+
+              <div class="monolith-meta-chips">
+                <div class="m-chip">
+                  <span class="chip-dot"></span>
+                  <span>18-Minute Power Talks</span>
+                </div>
+                <div class="m-chip">
+                  <span class="chip-dot"></span>
+                  <span>Diverse Global &amp; National Innovators</span>
+                </div>
+                <div class="m-chip">
+                  <span class="chip-dot"></span>
+                  <span>Unfiltered Intellectual Catalysts</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Integrated Nomination Call to Action -->
+            <div class="monolith-cta-dock">
+              <div class="dock-text text-center text-md-start">
+                <h4 class="mb-1 text-white">Have an idea worth spreading or want to nominate someone?</h4>
+                <p class="mb-0 text-muted">Speaker nominations and applications close October 30, 2026.</p>
+              </div>
+              <a href="#register" class="btn btn-hero-gold-red btn-sm">
+                <span>NOMINATE A SPEAKER</span>
+                <span class="btn-icon-bubble">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= $15K 3D EXECUTIVE PODIUM (ONE CENTERED BOARD MEMBER AT A TIME) ================= -->
+  <section id="team" class="board-3d-stage-section">
+    <!-- Theatrical Background Atmosphere & Center Overhead Spotlight -->
+    <div class="stage-theatrical-backdrop">
+      <div class="center-stage-conic-spotlight"></div>
+      <div class="stage-ambient-crimson-core"></div>
+      <div class="stage-cyber-grid"></div>
+    </div>
+
+    <div class="container position-relative z-3">
+      <!-- Section Header -->
+      <div class="board-header text-center">
+        <div class="section-pill-tag">
+          <span class="beacon-core-pulse"></span>
+          <span class="pill-label">THE 2026 ARCHITECTS</span>
+        </div>
+        <h2 class="board-main-title">
+          <span class="title-eyebrow">MEET THE</span>
+          <span class="title-highlight">
+            <span class="glow-text">EXECUTIVE BOARD</span>
+          </span>
+        </h2>
+        <p class="board-lead-subtitle">
+          The 5 core leaders engineering the vision, curation, operations, and cultural momentum of TEDxTBS 2026.
+        </p>
+      </div>
+
+      <!-- 3D Holographic Stage Arena -->
+      <div class="board-3d-arena" id="boardArena">
+        <!-- Overhead Holographic Pedestal Base on the Floor -->
+        <div class="stage-hologram-pedestal">
+          <div class="pedestal-outer-ring"></div>
+          <div class="pedestal-inner-circle">
+            <span class="pedestal-ted-x">X</span>
+          </div>
+          <div class="pedestal-pulse-wave"></div>
+        </div>
+
+        <!-- 3D Carousel Viewport with perspective -->
+        <div class="carousel-3d-viewport" id="carouselViewport">
+          <div class="carousel-3d-cylinder" id="carouselCylinder">
+
+            <!-- MEMBER 1: ORGANISER -->
+            <div class="board-3d-card active" data-index="0" style="--card-angle: 0deg;">
+              <div class="card-3d-glare"></div>
+              <div class="card-3d-content">
+                <div class="card-top-header">
+                  <span class="card-index-tag">BOARD 01 / 05</span>
+                  <span class="card-status-dot"><span class="status-blink"></span> EXECUTIVE LEAD</span>
+                </div>
+
+                <!-- 3D Holographic Avatar Portal -->
+                <div class="avatar-3d-portal">
+                  <div class="portal-cyber-ring"></div>
+                  <div class="portal-core-circle">
+                    <img src="assets/board-photo.png" alt="Lead Organiser" class="portal-photo" />
+                    <div class="portal-laser-scan"></div>
+                    <div class="portal-badge-x">x</div>
+                  </div>
+                </div>
+
+                <div class="card-info-cluster">
+                  <div class="role-glow-pill">LEAD ORGANISER</div>
+                  <h3 class="executive-name">Lead Organiser</h3>
+                  <span class="executive-designation">Licensee &amp; Executive Director</span>
+
+                  <div class="manifesto-pill-box">
+                    <p class="manifesto-text">
+                      "Holding the official TEDx license and architecting the macro vision, university alliances, and executive strategy to deliver a transcendent edition at Tunis Business School."
+                    </p>
+                  </div>
+
+                  <div class="executive-metrics-bar">
+                    <div class="metric-item">
+                      <span class="m-val">2026</span>
+                      <span class="m-lbl">EDITION</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">TEDx</span>
+                      <span class="m-lbl">LICENSE</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">COMMAND</span>
+                      <span class="m-lbl">DIVISION</span>
+                    </div>
+                  </div>
+
+                  <div class="executive-social-dock">
+                    <a href="#" class="dock-btn" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.73 1.72 1.73 1.73-.78 1.73-1.73-.78-1.73-1.73-1.73Z"/></svg></a>
+                    <a href="#" class="dock-btn" aria-label="X / Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MEMBER 2: CO-ORGANISER -->
+            <div class="board-3d-card" data-index="1" style="--card-angle: 72deg;">
+              <div class="card-3d-glare"></div>
+              <div class="card-3d-content">
+                <div class="card-top-header">
+                  <span class="card-index-tag">BOARD 02 / 05</span>
+                  <span class="card-status-dot"><span class="status-blink"></span> OPERATIONS LEAD</span>
+                </div>
+
+                <!-- 3D Holographic Avatar Portal -->
+                <div class="avatar-3d-portal">
+                  <div class="portal-cyber-ring"></div>
+                  <div class="portal-core-circle">
+                    <img src="assets/board-photo.png" alt="Co-Organiser" class="portal-photo" />
+                    <div class="portal-laser-scan"></div>
+                    <div class="portal-badge-x">x</div>
+                  </div>
+                </div>
+
+                <div class="card-info-cluster">
+                  <div class="role-glow-pill">CO-ORGANISER</div>
+                  <h3 class="executive-name">Co-Organiser</h3>
+                  <span class="executive-designation">Operations &amp; Strategy Co-Lead</span>
+
+                  <div class="manifesto-pill-box">
+                    <p class="manifesto-text">
+                      "Synchronizing cross-team operations, stage production, budget allocation, and high-impact event logistics to ensure flawless execution on December 12."
+                    </p>
+                  </div>
+
+                  <div class="executive-metrics-bar">
+                    <div class="metric-item">
+                      <span class="m-val">OPS</span>
+                      <span class="m-lbl">DOMAIN</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">100%</span>
+                      <span class="m-lbl">PRECISION</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">STRATEGY</span>
+                      <span class="m-lbl">CORE</span>
+                    </div>
+                  </div>
+
+                  <div class="executive-social-dock">
+                    <a href="#" class="dock-btn" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.73 1.72 1.73 1.73-.78 1.73-1.73-.78-1.73-1.73-1.73Z"/></svg></a>
+                    <a href="#" class="dock-btn" aria-label="X / Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MEMBER 3: SPEAKER COORDINATOR -->
+            <div class="board-3d-card" data-index="2" style="--card-angle: 144deg;">
+              <div class="card-3d-glare"></div>
+              <div class="card-3d-content">
+                <div class="card-top-header">
+                  <span class="card-index-tag">BOARD 03 / 05</span>
+                  <span class="card-status-dot"><span class="status-blink"></span> STAGE CURATION</span>
+                </div>
+
+                <!-- 3D Holographic Avatar Portal -->
+                <div class="avatar-3d-portal">
+                  <div class="portal-cyber-ring"></div>
+                  <div class="portal-core-circle">
+                    <img src="assets/board-photo.png" alt="Speaker Coordinator" class="portal-photo" />
+                    <div class="portal-laser-scan"></div>
+                    <div class="portal-badge-x">x</div>
+                  </div>
+                </div>
+
+                <div class="card-info-cluster">
+                  <div class="role-glow-pill">SPEAKER COORDINATOR</div>
+                  <h3 class="executive-name">Speaker Coordinator</h3>
+                  <span class="executive-designation">Curation &amp; Stage Talent Lead</span>
+
+                  <div class="manifesto-pill-box">
+                    <p class="manifesto-text">
+                      "Scouting world-class thinkers, steering intense talk coaching, and architecting narrative arcs that guarantee each 18-minute speech creates an indelible shockwave."
+                    </p>
+                  </div>
+
+                  <div class="executive-metrics-bar">
+                    <div class="metric-item">
+                      <span class="m-val">12+</span>
+                      <span class="m-lbl">TALKS</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">18 MIN</span>
+                      <span class="m-lbl">POWER</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">CURATED</span>
+                      <span class="m-lbl">STAGE</span>
+                    </div>
+                  </div>
+
+                  <div class="executive-social-dock">
+                    <a href="#" class="dock-btn" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.73 1.72 1.73 1.73-.78 1.73-1.73-.78-1.73-1.73-1.73Z"/></svg></a>
+                    <a href="#" class="dock-btn" aria-label="X / Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MEMBER 4: MARKETING CHIEF -->
+            <div class="board-3d-card" data-index="3" style="--card-angle: 216deg;">
+              <div class="card-3d-glare"></div>
+              <div class="card-3d-content">
+                <div class="card-top-header">
+                  <span class="card-index-tag">BOARD 04 / 05</span>
+                  <span class="card-status-dot"><span class="status-blink"></span> BRAND &amp; MEDIA</span>
+                </div>
+
+                <!-- 3D Holographic Avatar Portal -->
+                <div class="avatar-3d-portal">
+                  <div class="portal-cyber-ring"></div>
+                  <div class="portal-core-circle">
+                    <img src="assets/board-photo.png" alt="Marketing Chief" class="portal-photo" />
+                    <div class="portal-laser-scan"></div>
+                    <div class="portal-badge-x">x</div>
+                  </div>
+                </div>
+
+                <div class="card-info-cluster">
+                  <div class="role-glow-pill">MARKETING CHIEF</div>
+                  <h3 class="executive-name">Marketing Chief</h3>
+                  <span class="executive-designation">Brand, Media &amp; Creative Lead</span>
+
+                  <div class="manifesto-pill-box">
+                    <p class="manifesto-text">
+                      "Shaping the event’s visual aura, dynamic digital campaigns, video storytelling, and social velocity across Tunisia’s academic and creative ecosystems."
+                    </p>
+                  </div>
+
+                  <div class="executive-metrics-bar">
+                    <div class="metric-item">
+                      <span class="m-val">VIRAL</span>
+                      <span class="m-lbl">AURA</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">CREATIVE</span>
+                      <span class="m-lbl">ENERGY</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">MEDIA</span>
+                      <span class="m-lbl">REACH</span>
+                    </div>
+                  </div>
+
+                  <div class="executive-social-dock">
+                    <a href="#" class="dock-btn" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.73 1.72 1.73 1.73-.78 1.73-1.73-.78-1.73-1.73-1.73Z"/></svg></a>
+                    <a href="#" class="dock-btn" aria-label="X / Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MEMBER 5: HR LEAD -->
+            <div class="board-3d-card" data-index="4" style="--card-angle: 288deg;">
+              <div class="card-3d-glare"></div>
+              <div class="card-3d-content">
+                <div class="card-top-header">
+                  <span class="card-index-tag">BOARD 05 / 05</span>
+                  <span class="card-status-dot"><span class="status-blink"></span> PEOPLE &amp; CULTURE</span>
+                </div>
+
+                <!-- 3D Holographic Avatar Portal -->
+                <div class="avatar-3d-portal">
+                  <div class="portal-cyber-ring"></div>
+                  <div class="portal-core-circle">
+                    <img src="assets/board-photo.png" alt="HR Chief" class="portal-photo" />
+                    <div class="portal-laser-scan"></div>
+                    <div class="portal-badge-x">x</div>
+                  </div>
+                </div>
+
+                <div class="card-info-cluster">
+                  <div class="role-glow-pill">HUMAN RESOURCES</div>
+                  <h3 class="executive-name">HR Chief</h3>
+                  <span class="executive-designation">People, Culture &amp; Talent Lead</span>
+
+                  <div class="manifesto-pill-box">
+                    <p class="manifesto-text">
+                      "Recruiting exceptional student brilliance, driving inter-departmental synergy, and forging an empowered culture of high standards, passion, and belonging."
+                    </p>
+                  </div>
+
+                  <div class="executive-metrics-bar">
+                    <div class="metric-item">
+                      <span class="m-val">TALENT</span>
+                      <span class="m-lbl">SCOUT</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">CULTURE</span>
+                      <span class="m-lbl">ENERGY</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                      <span class="m-val">UNITY</span>
+                      <span class="m-lbl">PILLAR</span>
+                    </div>
+                  </div>
+
+                  <div class="executive-social-dock">
+                    <a href="#" class="dock-btn" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.73 1.72 1.73 1.73-.78 1.73-1.73-.78-1.73-1.73-1.73Z"/></svg></a>
+                    <a href="#" class="dock-btn" aria-label="X / Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3D Navigation Triggers (Floating Wings) -->
+        <button class="stage-nav-arrow arrow-prev" id="stagePrevBtn" aria-label="Previous Board Member">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="stage-nav-arrow arrow-next" id="stageNextBtn" aria-label="Next Board Member">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Futuristic 3D Dial Selector Bar -->
+      <div class="board-orbital-dial-bar">
+        <div class="dial-track-rail" id="dialRail">
+          <button class="dial-role-tab active" data-index="0">
+            <span class="tab-index">01</span>
+            <span class="tab-title">ORGANISER</span>
+          </button>
+          <button class="dial-role-tab" data-index="1">
+            <span class="tab-index">02</span>
+            <span class="tab-title">CO-ORGANISER</span>
+          </button>
+          <button class="dial-role-tab" data-index="2">
+            <span class="tab-index">03</span>
+            <span class="tab-title">SPEAKER COORD.</span>
+          </button>
+          <button class="dial-role-tab" data-index="3">
+            <span class="tab-index">04</span>
+            <span class="tab-title">MARKETING CHIEF</span>
+          </button>
+          <button class="dial-role-tab" data-index="4">
+            <span class="tab-index">05</span>
+            <span class="tab-title">HUMAN RESOURCES</span>
+          </button>
+          <div class="dial-active-slider" id="dialSlider"></div>
+        </div>
+        <div class="dial-hint-text">
+          <span>SCROLL, DRAG, OR USE ARROWS TO ROTATE 3D STAGE</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= $15K VIP TICKET PASS GENERATOR ================= -->
+  <section id="ticket-pass" class="ticket-generator-section">
+    <!-- Atmospheric Lighting & Background Grid -->
+    <div class="ticket-gen-backdrop">
+      <div class="ticket-gen-ambient-glow"></div>
+      <div class="ticket-cyber-grid"></div>
+    </div>
+
+    <div class="container position-relative z-3">
+      <!-- Section Header -->
+      <div class="ticket-header text-center">
+        <div class="section-pill-tag">
+          <span class="beacon-core-pulse"></span>
+          <span class="pill-label">OFFICIAL CREDENTIALS &bull; PASS GENERATOR</span>
+        </div>
+        <h2 class="ticket-main-title">
+          <span class="title-eyebrow">CLAIM YOUR OFFICIAL</span>
+          <span class="title-highlight">
+            <span class="glow-text">VIP TICKET PASS</span>
+          </span>
+        </h2>
+        <p class="ticket-lead-desc">
+          Have an invitation or registration code? Enter your credentials below to verify your pass, personalize your commemorative ticket, and download your high-resolution pass for December 12, 2026.
+        </p>
+      </div>
+
+      <!-- Generator Console Card -->
+      <div class="ticket-generator-card">
+        
+        <!-- Step 1: Code Verification -->
+        <div class="ticket-step-pane" id="ticketStepCode">
+          <div class="code-entry-header text-center">
+            <div class="lock-beacon-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 class="step-title">Enter Your Access Code</h3>
+            <p class="step-desc">Enter your committee invite, VIP delegate, or early-access attendee code.</p>
+          </div>
+
+          <form id="codeVerifyForm" class="code-verify-form" onsubmit="return false;">
+            <div class="code-input-group">
+              <input type="text" id="accessCodeInput" class="code-input" placeholder="ENTER CODE (e.g. TEDXTBS2026)" autocomplete="off" spellcheck="false" required />
+              <button type="submit" id="btnVerifyCode" class="btn btn-hero-gold-red btn-verify">
+                <span>VERIFY CODE</span>
+                <span class="btn-icon-bubble">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </button>
+            </div>
+            <div class="code-demo-hint">
+              <span class="hint-label">DEMO CODES:</span>
+              <button type="button" class="demo-code-chip" data-code="TEDXTBS2026">TEDXTBS2026 (VIP)</button>
+              <button type="button" class="demo-code-chip" data-code="INNOVATE2026">INNOVATE2026 (Student)</button>
+              <button type="button" class="demo-code-chip" data-code="CS50TBS">CS50TBS (Guest)</button>
+            </div>
+            <p id="codeErrorMsg" class="code-error-msg" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Step 2: Personalize & View Ticket (Unlocked after code verification) -->
+        <div class="ticket-step-pane d-none" id="ticketStepPreview">
+          
+          <!-- Top verification confirmation bar -->
+          <div class="verified-status-bar d-flex flex-wrap align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <span class="verified-badge-icon">&#10003;</span>
+              <span class="verified-label">CREDENTIAL VALIDATED:</span>
+              <strong id="validatedPassTier" class="validated-tier-text">VIP ALL-ACCESS PASS</strong>
+            </div>
+            <button type="button" id="btnChangeCode" class="btn-change-code">Change Code</button>
+          </div>
+
+          <!-- Name Entry Input -->
+          <div class="name-entry-cluster">
+            <label for="attendeeNameInput" class="name-input-label">TYPE YOUR NAME TO EMBOSS ON TICKET:</label>
+            <div class="name-input-dock">
+              <input type="text" id="attendeeNameInput" class="name-input" placeholder="Your Full Name (e.g. Amin Gharbi)" maxlength="30" autocomplete="name" />
+              <span class="live-tag">LIVE EMBOSSING</span>
+            </div>
+          </div>
+
+          <!-- Realistic Ticket 3D Canvas Preview -->
+          <div class="ticket-display-stage" id="ticketDisplayStage">
+            <div class="ticket-3d-wrapper" id="ticket3DWrapper">
+              
+              <!-- Real-time HTML visual ticket container overlaying base image -->
+              <div class="ticket-pass-element" id="ticketPassElement">
+                <img src="assets/ticket-base.png" alt="TEDxTBS Official Pass" class="ticket-bg-img" />
+                
+                <!-- Dynamic Overlay Elements on the Ticket -->
+                <div class="ticket-overlay-layer">
+                  <!-- Main Left Body Stamped Info -->
+                  <div class="ticket-stamp-left">
+                    <div class="stamp-attendee-cluster">
+                      <span class="stamp-caption">OFFICIAL DELEGATE</span>
+                      <h4 class="stamp-attendee-name" id="ticketCardName">GUEST ATTENDEE</h4>
+                      <div class="stamp-meta-pills">
+                        <span class="stamp-pill" id="ticketCardTier">VIP PASS</span>
+                        <span class="stamp-serial" id="ticketCardSerial">NO. #TBS-2026-8942</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right Stub Stamped Info -->
+                  <div class="ticket-stamp-right">
+                    <div class="stub-attendee-badge">
+                      <span class="stub-lbl">HOLDER:</span>
+                      <strong class="stub-val" id="ticketStubName">GUEST</strong>
+                    </div>
+                    <div class="stub-code-badge" id="ticketStubCode">#TBS-8942</div>
+                  </div>
+                </div>
+
+                <div class="ticket-foil-glare" id="ticketGlare"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Download & Action Buttons -->
+          <div class="ticket-actions-bar text-center mt-4">
+            <button type="button" id="btnDownloadTicket" class="btn btn-hero-gold-red btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>DOWNLOAD OFFICIAL TICKET (PNG)</span>
+            </button>
+            <p class="download-subtext">100% Free instant high-resolution PNG souvenir ticket. Ready for mobile wallet and social sharing.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ACCORDION SECTION ================= -->
+  <section id="faq" class="faq-section">
+    <div class="faq-bg-ambient"></div>
+    <div class="container position-relative z-2">
+      <div class="faq-header text-center">
+        <div class="section-pill-tag">
+          <span class="beacon-core-pulse"></span>
+          <span class="pill-label">FREQUENTLY ASKED QUESTIONS</span>
+        </div>
+        <h2 class="faq-main-title">
+          <span class="title-row-eyebrow">EVERYTHING YOU NEED</span>
+          <span class="title-row-highlight">
+            <span class="glow-text">TO KNOW</span>
+          </span>
+        </h2>
+        <p class="faq-lead-desc">
+          Essential details regarding attendance eligibility, speaker curation, ticketing timeline, and the December 12 edition at Tunis Business School.
+        </p>
+      </div>
+
+      <div class="accordion modern-faq-accordion mt-5" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              <span class="faq-index">01</span>
+              <span>What is TEDx and how is TEDxTBS organized?</span>
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              TEDx is a grassroots initiative created in the spirit of TED's overall mission to research and discover "ideas worth spreading." TEDxTBS is an independently organized event operating under official license from TED, led entirely by student leaders and executive directors at Tunis Business School.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              <span class="faq-index">02</span>
+              <span>Who can attend the December 12, 2026 conference?</span>
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              TEDxTBS welcomes passionate university students, ambitious entrepreneurs, academic faculty, researchers, industry executives, and creative thinkers. Seat allocations are strictly curated to maintain an intellectually vibrant, diverse audience.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+              <span class="faq-index">03</span>
+              <span>How can I apply or nominate a visionary speaker?</span>
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Speaker nominations and open calls are managed directly by the Curation &amp; Speaker Coordination division. Applications remain open through late October 2026. Use the nomination button in the speakers section or register below to submit candidates.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+              <span class="faq-index">04</span>
+              <span>When does early-bird priority registration open?</span>
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Priority badge registration unlocks in waves. Joining the priority dispatch list below guarantees first-in-line access 48 hours before general ticketing opens to the public.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+              <span class="faq-index">05</span>
+              <span>How do I claim and download my official VIP Ticket Pass?</span>
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              If you hold an official invitation code (e.g. VIP, Student Innovator, CS50 Guest), head directly to the <a href="#ticket-pass" class="text-danger text-decoration-none fw-bold">Ticket Pass section</a>, enter your code to validate your credentials, type your name for live embossing, and download your high-resolution official PNG pass instantly 100% free.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= $15K GRAND FINALE: BE PART OF TEDxTBS (LAST SECTION) ================= -->
+  <section id="register" class="be-part-section">
+    <!-- Cinematic Dark Stage Background & Floor Glow -->
+    <div class="be-part-backdrop">
+      <div class="be-part-red-ambient"></div>
+      <div class="be-part-floor-sheen"></div>
+    </div>
+
+    <!-- UI Cyber Accents from Reference Design -->
+    <div class="cyber-accent-dots-top-left" aria-hidden="true">
+      <span class="accent-dot"></span>
+      <span class="accent-dot"></span>
+      <span class="accent-dot"></span>
+    </div>
+    <div class="cyber-accent-line-left" aria-hidden="true"></div>
+    <div class="cyber-accent-line-right" aria-hidden="true">
+      <span class="accent-down-arrow">&darr;</span>
+    </div>
+
+    <div class="container position-relative z-3 text-center">
+      <!-- 3D Ribbon X Masterpiece Visual Hero -->
+      <div class="be-part-sculpture-wrapper">
+        <div class="sculpture-box">
+          <img src="assets/be-part-of-tedxtbs.png" alt="Be part of TEDxTBS" class="be-part-sculpture-img" />
+          <div class="sculpture-ambient-reflection"></div>
+        </div>
+      </div>
+
+      <!-- Registration & Countdown Overlay Dock -->
+      <div class="be-part-interactive-dock">
+        <div class="event-stamp-pill">
+          <span class="stamp-pulse"></span>
+          <span>DECEMBER 12, 2026 &bull; TUNIS BUSINESS SCHOOL</span>
+        </div>
+
+        <p class="be-part-lead-copy">
+          Seats inside the red circle are strictly limited. Secure your priority invite to receive early registration access and official 2026 announcements.
+        </p>
+
+        <!-- Glassmorphic Countdown Timer -->
+        <div class="countdown finale-countdown" aria-label="Event countdown">
+          <div class="countdown-card"><strong id="days">00</strong><small>DAYS</small></div>
+          <div class="countdown-card"><strong id="hours">00</strong><small>HOURS</small></div>
+          <div class="countdown-card"><strong id="minutes">00</strong><small>MINUTES</small></div>
+          <div class="countdown-card"><strong id="seconds">00</strong><small>SECONDS</small></div>
+        </div>
+
+        <!-- Priority Notification Form Dock -->
+        <div class="finale-notify-cluster mt-4">
+          <form class="notify-form-dock" id="notifyForm" onsubmit="return false;">
+            <input type="email" class="notify-input" id="notifyEmail" placeholder="Enter your academic or corporate email" required aria-label="Email address" />
+            <button id="notifyBtn" type="submit" class="btn btn-hero-gold-red btn-notify">
+              <span>GET PRIORITY ACCESS</span>
+              <span class="btn-icon-bubble">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </button>
+          </form>
+          <p id="notifyMessage" class="notify-message" aria-live="polite"></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div><span class="ted">TED</span><span class="x">x</span><span class="tbs">TBS</span></div>
+      <p>© 2026 TEDxTBS · Independently organized TED event</p>
+      <div class="social-links"><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1072 @@
+/* Enhanced Blog Specific Styles */
+
+/* MOBILE-FIRST: Force no horizontal overflow on all devices */
+html, body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  max-width: 100vw !important;
+}
+
+/* Mobile viewport fixes */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    max-width: 100vw !important;
+    position: relative !important;
+  }
+
+  * {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Blog Hero Section with improved visual appeal */
+.blog-hero-section {
+  padding-top: 120px;
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-light) 100%);
+  position: relative;
+}
+
+.blog-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 148, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 69, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.breadcrumb a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.article-meta {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.blog-title {
+  max-width: none;
+}
+
+.blog-subtitle {
+  max-width: none;
+}
+
+.blog-featured-image {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Blog Content Styles */
+.blog-content {
+  line-height: 1.8;
+}
+
+.prose {
+  color: var(--graphite-light);
+}
+
+.prose h2 {
+  color: var(--cloud);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  border-bottom: 2px solid rgba(0, 255, 148, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.prose h3 {
+  color: var(--cloud);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.prose h4 {
+  color: var(--cloud);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.prose strong {
+  color: var(--cloud);
+  font-weight: 600;
+}
+
+/* Table of Contents */
+.toc-container {
+  background: rgba(26, 29, 41, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 148, 0.1);
+}
+
+.toc-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.toc-list li:last-child {
+  border-bottom: none;
+}
+
+.toc-list a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Highlight Boxes */
+.highlight-box {
+  background: rgba(0, 255, 148, 0.05);
+  border-left: 4px solid var(--electric-mint);
+  backdrop-filter: blur(20px);
+}
+
+/* Feature Lists */
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Applications Grid */
+.applications-grid {
+  margin-bottom: 2rem;
+}
+
+.application-card {
+  background: rgba(26, 29, 41, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 148, 0.1);
+  transition: all 0.3s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 148, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 255, 148, 0.1);
+}
+
+.metric-highlight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Timeline */
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 2rem;
+  width: 2px;
+  height: calc(100% - 1rem);
+  background: linear-gradient(to bottom, var(--electric-mint), transparent);
+}
+
+.timeline-marker {
+  flex-shrink: 0;
+}
+
+/* CTA Box */
+.cta-box {
+  background: rgba(26, 29, 41, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 148, 0.15);
+}
+
+/* Related Articles */
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+/* Remove hover effects to use hover-lift class instead */
+
+/* Simple hover lift effect (matching main index page) */
+.hover-lift:hover {
+  transform: translateY(-5px) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Newsletter */
+.newsletter-form input {
+  background: rgba(26, 29, 41, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--cloud);
+  border-radius: 0.5rem;
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: var(--electric-mint);
+  box-shadow: 0 0 0 3px rgba(0, 255, 148, 0.1);
+}
+
+.newsletter-form input::placeholder {
+  color: var(--graphite);
+}
+
+/* Share Buttons */
+.share-buttons {
+  animation: slideInRight 0.8s ease 1.5s both;
+}
+
+.share-btn {
+  width: 48px;
+  height: 48px;
+  background: rgba(26, 29, 41, 0.9);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 148, 0.2);
+  border-radius: 50%;
+  color: var(--electric-mint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.share-btn:hover {
+  background: var(--electric-mint);
+  color: var(--deep-navy);
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(0, 255, 148, 0.4);
+}
+
+/* Scroll Progress */
+.scroll-progress {
+  background: linear-gradient(90deg, var(--electric-mint), var(--purple));
+  transition: transform 0.1s ease;
+}
+
+/* Active Navigation Link */
+.nav-link.active {
+  color: var(--electric-mint);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--electric-mint);
+  border-radius: 2px;
+}
+
+/* Reading Progress Animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+  /* Prevent overflow issues */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  .container {
+    max-width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .blog-hero-section {
+    padding-top: 100px;
+    padding-bottom: 3rem;
+    overflow-x: hidden;
+  }
+
+  .blog-hero-section .text-center {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .breadcrumb {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+  }
+
+  .breadcrumb .flex {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .breadcrumb .flex > div {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .blog-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .article-meta {
+    padding: 0 1rem 1.5rem 1rem;
+    overflow-x: hidden;
+  }
+
+  .article-meta .flex {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    overflow-x: hidden;
+  }
+
+  .prose {
+    max-width: none;
+    padding: 0 1rem;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .prose * {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+  }
+
+  .prose h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .prose h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .prose p {
+    font-size: 1rem;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .prose code {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  .stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+    padding: 0 1rem;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .applications-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    padding: 0 1rem;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .application-card {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .tool-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    overflow-x: hidden;
+  }
+
+  .tool-card {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .share-buttons {
+    display: none;
+  }
+
+  .newsletter-form {
+    max-width: none;
+    padding: 0 1rem;
+    overflow-x: hidden;
+  }
+
+  .newsletter-form .flex {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    margin-top: 0.75rem;
+    box-sizing: border-box;
+  }
+
+  .toc-container {
+    margin: 0 -1rem 3rem -1rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    overflow-x: hidden;
+  }
+
+  .toc-list {
+    overflow-x: hidden;
+  }
+
+  .toc-list a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .cta-box {
+    padding: 2rem 1rem;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .cta-box .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: hidden;
+  }
+
+  .cta-box a {
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+
+  .related-articles {
+    padding: 0 1rem;
+    overflow-x: hidden;
+  }
+
+  .related-articles .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    overflow-x: hidden;
+  }
+
+  .blog-card {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .blog-card h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .blog-card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Additional overflow protection for very small screens */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  .blog-hero-section {
+    padding-top: 80px;
+    padding-bottom: 2rem;
+    overflow-x: hidden;
+  }
+
+  .blog-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .blog-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .article-meta .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .article-meta .flex > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+    overflow-x: hidden;
+  }
+
+  .prose h2 {
+    font-size: 1.375rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .prose h3 {
+    font-size: 1.125rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .cta-box {
+    padding: 1.5rem 1rem;
+    overflow-x: hidden;
+  }
+
+  .cta-box .flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .cta-box a {
+    width: 100%;
+    max-width: 240px;
+    box-sizing: border-box;
+  }
+
+  .timeline-item .flex {
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .timeline-item::after {
+    display: none;
+  }
+
+  .footer {
+    overflow-x: hidden;
+  }
+
+  .footer .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .footer .lg\\:col-span-2 {
+    grid-column: span 1;
+  }
+
+  .footer .flex.space-x-4 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Ensure all text elements wrap properly */
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Additional mobile fixes for grid layouts */
+  .grid {
+    display: grid !important;
+    width: 100% !important;
+    overflow-x: hidden;
+    max-width: 100% !important;
+  }
+
+  .md\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .lg\\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  /* Force all grid containers to mobile layout */
+  .grid-cols-1, .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix specific Tailwind grid classes that might be causing issues */
+  div[class*="grid-cols-"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .flex {
+    flex-wrap: wrap !important;
+  }
+
+  /* Fix any remaining overflow issues */
+  section, main, article {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  /* Force all elements to stay within viewport */
+  * {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Override any potential width issues */
+  .container, .container mx-auto, .container max-w-4xl {
+    max-width: 100vw !important;
+    width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Ensure grid layouts don't overflow */
+  .grid, .md\\:grid-cols-2, .lg\\:grid-cols-3, .md\\:grid-cols-3 {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix any flex layouts that might overflow */
+  .flex {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    flex-wrap: wrap !important;
+  }
+
+  /* Force all potential problematic elements */
+  div, span, p, h1, h2, h3, h4, h5, h6, ul, ol, li, section, main, article, aside, header, footer {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .share-buttons,
+  .newsletter-signup,
+  .related-articles,
+  header,
+  footer {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .blog-title,
+  .prose h2,
+  .prose h3,
+  .prose h4 {
+    color: black !important;
+  }
+  
+  .prose p,
+  .prose li {
+    color: #333 !important;
+  }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  .share-buttons {
+    animation: none;
+  }
+  
+  .blog-card,
+  .application-card,
+  .share-btn {
+    transition: none;
+  }
+  
+  .scroll-progress {
+    transition: none;
+  }
+}
+
+/* Remove hover effects from specific components */
+.bg-electric-mint.bg-opacity-5.border-l-4.border-electric-mint:hover,
+.bg-electric-mint.bg-opacity-5.border-l-4.border-electric-mint {
+  transform: none !important;
+  transition: none !important;
+  border-color: var(--electric-mint) !important;
+  background-color: rgba(0, 255, 148, 0.05) !important;
+  box-shadow: none !important;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .toc-container,
+  .highlight-box,
+  .application-card,
+  .cta-box {
+    border-width: 2px;
+  }
+
+  .share-btn {
+    border-width: 2px;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.share-btn:focus,
+.toc-list a:focus,
+.newsletter-form input:focus,
+.newsletter-form button:focus {
+  outline: 2px solid var(--electric-mint);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+.blog-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.blog-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.blog-content::-webkit-scrollbar-thumb {
+  background: var(--electric-mint);
+  border-radius: 3px;
+}
+
+.blog-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 148, 0.8);
+}
+
+/* Enhanced Tool Cards */
+.tool-card {
+  background: linear-gradient(145deg, rgba(26, 29, 41, 0.9), rgba(26, 29, 41, 0.7));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 148, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 148, 0.05), transparent);
+  transition: left 0.8s ease;
+}
+
+.tool-card:hover::before {
+  left: 100%;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 255, 148, 0.3);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 255, 148, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, var(--charcoal-light) 0%, var(--charcoal) 100%);
+  border: 1px solid rgba(0, 255, 148, 0.2);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--electric-mint), var(--purple), var(--blue));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 148, 0.4);
+  box-shadow: 0 15px 30px rgba(0, 255, 148, 0.1);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--electric-mint), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Enhanced Recommendation Cards */
+.recommendation-card {
+  background: linear-gradient(145deg, rgba(26, 29, 41, 0.9), rgba(26, 29, 41, 0.7));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 148, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.recommendation-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--electric-mint), var(--purple));
+}
+
+/* Enhanced FAQ Cards */
+.faq-card {
+  background: linear-gradient(135deg, var(--charcoal-light) 0%, var(--charcoal) 100%);
+  border: 1px solid rgba(0, 255, 148, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.faq-card:hover {
+  border-color: rgba(0, 255, 148, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 255, 148, 0.1);
+}
+
+/* Enhanced CTA Boxes */
+.cta-enhanced {
+  background: linear-gradient(135deg, var(--electric-mint) 0%, var(--purple) 50%, var(--blue) 100%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+}
+
+.cta-enhanced * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Enhanced Reading Progress */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--electric-mint), var(--purple), var(--blue));
+  transform-origin: left;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+/* Improved Typography */
+.blog-title-enhanced {
+  background: linear-gradient(135deg, var(--cloud) 0%, var(--electric-mint) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Enhanced Image Containers */
+.blog-image-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.blog-image-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.blog-image-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 148, 0.1) 0%, rgba(139, 69, 255, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.blog-image-container:hover::after {
+  opacity: 1;
+}

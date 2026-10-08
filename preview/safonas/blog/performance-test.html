@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Performance Testing Suite</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; padding: 20px; background: #f5f5f5; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { margin-bottom: 20px; color: #333; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+    .metric { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .metric h3 { color: #666; font-size: 14px; margin-bottom: 10px; }
+    .metric .value { font-size: 32px; font-weight: bold; color: #333; }
+    .metric .unit { font-size: 14px; color: #999; }
+    .status { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; display: inline-block; }
+    .good { background: #d4edda; color: #155724; }
+    .needs-improvement { background: #fff3cd; color: #856404; }
+    .poor { background: #f8d7da; color: #721c24; }
+    .test-section { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    button { background: #00ff94; color: #000; border: none; padding: 12px 24px; border-radius: 4px; font-weight: 600; cursor: pointer; margin-right: 10px; }
+    button:hover { background: #00cc75; }
+    .log { background: #f9f9f9; padding: 15px; border-radius: 4px; font-family: monospace; font-size: 12px; max-height: 300px; overflow-y: auto; }
+    .test-frame { width: 100%; border: 2px solid #ddd; border-radius: 8px; margin-top: 20px; background: white; }
+    .viewport-selector { display: flex; gap: 10px; margin-bottom: 20px; }
+    .viewport-btn { padding: 8px 16px; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; }
+    .viewport-btn.active { background: #00ff94; border-color: #00cc75; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Blog Performance Testing Suite</h1>
+    
+    <!-- Core Web Vitals -->
+    <div class="metrics" id="metrics">
+      <div class="metric">
+        <h3>First Contentful Paint (FCP)</h3>
+        <div class="value" id="fcp">--</div>
+        <div class="unit">ms</div>
+      </div>
+      <div class="metric">
+        <h3>Largest Contentful Paint (LCP)</h3>
+        <div class="value" id="lcp">--</div>
+        <div class="unit">ms</div>
+      </div>
+      <div class="metric">
+        <h3>Cumulative Layout Shift (CLS)</h3>
+        <div class="value" id="cls">--</div>
+        <div class="unit">score</div>
+      </div>
+      <div class="metric">
+        <h3>Total Blocking Time (TBT)</h3>
+        <div class="value" id="tbt">--</div>
+        <div class="unit">ms</div>
+      </div>
+      <div class="metric">
+        <h3>CSS Size</h3>
+        <div class="value" id="css-size">--</div>
+        <div class="unit">KB</div>
+      </div>
+      <div class="metric">
+        <h3>Render Time</h3>
+        <div class="value" id="render-time">--</div>
+        <div class="unit">ms</div>
+      </div>
+    </div>
+
+    <!-- Test Controls -->
+    <div class="test-section">
+      <h2>Performance Tests</h2>
+      <div class="viewport-selector">
+        <button class="viewport-btn active" data-width="375" data-height="667">iPhone SE (375px)</button>
+        <button class="viewport-btn" data-width="390" data-height="844">iPhone 12 (390px)</button>
+        <button class="viewport-btn" data-width="768" data-height="1024">iPad (768px)</button>
+        <button class="viewport-btn" data-width="1024" data-height="768">Desktop (1024px)</button>
+      </div>
+      <button onclick="runPerformanceTest()">Run Performance Test</button>
+      <button onclick="runLayoutTest()">Test Layout Shift</button>
+      <button onclick="runCSSAnalysis()">Analyze CSS</button>
+      <button onclick="runMobileOptimization()">Mobile Optimization Test</button>
+      <button onclick="compareVersions()">Compare CSS Versions</button>
+      <div class="log" id="log"></div>
+    </div>
+
+    <!-- Test Frame -->
+    <div class="test-section">
+      <h2>Live Preview (375px Mobile)</h2>
+      <iframe 
+        id="test-frame"
+        class="test-frame" 
+        src="index.html" 
+        width="375" 
+        height="667"
+        title="Test Frame">
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    // Performance Observer
+    const observer = new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        if (entry.entryType === 'paint') {
+          if (entry.name === 'first-contentful-paint') {
+            updateMetric('fcp', Math.round(entry.startTime));
+          }
+        }
+        if (entry.entryType === 'largest-contentful-paint') {
+          updateMetric('lcp', Math.round(entry.startTime));
+        }
+        if (entry.entryType === 'layout-shift') {
+          const currentCLS = parseFloat(document.getElementById('cls').textContent) || 0;
+          updateMetric('cls', (currentCLS + entry.value).toFixed(3));
+        }
+      }
+    });
+
+    observer.observe({ entryTypes: ['paint', 'largest-contentful-paint', 'layout-shift'] });
+
+    function updateMetric(id, value) {
+      const element = document.getElementById(id);
+      element.textContent = value;
+      
+      // Add status indicator
+      const parent = element.parentElement;
+      const existing = parent.querySelector('.status');
+      if (existing) existing.remove();
+      
+      const status = document.createElement('span');
+      status.className = 'status';
+      
+      // Determine status based on metric
+      if (id === 'fcp') {
+        if (value < 1800) status.className += ' good';
+        else if (value < 3000) status.className += ' needs-improvement';
+        else status.className += ' poor';
+      }
+      if (id === 'lcp') {
+        if (value < 2500) status.className += ' good';
+        else if (value < 4000) status.className += ' needs-improvement';
+        else status.className += ' poor';
+      }
+      if (id === 'cls') {
+        if (value < 0.1) status.className += ' good';
+        else if (value < 0.25) status.className += ' needs-improvement';
+        else status.className += ' poor';
+      }
+      
+      status.textContent = status.className.includes('good') ? 'Good' : 
+                          status.className.includes('needs-improvement') ? 'Needs Work' : 'Poor';
+      parent.appendChild(status);
+    }
+
+    function log(message) {
+      const logEl = document.getElementById('log');
+      const time = new Date().toLocaleTimeString();
+      logEl.innerHTML += `[${time}] ${message}<br>`;
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    async function runPerformanceTest() {
+      log('🔍 Starting performance test...');
+      
+      const frame = document.getElementById('test-frame');
+      frame.src = 'index.html?' + Date.now();
+      
+      frame.onload = async () => {
+        log('✓ Page loaded');
+        
+        // Measure CSS size
+        const cssSize = await measureCSSSize();
+        updateMetric('css-size', (cssSize / 1024).toFixed(2));
+        log(`📊 Total CSS size: ${(cssSize / 1024).toFixed(2)}KB`);
+        
+        // Measure render time
+        const renderTime = performance.now();
+        updateMetric('render-time', Math.round(renderTime));
+        log(`⚡ Render time: ${Math.round(renderTime)}ms`);
+        
+        // Check mobile optimization
+        const mobileScore = checkMobileOptimization(frame);
+        log(`📱 Mobile optimization score: ${mobileScore}/100`);
+        
+        log('✅ Performance test complete!');
+      };
+    }
+
+    async function measureCSSSize() {
+      const styles = document.styleSheets;
+      let totalSize = 0;
+      
+      for (let sheet of styles) {
+        try {
+          const rules = sheet.cssRules || sheet.rules;
+          const cssText = Array.from(rules).map(r => r.cssText).join('');
+          totalSize += new Blob([cssText]).size;
+        } catch (e) {
+          // External stylesheets
+          if (sheet.href) {
+            try {
+              const response = await fetch(sheet.href);
+              const text = await response.text();
+              totalSize += new Blob([text]).size;
+            } catch (e) {
+              console.error('Could not fetch:', sheet.href);
+            }
+          }
+        }
+      }
+      
+      return totalSize;
+    }
+
+    function runLayoutTest() {
+      log('🔍 Testing layout shift...');
+      const frame = document.getElementById('test-frame');
+      
+      // Simulate dynamic content loading
+      setTimeout(() => {
+        frame.contentWindow.document.body.insertAdjacentHTML('beforeend', 
+          '<div style="height: 200px; background: #f0f0f0; margin: 20px;">Late-loaded content</div>'
+        );
+        log('✓ Dynamic content added');
+      }, 1000);
+      
+      setTimeout(() => {
+        log('✅ Layout shift test complete - check CLS metric');
+      }, 2000);
+    }
+
+    async function runCSSAnalysis() {
+      log('🔍 Analyzing CSS efficiency...');
+      
+      const frame = document.getElementById('test-frame');
+      const doc = frame.contentDocument;
+      
+      // Count selectors
+      let selectorCount = 0;
+      let ruleCount = 0;
+      let importantCount = 0;
+      
+      for (let sheet of doc.styleSheets) {
+        try {
+          const rules = sheet.cssRules || sheet.rules;
+          ruleCount += rules.length;
+          
+          for (let rule of rules) {
+            if (rule.selectorText) {
+              selectorCount += rule.selectorText.split(',').length;
+            }
+            if (rule.style && rule.style.cssText.includes('!important')) {
+              importantCount++;
+            }
+          }
+        } catch (e) {}
+      }
+      
+      log(`📊 CSS Analysis Results:`);
+      log(`  • Total rules: ${ruleCount}`);
+      log(`  • Total selectors: ${selectorCount}`);
+      log(`  • !important usage: ${importantCount}`);
+      log(`  • Average specificity: ${(selectorCount / ruleCount).toFixed(2)}`);
+      
+      // Check for unused CSS
+      const allElements = doc.querySelectorAll('*');
+      const usedClasses = new Set();
+      allElements.forEach(el => {
+        el.classList.forEach(cls => usedClasses.add(cls));
+      });
+      
+      log(`  • DOM elements: ${allElements.length}`);
+      log(`  • Unique classes used: ${usedClasses.size}`);
+      
+      log('✅ CSS analysis complete!');
+    }
+
+    function runMobileOptimization() {
+      log('🔍 Running mobile optimization tests...');
+      
+      const frame = document.getElementById('test-frame');
+      const doc = frame.contentDocument;
+      
+      let score = 100;
+      const issues = [];
+      
+      // Check viewport
+      const viewport = doc.querySelector('meta[name="viewport"]');
+      if (!viewport || !viewport.content.includes('width=device-width')) {
+        score -= 20;
+        issues.push('❌ Missing proper viewport meta tag');
+      } else {
+        log('✓ Viewport configured correctly');
+      }
+      
+      // Check touch targets
+      const buttons = doc.querySelectorAll('button, a, input, select, textarea');
+      let smallTargets = 0;
+      buttons.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.width < 44 || rect.height < 44) {
+          smallTargets++;
+        }
+      });
+      
+      if (smallTargets > 0) {
+        score -= (smallTargets * 2);
+        issues.push(`❌ ${smallTargets} touch targets < 44px`);
+      } else {
+        log('✓ All touch targets properly sized');
+      }
+      
+      // Check font sizes
+      const texts = doc.querySelectorAll('p, li, span');
+      let smallText = 0;
+      texts.forEach(el => {
+        const fontSize = window.getComputedStyle(el).fontSize;
+        if (parseFloat(fontSize) < 14) {
+          smallText++;
+        }
+      });
+      
+      if (smallText > 0) {
+        score -= 10;
+        issues.push(`❌ ${smallText} text elements < 14px`);
+      } else {
+        log('✓ Text sizes are readable');
+      }
+      
+      // Check horizontal scroll
+      if (doc.documentElement.scrollWidth > frame.clientWidth) {
+        score -= 30;
+        issues.push('❌ Horizontal scroll detected');
+      } else {
+        log('✓ No horizontal scroll');
+      }
+      
+      log(`📱 Mobile Optimization Score: ${Math.max(0, score)}/100`);
+      issues.forEach(issue => log(issue));
+      
+      return Math.max(0, score);
+    }
+
+    function checkMobileOptimization(frame) {
+      const doc = frame.contentDocument;
+      let score = 100;
+      
+      // Quick mobile checks
+      if (doc.documentElement.scrollWidth > 375) score -= 20;
+      if (!doc.querySelector('meta[name="viewport"]')) score -= 20;
+      
+      return Math.max(0, score);
+    }
+
+    async function compareVersions() {
+      log('🔍 Comparing CSS versions...');
+      
+      const versions = [
+        { name: 'Current', file: 'blog-styles.css', size: 5143 },
+        { name: 'Optimized', file: 'blog-styles-optimized.css', size: 0 },
+        { name: 'Minified', file: 'blog-styles.min.css', size: 0 }
+      ];
+      
+      for (let version of versions) {
+        if (version.size === 0) {
+          try {
+            const response = await fetch(version.file);
+            const text = await response.text();
+            version.size = new Blob([text]).size;
+          } catch (e) {
+            version.size = 'N/A';
+          }
+        }
+        
+        const sizeKB = version.size !== 'N/A' ? (version.size / 1024).toFixed(2) : 'N/A';
+        const gzipSize = version.size !== 'N/A' ? (version.size * 0.3 / 1024).toFixed(2) : 'N/A';
+        
+        log(`📊 ${version.name}: ${sizeKB}KB (gzip: ~${gzipSize}KB)`);
+      }
+      
+      log('✅ Version comparison complete!');
+    }
+
+    // Viewport selector
+    document.querySelectorAll('.viewport-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.viewport-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        const frame = document.getElementById('test-frame');
+        frame.width = this.dataset.width;
+        frame.height = this.dataset.height;
+        
+        log(`📱 Viewport changed to ${this.textContent}`);
+      });
+    });
+
+    // Auto-run initial test
+    setTimeout(() => {
+      log('🚀 Performance monitor ready!');
+      log('Click any button to start testing...');
+    }, 1000);
+  </script>
+</body>
+</html>

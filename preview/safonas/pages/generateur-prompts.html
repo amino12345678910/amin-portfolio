@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-32YPLYV9T5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-32YPLYV9T5');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Générateur de Prompts Image IA | Outil Gratuit | Safonas</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <!-- Enhanced Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=()" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="🎨 Générateur de prompts pour IA d'image gratuit. Créez des prompts optimisés pour la génération d'images par IA. Générez des images époustouflantes avec des prompts experts." />
+    <meta name="keywords" content="générateur prompts image IA, prompt engineering image, art IA, génération image, création prompts, outil IA gratuit" />
+    <meta name="author" content="Équipe Safonas" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Générateur de Prompts Image IA Gratuit | Safonas" />
+    <meta property="og:description" content="🎨 Générez des prompts optimisés pour la création d'images par intelligence artificielle. Outil gratuit pour créer des images époustouflantes." />
+    <meta property="og:image" content="https://safonas.com/assets/image-prompt-generator-social.jpg" />
+    <meta property="og:url" content="https://safonas.com/pages/generateur-prompts.html" />
+    <meta property="og:site_name" content="Safonas - Agence IA Tunisie" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Générateur de Prompts Image IA Gratuit | Safonas" />
+    <meta name="twitter:description" content="Générez des prompts optimisés pour créer des images époustouflantes avec l'intelligence artificielle." />
+    <meta name="twitter:image" content="https://safonas.com/assets/image-prompt-generator-social.jpg" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Générateur de Prompts Image IA",
+      "description": "Outil gratuit pour générer des prompts optimisés pour la création d'images par intelligence artificielle",
+      "url": "https://safonas.com/pages/generateur-prompts.html",
+      "applicationCategory": "Design",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Safonas",
+        "url": "https://safonas.com"
+      }
+    }
+    </script>
+
+    <!-- External CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+
+    <style>
+      /* Chat Interface with Consistent Deep Navy Theme */
+      body {
+        padding-top: 80px; /* Account for fixed header height */
+        background: var(--deep-navy, #0a0f2c);
+        background-image:
+          radial-gradient(circle at 20% 50%, rgba(0, 255, 148, 0.03) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+          radial-gradient(circle at 40% 80%, rgba(59, 130, 246, 0.02) 0%, transparent 50%);
+        color: var(--cloud, #ffffff);
+      }
+
+      .chat-container {
+        max-width: 800px;
+        margin: 6rem auto 8rem auto;
+        padding: 3rem 1.5rem;
+        min-height: calc(100vh - 350px);
+        background: rgba(10, 15, 44, 0.95);
+        backdrop-filter: blur(20px);
+        border-radius: var(--radius-lg);
+        border: 1px solid rgba(0, 255, 148, 0.08);
+        box-shadow:
+          0 20px 40px rgba(10, 15, 44, 0.6),
+          inset 0 1px 0 rgba(255, 255, 255, 0.02);
+      }
+
+      .chat-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 255, 148, 0.05);
+      }
+
+      .chat-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #e2e8f0;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.5rem;
+      }
+
+      .chat-subtitle {
+        color: #64748b;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+      }
+
+      /* Chat messages container - Deep Navy theme */
+      #chat-messages {
+        background: rgba(20, 31, 60, 0.6);
+        border: 1px solid rgba(0, 255, 148, 0.05);
+        border-radius: 12px;
+        padding: 1.5rem;
+        min-height: 400px;
+        margin-bottom: 1.5rem;
+        overflow-y: auto;
+        max-height: 600px;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0, 255, 148, 0.3) transparent;
+      }
+
+      #chat-messages::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      #chat-messages::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      #chat-messages::-webkit-scrollbar-thumb {
+        background: rgba(0, 255, 148, 0.3);
+        border-radius: 3px;
+      }
+
+      #chat-messages::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 255, 148, 0.5);
+      }
+
+      /* Message styling - Dark theme */
+      .message {
+        display: flex;
+        margin-bottom: 1rem;
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .message-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.75rem;
+        margin-right: 0.75rem;
+        flex-shrink: 0;
+      }
+
+      .ai-message .message-avatar {
+        background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+        color: white;
+        font-size: 0.75rem;
+      }
+
+      .user-message {
+        flex-direction: row-reverse;
+      }
+
+      .user-message .message-avatar {
+        background: linear-gradient(135deg, #4ecdc4, #44a39f);
+        color: white;
+        margin-right: 0;
+        margin-left: 0.75rem;
+      }
+
+      /* Message bubbles - Dark theme */
+      .message-bubble {
+        border-radius: 12px;
+        padding: 0.75rem 1rem;
+        display: inline-block;
+        max-width: 70%;
+        word-wrap: break-word;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 255, 148, 0.1);
+      }
+
+      .ai-message .message-bubble {
+        background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(238, 90, 82, 0.05));
+        border: 1px solid rgba(255, 107, 107, 0.2);
+        color: #e2e8f0;
+      }
+
+      .user-message .message-bubble {
+        background: linear-gradient(135deg, rgba(78, 205, 196, 0.15), rgba(68, 163, 159, 0.08));
+        border: 1px solid rgba(78, 205, 196, 0.25);
+        color: #e2e8f0;
+      }
+
+      /* Typing indicator - Dark theme */
+      .typing-indicator {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        background: rgba(255, 107, 107, 0.1);
+        border: 1px solid rgba(255, 107, 107, 0.15);
+        border-radius: 12px;
+        max-width: 70%;
+      }
+
+
+      .typing-dot {
+        width: 8px;
+        height: 8px;
+        background: rgba(255, 107, 107, 0.6);
+        border-radius: 50%;
+        animation: typing 1.4s infinite;
+      }
+
+      .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+      .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+      @keyframes typing {
+        0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+        30% { transform: translateY(-6px); opacity: 1; }
+      }
+
+      /* Chat input container - Deep Navy theme */
+      .chat-input-container {
+        background: rgba(20, 31, 60, 0.9);
+        border: 1px solid rgba(0, 255, 148, 0.08);
+        border-radius: 12px;
+        padding: 1rem;
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(10, 15, 44, 0.4);
+      }
+
+      .chat-input-container:focus-within {
+        border-color: rgba(0, 255, 148, 0.3);
+        box-shadow: 0 0 0 3px rgba(0, 255, 148, 0.1), 0 4px 20px rgba(10, 15, 44, 0.4);
+      }
+
+      #chat-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        resize: none;
+        font-family: inherit;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        height: 44px;
+        min-height: 44px;
+        max-height: 120px;
+        background: transparent;
+        color: #cbd5e1;
+        padding: 0 0.5rem;
+        vertical-align: middle;
+      }
+
+      #chat-input::placeholder {
+        color: #64748b;
+      }
+
+      #send-btn {
+        background: linear-gradient(135deg, rgba(0, 255, 148, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+        color: #cbd5e1;
+        border: 1px solid rgba(0, 255, 148, 0.25);
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 0.875rem;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      #send-btn:hover:not(:disabled) {
+        background: linear-gradient(135deg, rgba(0, 255, 148, 0.25) 0%, rgba(139, 92, 246, 0.25) 100%);
+        border-color: rgba(0, 255, 148, 0.4);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 255, 148, 0.2);
+        color: #e2e8f0;
+      }
+
+      #send-btn:disabled {
+        background: rgba(100, 116, 139, 0.2);
+        border-color: rgba(100, 116, 139, 0.3);
+        color: #64748b;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      /* Welcome message - Deep Navy theme */
+      .welcome-message {
+        background: rgba(0, 255, 148, 0.03);
+        border: 1px solid rgba(0, 255, 148, 0.08);
+        border-radius: 12px;
+        padding: 2rem;
+        text-align: center;
+        color: var(--cloud-secondary, #f8fafc);
+      }
+
+      .welcome-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #86efac;
+        margin-bottom: 0.5rem;
+      }
+
+      .welcome-text {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        color: var(--graphite-light, #94a3b8);
+      }
+
+
+      /* Active nav link styling */
+      .nav-link.active {
+        color: var(--electric-mint) !important;
+        text-shadow: 0 0 10px rgba(0, 255, 148, 0.5);
+      }
+
+      /* CSS Custom Properties fallbacks */
+      :root {
+        --radius-lg: 16px;
+        --radius: 8px;
+        --transition: all 0.2s ease;
+        --electric-mint: #00ff94;
+        --deep-navy: #0a0f2c;
+        --cloud: #ffffff;
+        --cloud-secondary: #f8fafc;
+        --graphite: #64748b;
+        --graphite-light: #94a3b8;
+      }
+
+      /* Mobile Menu Styles */
+      .mobile-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .mobile-menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        max-width: 80vw;
+        height: 100vh;
+        background: rgba(10, 15, 44, 0.98);
+        backdrop-filter: blur(20px);
+        border-left: 1px solid rgba(0, 255, 148, 0.1);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+      }
+
+      .mobile-menu.active {
+        right: 0;
+      }
+
+      .mobile-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(0, 255, 148, 0.1);
+      }
+
+      .mobile-menu-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--electric-mint, #00ff94);
+      }
+
+      .mobile-menu-close {
+        background: none;
+        border: none;
+        color: var(--graphite-light, #94a3b8);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+      }
+
+      .mobile-menu-close:hover {
+        color: var(--electric-mint, #00ff94);
+        background: rgba(0, 255, 148, 0.1);
+      }
+
+      .mobile-menu-nav {
+        padding: 1rem 0;
+      }
+
+      .mobile-nav-link {
+        display: block;
+        padding: 1rem 1.5rem;
+        color: var(--cloud-secondary, #f8fafc);
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border-left: 3px solid transparent;
+      }
+
+      .mobile-nav-link:hover,
+      .mobile-nav-link.active {
+        color: var(--electric-mint, #00ff94);
+        background: rgba(0, 255, 148, 0.05);
+        border-left-color: var(--electric-mint, #00ff94);
+      }
+
+      /* Mobile responsive adjustments */
+      @media (max-width: 768px) {
+        body {
+          padding-top: 70px; /* Smaller header on mobile */
+        }
+
+        .chat-container {
+          margin: 5rem auto 6rem auto;
+          padding: 2rem 1rem;
+          min-height: calc(100vh - 300px);
+        }
+
+        .message-bubble {
+          max-width: 85%;
+        }
+
+        /* Hide mobile menu button and show mobile menu */
+        .mobile-menu-container,
+        .mobile-menu-btn {
+          display: flex;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .chat-container {
+          margin: 4rem auto 5rem auto;
+          padding: 1.5rem 0.75rem;
+          min-height: calc(100vh - 280px);
+        }
+
+        .message-bubble {
+          max-width: 90%;
+        }
+
+        .chat-header {
+          margin-bottom: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="loaded gradient-bg">
+    <!-- Header Navigation -->
+    <header data-aos="fade-down" id="header">
+      <div class="container">
+        <nav role="navigation" aria-label="Main navigation">
+          <div
+            id="logo"
+            class="logo font-display text-2xl font-bold cursor-pointer"
+            role="banner"
+            onclick="window.location.href='../index.html'"
+          >
+            Safonas
+          </div>
+          <div class="nav-links" role="menubar">
+            <a href="../index.html#features" class="nav-link" role="menuitem">Fonctionnalités</a>
+            <a href="../pages/services.html" class="nav-link" role="menuitem">Services</a>
+            <a href="../index.html#testimonials" class="nav-link" role="menuitem">Témoignages</a>
+            <a href="../index.html#contact" class="nav-link" role="menuitem">Contact</a>
+            <a href="./generateur-prompts.html" class="nav-link active" role="menuitem">Chat IA</a>
+          </div>
+          <div class="mobile-menu-container">
+            <button
+              id="mobile-menu-btn"
+              class="mobile-menu-btn"
+              aria-label="Toggle mobile menu"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay" role="presentation"></div>
+    <div id="mobile-menu" class="mobile-menu" role="menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          Safonas
+        </div>
+        <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Fermer le menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="../index.html#features" class="mobile-nav-link" role="menuitem">Fonctionnalités</a>
+        <a href="../pages/services.html" class="mobile-nav-link" role="menuitem">Services</a>
+        <a href="../index.html#testimonials" class="mobile-nav-link" role="menuitem">Témoignages</a>
+        <a href="../index.html#contact" class="mobile-nav-link" role="menuitem">Contact</a>
+        <a href="./generateur-prompts.html" class="mobile-nav-link active" role="menuitem">Chat IA</a>
+      </nav>
+    </div>
+
+    <!-- Chat Interface -->
+    <div class="chat-container">
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <h1 class="chat-title">🎨 Dex - Générateur de Prompts Image IA</h1>
+        <p class="chat-subtitle">Votre expert IA pour créer des prompts optimisés pour la génération d'images</p>
+      </div>
+
+      <!-- Chat Messages -->
+      <div id="chat-messages">
+        <!-- Welcome Message -->
+        <div class="welcome-message">
+          <h2 class="welcome-title">🎨 Créons des images époustouflantes ensemble !</h2>
+          <p class="welcome-text">
+            Je suis Dex, votre expert IA spécialisé dans l'élaboration de prompts détaillés.
+            Donnez-moi une simple idée et je la transformerai en un prompt riche et précis pour créer des images époustouflantes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div class="chat-input-container">
+        <textarea id="chat-input" placeholder="Décrivez l'image que vous voulez créer..." rows="1"></textarea>
+        <button id="send-btn">
+          <i class="fas fa-magic"></i>
+          Générer
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-charcoal-light relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 left-1/4 w-96 h-96 bg-electric-mint rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-1/4 w-80 h-80 bg-purple rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 max-w-7xl relative" data-aos="fade-up">
+        <!-- Main footer content -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand section -->
+          <div class="lg:col-span-1">
+            <div class="logo font-satoshi text-3xl font-bold mb-6">Safonas</div>
+            <p class="text-graphite-light mb-8 leading-relaxed">
+              Révolutionnons ensemble l'avenir de votre entreprise avec
+              l'intelligence artificielle. Des solutions sur mesure pour
+              accélérer votre croissance.
+            </p>
+          </div>
+
+          <!-- Product section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Produit
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="../index.html#features"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Fonctionnalités
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  API
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Sécurité
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Ressources
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="../blog/"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Blog
+                </a>
+              </li>
+                <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Webinaires
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company section -->
+          <div>
+            <h4 class="font-satoshi font-bold text-cloud mb-6 text-lg">
+              Entreprise
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  À propos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Carrières
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Presse
+                </a>
+              </li>
+              <li>
+                <a
+                  id="footerContactLink"
+                  href="../index.html#contact"
+                  class="text-graphite-light hover:text-electric-mint transition-colors flex items-center group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-electric-mint opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></i>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom footer -->
+        <div class="border-t border-graphite border-opacity-30 pt-12">
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="text-graphite text-sm mb-6 lg:mb-0 flex items-center">
+              <span>© 2025 Safonas. Tous droits réservés.</span>
+              <div class="ml-4 flex items-center text-xs">
+                <span
+                  class="w-2 h-2 bg-green-500 rounded-full mr-2 pulse"
+                ></span>
+                <span class="text-green-500">Tous systèmes opérationnels</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 text-sm">
+              <a
+                href="../legal/politique-de-confidentialite.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Confidentialité
+              </a>
+              <a
+                href="../legal/mentions-legales.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Mentions légales
+              </a>
+              <a
+                href="../legal/CGU_Safonas.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                CGU
+              </a>
+              <a
+                href="../legal/cookies-policy.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Cookies
+              </a>
+              <a
+                href="../legal/disclaimer-services-ia.html"
+                class="text-graphite-light hover:text-electric-mint transition-colors"
+              >
+                Avis IA
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/ui-components.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+
+      // Chat Interface with N8n Webhook Integration
+      class DexChat {
+        constructor() {
+          this.chatMessages = document.getElementById('chat-messages');
+          this.chatInput = document.getElementById('chat-input');
+          this.sendBtn = document.getElementById('send-btn');
+          this.isTyping = false;
+
+          this.initializeEventListeners();
+        }
+
+        initializeEventListeners() {
+          // Send button click
+          this.sendBtn.addEventListener('click', () => this.sendMessage());
+
+          // Input handling
+          this.chatInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+              e.preventDefault();
+              this.sendMessage();
+            }
+          });
+
+          // Toggle send button based on input
+          this.chatInput.addEventListener('input', () => {
+            this.toggleSendButton();
+          });
+
+          // Auto-resize textarea
+          this.chatInput.addEventListener('input', () => {
+            this.autoResizeTextarea();
+          });
+        }
+
+        toggleSendButton() {
+          const hasContent = this.chatInput.value.trim().length > 0;
+          this.sendBtn.disabled = !hasContent || this.isTyping;
+        }
+
+        autoResizeTextarea() {
+          this.chatInput.style.height = 'auto';
+          this.chatInput.style.height = Math.min(this.chatInput.scrollHeight, 120) + 'px';
+        }
+
+        removeWelcomeMessage() {
+          const welcomeMessage = this.chatMessages.querySelector('.welcome-message');
+          if (welcomeMessage) {
+            welcomeMessage.style.opacity = '0';
+            setTimeout(() => welcomeMessage.remove(), 300);
+          }
+        }
+
+        sendMessage() {
+          const message = this.chatInput.value.trim();
+          if (!message || this.isTyping) return;
+
+          // Remove welcome message on first message
+          if (this.chatMessages.querySelector('.welcome-message')) {
+            this.removeWelcomeMessage();
+          }
+
+          // Add user message
+          this.addMessage(message, 'user');
+
+          // Clear input
+          this.chatInput.value = '';
+          this.autoResizeTextarea();
+          this.toggleSendButton();
+
+          // Show typing indicator
+          this.showTypingIndicator();
+
+          // Call N8n webhook
+          this.callWebhook(message);
+        }
+
+        addMessage(text, sender) {
+          // Create single message container
+          const messageDiv = document.createElement('div');
+          messageDiv.className = `message ${sender}-message`;
+
+          // Avatar
+          const avatar = document.createElement('div');
+          avatar.className = 'message-avatar';
+          avatar.textContent = sender === 'ai' ? 'Dex' : 'U';
+
+          // Message bubble (direct child, no extra content div)
+          const bubble = document.createElement('div');
+          bubble.className = 'message-bubble';
+          bubble.textContent = text;
+
+          // Assemble message - avatar + bubble directly
+          messageDiv.appendChild(avatar);
+          messageDiv.appendChild(bubble);
+
+          this.chatMessages.appendChild(messageDiv);
+          this.scrollToBottom();
+        }
+
+        showTypingIndicator() {
+          this.isTyping = true;
+          this.toggleSendButton();
+
+          const typingDiv = document.createElement('div');
+          typingDiv.className = 'message ai-message';
+          typingDiv.id = 'typing-indicator';
+
+          const avatar = document.createElement('div');
+          avatar.className = 'message-avatar';
+          avatar.textContent = 'Dex';
+
+          const typingIndicator = document.createElement('div');
+          typingIndicator.className = 'typing-indicator';
+          typingIndicator.innerHTML = `
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+          `;
+
+          // Assemble typing indicator - avatar + indicator directly
+          typingDiv.appendChild(avatar);
+          typingDiv.appendChild(typingIndicator);
+
+          this.chatMessages.appendChild(typingDiv);
+          this.scrollToBottom();
+        }
+
+        hideTypingIndicator() {
+          this.isTyping = false;
+          this.toggleSendButton();
+
+          const typingIndicator = document.getElementById('typing-indicator');
+          if (typingIndicator) {
+            typingIndicator.remove();
+          }
+        }
+
+        scrollToBottom() {
+          this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
+        }
+
+        async callWebhook(message) {
+          try {
+            // Direct N8N webhook call with CORS headers and error handling
+            const webhookUrl = 'https://n8n.safonas.com/webhook/2aa5493f-11f5-4b65-aa12-d9170a25f3b5/chat';
+            const sessionId = this.getChatSessionId();
+            const isMobileDetected = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            const requestData = {
+              message: message,
+              chatId: sessionId
+            };
+
+            const fetchOptions = {
+              method: 'POST',
+              mode: 'cors', // Explicitly enable CORS
+              credentials: 'omit', // Don't send cookies
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Cache-Control': 'no-cache',
+                'X-Requested-With': 'XMLHttpRequest',
+                'Origin': window.location.origin
+              },
+              body: JSON.stringify(requestData)
+            };
+
+            const startTime = Date.now();
+
+            // Add timeout to prevent hanging
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
+            fetchOptions.signal = controller.signal;
+
+            const response = await fetch(webhookUrl, fetchOptions);
+            clearTimeout(timeoutId);
+            const endTime = Date.now();
+
+            this.hideTypingIndicator();
+
+            if (response.ok) {
+              const data = await response.json();
+
+              // Handle multiple possible response fields (matching Sparrow config)
+              const botMessage = data.output || data.reply || data.response || data.message || data.chatbot_response || "Désolé, je n'ai pas pu traiter votre demande.";
+
+              this.addMessage(botMessage, 'ai');
+            } else {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+          } catch (error) {
+            console.error('Webhook error:', error);
+            this.hideTypingIndicator();
+
+            if (error.name === 'AbortError') {
+              this.addMessage('⏱️ La demande a expiré. Veuillez réessayer.', 'ai');
+            } else if (error.message.includes('Failed to fetch')) {
+              this.addMessage('🔌 Impossible de contacter le service. Veuillez vérifier votre connexion.', 'ai');
+            } else {
+              this.addMessage('⚠️ Service Dex temporairement indisponible. Veuillez réessayer plus tard.', 'ai');
+            }
+          }
+        }
+
+        getChatSessionId() {
+          // Generate or retrieve a session ID for tracking conversation
+          let sessionId = sessionStorage.getItem('dex-chat-session-id');
+          if (!sessionId) {
+            sessionId = 'dex_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            sessionStorage.setItem('dex-chat-session-id', sessionId);
+          }
+          return sessionId;
+        }
+      }
+
+      // Initialize Dex Chat when DOM is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        new DexChat();
+
+        // Initialize mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        const openMobileMenu = () => {
+          if (mobileMenu && mobileMenuOverlay) {
+            mobileMenu.classList.add('active');
+            mobileMenuOverlay.classList.add('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            mobileMenu.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+          }
+        };
+
+        const closeMobileMenu = () => {
+          if (mobileMenu && mobileMenuOverlay) {
+            mobileMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+          }
+        };
+
+        // Event listeners
+        if (mobileMenuBtn) {
+          mobileMenuBtn.addEventListener('click', openMobileMenu);
+        }
+
+        if (mobileMenuClose) {
+          mobileMenuClose.addEventListener('click', closeMobileMenu);
+        }
+
+        if (mobileMenuOverlay) {
+          mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+        }
+
+        // Close menu when escape key is pressed
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('active')) {
+            closeMobileMenu();
+          }
+        });
+
+        // Handle mobile nav links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach((link) => {
+          link.addEventListener('click', () => {
+            closeMobileMenu();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
